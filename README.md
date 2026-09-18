@@ -2,8 +2,6 @@
 
 A small offline‑capable trainer for the 500 most common Danish verbs, 250 most common adjectives, the Danish question words (hv‑ord), and Danish numbers (cardinals 0–100+, ordinals).
 
-**Live:** https://degrigorash.github.io/DanskMemorize/
-
 ## Features
 
 - Two directions: Danish → English and English → Danish
@@ -23,4 +21,4 @@ then commit both files. `source/template.html` holds the app itself.
 
 ## Hosting
 
-Plain static site — GitHub Pages serves `index.html` from the repository root. No build step, no dependencies.
+Plain static site — everything is in `index.html`. Serve that single file from any static host; there is no build step at runtime and no dependencies. It also works opened directly from disk.
