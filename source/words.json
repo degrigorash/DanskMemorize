@@ -10497,7 +10497,34 @@
    "da": "enogtyve",
    "level": 3,
    "f": [
-    "en + og + tyve = one-and-twenty",
+    "en + og + tyve",
+    []
+   ]
+  },
+  {
+   "en": "22",
+   "da": "toogtyve",
+   "level": 3,
+   "f": [
+    "to + og + tyve",
+    []
+   ]
+  },
+  {
+   "en": "23",
+   "da": "treogtyve",
+   "level": 3,
+   "f": [
+    "tre + og + tyve",
+    []
+   ]
+  },
+  {
+   "en": "24",
+   "da": "fireogtyve",
+   "level": 3,
+   "f": [
+    "fire + og + tyve",
     []
    ]
   },
@@ -10511,11 +10538,83 @@
    ]
   },
   {
+   "en": "26",
+   "da": "seksogtyve",
+   "level": 3,
+   "f": [
+    "seks + og + tyve",
+    []
+   ]
+  },
+  {
+   "en": "27",
+   "da": "syvogtyve",
+   "level": 3,
+   "f": [
+    "syv + og + tyve",
+    []
+   ]
+  },
+  {
+   "en": "28",
+   "da": "otteogtyve",
+   "level": 3,
+   "f": [
+    "otte + og + tyve",
+    []
+   ]
+  },
+  {
+   "en": "29",
+   "da": "niogtyve",
+   "level": 3,
+   "f": [
+    "ni + og + tyve",
+    []
+   ]
+  },
+  {
+   "en": "31",
+   "da": "enogtredive",
+   "level": 3,
+   "f": [
+    "en + og + tredive",
+    []
+   ]
+  },
+  {
    "en": "32",
    "da": "toogtredive",
    "level": 3,
    "f": [
     "to + og + tredive",
+    []
+   ]
+  },
+  {
+   "en": "33",
+   "da": "treogtredive",
+   "level": 3,
+   "f": [
+    "tre + og + tredive",
+    []
+   ]
+  },
+  {
+   "en": "34",
+   "da": "fireogtredive",
+   "level": 3,
+   "f": [
+    "fire + og + tredive",
+    []
+   ]
+  },
+  {
+   "en": "35",
+   "da": "femogtredive",
+   "level": 3,
+   "f": [
+    "fem + og + tredive",
     []
    ]
   },
@@ -10529,11 +10628,83 @@
    ]
   },
   {
+   "en": "37",
+   "da": "syvogtredive",
+   "level": 3,
+   "f": [
+    "syv + og + tredive",
+    []
+   ]
+  },
+  {
+   "en": "38",
+   "da": "otteogtredive",
+   "level": 3,
+   "f": [
+    "otte + og + tredive",
+    []
+   ]
+  },
+  {
+   "en": "39",
+   "da": "niogtredive",
+   "level": 3,
+   "f": [
+    "ni + og + tredive",
+    []
+   ]
+  },
+  {
+   "en": "41",
+   "da": "enogfyrre",
+   "level": 3,
+   "f": [
+    "en + og + fyrre",
+    []
+   ]
+  },
+  {
+   "en": "42",
+   "da": "toogfyrre",
+   "level": 3,
+   "f": [
+    "to + og + fyrre",
+    []
+   ]
+  },
+  {
    "en": "43",
    "da": "treogfyrre",
    "level": 3,
    "f": [
     "tre + og + fyrre",
+    []
+   ]
+  },
+  {
+   "en": "44",
+   "da": "fireogfyrre",
+   "level": 3,
+   "f": [
+    "fire + og + fyrre",
+    []
+   ]
+  },
+  {
+   "en": "45",
+   "da": "femogfyrre",
+   "level": 3,
+   "f": [
+    "fem + og + fyrre",
+    []
+   ]
+  },
+  {
+   "en": "46",
+   "da": "seksogfyrre",
+   "level": 3,
+   "f": [
+    "seks + og + fyrre",
     []
    ]
   },
@@ -10547,11 +10718,83 @@
    ]
   },
   {
+   "en": "48",
+   "da": "otteogfyrre",
+   "level": 3,
+   "f": [
+    "otte + og + fyrre",
+    []
+   ]
+  },
+  {
+   "en": "49",
+   "da": "niogfyrre",
+   "level": 3,
+   "f": [
+    "ni + og + fyrre",
+    []
+   ]
+  },
+  {
+   "en": "51",
+   "da": "enoghalvtreds",
+   "level": 3,
+   "f": [
+    "en + og + halvtreds",
+    []
+   ]
+  },
+  {
+   "en": "52",
+   "da": "tooghalvtreds",
+   "level": 3,
+   "f": [
+    "to + og + halvtreds",
+    []
+   ]
+  },
+  {
+   "en": "53",
+   "da": "treoghalvtreds",
+   "level": 3,
+   "f": [
+    "tre + og + halvtreds",
+    []
+   ]
+  },
+  {
    "en": "54",
    "da": "fireoghalvtreds",
    "level": 3,
    "f": [
     "fire + og + halvtreds",
+    []
+   ]
+  },
+  {
+   "en": "55",
+   "da": "femoghalvtreds",
+   "level": 3,
+   "f": [
+    "fem + og + halvtreds",
+    []
+   ]
+  },
+  {
+   "en": "56",
+   "da": "seksoghalvtreds",
+   "level": 3,
+   "f": [
+    "seks + og + halvtreds",
+    []
+   ]
+  },
+  {
+   "en": "57",
+   "da": "syvoghalvtreds",
+   "level": 3,
+   "f": [
+    "syv + og + halvtreds",
     []
    ]
   },
@@ -10565,11 +10808,74 @@
    ]
   },
   {
+   "en": "59",
+   "da": "nioghalvtreds",
+   "level": 3,
+   "f": [
+    "ni + og + halvtreds",
+    []
+   ]
+  },
+  {
+   "en": "61",
+   "da": "enogtres",
+   "level": 3,
+   "f": [
+    "en + og + tres",
+    []
+   ]
+  },
+  {
+   "en": "62",
+   "da": "toogtres",
+   "level": 3,
+   "f": [
+    "to + og + tres",
+    []
+   ]
+  },
+  {
    "en": "63",
    "da": "treogtres",
    "level": 3,
    "f": [
     "tre + og + tres",
+    []
+   ]
+  },
+  {
+   "en": "64",
+   "da": "fireogtres",
+   "level": 3,
+   "f": [
+    "fire + og + tres",
+    []
+   ]
+  },
+  {
+   "en": "65",
+   "da": "femogtres",
+   "level": 3,
+   "f": [
+    "fem + og + tres",
+    []
+   ]
+  },
+  {
+   "en": "66",
+   "da": "seksogtres",
+   "level": 3,
+   "f": [
+    "seks + og + tres",
+    []
+   ]
+  },
+  {
+   "en": "67",
+   "da": "syvogtres",
+   "level": 3,
+   "f": [
+    "syv + og + tres",
     []
    ]
   },
@@ -10583,11 +10889,83 @@
    ]
   },
   {
+   "en": "69",
+   "da": "niogtres",
+   "level": 3,
+   "f": [
+    "ni + og + tres",
+    []
+   ]
+  },
+  {
+   "en": "71",
+   "da": "enoghalvfjerds",
+   "level": 3,
+   "f": [
+    "en + og + halvfjerds",
+    []
+   ]
+  },
+  {
    "en": "72",
    "da": "tooghalvfjerds",
    "level": 3,
    "f": [
     "to + og + halvfjerds",
+    []
+   ]
+  },
+  {
+   "en": "73",
+   "da": "treoghalvfjerds",
+   "level": 3,
+   "f": [
+    "tre + og + halvfjerds",
+    []
+   ]
+  },
+  {
+   "en": "74",
+   "da": "fireoghalvfjerds",
+   "level": 3,
+   "f": [
+    "fire + og + halvfjerds",
+    []
+   ]
+  },
+  {
+   "en": "75",
+   "da": "femoghalvfjerds",
+   "level": 3,
+   "f": [
+    "fem + og + halvfjerds",
+    []
+   ]
+  },
+  {
+   "en": "76",
+   "da": "seksoghalvfjerds",
+   "level": 3,
+   "f": [
+    "seks + og + halvfjerds",
+    []
+   ]
+  },
+  {
+   "en": "77",
+   "da": "syvoghalvfjerds",
+   "level": 3,
+   "f": [
+    "syv + og + halvfjerds",
+    []
+   ]
+  },
+  {
+   "en": "78",
+   "da": "otteoghalvfjerds",
+   "level": 3,
+   "f": [
+    "otte + og + halvfjerds",
     []
    ]
   },
@@ -10601,6 +10979,42 @@
    ]
   },
   {
+   "en": "81",
+   "da": "enogfirs",
+   "level": 3,
+   "f": [
+    "en + og + firs",
+    []
+   ]
+  },
+  {
+   "en": "82",
+   "da": "toogfirs",
+   "level": 3,
+   "f": [
+    "to + og + firs",
+    []
+   ]
+  },
+  {
+   "en": "83",
+   "da": "treogfirs",
+   "level": 3,
+   "f": [
+    "tre + og + firs",
+    []
+   ]
+  },
+  {
+   "en": "84",
+   "da": "fireogfirs",
+   "level": 3,
+   "f": [
+    "fire + og + firs",
+    []
+   ]
+  },
+  {
    "en": "85",
    "da": "femogfirs",
    "level": 3,
@@ -10610,11 +11024,110 @@
    ]
   },
   {
+   "en": "86",
+   "da": "seksogfirs",
+   "level": 3,
+   "f": [
+    "seks + og + firs",
+    []
+   ]
+  },
+  {
+   "en": "87",
+   "da": "syvogfirs",
+   "level": 3,
+   "f": [
+    "syv + og + firs",
+    []
+   ]
+  },
+  {
+   "en": "88",
+   "da": "otteogfirs",
+   "level": 3,
+   "f": [
+    "otte + og + firs",
+    []
+   ]
+  },
+  {
+   "en": "89",
+   "da": "niogfirs",
+   "level": 3,
+   "f": [
+    "ni + og + firs",
+    []
+   ]
+  },
+  {
    "en": "91",
    "da": "enoghalvfems",
    "level": 3,
    "f": [
     "en + og + halvfems",
+    []
+   ]
+  },
+  {
+   "en": "92",
+   "da": "tooghalvfems",
+   "level": 3,
+   "f": [
+    "to + og + halvfems",
+    []
+   ]
+  },
+  {
+   "en": "93",
+   "da": "treoghalvfems",
+   "level": 3,
+   "f": [
+    "tre + og + halvfems",
+    []
+   ]
+  },
+  {
+   "en": "94",
+   "da": "fireoghalvfems",
+   "level": 3,
+   "f": [
+    "fire + og + halvfems",
+    []
+   ]
+  },
+  {
+   "en": "95",
+   "da": "femoghalvfems",
+   "level": 3,
+   "f": [
+    "fem + og + halvfems",
+    []
+   ]
+  },
+  {
+   "en": "96",
+   "da": "seksoghalvfems",
+   "level": 3,
+   "f": [
+    "seks + og + halvfems",
+    []
+   ]
+  },
+  {
+   "en": "97",
+   "da": "syvoghalvfems",
+   "level": 3,
+   "f": [
+    "syv + og + halvfems",
+    []
+   ]
+  },
+  {
+   "en": "98",
+   "da": "otteoghalvfems",
+   "level": 3,
+   "f": [
+    "otte + og + halvfems",
     []
    ]
   },
