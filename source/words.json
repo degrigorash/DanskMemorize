@@ -1,0 +1,9701 @@
+{
+ "verbs": [
+  {
+   "en": "to accept",
+   "da": "acceptere",
+   "level": 3,
+   "f": [
+    "accepterer",
+    "accepterede",
+    "har accepteret",
+    "havde accepteret",
+    "accepter",
+    "b1"
+   ]
+  },
+  {
+   "en": "to separate",
+   "da": "adskille",
+   "level": 5,
+   "f": [
+    "adskiller",
+    "adskilte",
+    "har adskilt",
+    "havde adskilt",
+    "adskil",
+    "b2"
+   ]
+  },
+  {
+   "en": "to warn",
+   "da": "advare",
+   "level": 3,
+   "f": [
+    "advarer",
+    "advarede",
+    "har advaret",
+    "havde advaret",
+    "advar",
+    "b1"
+   ]
+  },
+  {
+   "en": "to interrupt, cut off",
+   "da": "afbryde",
+   "level": 5,
+   "f": [
+    "afbryder",
+    "afbrød",
+    "har afbrudt",
+    "havde afbrudt",
+    "afbryd",
+    "uv"
+   ]
+  },
+  {
+   "en": "to give up, submit, cast (a vote)",
+   "da": "afgive",
+   "level": 5,
+   "f": [
+    "afgiver",
+    "afgav",
+    "har afgivet",
+    "havde afgivet",
+    "afgiv",
+    "uv"
+   ]
+  },
+  {
+   "en": "to decide, determine",
+   "da": "afgøre",
+   "level": 4,
+   "f": [
+    "afgør",
+    "afgjorde",
+    "har afgjort",
+    "havde afgjort",
+    "afgør",
+    "uv"
+   ]
+  },
+  {
+   "en": "to hand in, deliver",
+   "da": "aflevere",
+   "level": 3,
+   "f": [
+    "afleverer",
+    "afleverede",
+    "har afleveret",
+    "havde afleveret",
+    "aflever",
+    "b1"
+   ]
+  },
+  {
+   "en": "to cancel",
+   "da": "aflyse",
+   "level": 3,
+   "f": [
+    "aflyser",
+    "aflyste",
+    "har aflyst",
+    "havde aflyst",
+    "aflys",
+    "b2"
+   ]
+  },
+  {
+   "en": "to relieve, replace",
+   "da": "afløse",
+   "level": 5,
+   "f": [
+    "afløser",
+    "afløste",
+    "har afløst",
+    "havde afløst",
+    "afløs",
+    "b2"
+   ]
+  },
+  {
+   "en": "to abolish",
+   "da": "afskaffe",
+   "level": 5,
+   "f": [
+    "afskaffer",
+    "afskaffede",
+    "har afskaffet",
+    "havde afskaffet",
+    "afskaf",
+    "b1"
+   ]
+  },
+  {
+   "en": "to finish, conclude",
+   "da": "afslutte",
+   "level": 3,
+   "f": [
+    "afslutter",
+    "afsluttede",
+    "har afsluttet",
+    "havde afsluttet",
+    "afslut",
+    "b1"
+   ]
+  },
+  {
+   "en": "to reject, dismiss",
+   "da": "afvise",
+   "level": 4,
+   "f": [
+    "afviser",
+    "afviste",
+    "har afvist",
+    "havde afvist",
+    "afvis",
+    "b2"
+   ]
+  },
+  {
+   "en": "to recommend",
+   "da": "anbefale",
+   "level": 3,
+   "f": [
+    "anbefaler",
+    "anbefalede",
+    "har anbefalet",
+    "havde anbefalet",
+    "anbefal",
+    "b1"
+   ]
+  },
+  {
+   "en": "to place, put",
+   "da": "anbringe",
+   "level": 5,
+   "f": [
+    "anbringer",
+    "anbragte",
+    "har anbragt",
+    "havde anbragt",
+    "anbring",
+    "uv"
+   ]
+  },
+  {
+   "en": "to sense, have an inkling of",
+   "da": "ane",
+   "level": 5,
+   "f": [
+    "aner",
+    "anede",
+    "har anet",
+    "havde anet",
+    "",
+    "b1"
+   ]
+  },
+  {
+   "en": "to acknowledge, recognize",
+   "da": "anerkende",
+   "level": 5,
+   "f": [
+    "anerkender",
+    "anerkendte",
+    "har anerkendt",
+    "havde anerkendt",
+    "anerkend",
+    "b2"
+   ]
+  },
+  {
+   "en": "to state, indicate; report (someone)",
+   "da": "angive",
+   "level": 5,
+   "f": [
+    "angiver",
+    "angav",
+    "har angivet",
+    "havde angivet",
+    "angiv",
+    "uv"
+   ]
+  },
+  {
+   "en": "to concern, regard",
+   "da": "angå",
+   "level": 5,
+   "f": [
+    "angår",
+    "angik",
+    "har angået",
+    "havde angået",
+    "",
+    "uv"
+   ]
+  },
+  {
+   "en": "to arrest",
+   "da": "anholde",
+   "level": 4,
+   "f": [
+    "anholder",
+    "anholdt",
+    "har anholdt",
+    "havde anholdt",
+    "anhold",
+    "uv"
+   ]
+  },
+  {
+   "en": "to arrive",
+   "da": "ankomme",
+   "level": 3,
+   "f": [
+    "ankommer",
+    "ankom",
+    "er ankommet",
+    "var ankommet",
+    "",
+    "uv"
+   ]
+  },
+  {
+   "en": "to report; review",
+   "da": "anmelde",
+   "level": 5,
+   "f": [
+    "anmelder",
+    "anmeldte",
+    "har anmeldt",
+    "havde anmeldt",
+    "anmeld",
+    "b2"
+   ]
+  },
+  {
+   "en": "to regard, consider",
+   "da": "anse",
+   "level": 5,
+   "f": [
+    "anser",
+    "anså",
+    "har anset",
+    "havde anset",
+    "",
+    "uv"
+   ]
+  },
+  {
+   "en": "to employ, hire",
+   "da": "ansætte",
+   "level": 5,
+   "f": [
+    "ansætter",
+    "ansatte",
+    "har ansat",
+    "havde ansat",
+    "ansæt",
+    "uv"
+   ]
+  },
+  {
+   "en": "to use, apply",
+   "da": "anvende",
+   "level": 4,
+   "f": [
+    "anvender",
+    "anvendte",
+    "har anvendt",
+    "havde anvendt",
+    "anvend",
+    "b2"
+   ]
+  },
+  {
+   "en": "to work",
+   "da": "arbejde",
+   "level": 1,
+   "f": [
+    "arbejder",
+    "arbejdede",
+    "har arbejdet",
+    "havde arbejdet",
+    "arbejd",
+    "b1"
+   ]
+  },
+  {
+   "en": "to arrange, organize",
+   "da": "arrangere",
+   "level": 3,
+   "f": [
+    "arrangerer",
+    "arrangerede",
+    "har arrangeret",
+    "havde arrangeret",
+    "arranger",
+    "b1"
+   ]
+  },
+  {
+   "en": "to arrest",
+   "da": "arrestere",
+   "level": 4,
+   "f": [
+    "arresterer",
+    "arresterede",
+    "har arresteret",
+    "havde arresteret",
+    "arrester",
+    "b1"
+   ]
+  },
+  {
+   "en": "to bake",
+   "da": "bage",
+   "level": 2,
+   "f": [
+    "bager",
+    "bagte",
+    "har bagt",
+    "havde bagt",
+    "bag",
+    "b2"
+   ]
+  },
+  {
+   "en": "to knock; beat",
+   "da": "banke",
+   "level": 3,
+   "f": [
+    "banker",
+    "bankede",
+    "har banket",
+    "havde banket",
+    "bank",
+    "b1"
+   ]
+  },
+  {
+   "en": "to ask, request; pray",
+   "da": "bede",
+   "level": 1,
+   "f": [
+    "beder",
+    "bad",
+    "har bedt",
+    "havde bedt",
+    "bed",
+    "uv"
+   ]
+  },
+  {
+   "en": "to be located, feel (oneself)",
+   "da": "befinde",
+   "level": 5,
+   "f": [
+    "befinder",
+    "befandt",
+    "har befundet",
+    "havde befundet",
+    "",
+    "uv"
+   ]
+  },
+  {
+   "en": "to bury",
+   "da": "begrave",
+   "level": 5,
+   "f": [
+    "begraver",
+    "begravede",
+    "har begravet",
+    "havde begravet",
+    "begrav",
+    "b1"
+   ]
+  },
+  {
+   "en": "to limit, restrict",
+   "da": "begrænse",
+   "level": 4,
+   "f": [
+    "begrænser",
+    "begrænsede",
+    "har begrænset",
+    "havde begrænset",
+    "begræns",
+    "b1"
+   ]
+  },
+  {
+   "en": "to begin, start",
+   "da": "begynde",
+   "level": 1,
+   "f": [
+    "begynder",
+    "begyndte",
+    "er begyndt",
+    "var begyndt",
+    "begynd",
+    "b2"
+   ]
+  },
+  {
+   "en": "to commit",
+   "da": "begå",
+   "level": 5,
+   "f": [
+    "begår",
+    "begik",
+    "har begået",
+    "havde begået",
+    "begå",
+    "uv"
+   ]
+  },
+  {
+   "en": "to treat, handle",
+   "da": "behandle",
+   "level": 3,
+   "f": [
+    "behandler",
+    "behandlede",
+    "har behandlet",
+    "havde behandlet",
+    "behandl",
+    "b1"
+   ]
+  },
+  {
+   "en": "to keep",
+   "da": "beholde",
+   "level": 3,
+   "f": [
+    "beholder",
+    "beholdt",
+    "har beholdt",
+    "havde beholdt",
+    "behold",
+    "uv"
+   ]
+  },
+  {
+   "en": "to need",
+   "da": "behøve",
+   "level": 3,
+   "f": [
+    "behøver",
+    "behøvede",
+    "har behøvet",
+    "havde behøvet",
+    "",
+    "b1"
+   ]
+  },
+  {
+   "en": "to regret, apologize for",
+   "da": "beklage",
+   "level": 5,
+   "f": [
+    "beklager",
+    "beklagede",
+    "har beklaget",
+    "havde beklaget",
+    "beklag",
+    "b1"
+   ]
+  },
+  {
+   "en": "to confirm",
+   "da": "bekræfte",
+   "level": 4,
+   "f": [
+    "bekræfter",
+    "bekræftede",
+    "har bekræftet",
+    "havde bekræftet",
+    "bekræft",
+    "b1"
+   ]
+  },
+  {
+   "en": "to notice, remark",
+   "da": "bemærke",
+   "level": 4,
+   "f": [
+    "bemærker",
+    "bemærkede",
+    "har bemærket",
+    "havde bemærket",
+    "bemærk",
+    "b1"
+   ]
+  },
+  {
+   "en": "to use",
+   "da": "benytte",
+   "level": 5,
+   "f": [
+    "benytter",
+    "benyttede",
+    "har benyttet",
+    "havde benyttet",
+    "benyt",
+    "b1"
+   ]
+  },
+  {
+   "en": "to describe",
+   "da": "beskrive",
+   "level": 4,
+   "f": [
+    "beskriver",
+    "beskrev",
+    "har beskrevet",
+    "havde beskrevet",
+    "beskriv",
+    "uv"
+   ]
+  },
+  {
+   "en": "to protect",
+   "da": "beskytte",
+   "level": 4,
+   "f": [
+    "beskytter",
+    "beskyttede",
+    "har beskyttet",
+    "havde beskyttet",
+    "beskyt",
+    "b1"
+   ]
+  },
+  {
+   "en": "to decide",
+   "da": "beslutte",
+   "level": 3,
+   "f": [
+    "beslutter",
+    "besluttede",
+    "har besluttet",
+    "havde besluttet",
+    "beslut",
+    "b1"
+   ]
+  },
+  {
+   "en": "to decide, determine",
+   "da": "bestemme",
+   "level": 3,
+   "f": [
+    "bestemmer",
+    "bestemte",
+    "har bestemt",
+    "havde bestemt",
+    "bestem",
+    "b2"
+   ]
+  },
+  {
+   "en": "to order; book",
+   "da": "bestille",
+   "level": 2,
+   "f": [
+    "bestiller",
+    "bestilte",
+    "har bestilt",
+    "havde bestilt",
+    "bestil",
+    "b2"
+   ]
+  },
+  {
+   "en": "to consist of; pass (an exam)",
+   "da": "bestå",
+   "level": 5,
+   "f": [
+    "består",
+    "bestod",
+    "har bestået",
+    "havde bestået",
+    "bestå",
+    "uv"
+   ]
+  },
+  {
+   "en": "to occupy",
+   "da": "besætte",
+   "level": 3,
+   "f": [
+    "besætter",
+    "besatte",
+    "har besat",
+    "havde besat",
+    "besæt",
+    "uv"
+   ]
+  },
+  {
+   "en": "to visit",
+   "da": "besøge",
+   "level": 2,
+   "f": [
+    "besøger",
+    "besøgte",
+    "har besøgt",
+    "havde besøgt",
+    "besøg",
+    "b2"
+   ]
+  },
+  {
+   "en": "to pay",
+   "da": "betale",
+   "level": 1,
+   "f": [
+    "betaler",
+    "betalte",
+    "har betalt",
+    "havde betalt",
+    "betal",
+    "b2"
+   ]
+  },
+  {
+   "en": "to mean",
+   "da": "betyde",
+   "level": 1,
+   "f": [
+    "betyder",
+    "betød",
+    "har betydet",
+    "havde betydet",
+    "betyd",
+    "uv"
+   ]
+  },
+  {
+   "en": "to preserve, keep",
+   "da": "bevare",
+   "level": 4,
+   "f": [
+    "bevarer",
+    "bevarede",
+    "har bevaret",
+    "havde bevaret",
+    "bevar",
+    "b1"
+   ]
+  },
+  {
+   "en": "to prove",
+   "da": "bevise",
+   "level": 4,
+   "f": [
+    "beviser",
+    "beviste",
+    "har bevist",
+    "havde bevist",
+    "bevis",
+    "b2"
+   ]
+  },
+  {
+   "en": "to move (oneself)",
+   "da": "bevæge sig",
+   "level": 3,
+   "f": [
+    "bevæger sig",
+    "bevægede sig",
+    "har bevæget sig",
+    "havde bevæget sig",
+    "bevæg dig",
+    "b1"
+   ]
+  },
+  {
+   "en": "to bite",
+   "da": "bide",
+   "level": 2,
+   "f": [
+    "bider",
+    "bed",
+    "har bidt",
+    "havde bidt",
+    "bid",
+    "uv"
+   ]
+  },
+  {
+   "en": "to contribute",
+   "da": "bidrage",
+   "level": 4,
+   "f": [
+    "bidrager",
+    "bidrog",
+    "har bidraget",
+    "havde bidraget",
+    "bidrag",
+    "uv"
+   ]
+  },
+  {
+   "en": "to tie, bind",
+   "da": "binde",
+   "level": 2,
+   "f": [
+    "binder",
+    "bandt",
+    "har bundet",
+    "havde bundet",
+    "bind",
+    "uv"
+   ]
+  },
+  {
+   "en": "to mix",
+   "da": "blande",
+   "level": 2,
+   "f": [
+    "blander",
+    "blandede",
+    "har blandet",
+    "havde blandet",
+    "bland",
+    "b1"
+   ]
+  },
+  {
+   "en": "to become; stay",
+   "da": "blive",
+   "level": 1,
+   "f": [
+    "bliver",
+    "blev",
+    "er blevet",
+    "var blevet",
+    "bliv",
+    "uv"
+   ]
+  },
+  {
+   "en": "to blow",
+   "da": "blæse",
+   "level": 2,
+   "f": [
+    "blæser",
+    "blæste",
+    "har blæst",
+    "havde blæst",
+    "blæs",
+    "b2"
+   ]
+  },
+  {
+   "en": "to live, reside",
+   "da": "bo",
+   "level": 1,
+   "f": [
+    "bor",
+    "boede",
+    "har boet",
+    "havde boet",
+    "bo",
+    "b1"
+   ]
+  },
+  {
+   "en": "to spread (out)",
+   "da": "brede sig",
+   "level": 5,
+   "f": [
+    "breder sig",
+    "bredte sig",
+    "har bredt sig",
+    "havde bredt sig",
+    "bred dig",
+    "b2"
+   ]
+  },
+  {
+   "en": "to bring",
+   "da": "bringe",
+   "level": 3,
+   "f": [
+    "bringer",
+    "bragte",
+    "har bragt",
+    "havde bragt",
+    "bring",
+    "uv"
+   ]
+  },
+  {
+   "en": "to use",
+   "da": "bruge",
+   "level": 1,
+   "f": [
+    "bruger",
+    "brugte",
+    "har brugt",
+    "havde brugt",
+    "brug",
+    "b2"
+   ]
+  },
+  {
+   "en": "to break",
+   "da": "bryde",
+   "level": 2,
+   "f": [
+    "bryder",
+    "brød",
+    "har brudt",
+    "havde brudt",
+    "bryd",
+    "uv"
+   ]
+  },
+  {
+   "en": "to build",
+   "da": "bygge",
+   "level": 2,
+   "f": [
+    "bygger",
+    "byggede",
+    "har bygget",
+    "havde bygget",
+    "byg",
+    "b1"
+   ]
+  },
+  {
+   "en": "to exchange, swap",
+   "da": "bytte",
+   "level": 2,
+   "f": [
+    "bytter",
+    "byttede",
+    "har byttet",
+    "havde byttet",
+    "byt",
+    "b1"
+   ]
+  },
+  {
+   "en": "to carry",
+   "da": "bære",
+   "level": 2,
+   "f": [
+    "bærer",
+    "bar",
+    "har båret",
+    "havde båret",
+    "bær",
+    "uv"
+   ]
+  },
+  {
+   "en": "to quote",
+   "da": "citere",
+   "level": 5,
+   "f": [
+    "citerer",
+    "citerede",
+    "har citeret",
+    "havde citeret",
+    "citer",
+    "b1"
+   ]
+  },
+  {
+   "en": "to form, create",
+   "da": "danne",
+   "level": 5,
+   "f": [
+    "danner",
+    "dannede",
+    "har dannet",
+    "havde dannet",
+    "dan",
+    "b1"
+   ]
+  },
+  {
+   "en": "to dance",
+   "da": "danse",
+   "level": 2,
+   "f": [
+    "danser",
+    "dansede",
+    "har danset",
+    "havde danset",
+    "dans",
+    "b1"
+   ]
+  },
+  {
+   "en": "to share, divide",
+   "da": "dele",
+   "level": 3,
+   "f": [
+    "deler",
+    "delte",
+    "har delt",
+    "havde delt",
+    "del",
+    "b2"
+   ]
+  },
+  {
+   "en": "to participate",
+   "da": "deltage",
+   "level": 3,
+   "f": [
+    "deltager",
+    "deltog",
+    "har deltaget",
+    "havde deltaget",
+    "deltag",
+    "uv"
+   ]
+  },
+  {
+   "en": "to discuss",
+   "da": "diskutere",
+   "level": 3,
+   "f": [
+    "diskuterer",
+    "diskuterede",
+    "har diskuteret",
+    "havde diskuteret",
+    "diskuter",
+    "b1"
+   ]
+  },
+  {
+   "en": "to dominate",
+   "da": "dominere",
+   "level": 5,
+   "f": [
+    "dominerer",
+    "dominerede",
+    "har domineret",
+    "havde domineret",
+    "dominer",
+    "b1"
+   ]
+  },
+  {
+   "en": "to move, travel; draw (a conclusion)",
+   "da": "drage",
+   "level": 5,
+   "f": [
+    "drager",
+    "drog",
+    "har draget",
+    "havde draget",
+    "drag",
+    "uv"
+   ]
+  },
+  {
+   "en": "to turn",
+   "da": "dreje",
+   "level": 2,
+   "f": [
+    "drejer",
+    "drejede",
+    "har drejet",
+    "havde drejet",
+    "dreje",
+    "b1"
+   ]
+  },
+  {
+   "en": "to drink",
+   "da": "drikke",
+   "level": 1,
+   "f": [
+    "drikker",
+    "drak",
+    "har drukket",
+    "havde drukket",
+    "drik",
+    "uv"
+   ]
+  },
+  {
+   "en": "to drive, run (a business); drift",
+   "da": "drive",
+   "level": 4,
+   "f": [
+    "driver",
+    "drev",
+    "har drevet",
+    "havde drevet",
+    "driv",
+    "uv"
+   ]
+  },
+  {
+   "en": "to kill",
+   "da": "dræbe",
+   "level": 3,
+   "f": [
+    "dræber",
+    "dræbte",
+    "har dræbt",
+    "havde dræbt",
+    "dræb",
+    "b2"
+   ]
+  },
+  {
+   "en": "to discuss",
+   "da": "drøfte",
+   "level": 5,
+   "f": [
+    "drøfter",
+    "drøftede",
+    "har drøftet",
+    "havde drøftet",
+    "drøft",
+    "b1"
+   ]
+  },
+  {
+   "en": "to dream",
+   "da": "drømme",
+   "level": 2,
+   "f": [
+    "drømmer",
+    "drømte",
+    "har drømt",
+    "havde drømt",
+    "drøm",
+    "b2"
+   ]
+  },
+  {
+   "en": "to show up, turn up",
+   "da": "dukke op",
+   "level": 3,
+   "f": [
+    "dukker op",
+    "dukkede op",
+    "er dukket op",
+    "var dukket op",
+    "duk op",
+    "b1"
+   ]
+  },
+  {
+   "en": "to cover",
+   "da": "dække",
+   "level": 2,
+   "f": [
+    "dækker",
+    "dækkede",
+    "har dækket",
+    "havde dækket",
+    "dæk",
+    "b1"
+   ]
+  },
+  {
+   "en": "to die",
+   "da": "dø",
+   "level": 1,
+   "f": [
+    "dør",
+    "døde",
+    "er død",
+    "var død",
+    "dø",
+    "uv"
+   ]
+  },
+  {
+   "en": "to judge, sentence",
+   "da": "dømme",
+   "level": 5,
+   "f": [
+    "dømmer",
+    "dømte",
+    "har dømt",
+    "havde dømt",
+    "døm",
+    "b2"
+   ]
+  },
+  {
+   "en": "to leave behind",
+   "da": "efterlade",
+   "level": 5,
+   "f": [
+    "efterlader",
+    "efterlod",
+    "har efterladt",
+    "havde efterladt",
+    "efterlad",
+    "uv"
+   ]
+  },
+  {
+   "en": "to own",
+   "da": "eje",
+   "level": 3,
+   "f": [
+    "ejer",
+    "ejede",
+    "har ejet",
+    "havde ejet",
+    "",
+    "b1"
+   ]
+  },
+  {
+   "en": "to exist",
+   "da": "eksistere",
+   "level": 3,
+   "f": [
+    "eksisterer",
+    "eksisterede",
+    "har eksisteret",
+    "havde eksisteret",
+    "",
+    "b1"
+   ]
+  },
+  {
+   "en": "to love",
+   "da": "elske",
+   "level": 1,
+   "f": [
+    "elsker",
+    "elskede",
+    "har elsket",
+    "havde elsket",
+    "elsk",
+    "b1"
+   ]
+  },
+  {
+   "en": "to end",
+   "da": "ende",
+   "level": 2,
+   "f": [
+    "ender",
+    "endte",
+    "er endt",
+    "var endt",
+    "",
+    "b2"
+   ]
+  },
+  {
+   "en": "to acknowledge, admit",
+   "da": "erkende",
+   "level": 5,
+   "f": [
+    "erkender",
+    "erkendte",
+    "har erkendt",
+    "havde erkendt",
+    "erkend",
+    "b2"
+   ]
+  },
+  {
+   "en": "to replace",
+   "da": "erstatte",
+   "level": 4,
+   "f": [
+    "erstatter",
+    "erstattede",
+    "har erstattet",
+    "havde erstattet",
+    "erstat",
+    "b1"
+   ]
+  },
+  {
+   "en": "to fall",
+   "da": "falde",
+   "level": 2,
+   "f": [
+    "falder",
+    "faldt",
+    "er faldet",
+    "var faldet",
+    "fald",
+    "uv"
+   ]
+  },
+  {
+   "en": "to catch",
+   "da": "fange",
+   "level": 2,
+   "f": [
+    "fanger",
+    "fangede",
+    "har fanget",
+    "havde fanget",
+    "fang",
+    "b1"
+   ]
+  },
+  {
+   "en": "to maintain, stick to",
+   "da": "fastholde",
+   "level": 5,
+   "f": [
+    "fastholder",
+    "fastholdt",
+    "har fastholdt",
+    "havde fastholdt",
+    "fasthold",
+    "uv"
+   ]
+  },
+  {
+   "en": "to establish, state firmly",
+   "da": "fastslå",
+   "level": 5,
+   "f": [
+    "fastslår",
+    "fastslog",
+    "har fastslået",
+    "havde fastslået",
+    "slå fast",
+    "uv"
+   ]
+  },
+  {
+   "en": "to set, fix (a date, price)",
+   "da": "fastsætte",
+   "level": 5,
+   "f": [
+    "fastsætter",
+    "fastsatte",
+    "har fastsat",
+    "havde fastsat",
+    "fastsæt",
+    "uv"
+   ]
+  },
+  {
+   "en": "to grasp, understand",
+   "da": "fatte",
+   "level": 5,
+   "f": [
+    "fatter",
+    "fattede",
+    "har fattet",
+    "havde fattet",
+    "fat",
+    "b1"
+   ]
+  },
+  {
+   "en": "to celebrate",
+   "da": "fejre",
+   "level": 2,
+   "f": [
+    "fejrer",
+    "fejrede",
+    "har fejret",
+    "havde fejret",
+    "fejr",
+    "b1"
+   ]
+  },
+  {
+   "en": "to find",
+   "da": "finde",
+   "level": 1,
+   "f": [
+    "finder",
+    "fandt",
+    "har fundet",
+    "havde fundet",
+    "find",
+    "uv"
+   ]
+  },
+  {
+   "en": "to remove",
+   "da": "fjerne",
+   "level": 2,
+   "f": [
+    "fjerner",
+    "fjernede",
+    "har fjernet",
+    "havde fjernet",
+    "fjern",
+    "b1"
+   ]
+  },
+  {
+   "en": "to flee",
+   "da": "flygte",
+   "level": 5,
+   "f": [
+    "flygter",
+    "flygtede",
+    "er flygtet",
+    "var flygtet",
+    "flygt",
+    "b1"
+   ]
+  },
+  {
+   "en": "to move",
+   "da": "flytte",
+   "level": 1,
+   "f": [
+    "flytter",
+    "flyttede",
+    "er flyttet",
+    "var flyttet",
+    "flyt",
+    "b1"
+   ]
+  },
+  {
+   "en": "to fly",
+   "da": "flyve",
+   "level": 2,
+   "f": [
+    "flyver",
+    "fløj",
+    "har/er fløjet",
+    "havde/var fløjet",
+    "flyv",
+    "uv"
+   ]
+  },
+  {
+   "en": "to feed (an animal)",
+   "da": "fodre",
+   "level": 3,
+   "f": [
+    "fodrer",
+    "fodrede",
+    "har fodret",
+    "havde fodret",
+    "fodr",
+    "b1"
+   ]
+  },
+  {
+   "en": "to improve",
+   "da": "forbedre",
+   "level": 4,
+   "f": [
+    "forbedrer",
+    "forbedrede",
+    "har forbedret",
+    "havde forbedret",
+    "forbedr",
+    "b1"
+   ]
+  },
+  {
+   "en": "to prepare",
+   "da": "forberede",
+   "level": 3,
+   "f": [
+    "forbereder",
+    "forberedte",
+    "har forberedt",
+    "havde forberedt",
+    "forbered",
+    "b2"
+   ]
+  },
+  {
+   "en": "to connect; bandage",
+   "da": "forbinde",
+   "level": 4,
+   "f": [
+    "forbinder",
+    "forbandt",
+    "har forbundet",
+    "havde forbundet",
+    "forbind",
+    "uv"
+   ]
+  },
+  {
+   "en": "to remain",
+   "da": "forblive",
+   "level": 5,
+   "f": [
+    "forbliver",
+    "forblev",
+    "er forblevet",
+    "var forblevet",
+    "forbliv",
+    "uv"
+   ]
+  },
+  {
+   "en": "to distribute",
+   "da": "fordele",
+   "level": 5,
+   "f": [
+    "fordeler",
+    "fordelte",
+    "har fordelt",
+    "havde fordelt",
+    "fordel",
+    "b2"
+   ]
+  },
+  {
+   "en": "to take place, happen",
+   "da": "foregå",
+   "level": 4,
+   "f": [
+    "foregår",
+    "foregik",
+    "er foregået",
+    "var foregået",
+    "foregå",
+    "uv"
+   ]
+  },
+  {
+   "en": "to occur, appear, seem",
+   "da": "forekomme",
+   "level": 5,
+   "f": [
+    "forekommer",
+    "forekom",
+    "er forekommet",
+    "var forekommet",
+    "forekom",
+    "uv"
+   ]
+  },
+  {
+   "en": "to fall in love",
+   "da": "forelske sig",
+   "level": 3,
+   "f": [
+    "forelsker sig",
+    "forelskede sig",
+    "har forelsket sig",
+    "havde forelsket sig",
+    "forelsk dig",
+    "b1"
+   ]
+  },
+  {
+   "en": "to unite",
+   "da": "forene",
+   "level": 5,
+   "f": [
+    "forener",
+    "forenede",
+    "har forenet",
+    "havde forenet",
+    "foren",
+    "b1"
+   ]
+  },
+  {
+   "en": "to suggest",
+   "da": "foreslå",
+   "level": 3,
+   "f": [
+    "foreslår",
+    "foreslog",
+    "har foreslået",
+    "havde foreslået",
+    "foreslå",
+    "uv"
+   ]
+  },
+  {
+   "en": "to imagine",
+   "da": "forestille sig",
+   "level": 3,
+   "f": [
+    "forestiller sig",
+    "forestillede sig",
+    "har forestillet sig",
+    "havde forestillet sig",
+    "forestil dig",
+    "b1"
+   ]
+  },
+  {
+   "en": "to do, undertake",
+   "da": "foretage sig",
+   "level": 5,
+   "f": [
+    "foretager sig",
+    "foretog sig",
+    "har foretaget sig",
+    "havde foretaget sig",
+    "foretag dig",
+    "uv"
+   ]
+  },
+  {
+   "en": "to prefer",
+   "da": "foretrække",
+   "level": 3,
+   "f": [
+    "foretrækker",
+    "foretrak",
+    "har foretrukket",
+    "havde foretrukket",
+    "",
+    "uv"
+   ]
+  },
+  {
+   "en": "to negotiate",
+   "da": "forhandle",
+   "level": 4,
+   "f": [
+    "forhandler",
+    "forhandlede",
+    "har forhandlet",
+    "havde forhandlet",
+    "forhandl",
+    "b1"
+   ]
+  },
+  {
+   "en": "to prevent",
+   "da": "forhindre",
+   "level": 4,
+   "f": [
+    "forhindrer",
+    "forhindrede",
+    "har forhindret",
+    "havde forhindret",
+    "forhindr",
+    "b1"
+   ]
+  },
+  {
+   "en": "to relate, behave (in relation to something)",
+   "da": "forholde sig",
+   "level": 5,
+   "f": [
+    "forholder sig",
+    "forholdt sig",
+    "har forholdt sig",
+    "havde forholdt sig",
+    "forhold dig",
+    "uv"
+   ]
+  },
+  {
+   "en": "to explain",
+   "da": "forklare",
+   "level": 1,
+   "f": [
+    "forklarer",
+    "forklarede",
+    "har forklaret",
+    "havde forklaret",
+    "forklar",
+    "b1"
+   ]
+  },
+  {
+   "en": "to leave",
+   "da": "forlade",
+   "level": 3,
+   "f": [
+    "forlader",
+    "forlod",
+    "har forladt",
+    "havde forladt",
+    "forlad",
+    "uv"
+   ]
+  },
+  {
+   "en": "to demand",
+   "da": "forlange",
+   "level": 4,
+   "f": [
+    "forlanger",
+    "forlangte",
+    "har forlangt",
+    "havde forlangt",
+    "forlang",
+    "b2"
+   ]
+  },
+  {
+   "en": "to formulate",
+   "da": "formulere",
+   "level": 4,
+   "f": [
+    "formulerer",
+    "formulerede",
+    "har formuleret",
+    "havde formuleret",
+    "formuler",
+    "b1"
+   ]
+  },
+  {
+   "en": "to be able to, manage to",
+   "da": "formå",
+   "level": 5,
+   "f": [
+    "formår",
+    "formåede",
+    "har formået",
+    "havde formået",
+    "formå",
+    "b1"
+   ]
+  },
+  {
+   "en": "to delay",
+   "da": "forsinke",
+   "level": 4,
+   "f": [
+    "forsinker",
+    "forsinkede",
+    "har forsinket",
+    "havde forsinket",
+    "forsink",
+    "b1"
+   ]
+  },
+  {
+   "en": "to understand",
+   "da": "forstå",
+   "level": 1,
+   "f": [
+    "forstår",
+    "forstod",
+    "har forstået",
+    "havde forstået",
+    "forstå",
+    "uv"
+   ]
+  },
+  {
+   "en": "to defend",
+   "da": "forsvare",
+   "level": 4,
+   "f": [
+    "forsvarer",
+    "forsvarede",
+    "har forsvaret",
+    "havde forsvaret",
+    "forsvar",
+    "b1"
+   ]
+  },
+  {
+   "en": "to disappear",
+   "da": "forsvinde",
+   "level": 3,
+   "f": [
+    "forsvinder",
+    "forsvandt",
+    "er forsvundet",
+    "var forsvundet",
+    "forsvind",
+    "uv"
+   ]
+  },
+  {
+   "en": "to try, attempt",
+   "da": "forsøge",
+   "level": 2,
+   "f": [
+    "forsøger",
+    "forsøgte",
+    "har forsøgt",
+    "havde forsøgt",
+    "forsøg",
+    "b2"
+   ]
+  },
+  {
+   "en": "to deserve",
+   "da": "fortjene",
+   "level": 4,
+   "f": [
+    "fortjener",
+    "fortjente",
+    "har fortjent",
+    "havde fortjent",
+    "fortjen",
+    "b2"
+   ]
+  },
+  {
+   "en": "to continue",
+   "da": "fortsætte",
+   "level": 2,
+   "f": [
+    "fortsætter",
+    "fortsatte",
+    "har/er fortsat",
+    "havde/var fortsat",
+    "fortsæt",
+    "uv"
+   ]
+  },
+  {
+   "en": "to tell",
+   "da": "fortælle",
+   "level": 1,
+   "f": [
+    "fortæller",
+    "fortalte",
+    "har fortalt",
+    "havde fortalt",
+    "fortæl",
+    "uv"
+   ]
+  },
+  {
+   "en": "to presuppose, require",
+   "da": "forudsætte",
+   "level": 5,
+   "f": [
+    "forudsætter",
+    "forudsatte",
+    "har/er forudsat",
+    "havde/var forudsat",
+    "forudsæt",
+    "uv"
+   ]
+  },
+  {
+   "en": "to transform",
+   "da": "forvandle",
+   "level": 5,
+   "f": [
+    "forvandler",
+    "forvandlede",
+    "har forvandlet",
+    "havde forvandlet",
+    "forvandl",
+    "b1"
+   ]
+  },
+  {
+   "en": "to expect",
+   "da": "forvente",
+   "level": 3,
+   "f": [
+    "forventer",
+    "forventede",
+    "har forventet",
+    "havde forventet",
+    "forvent",
+    "b1"
+   ]
+  },
+  {
+   "en": "to be evident, appear (from)",
+   "da": "fremgå",
+   "level": 5,
+   "f": [
+    "fremgår",
+    "fremgik",
+    "er fremgået",
+    "var fremgået",
+    "fremgå",
+    "uv"
+   ]
+  },
+  {
+   "en": "to emphasize, highlight",
+   "da": "fremhæve",
+   "level": 5,
+   "f": [
+    "fremhæver",
+    "fremhævede",
+    "har fremhævet",
+    "havde fremhævet",
+    "fremhæv",
+    "b1"
+   ]
+  },
+  {
+   "en": "to present, submit",
+   "da": "fremlægge",
+   "level": 5,
+   "f": [
+    "fremlægger",
+    "fremlagde",
+    "har fremlagt",
+    "havde fremlagt",
+    "fremlæg",
+    "uv"
+   ]
+  },
+  {
+   "en": "to produce, present",
+   "da": "fremstille",
+   "level": 5,
+   "f": [
+    "fremstiller",
+    "fremstillede",
+    "har fremstillet",
+    "havde fremstillet",
+    "fremstil",
+    "b1"
+   ]
+  },
+  {
+   "en": "to put forward, propose",
+   "da": "fremsætte",
+   "level": 5,
+   "f": [
+    "fremsætter",
+    "fremsatte",
+    "har fremsat",
+    "havde fremsat",
+    "fremsæt",
+    "uv"
+   ]
+  },
+  {
+   "en": "to tempt",
+   "da": "friste",
+   "level": 5,
+   "f": [
+    "frister",
+    "fristede",
+    "har fristet",
+    "havde fristet",
+    "frist",
+    "b1"
+   ]
+  },
+  {
+   "en": "to fear",
+   "da": "frygte",
+   "level": 4,
+   "f": [
+    "frygter",
+    "frygtede",
+    "har frygtet",
+    "havde frygtet",
+    "frygt",
+    "b1"
+   ]
+  },
+  {
+   "en": "to function, work",
+   "da": "fungere",
+   "level": 3,
+   "f": [
+    "fungerer",
+    "fungerede",
+    "har fungeret",
+    "havde fungeret",
+    "funger",
+    "b1"
+   ]
+  },
+  {
+   "en": "to fill; turn (an age)",
+   "da": "fylde",
+   "level": 2,
+   "f": [
+    "fylder",
+    "fyldte",
+    "har fyldt",
+    "havde fyldt",
+    "fyld",
+    "b2"
+   ]
+  },
+  {
+   "en": "to fire (from a job)",
+   "da": "fyre",
+   "level": 3,
+   "f": [
+    "fyrer",
+    "fyrede",
+    "har fyret",
+    "havde fyret",
+    "fyr",
+    "b1"
+   ]
+  },
+  {
+   "en": "to give birth; feed",
+   "da": "føde",
+   "level": 3,
+   "f": [
+    "føder",
+    "fødte",
+    "har født",
+    "havde født",
+    "fød",
+    "b2"
+   ]
+  },
+  {
+   "en": "to feel",
+   "da": "føle",
+   "level": 1,
+   "f": [
+    "føler",
+    "følte",
+    "har følt",
+    "havde følt",
+    "føl",
+    "b2"
+   ]
+  },
+  {
+   "en": "to follow",
+   "da": "følge",
+   "level": 1,
+   "f": [
+    "følger",
+    "fulgte",
+    "har fulgt",
+    "havde fulgt",
+    "følg",
+    "uv"
+   ]
+  },
+  {
+   "en": "to lead",
+   "da": "føre",
+   "level": 3,
+   "f": [
+    "fører",
+    "førte",
+    "har ført",
+    "havde ført",
+    "før",
+    "b2"
+   ]
+  },
+  {
+   "en": "to get, receive",
+   "da": "få",
+   "level": 1,
+   "f": [
+    "får",
+    "fik",
+    "har fået",
+    "havde fået",
+    "få",
+    "uv"
+   ]
+  },
+  {
+   "en": "to hide; save",
+   "da": "gemme",
+   "level": 2,
+   "f": [
+    "gemmer",
+    "gemte",
+    "har gemt",
+    "havde gemt",
+    "gem",
+    "b2"
+   ]
+  },
+  {
+   "en": "to bother, disturb",
+   "da": "genere",
+   "level": 3,
+   "f": [
+    "generer",
+    "generede",
+    "har generet",
+    "havde generet",
+    "gener",
+    "b1"
+   ]
+  },
+  {
+   "en": "to carry out, complete",
+   "da": "gennemføre",
+   "level": 4,
+   "f": [
+    "gennemfører",
+    "gennemførte",
+    "har gennemført",
+    "havde gennemført",
+    "gennemfør",
+    "b2"
+   ]
+  },
+  {
+   "en": "to go through",
+   "da": "gennemgå",
+   "level": 5,
+   "f": [
+    "gennemgår",
+    "gennemgik",
+    "har gennemgået",
+    "havde gennemgået",
+    "gennemgå",
+    "uv"
+   ]
+  },
+  {
+   "en": "to repeat",
+   "da": "gentage",
+   "level": 3,
+   "f": [
+    "gentager",
+    "gentog",
+    "har gentaget",
+    "havde gentaget",
+    "gentag",
+    "uv"
+   ]
+  },
+  {
+   "en": "to feel like (doing something)",
+   "da": "gide",
+   "level": 1,
+   "f": [
+    "gider",
+    "gad",
+    "har gidet",
+    "havde gidet",
+    "gid",
+    "uv"
+   ]
+  },
+  {
+   "en": "to get married",
+   "da": "gifte sig",
+   "level": 2,
+   "f": [
+    "gifter sig",
+    "giftede sig",
+    "har giftet sig",
+    "havde giftet sig",
+    "gift dig",
+    "b1"
+   ]
+  },
+  {
+   "en": "to give",
+   "da": "give",
+   "level": 1,
+   "f": [
+    "giver",
+    "gav",
+    "har givet",
+    "havde givet",
+    "giv",
+    "uv"
+   ]
+  },
+  {
+   "en": "to forget",
+   "da": "glemme",
+   "level": 1,
+   "f": [
+    "glemmer",
+    "glemte",
+    "har glemt",
+    "havde glemt",
+    "glem",
+    "b2"
+   ]
+  },
+  {
+   "en": "to slide, glide",
+   "da": "glide",
+   "level": 2,
+   "f": [
+    "glider",
+    "gled",
+    "er gledet",
+    "var gledet",
+    "glid",
+    "uv"
+   ]
+  },
+  {
+   "en": "to look forward, be glad",
+   "da": "glæde sig",
+   "level": 2,
+   "f": [
+    "glæder sig",
+    "glædede sig",
+    "har glædet sig",
+    "havde glædet sig",
+    "glæd dig",
+    "b1"
+   ]
+  },
+  {
+   "en": "to approve",
+   "da": "godkende",
+   "level": 4,
+   "f": [
+    "godkender",
+    "godkendte",
+    "har godkendt",
+    "havde godkendt",
+    "godkend",
+    "b2"
+   ]
+  },
+  {
+   "en": "to grab, catch",
+   "da": "gribe",
+   "level": 2,
+   "f": [
+    "griber",
+    "greb",
+    "har grebet",
+    "havde grebet",
+    "grib",
+    "uv"
+   ]
+  },
+  {
+   "en": "to laugh",
+   "da": "grine",
+   "level": 2,
+   "f": [
+    "griner",
+    "grinede",
+    "har grinet",
+    "havde grinet",
+    "grin",
+    "b1"
+   ]
+  },
+  {
+   "en": "to cry",
+   "da": "græde",
+   "level": 2,
+   "f": [
+    "græder",
+    "græd",
+    "har grædt",
+    "havde grædt",
+    "græd",
+    "uv"
+   ]
+  },
+  {
+   "en": "to do",
+   "da": "gøre",
+   "level": 1,
+   "f": [
+    "gør",
+    "gjorde",
+    "har gjort",
+    "havde gjort",
+    "gør",
+    "uv"
+   ]
+  },
+  {
+   "en": "to go, walk",
+   "da": "gå",
+   "level": 1,
+   "f": [
+    "går",
+    "gik",
+    "har/er gået",
+    "havde/var gået",
+    "gå",
+    "uv"
+   ]
+  },
+  {
+   "en": "to hate",
+   "da": "hade",
+   "level": 2,
+   "f": [
+    "hader",
+    "hadede",
+    "har hadet",
+    "havde hadet",
+    "had",
+    "b1"
+   ]
+  },
+  {
+   "en": "to act; trade, shop",
+   "da": "handle",
+   "level": 3,
+   "f": [
+    "handler",
+    "handlede",
+    "har handlet",
+    "havde handlet",
+    "handl",
+    "b1"
+   ]
+  },
+  {
+   "en": "to have",
+   "da": "have",
+   "level": 1,
+   "f": [
+    "har",
+    "havde",
+    "har haft",
+    "havde haft",
+    "hav",
+    "uv"
+   ]
+  },
+  {
+   "en": "to be called",
+   "da": "hedde",
+   "level": 1,
+   "f": [
+    "hedder",
+    "hed",
+    "har heddet",
+    "havde heddet",
+    "",
+    "uv"
+   ]
+  },
+  {
+   "en": "to fetch, pick up",
+   "da": "hente",
+   "level": 1,
+   "f": [
+    "henter",
+    "hentede",
+    "har hentet",
+    "havde hentet",
+    "hent",
+    "b1"
+   ]
+  },
+  {
+   "en": "to turn to, contact",
+   "da": "henvende sig",
+   "level": 4,
+   "f": [
+    "henvender sig",
+    "henvendte sig",
+    "har henvendt sig",
+    "havde henvendt sig",
+    "henvend dig",
+    "b2"
+   ]
+  },
+  {
+   "en": "to refer",
+   "da": "henvise",
+   "level": 5,
+   "f": [
+    "henviser",
+    "henviste",
+    "har henvist",
+    "havde henvist",
+    "henvis",
+    "b2"
+   ]
+  },
+  {
+   "en": "to rule, prevail",
+   "da": "herske",
+   "level": 5,
+   "f": [
+    "hersker",
+    "herskede",
+    "har hersket",
+    "havde hersket",
+    "hersk",
+    "b1"
+   ]
+  },
+  {
+   "en": "to greet",
+   "da": "hilse",
+   "level": 2,
+   "f": [
+    "hilser",
+    "hilste",
+    "har hilst",
+    "havde hilst",
+    "hils",
+    "b2"
+   ]
+  },
+  {
+   "en": "to prevent",
+   "da": "hindre",
+   "level": 5,
+   "f": [
+    "hindrer",
+    "hindrede",
+    "har hindret",
+    "havde hindret",
+    "hindr",
+    "b1"
+   ]
+  },
+  {
+   "en": "to help",
+   "da": "hjælpe",
+   "level": 1,
+   "f": [
+    "hjælper",
+    "hjalp",
+    "har hjulpet",
+    "havde hjulpet",
+    "hjælp",
+    "uv"
+   ]
+  },
+  {
+   "en": "to hold; keep",
+   "da": "holde",
+   "level": 1,
+   "f": [
+    "holder",
+    "holdt",
+    "har holdt",
+    "havde holdt",
+    "hold",
+    "uv"
+   ]
+  },
+  {
+   "en": "to jump",
+   "da": "hoppe",
+   "level": 2,
+   "f": [
+    "hopper",
+    "hoppede",
+    "har/er hoppet",
+    "havde/var hoppet",
+    "hop",
+    "b1"
+   ]
+  },
+  {
+   "en": "to remember",
+   "da": "huske",
+   "level": 1,
+   "f": [
+    "husker",
+    "huskede",
+    "har husket",
+    "havde husket",
+    "husk",
+    "b1"
+   ]
+  },
+  {
+   "en": "to rest",
+   "da": "hvile sig",
+   "level": 2,
+   "f": [
+    "hviler sig",
+    "hvilede sig",
+    "har hvilet sig",
+    "havde hvilet sig",
+    "hvil dig",
+    "b1"
+   ]
+  },
+  {
+   "en": "to whisper",
+   "da": "hviske",
+   "level": 2,
+   "f": [
+    "hvisker",
+    "hviskede",
+    "har hvisket",
+    "havde hvisket",
+    "hvisk",
+    "b1"
+   ]
+  },
+  {
+   "en": "to pour; lean",
+   "da": "hælde",
+   "level": 2,
+   "f": [
+    "hælder",
+    "hældte",
+    "har hældt",
+    "havde hældt",
+    "hæld",
+    "b2"
+   ]
+  },
+  {
+   "en": "to hang (something)",
+   "da": "hænge (tr.)",
+   "level": 2,
+   "f": [
+    "hænger",
+    "hængte",
+    "har hængt",
+    "havde hængt",
+    "hæng",
+    "b2"
+   ]
+  },
+  {
+   "en": "to hang, be hanging",
+   "da": "hænge (intr.)",
+   "level": 2,
+   "f": [
+    "hænger",
+    "hang",
+    "har hængt",
+    "havde hængt",
+    "hæng",
+    "uv"
+   ]
+  },
+  {
+   "en": "to claim, assert",
+   "da": "hævde",
+   "level": 5,
+   "f": [
+    "hævder",
+    "hævdede",
+    "har hævdet",
+    "havde hævdet",
+    "hævd",
+    "b1"
+   ]
+  },
+  {
+   "en": "to raise, lift; withdraw (money)",
+   "da": "hæve",
+   "level": 4,
+   "f": [
+    "hæver",
+    "hævede",
+    "har hævet",
+    "havde hævet",
+    "hæv",
+    "b1"
+   ]
+  },
+  {
+   "en": "to hear",
+   "da": "høre",
+   "level": 1,
+   "f": [
+    "hører",
+    "hørte",
+    "har hørt",
+    "havde hørt",
+    "hør",
+    "b2"
+   ]
+  },
+  {
+   "en": "to hope",
+   "da": "håbe",
+   "level": 1,
+   "f": [
+    "håber",
+    "håbede",
+    "har håbet",
+    "havde håbet",
+    "håb",
+    "b1"
+   ]
+  },
+  {
+   "en": "to involve; revoke",
+   "da": "inddrage",
+   "level": 5,
+   "f": [
+    "inddrager",
+    "inddrog",
+    "har inddraget",
+    "havde inddraget",
+    "inddrag",
+    "uv"
+   ]
+  },
+  {
+   "en": "to entail, involve",
+   "da": "indebære",
+   "level": 5,
+   "f": [
+    "indebærer",
+    "indebar",
+    "har indebåret",
+    "havde indebåret",
+    "",
+    "uv"
+   ]
+  },
+  {
+   "en": "to contain",
+   "da": "indeholde",
+   "level": 4,
+   "f": [
+    "indeholder",
+    "indeholdt",
+    "har indeholdt",
+    "havde indeholdt",
+    "",
+    "uv"
+   ]
+  },
+  {
+   "en": "to introduce, import",
+   "da": "indføre",
+   "level": 4,
+   "f": [
+    "indfører",
+    "indførte",
+    "har indført",
+    "havde indført",
+    "indfør",
+    "b2"
+   ]
+  },
+  {
+   "en": "to enter into (an agreement)",
+   "da": "indgå",
+   "level": 5,
+   "f": [
+    "indgår",
+    "indgik",
+    "har indgået",
+    "havde indgået",
+    "indgå",
+    "uv"
+   ]
+  },
+  {
+   "en": "to initiate, begin",
+   "da": "indlede",
+   "level": 5,
+   "f": [
+    "indleder",
+    "indledte",
+    "har indledt",
+    "havde indledt",
+    "indled",
+    "b2"
+   ]
+  },
+  {
+   "en": "to arrange, furnish",
+   "da": "indrette",
+   "level": 5,
+   "f": [
+    "indretter",
+    "indrettede",
+    "har indrettet",
+    "havde indrettet",
+    "indret",
+    "b1"
+   ]
+  },
+  {
+   "en": "to admit",
+   "da": "indrømme",
+   "level": 4,
+   "f": [
+    "indrømmer",
+    "indrømmede",
+    "har indrømmet",
+    "havde indrømmet",
+    "indrøm",
+    "b1"
+   ]
+  },
+  {
+   "en": "to adjust; recommend, nominate",
+   "da": "indstille",
+   "level": 5,
+   "f": [
+    "indstiller",
+    "indstillede",
+    "har indstillet",
+    "havde indstillet",
+    "indstil",
+    "b1"
+   ]
+  },
+  {
+   "en": "to take in, consume; capture",
+   "da": "indtage",
+   "level": 5,
+   "f": [
+    "indtager",
+    "indtog",
+    "har indtaget",
+    "havde indtaget",
+    "indtag",
+    "uv"
+   ]
+  },
+  {
+   "en": "to install",
+   "da": "installere",
+   "level": 3,
+   "f": [
+    "installerer",
+    "installerede",
+    "har installeret",
+    "havde installeret",
+    "installer",
+    "b1"
+   ]
+  },
+  {
+   "en": "to inspire",
+   "da": "inspirere",
+   "level": 4,
+   "f": [
+    "inspirerer",
+    "inspirerede",
+    "har inspireret",
+    "havde inspireret",
+    "inspirer",
+    "b1"
+   ]
+  },
+  {
+   "en": "to interest",
+   "da": "interessere",
+   "level": 3,
+   "f": [
+    "interesserer",
+    "interesserede",
+    "har interesseret",
+    "havde interesseret",
+    "interesser",
+    "b1"
+   ]
+  },
+  {
+   "en": "to invest",
+   "da": "investere",
+   "level": 4,
+   "f": [
+    "investerer",
+    "investerede",
+    "har investeret",
+    "havde investeret",
+    "invester",
+    "b1"
+   ]
+  },
+  {
+   "en": "to invite",
+   "da": "invitere",
+   "level": 2,
+   "f": [
+    "inviterer",
+    "inviterede",
+    "har inviteret",
+    "havde inviteret",
+    "inviter",
+    "b1"
+   ]
+  },
+  {
+   "en": "to irritate",
+   "da": "irritere",
+   "level": 3,
+   "f": [
+    "irriterer",
+    "irriterede",
+    "har irriteret",
+    "havde irriteret",
+    "irriter",
+    "b1"
+   ]
+  },
+  {
+   "en": "to call",
+   "da": "kalde",
+   "level": 1,
+   "f": [
+    "kalder",
+    "kaldte",
+    "har kaldt",
+    "havde kaldt",
+    "kald",
+    "b2"
+   ]
+  },
+  {
+   "en": "to throw",
+   "da": "kaste",
+   "level": 2,
+   "f": [
+    "kaster",
+    "kastede",
+    "har kastet",
+    "havde kastet",
+    "kast",
+    "b1"
+   ]
+  },
+  {
+   "en": "to know (a person, thing)",
+   "da": "kende",
+   "level": 1,
+   "f": [
+    "kender",
+    "kendte",
+    "har kendt",
+    "havde kendt",
+    "kend",
+    "b2"
+   ]
+  },
+  {
+   "en": "to look",
+   "da": "kigge",
+   "level": 1,
+   "f": [
+    "kigger",
+    "kiggede",
+    "har kigget",
+    "havde kigget",
+    "kig",
+    "b1"
+   ]
+  },
+  {
+   "en": "to manage, handle",
+   "da": "klare",
+   "level": 3,
+   "f": [
+    "klarer",
+    "klarede",
+    "har klaret",
+    "havde klaret",
+    "klar",
+    "b1"
+   ]
+  },
+  {
+   "en": "to cut",
+   "da": "klippe",
+   "level": 2,
+   "f": [
+    "klipper",
+    "klippede",
+    "har klippet",
+    "havde klippet",
+    "klip",
+    "b1"
+   ]
+  },
+  {
+   "en": "to dress, suit",
+   "da": "klæde",
+   "level": 2,
+   "f": [
+    "klæder",
+    "klædte",
+    "har klædt",
+    "havde klædt",
+    "klæd",
+    "b2"
+   ]
+  },
+  {
+   "en": "to crush",
+   "da": "knuse",
+   "level": 2,
+   "f": [
+    "knuser",
+    "knuste",
+    "har knust",
+    "havde knust",
+    "knus",
+    "b2"
+   ]
+  },
+  {
+   "en": "to tie, link",
+   "da": "knytte",
+   "level": 5,
+   "f": [
+    "knytter",
+    "knyttede",
+    "har knyttet",
+    "havde knyttet",
+    "knyt",
+    "b1"
+   ]
+  },
+  {
+   "en": "to boil",
+   "da": "koge",
+   "level": 2,
+   "f": [
+    "koger",
+    "kogte",
+    "har kogt",
+    "havde kogt",
+    "kog",
+    "b2"
+   ]
+  },
+  {
+   "en": "to combine",
+   "da": "kombinere",
+   "level": 4,
+   "f": [
+    "kombinerer",
+    "kombinerede",
+    "har kombineret",
+    "havde kombineret",
+    "kombiner",
+    "b1"
+   ]
+  },
+  {
+   "en": "to come",
+   "da": "komme",
+   "level": 1,
+   "f": [
+    "kommer",
+    "kom",
+    "er kommet",
+    "var kommet",
+    "kom",
+    "uv"
+   ]
+  },
+  {
+   "en": "to comment",
+   "da": "kommentere",
+   "level": 3,
+   "f": [
+    "kommenterer",
+    "kommenterede",
+    "har kommenteret",
+    "havde kommenteret",
+    "kommenter",
+    "b1"
+   ]
+  },
+  {
+   "en": "to concentrate",
+   "da": "koncentrere sig",
+   "level": 3,
+   "f": [
+    "koncentrerer sig",
+    "koncentrerede sig",
+    "har koncentreret sig",
+    "havde koncentreret sig",
+    "koncentrer dig",
+    "b1"
+   ]
+  },
+  {
+   "en": "to establish, note",
+   "da": "konstatere",
+   "level": 5,
+   "f": [
+    "konstaterer",
+    "konstaterede",
+    "har konstateret",
+    "havde konstateret",
+    "konstater",
+    "b1"
+   ]
+  },
+  {
+   "en": "to contact",
+   "da": "kontakte",
+   "level": 3,
+   "f": [
+    "kontakter",
+    "kontaktede",
+    "har kontaktet",
+    "havde kontaktet",
+    "kontakt",
+    "b1"
+   ]
+  },
+  {
+   "en": "to check, control",
+   "da": "kontrollere",
+   "level": 3,
+   "f": [
+    "kontrollerer",
+    "kontrollerede",
+    "har kontrolleret",
+    "havde kontrolleret",
+    "kontroller",
+    "b1"
+   ]
+  },
+  {
+   "en": "to cost",
+   "da": "koste",
+   "level": 1,
+   "f": [
+    "koster",
+    "kostede",
+    "har kostet",
+    "havde kostet",
+    "",
+    "b1"
+   ]
+  },
+  {
+   "en": "to criticize",
+   "da": "kritisere",
+   "level": 4,
+   "f": [
+    "kritiserer",
+    "kritiserede",
+    "har kritiseret",
+    "havde kritiseret",
+    "kritiser",
+    "b1"
+   ]
+  },
+  {
+   "en": "to demand, require",
+   "da": "kræve",
+   "level": 3,
+   "f": [
+    "kræver",
+    "krævede",
+    "har krævet",
+    "havde krævet",
+    "kræv",
+    "b1"
+   ]
+  },
+  {
+   "en": "to be able to, can",
+   "da": "kunne",
+   "level": 1,
+   "f": [
+    "kan",
+    "kunne",
+    "har kunnet",
+    "havde kunnet",
+    "",
+    "uv"
+   ]
+  },
+  {
+   "en": "to like",
+   "da": "kunne lide",
+   "level": 1,
+   "f": [
+    "kan lide",
+    "kunne lide",
+    "har kunnet lide",
+    "havde kunnet lide",
+    "",
+    "uv"
+   ]
+  },
+  {
+   "en": "to kiss",
+   "da": "kysse",
+   "level": 2,
+   "f": [
+    "kysser",
+    "kyssede",
+    "har kysset",
+    "havde kysset",
+    "kys",
+    "b1"
+   ]
+  },
+  {
+   "en": "to fight",
+   "da": "kæmpe",
+   "level": 2,
+   "f": [
+    "kæmper",
+    "kæmpede",
+    "har kæmpet",
+    "havde kæmpet",
+    "kæmp",
+    "b1"
+   ]
+  },
+  {
+   "en": "to buy",
+   "da": "købe",
+   "level": 1,
+   "f": [
+    "køber",
+    "købte",
+    "har købt",
+    "havde købt",
+    "køb",
+    "b2"
+   ]
+  },
+  {
+   "en": "to drive",
+   "da": "køre",
+   "level": 1,
+   "f": [
+    "kører",
+    "kørte",
+    "har/er kørt",
+    "havde/var kørt",
+    "kør",
+    "b2"
+   ]
+  },
+  {
+   "en": "to let, allow",
+   "da": "lade",
+   "level": 3,
+   "f": [
+    "lader",
+    "lod",
+    "har ladet",
+    "havde ladet",
+    "lad",
+    "uv"
+   ]
+  },
+  {
+   "en": "to pretend",
+   "da": "lade som om",
+   "level": 3,
+   "f": [
+    "lader som om",
+    "lod som om",
+    "har ladet som om",
+    "havde ladet som om",
+    "lad som om",
+    "uv"
+   ]
+  },
+  {
+   "en": "to land",
+   "da": "lande",
+   "level": 2,
+   "f": [
+    "lander",
+    "landede",
+    "er landet",
+    "var landet",
+    "land",
+    "b1"
+   ]
+  },
+  {
+   "en": "to make, do",
+   "da": "lave",
+   "level": 1,
+   "f": [
+    "laver",
+    "lavede",
+    "har lavet",
+    "havde lavet",
+    "lav",
+    "b1"
+   ]
+  },
+  {
+   "en": "to laugh",
+   "da": "le",
+   "level": 2,
+   "f": [
+    "ler",
+    "lo",
+    "har leet",
+    "havde leet",
+    "le",
+    "uv"
+   ]
+  },
+  {
+   "en": "to lead; search",
+   "da": "lede",
+   "level": 3,
+   "f": [
+    "leder",
+    "ledte",
+    "har ledt",
+    "havde ledt",
+    "led",
+    "b2"
+   ]
+  },
+  {
+   "en": "to play",
+   "da": "lege",
+   "level": 1,
+   "f": [
+    "leger",
+    "legede",
+    "har leget",
+    "havde leget",
+    "leg",
+    "b1"
+   ]
+  },
+  {
+   "en": "to rent",
+   "da": "leje",
+   "level": 2,
+   "f": [
+    "lejer",
+    "lejede",
+    "har lejet",
+    "havde lejet",
+    "lej",
+    "b1"
+   ]
+  },
+  {
+   "en": "to lighten; take off (plane); ease",
+   "da": "lette",
+   "level": 3,
+   "f": [
+    "letter",
+    "lettede",
+    "har/er lettet",
+    "havde/var lettet",
+    "let",
+    "b1"
+   ]
+  },
+  {
+   "en": "to live",
+   "da": "leve",
+   "level": 1,
+   "f": [
+    "lever",
+    "levede",
+    "har levet",
+    "havde levet",
+    "lev",
+    "b1"
+   ]
+  },
+  {
+   "en": "to deliver",
+   "da": "levere",
+   "level": 3,
+   "f": [
+    "leverer",
+    "leverede",
+    "har leveret",
+    "havde leveret",
+    "lever",
+    "b1"
+   ]
+  },
+  {
+   "en": "to suffer",
+   "da": "lide",
+   "level": 2,
+   "f": [
+    "lider",
+    "led",
+    "har lidt",
+    "havde lidt",
+    "lid",
+    "uv"
+   ]
+  },
+  {
+   "en": "to lie (be lying down)",
+   "da": "ligge (intr.)",
+   "level": 1,
+   "f": [
+    "ligger",
+    "lå",
+    "har ligget",
+    "havde ligget",
+    "lig",
+    "uv"
+   ]
+  },
+  {
+   "en": "to resemble",
+   "da": "ligne",
+   "level": 3,
+   "f": [
+    "ligner",
+    "lignede",
+    "har lignet",
+    "havde lignet",
+    "lign",
+    "b1"
+   ]
+  },
+  {
+   "en": "to lure, entice",
+   "da": "lokke",
+   "level": 5,
+   "f": [
+    "lokker",
+    "lokkede",
+    "har lokket",
+    "havde lokket",
+    "lok",
+    "b1"
+   ]
+  },
+  {
+   "en": "to promise",
+   "da": "love",
+   "level": 3,
+   "f": [
+    "lover",
+    "lovede",
+    "har lovet",
+    "havde lovet",
+    "lov",
+    "b1"
+   ]
+  },
+  {
+   "en": "to close",
+   "da": "lukke",
+   "level": 1,
+   "f": [
+    "lukker",
+    "lukkede",
+    "har lukket",
+    "havde lukket",
+    "luk",
+    "b1"
+   ]
+  },
+  {
+   "en": "to sound",
+   "da": "lyde",
+   "level": 3,
+   "f": [
+    "lyder",
+    "lød",
+    "har lydt",
+    "havde lydt",
+    "lyd",
+    "uv"
+   ]
+  },
+  {
+   "en": "to succeed",
+   "da": "lykkes",
+   "level": 3,
+   "f": [
+    "lykkes",
+    "lykkedes",
+    "er lykkedes",
+    "var lykkedes",
+    "",
+    "uv"
+   ]
+  },
+  {
+   "en": "to shine, light up",
+   "da": "lyse",
+   "level": 2,
+   "f": [
+    "lyser",
+    "lyste",
+    "har lyst",
+    "havde lyst",
+    "lys",
+    "b2"
+   ]
+  },
+  {
+   "en": "to listen",
+   "da": "lytte",
+   "level": 1,
+   "f": [
+    "lytter",
+    "lyttede",
+    "har lyttet",
+    "havde lyttet",
+    "lyt",
+    "b1"
+   ]
+  },
+  {
+   "en": "to lay, put",
+   "da": "lægge (tr.)",
+   "level": 1,
+   "f": [
+    "lægger",
+    "lagde",
+    "har lagt",
+    "havde lagt",
+    "læg",
+    "uv"
+   ]
+  },
+  {
+   "en": "to learn; teach",
+   "da": "lære",
+   "level": 1,
+   "f": [
+    "lærer",
+    "lærte",
+    "har lært",
+    "havde lært",
+    "lær",
+    "b2"
+   ]
+  },
+  {
+   "en": "to read",
+   "da": "læse",
+   "level": 1,
+   "f": [
+    "læser",
+    "læste",
+    "har læst",
+    "havde læst",
+    "læs",
+    "b2"
+   ]
+  },
+  {
+   "en": "to run",
+   "da": "løbe",
+   "level": 2,
+   "f": [
+    "løber",
+    "løb",
+    "har/er løbet",
+    "havde/var løbet",
+    "løb",
+    "uv"
+   ]
+  },
+  {
+   "en": "to lift",
+   "da": "løfte",
+   "level": 2,
+   "f": [
+    "løfter",
+    "løftede",
+    "har løftet",
+    "havde løftet",
+    "løft",
+    "b1"
+   ]
+  },
+  {
+   "en": "to solve",
+   "da": "løse",
+   "level": 2,
+   "f": [
+    "løser",
+    "løste",
+    "har løst",
+    "havde løst",
+    "løs",
+    "b2"
+   ]
+  },
+  {
+   "en": "to borrow, lend",
+   "da": "låne",
+   "level": 1,
+   "f": [
+    "låner",
+    "lånte",
+    "har lånt",
+    "havde lånt",
+    "lån",
+    "b2"
+   ]
+  },
+  {
+   "en": "to paint",
+   "da": "male",
+   "level": 2,
+   "f": [
+    "maler",
+    "malede",
+    "har malet",
+    "havde malet",
+    "mal",
+    "b1"
+   ]
+  },
+  {
+   "en": "to lack, be missing",
+   "da": "mangle",
+   "level": 3,
+   "f": [
+    "mangler",
+    "manglede",
+    "har manglet",
+    "havde manglet",
+    "",
+    "b1"
+   ]
+  },
+  {
+   "en": "to inform, announce",
+   "da": "meddele",
+   "level": 4,
+   "f": [
+    "meddeler",
+    "meddelte",
+    "har meddelt",
+    "havde meddelt",
+    "meddel",
+    "b2"
+   ]
+  },
+  {
+   "en": "to entail, result in",
+   "da": "medføre",
+   "level": 5,
+   "f": [
+    "medfører",
+    "medførte",
+    "har medført",
+    "havde medført",
+    "medfør",
+    "b2"
+   ]
+  },
+  {
+   "en": "to participate, contribute",
+   "da": "medvirke",
+   "level": 5,
+   "f": [
+    "medvirker",
+    "medvirkede",
+    "har medvirket",
+    "havde medvirket",
+    "medvirk",
+    "b1"
+   ]
+  },
+  {
+   "en": "to report",
+   "da": "melde",
+   "level": 4,
+   "f": [
+    "melder",
+    "meldte",
+    "har meldt",
+    "havde meldt",
+    "meld",
+    "b2"
+   ]
+  },
+  {
+   "en": "to mean, think (an opinion)",
+   "da": "mene",
+   "level": 1,
+   "f": [
+    "mener",
+    "mente",
+    "har ment",
+    "havde ment",
+    "men",
+    "b2"
+   ]
+  },
+  {
+   "en": "to remind",
+   "da": "minde",
+   "level": 3,
+   "f": [
+    "minder",
+    "mindede",
+    "har mindet",
+    "havde mindet",
+    "mind",
+    "b1"
+   ]
+  },
+  {
+   "en": "to lose",
+   "da": "miste",
+   "level": 3,
+   "f": [
+    "mister",
+    "mistede",
+    "har mistet",
+    "havde mistet",
+    "mist",
+    "b1"
+   ]
+  },
+  {
+   "en": "to receive",
+   "da": "modtage",
+   "level": 3,
+   "f": [
+    "modtager",
+    "modtog",
+    "har modtaget",
+    "havde modtaget",
+    "modtag",
+    "uv"
+   ]
+  },
+  {
+   "en": "to murder",
+   "da": "myrde",
+   "level": 4,
+   "f": [
+    "myrder",
+    "myrdede",
+    "har myrdet",
+    "havde myrdet",
+    "myrd",
+    "b1"
+   ]
+  },
+  {
+   "en": "to notice, feel",
+   "da": "mærke",
+   "level": 3,
+   "f": [
+    "mærker",
+    "mærkede",
+    "har mærket",
+    "havde mærket",
+    "mærk",
+    "b1"
+   ]
+  },
+  {
+   "en": "to meet",
+   "da": "møde",
+   "level": 1,
+   "f": [
+    "møder",
+    "mødte",
+    "har mødt",
+    "havde mødt",
+    "mød",
+    "b2"
+   ]
+  },
+  {
+   "en": "to meet (each other)",
+   "da": "mødes",
+   "level": 2,
+   "f": [
+    "mødes",
+    "mødtes",
+    "har mødtes",
+    "havde mødtes",
+    "",
+    "uv"
+   ]
+  },
+  {
+   "en": "to measure",
+   "da": "måle",
+   "level": 2,
+   "f": [
+    "måler",
+    "målte",
+    "har målt",
+    "havde målt",
+    "mål",
+    "b2"
+   ]
+  },
+  {
+   "en": "to have to, must; may",
+   "da": "måtte",
+   "level": 1,
+   "f": [
+    "må",
+    "måtte",
+    "har måttet",
+    "havde måttet",
+    "",
+    "uv"
+   ]
+  },
+  {
+   "en": "to abolish, lay down",
+   "da": "nedlægge",
+   "level": 5,
+   "f": [
+    "nedlægger",
+    "nedlagde",
+    "har nedlagt",
+    "havde nedlagt",
+    "nedlæg",
+    "uv"
+   ]
+  },
+  {
+   "en": "to reduce; set up (a committee)",
+   "da": "nedsætte",
+   "level": 5,
+   "f": [
+    "nedsætter",
+    "nedsatte",
+    "har nedsat",
+    "havde nedsat",
+    "nedsæt",
+    "uv"
+   ]
+  },
+  {
+   "en": "to nod",
+   "da": "nikke",
+   "level": 2,
+   "f": [
+    "nikker",
+    "nikkede",
+    "har nikket",
+    "havde nikket",
+    "nik",
+    "b1"
+   ]
+  },
+  {
+   "en": "to note down",
+   "da": "notere",
+   "level": 3,
+   "f": [
+    "noterer",
+    "noterede",
+    "har noteret",
+    "havde noteret",
+    "noter",
+    "b1"
+   ]
+  },
+  {
+   "en": "to enjoy",
+   "da": "nyde",
+   "level": 2,
+   "f": [
+    "nyder",
+    "nød",
+    "har nydt",
+    "havde nydt",
+    "nyd",
+    "uv"
+   ]
+  },
+  {
+   "en": "to refuse, deny",
+   "da": "nægte",
+   "level": 4,
+   "f": [
+    "nægter",
+    "nægtede",
+    "har nægtet",
+    "havde nægtet",
+    "nægt",
+    "b1"
+   ]
+  },
+  {
+   "en": "to approach",
+   "da": "nærme sig",
+   "level": 3,
+   "f": [
+    "nærmer sig",
+    "nærmede sig",
+    "har nærmet sig",
+    "havde nærmet sig",
+    "nærm dig",
+    "b1"
+   ]
+  },
+  {
+   "en": "to make do with, settle for",
+   "da": "nøjes med",
+   "level": 3,
+   "f": [
+    "nøjes med",
+    "nøjedes med",
+    "har nøjedes med",
+    "havde nøjedes med",
+    "nøjes med",
+    "uv"
+   ]
+  },
+  {
+   "en": "to reach; manage (to do something)",
+   "da": "nå",
+   "level": 1,
+   "f": [
+    "når",
+    "nåede",
+    "har nået",
+    "havde nået",
+    "nå",
+    "b1"
+   ]
+  },
+  {
+   "en": "to publish, make public",
+   "da": "offentliggøre",
+   "level": 5,
+   "f": [
+    "offentliggør",
+    "offentliggjorde",
+    "har offentliggjort",
+    "havde offentliggjort",
+    "offentliggør",
+    "uv"
+   ]
+  },
+  {
+   "en": "to comprise, include",
+   "da": "omfatte",
+   "level": 4,
+   "f": [
+    "omfatter",
+    "omfattede",
+    "har omfattet",
+    "havde omfattet",
+    "omfat",
+    "b1"
+   ]
+  },
+  {
+   "en": "to surround",
+   "da": "omgive",
+   "level": 5,
+   "f": [
+    "omgiver",
+    "omgav",
+    "har omgivet",
+    "havde omgivet",
+    "omgiv",
+    "uv"
+   ]
+  },
+  {
+   "en": "to build up",
+   "da": "opbygge",
+   "level": 5,
+   "f": [
+    "opbygger",
+    "opbyggede",
+    "har opbygget",
+    "havde opbygget",
+    "opbyg",
+    "b1"
+   ]
+  },
+  {
+   "en": "to discover",
+   "da": "opdage",
+   "level": 3,
+   "f": [
+    "opdager",
+    "opdagede",
+    "har opdaget",
+    "havde opdaget",
+    "opdag",
+    "b1"
+   ]
+  },
+  {
+   "en": "to operate",
+   "da": "operere",
+   "level": 4,
+   "f": [
+    "opererer",
+    "opererede",
+    "har opereret",
+    "havde opereret",
+    "operer",
+    "b1"
+   ]
+  },
+  {
+   "en": "to perceive, understand",
+   "da": "opfatte",
+   "level": 5,
+   "f": [
+    "opfatter",
+    "opfattede",
+    "har opfattet",
+    "havde opfattet",
+    "opfat",
+    "b1"
+   ]
+  },
+  {
+   "en": "to invent",
+   "da": "opfinde",
+   "level": 4,
+   "f": [
+    "opfinder",
+    "opfandt",
+    "har opfundet",
+    "havde opfundet",
+    "opfind",
+    "uv"
+   ]
+  },
+  {
+   "en": "to urge, encourage",
+   "da": "opfordre",
+   "level": 4,
+   "f": [
+    "opfordrer",
+    "opfordrede",
+    "har opfordret",
+    "havde opfordret",
+    "opfordr",
+    "b1"
+   ]
+  },
+  {
+   "en": "to fulfil",
+   "da": "opfylde",
+   "level": 4,
+   "f": [
+    "opfylder",
+    "opfyldte",
+    "har opfyldt",
+    "havde opfyldt",
+    "opfyld",
+    "b2"
+   ]
+  },
+  {
+   "en": "to build, construct; perform",
+   "da": "opføre",
+   "level": 5,
+   "f": [
+    "opfører",
+    "opførte",
+    "har opført",
+    "havde opført",
+    "opfør",
+    "b2"
+   ]
+  },
+  {
+   "en": "to give up",
+   "da": "opgive",
+   "level": 4,
+   "f": [
+    "opgiver",
+    "opgav",
+    "har opgivet",
+    "havde opgivet",
+    "opgiv",
+    "uv"
+   ]
+  },
+  {
+   "en": "to abolish, cancel, lift (a ban)",
+   "da": "ophæve",
+   "level": 5,
+   "f": [
+    "ophæver",
+    "ophævede",
+    "har ophævet",
+    "havde ophævet",
+    "ophæv",
+    "b1"
+   ]
+  },
+  {
+   "en": "to experience",
+   "da": "opleve",
+   "level": 2,
+   "f": [
+    "oplever",
+    "oplevede",
+    "har oplevet",
+    "havde oplevet",
+    "oplev",
+    "b1"
+   ]
+  },
+  {
+   "en": "to inform; illuminate",
+   "da": "oplyse",
+   "level": 5,
+   "f": [
+    "oplyser",
+    "oplyste",
+    "har oplyst",
+    "havde oplyst",
+    "oplys",
+    "b2"
+   ]
+  },
+  {
+   "en": "to achieve, attain",
+   "da": "opnå",
+   "level": 4,
+   "f": [
+    "opnår",
+    "opnåede",
+    "har opnået",
+    "havde opnået",
+    "opnå",
+    "b1"
+   ]
+  },
+  {
+   "en": "to establish, set up",
+   "da": "oprette",
+   "level": 5,
+   "f": [
+    "opretter",
+    "oprettede",
+    "har oprettet",
+    "havde oprettet",
+    "opret",
+    "b1"
+   ]
+  },
+  {
+   "en": "to set up, put up; nominate",
+   "da": "opstille",
+   "level": 5,
+   "f": [
+    "opstiller",
+    "opstillede",
+    "har opstillet",
+    "havde opstillet",
+    "opstil",
+    "b1"
+   ]
+  },
+  {
+   "en": "to arise, occur",
+   "da": "opstå",
+   "level": 5,
+   "f": [
+    "opstår",
+    "opstod",
+    "er opstået",
+    "var opstået",
+    "opstå",
+    "uv"
+   ]
+  },
+  {
+   "en": "to record; admit (to a school)",
+   "da": "optage",
+   "level": 5,
+   "f": [
+    "optager",
+    "optog",
+    "har optaget",
+    "havde optaget",
+    "optag",
+    "uv"
+   ]
+  },
+  {
+   "en": "to appear, perform",
+   "da": "optræde",
+   "level": 5,
+   "f": [
+    "optræder",
+    "optrådte",
+    "har optrådt",
+    "havde optrådt",
+    "optræd",
+    "uv"
+   ]
+  },
+  {
+   "en": "to inform, orient",
+   "da": "orientere",
+   "level": 5,
+   "f": [
+    "orienterer",
+    "orienterede",
+    "har orienteret",
+    "havde orienteret",
+    "orienter",
+    "b1"
+   ]
+  },
+  {
+   "en": "to convince",
+   "da": "overbevise",
+   "level": 4,
+   "f": [
+    "overbeviser",
+    "overbeviste",
+    "har overbevist",
+    "havde overbevist",
+    "overbevis",
+    "b2"
+   ]
+  },
+  {
+   "en": "to transfer",
+   "da": "overføre",
+   "level": 4,
+   "f": [
+    "overfører",
+    "overførte",
+    "har overført",
+    "havde overført",
+    "overfør",
+    "b2"
+   ]
+  },
+  {
+   "en": "to comply with, observe",
+   "da": "overholde",
+   "level": 5,
+   "f": [
+    "overholder",
+    "overholdt",
+    "har overholdt",
+    "havde overholdt",
+    "overhold",
+    "uv"
+   ]
+  },
+  {
+   "en": "to leave (to someone)",
+   "da": "overlade",
+   "level": 5,
+   "f": [
+    "overlader",
+    "overlod",
+    "har overladt",
+    "havde overladt",
+    "overlad",
+    "uv"
+   ]
+  },
+  {
+   "en": "to survive",
+   "da": "overleve",
+   "level": 4,
+   "f": [
+    "overlever",
+    "overlevede",
+    "har overlevet",
+    "havde overlevet",
+    "overlev",
+    "b1"
+   ]
+  },
+  {
+   "en": "to surprise",
+   "da": "overraske",
+   "level": 3,
+   "f": [
+    "overrasker",
+    "overraskede",
+    "har overrasket",
+    "havde overrasket",
+    "overrask",
+    "b1"
+   ]
+  },
+  {
+   "en": "to take over",
+   "da": "overtage",
+   "level": 5,
+   "f": [
+    "overtager",
+    "overtog",
+    "har overtaget",
+    "havde overtaget",
+    "overtag",
+    "uv"
+   ]
+  },
+  {
+   "en": "to consider",
+   "da": "overveje",
+   "level": 4,
+   "f": [
+    "overvejer",
+    "overvejede",
+    "har overvejet",
+    "havde overvejet",
+    "overvej",
+    "b1"
+   ]
+  },
+  {
+   "en": "to pack",
+   "da": "pakke",
+   "level": 2,
+   "f": [
+    "pakker",
+    "pakkede",
+    "har pakket",
+    "havde pakket",
+    "pak",
+    "b1"
+   ]
+  },
+  {
+   "en": "to fit; look after",
+   "da": "passe",
+   "level": 2,
+   "f": [
+    "passer",
+    "passede",
+    "har passet",
+    "havde passet",
+    "pas",
+    "b1"
+   ]
+  },
+  {
+   "en": "to point",
+   "da": "pege",
+   "level": 2,
+   "f": [
+    "peger",
+    "pegede",
+    "har peget",
+    "havde peget",
+    "peg",
+    "b1"
+   ]
+  },
+  {
+   "en": "to place",
+   "da": "placere",
+   "level": 3,
+   "f": [
+    "placerer",
+    "placerede",
+    "har placeret",
+    "havde placeret",
+    "placer",
+    "b1"
+   ]
+  },
+  {
+   "en": "to plan",
+   "da": "planlægge",
+   "level": 3,
+   "f": [
+    "planlægger",
+    "planlagde",
+    "har planlagt",
+    "havde planlagt",
+    "planlæg",
+    "uv"
+   ]
+  },
+  {
+   "en": "to take care of; used to (do something)",
+   "da": "pleje",
+   "level": 5,
+   "f": [
+    "plejer",
+    "plejede",
+    "har plejet",
+    "havde plejet",
+    "plej",
+    "b1"
+   ]
+  },
+  {
+   "en": "to press, pressure",
+   "da": "presse",
+   "level": 4,
+   "f": [
+    "presser",
+    "pressede",
+    "har presset",
+    "havde presset",
+    "pres",
+    "b1"
+   ]
+  },
+  {
+   "en": "to produce",
+   "da": "producere",
+   "level": 4,
+   "f": [
+    "producerer",
+    "producerede",
+    "har produceret",
+    "havde produceret",
+    "producer",
+    "b1"
+   ]
+  },
+  {
+   "en": "to characterize, shape",
+   "da": "præge",
+   "level": 5,
+   "f": [
+    "præger",
+    "prægede",
+    "har præget",
+    "havde præget",
+    "præg",
+    "b1"
+   ]
+  },
+  {
+   "en": "to present",
+   "da": "præsentere",
+   "level": 4,
+   "f": [
+    "præsenterer",
+    "præsenterede",
+    "har præsenteret",
+    "havde præsenteret",
+    "præsenter",
+    "b1"
+   ]
+  },
+  {
+   "en": "to try",
+   "da": "prøve",
+   "level": 1,
+   "f": [
+    "prøver",
+    "prøvede",
+    "har prøvet",
+    "havde prøvet",
+    "prøv",
+    "b1"
+   ]
+  },
+  {
+   "en": "to polish, wipe",
+   "da": "pudse",
+   "level": 2,
+   "f": [
+    "pudser",
+    "pudsede",
+    "har pudset",
+    "havde pudset",
+    "puds",
+    "b1"
+   ]
+  },
+  {
+   "en": "to influence, affect",
+   "da": "påvirke",
+   "level": 5,
+   "f": [
+    "påvirker",
+    "påvirkede",
+    "har påvirket",
+    "havde påvirket",
+    "påvirk",
+    "b1"
+   ]
+  },
+  {
+   "en": "to hit",
+   "da": "ramme",
+   "level": 4,
+   "f": [
+    "rammer",
+    "ramte",
+    "har ramt",
+    "havde ramt",
+    "ram",
+    "b2"
+   ]
+  },
+  {
+   "en": "to react",
+   "da": "reagere",
+   "level": 4,
+   "f": [
+    "reagerer",
+    "reagerede",
+    "har reageret",
+    "havde reageret",
+    "reager",
+    "b1"
+   ]
+  },
+  {
+   "en": "to save, rescue",
+   "da": "redde",
+   "level": 3,
+   "f": [
+    "redder",
+    "reddede",
+    "har reddet",
+    "havde reddet",
+    "red",
+    "b1"
+   ]
+  },
+  {
+   "en": "to reduce",
+   "da": "reducere",
+   "level": 4,
+   "f": [
+    "reducerer",
+    "reducerede",
+    "har reduceret",
+    "havde reduceret",
+    "reducer",
+    "b1"
+   ]
+  },
+  {
+   "en": "to register",
+   "da": "registrere",
+   "level": 4,
+   "f": [
+    "registrerer",
+    "registrerede",
+    "har registreret",
+    "havde registreret",
+    "registrer",
+    "b1"
+   ]
+  },
+  {
+   "en": "to rain; calculate",
+   "da": "regne",
+   "level": 2,
+   "f": [
+    "regner",
+    "regnede",
+    "har regnet",
+    "havde regnet",
+    "regn",
+    "b1"
+   ]
+  },
+  {
+   "en": "to travel; raise",
+   "da": "rejse",
+   "level": 1,
+   "f": [
+    "rejser",
+    "rejste",
+    "har/er rejst",
+    "havde/var rejst",
+    "rejs",
+    "b2"
+   ]
+  },
+  {
+   "en": "to clean",
+   "da": "rense",
+   "level": 2,
+   "f": [
+    "renser",
+    "rensede",
+    "har renset",
+    "havde renset",
+    "rens",
+    "b1"
+   ]
+  },
+  {
+   "en": "to represent",
+   "da": "repræsentere",
+   "level": 4,
+   "f": [
+    "repræsenterer",
+    "repræsenterede",
+    "har repræsenteret",
+    "havde repræsenteret",
+    "repræsenter",
+    "b1"
+   ]
+  },
+  {
+   "en": "to respect",
+   "da": "respektere",
+   "level": 4,
+   "f": [
+    "respekterer",
+    "respekterede",
+    "har respekteret",
+    "havde respekteret",
+    "respekter",
+    "b1"
+   ]
+  },
+  {
+   "en": "to correct; aim, direct",
+   "da": "rette",
+   "level": 4,
+   "f": [
+    "retter",
+    "rettede",
+    "har rettet",
+    "havde rettet",
+    "ret",
+    "b1"
+   ]
+  },
+  {
+   "en": "to ride (a horse)",
+   "da": "ride",
+   "level": 2,
+   "f": [
+    "rider",
+    "red",
+    "har redet",
+    "havde redet",
+    "rid",
+    "uv"
+   ]
+  },
+  {
+   "en": "to call, ring",
+   "da": "ringe",
+   "level": 1,
+   "f": [
+    "ringer",
+    "ringede",
+    "har ringet",
+    "havde ringet",
+    "ring",
+    "b1"
+   ]
+  },
+  {
+   "en": "to risk",
+   "da": "risikere",
+   "level": 4,
+   "f": [
+    "risikerer",
+    "risikerede",
+    "har risikeret",
+    "havde risikeret",
+    "risiker",
+    "b1"
+   ]
+  },
+  {
+   "en": "to tear",
+   "da": "rive",
+   "level": 2,
+   "f": [
+    "river",
+    "rev",
+    "har revet",
+    "havde revet",
+    "riv",
+    "uv"
+   ]
+  },
+  {
+   "en": "to praise",
+   "da": "rose",
+   "level": 4,
+   "f": [
+    "roser",
+    "roste",
+    "har rost",
+    "havde rost",
+    "ros",
+    "b2"
+   ]
+  },
+  {
+   "en": "to roll",
+   "da": "rulle",
+   "level": 2,
+   "f": [
+    "ruller",
+    "rullede",
+    "har/er rullet",
+    "havde/var rullet",
+    "rul",
+    "b1"
+   ]
+  },
+  {
+   "en": "to contain, hold",
+   "da": "rumme",
+   "level": 5,
+   "f": [
+    "rummer",
+    "rummede",
+    "har rummet",
+    "havde rummet",
+    "rum",
+    "b1"
+   ]
+  },
+  {
+   "en": "to clear, tidy",
+   "da": "rydde",
+   "level": 2,
+   "f": [
+    "rydder",
+    "ryddede",
+    "har ryddet",
+    "havde ryddet",
+    "ryd",
+    "b1"
+   ]
+  },
+  {
+   "en": "to smoke",
+   "da": "ryge",
+   "level": 2,
+   "f": [
+    "ryger",
+    "røg",
+    "har røget",
+    "havde røget",
+    "ryg",
+    "uv"
+   ]
+  },
+  {
+   "en": "to move, shift; pull",
+   "da": "rykke",
+   "level": 5,
+   "f": [
+    "rykker",
+    "rykkede",
+    "har rykket",
+    "havde rykket",
+    "ryk",
+    "b1"
+   ]
+  },
+  {
+   "en": "to shake",
+   "da": "ryste",
+   "level": 2,
+   "f": [
+    "ryster",
+    "rystede",
+    "har rystet",
+    "havde rystet",
+    "ryst",
+    "b1"
+   ]
+  },
+  {
+   "en": "to reach, pass, hand",
+   "da": "række",
+   "level": 2,
+   "f": [
+    "rækker",
+    "rakte",
+    "har rakt",
+    "havde rakt",
+    "ræk",
+    "uv"
+   ]
+  },
+  {
+   "en": "to touch, stir",
+   "da": "røre",
+   "level": 2,
+   "f": [
+    "rører",
+    "rørte",
+    "har rørt",
+    "havde rørt",
+    "rør",
+    "b2"
+   ]
+  },
+  {
+   "en": "to shout",
+   "da": "råbe",
+   "level": 2,
+   "f": [
+    "råber",
+    "råbte",
+    "har råbt",
+    "havde råbt",
+    "råb",
+    "b2"
+   ]
+  },
+  {
+   "en": "to advise",
+   "da": "råde",
+   "level": 5,
+   "f": [
+    "råder",
+    "rådede",
+    "har rådet",
+    "havde rådet",
+    "råd",
+    "b1"
+   ]
+  },
+  {
+   "en": "to gather, collect",
+   "da": "samle",
+   "level": 2,
+   "f": [
+    "samler",
+    "samlede",
+    "har samlet",
+    "havde samlet",
+    "saml",
+    "b1"
+   ]
+  },
+  {
+   "en": "to compare",
+   "da": "sammenligne",
+   "level": 4,
+   "f": [
+    "sammenligner",
+    "sammenlignede",
+    "har sammenlignet",
+    "havde sammenlignet",
+    "sammenlign",
+    "b1"
+   ]
+  },
+  {
+   "en": "to bet, gamble; invest effort",
+   "da": "satse",
+   "level": 5,
+   "f": [
+    "satser",
+    "satsede",
+    "har satset",
+    "havde satset",
+    "sats",
+    "b1"
+   ]
+  },
+  {
+   "en": "to miss",
+   "da": "savne",
+   "level": 2,
+   "f": [
+    "savner",
+    "savnede",
+    "har savnet",
+    "havde savnet",
+    "savn",
+    "b1"
+   ]
+  },
+  {
+   "en": "to see",
+   "da": "se",
+   "level": 1,
+   "f": [
+    "ser",
+    "så",
+    "har set",
+    "havde set",
+    "se",
+    "uv"
+   ]
+  },
+  {
+   "en": "to sail",
+   "da": "sejle",
+   "level": 2,
+   "f": [
+    "sejler",
+    "sejlede",
+    "har sejlet",
+    "havde sejlet",
+    "sejl",
+    "b1"
+   ]
+  },
+  {
+   "en": "to send",
+   "da": "sende",
+   "level": 1,
+   "f": [
+    "sender",
+    "sendte",
+    "har sendt",
+    "havde sendt",
+    "send",
+    "b2"
+   ]
+  },
+  {
+   "en": "to serve",
+   "da": "servere",
+   "level": 2,
+   "f": [
+    "serverer",
+    "serverede",
+    "har serveret",
+    "havde serveret",
+    "server",
+    "b1"
+   ]
+  },
+  {
+   "en": "to see each other",
+   "da": "ses",
+   "level": 2,
+   "f": [
+    "ses",
+    "sås",
+    "har sets",
+    "havde sets",
+    "",
+    "uv"
+   ]
+  },
+  {
+   "en": "to sit",
+   "da": "sidde",
+   "level": 1,
+   "f": [
+    "sidder",
+    "sad",
+    "har siddet",
+    "havde siddet",
+    "sid",
+    "uv"
+   ]
+  },
+  {
+   "en": "to say",
+   "da": "sige",
+   "level": 1,
+   "f": [
+    "siger",
+    "sagde",
+    "har sagt",
+    "havde sagt",
+    "sig",
+    "uv"
+   ]
+  },
+  {
+   "en": "to secure, ensure",
+   "da": "sikre",
+   "level": 3,
+   "f": [
+    "sikrer",
+    "sikrede",
+    "har sikret",
+    "havde sikret",
+    "sikr",
+    "b1"
+   ]
+  },
+  {
+   "en": "to create",
+   "da": "skabe",
+   "level": 3,
+   "f": [
+    "skaber",
+    "skabte",
+    "har skabt",
+    "havde skabt",
+    "skab",
+    "b2"
+   ]
+  },
+  {
+   "en": "to harm",
+   "da": "skade",
+   "level": 4,
+   "f": [
+    "skader",
+    "skadede",
+    "har skadet",
+    "havde skadet",
+    "skad",
+    "b1"
+   ]
+  },
+  {
+   "en": "to get, obtain",
+   "da": "skaffe",
+   "level": 3,
+   "f": [
+    "skaffer",
+    "skaffede",
+    "har skaffet",
+    "havde skaffet",
+    "skaf",
+    "b1"
+   ]
+  },
+  {
+   "en": "to happen",
+   "da": "ske",
+   "level": 1,
+   "f": [
+    "sker",
+    "skete",
+    "er sket",
+    "var sket",
+    "ske",
+    "b2"
+   ]
+  },
+  {
+   "en": "to change, switch",
+   "da": "skifte",
+   "level": 2,
+   "f": [
+    "skifter",
+    "skiftede",
+    "har skiftet",
+    "havde skiftet",
+    "skift",
+    "b1"
+   ]
+  },
+  {
+   "en": "to shine",
+   "da": "skinne",
+   "level": 2,
+   "f": [
+    "skinner",
+    "skinnede",
+    "har skinnet",
+    "havde skinnet",
+    "skin",
+    "b1"
+   ]
+  },
+  {
+   "en": "to hide",
+   "da": "skjule",
+   "level": 3,
+   "f": [
+    "skjuler",
+    "skjulte",
+    "har skjult",
+    "havde skjult",
+    "skjul",
+    "b2"
+   ]
+  },
+  {
+   "en": "to scream",
+   "da": "skrige",
+   "level": 2,
+   "f": [
+    "skriger",
+    "skreg",
+    "har skreget",
+    "havde skreget",
+    "skrig",
+    "uv"
+   ]
+  },
+  {
+   "en": "to write",
+   "da": "skrive",
+   "level": 1,
+   "f": [
+    "skriver",
+    "skrev",
+    "har skrevet",
+    "havde skrevet",
+    "skriv",
+    "uv"
+   ]
+  },
+  {
+   "en": "to scare",
+   "da": "skræmme",
+   "level": 3,
+   "f": [
+    "skræmmer",
+    "skræmte",
+    "har skræmt",
+    "havde skræmt",
+    "skræm",
+    "b2"
+   ]
+  },
+  {
+   "en": "to push",
+   "da": "skubbe",
+   "level": 3,
+   "f": [
+    "skubber",
+    "skubbede",
+    "har skubbet",
+    "havde skubbet",
+    "skub",
+    "b1"
+   ]
+  },
+  {
+   "en": "to disappoint",
+   "da": "skuffe",
+   "level": 3,
+   "f": [
+    "skuffer",
+    "skuffede",
+    "har skuffet",
+    "havde skuffet",
+    "skuf",
+    "b1"
+   ]
+  },
+  {
+   "en": "to have to, shall",
+   "da": "skulle",
+   "level": 1,
+   "f": [
+    "skal",
+    "skulle",
+    "har skullet",
+    "havde skullet",
+    "",
+    "uv"
+   ]
+  },
+  {
+   "en": "to shoot",
+   "da": "skyde",
+   "level": 2,
+   "f": [
+    "skyder",
+    "skød",
+    "har skudt",
+    "havde skudt",
+    "skyd",
+    "uv"
+   ]
+  },
+  {
+   "en": "to be due to",
+   "da": "skyldes",
+   "level": 5,
+   "f": [
+    "skyldes",
+    "skyldtes",
+    "har skyldtes",
+    "havde skyldtes",
+    "",
+    "uv"
+   ]
+  },
+  {
+   "en": "to cut",
+   "da": "skære",
+   "level": 2,
+   "f": [
+    "skærer",
+    "skar",
+    "har skåret",
+    "havde skåret",
+    "skær",
+    "uv"
+   ]
+  },
+  {
+   "en": "to let go, escape",
+   "da": "slippe",
+   "level": 2,
+   "f": [
+    "slipper",
+    "slap",
+    "har/er sluppet",
+    "havde/var sluppet",
+    "slip",
+    "uv"
+   ]
+  },
+  {
+   "en": "to turn off, extinguish",
+   "da": "slukke",
+   "level": 2,
+   "f": [
+    "slukker",
+    "slukkede",
+    "er slukket",
+    "var slukket",
+    "sluk",
+    "b1"
+   ]
+  },
+  {
+   "en": "to end, finish",
+   "da": "slutte",
+   "level": 2,
+   "f": [
+    "slutter",
+    "sluttede",
+    "er sluttet",
+    "var sluttet",
+    "slut",
+    "b1"
+   ]
+  },
+  {
+   "en": "to hit, strike",
+   "da": "slå",
+   "level": 2,
+   "f": [
+    "slår",
+    "slog",
+    "har slået",
+    "havde slået",
+    "slå",
+    "uv"
+   ]
+  },
+  {
+   "en": "to fight",
+   "da": "slås",
+   "level": 2,
+   "f": [
+    "slås",
+    "sloges",
+    "har sloges",
+    "havde sloges",
+    "slås",
+    "uv"
+   ]
+  },
+  {
+   "en": "to taste",
+   "da": "smage",
+   "level": 2,
+   "f": [
+    "smager",
+    "smagte",
+    "har smagt",
+    "havde smagt",
+    "smag",
+    "b2"
+   ]
+  },
+  {
+   "en": "to throw, chuck",
+   "da": "smide",
+   "level": 2,
+   "f": [
+    "smider",
+    "smed",
+    "har smidt",
+    "havde smidt",
+    "smid",
+    "b2"
+   ]
+  },
+  {
+   "en": "to smile",
+   "da": "smile",
+   "level": 2,
+   "f": [
+    "smiler",
+    "smilede",
+    "har smilet",
+    "havde smilet",
+    "smil",
+    "b1"
+   ]
+  },
+  {
+   "en": "to infect",
+   "da": "smitte",
+   "level": 3,
+   "f": [
+    "smitter",
+    "smittede",
+    "har smittet",
+    "havde smittet",
+    "smit",
+    "b1"
+   ]
+  },
+  {
+   "en": "to talk, chat",
+   "da": "snakke",
+   "level": 1,
+   "f": [
+    "snakker",
+    "snakkede",
+    "har snakket",
+    "havde snakket",
+    "snak",
+    "b1"
+   ]
+  },
+  {
+   "en": "to sleep",
+   "da": "sove",
+   "level": 1,
+   "f": [
+    "sover",
+    "sov",
+    "har sovet",
+    "havde sovet",
+    "sov",
+    "uv"
+   ]
+  },
+  {
+   "en": "to save (money)",
+   "da": "spare",
+   "level": 3,
+   "f": [
+    "sparer",
+    "sparede",
+    "har sparet",
+    "havde sparet",
+    "spar",
+    "b1"
+   ]
+  },
+  {
+   "en": "to play",
+   "da": "spille",
+   "level": 1,
+   "f": [
+    "spiller",
+    "spillede",
+    "har spillet",
+    "havde spillet",
+    "spil",
+    "b1"
+   ]
+  },
+  {
+   "en": "to eat",
+   "da": "spise",
+   "level": 1,
+   "f": [
+    "spiser",
+    "spiste",
+    "har spist",
+    "havde spist",
+    "spis",
+    "b2"
+   ]
+  },
+  {
+   "en": "to spread",
+   "da": "sprede",
+   "level": 3,
+   "f": [
+    "spreder",
+    "spredte",
+    "har spredt",
+    "havde spredt",
+    "spred",
+    "b2"
+   ]
+  },
+  {
+   "en": "to jump",
+   "da": "springe",
+   "level": 2,
+   "f": [
+    "springer",
+    "sprang",
+    "har/er sprunget",
+    "havde/var sprunget",
+    "spring",
+    "uv"
+   ]
+  },
+  {
+   "en": "to ask",
+   "da": "spørge",
+   "level": 1,
+   "f": [
+    "spørger",
+    "spurgte",
+    "har spurgt",
+    "havde spurgt",
+    "spørg",
+    "uv"
+   ]
+  },
+  {
+   "en": "to stammer; originate (from)",
+   "da": "stamme",
+   "level": 5,
+   "f": [
+    "stammer",
+    "stammede",
+    "har stammet",
+    "havde stammet",
+    "stam",
+    "b1"
+   ]
+  },
+  {
+   "en": "to stop",
+   "da": "standse",
+   "level": 3,
+   "f": [
+    "standser",
+    "standsede",
+    "har/er standset",
+    "havde/var standset",
+    "stands",
+    "b1"
+   ]
+  },
+  {
+   "en": "to start",
+   "da": "starte",
+   "level": 2,
+   "f": [
+    "starter",
+    "startede",
+    "har/er startet",
+    "havde/var startet",
+    "start",
+    "b1"
+   ]
+  },
+  {
+   "en": "to vote; tune",
+   "da": "stemme",
+   "level": 4,
+   "f": [
+    "stemmer",
+    "stemte",
+    "har stemt",
+    "havde stemt",
+    "stem",
+    "b2"
+   ]
+  },
+  {
+   "en": "to fry, roast",
+   "da": "stege",
+   "level": 2,
+   "f": [
+    "steger",
+    "stegte",
+    "har stegt",
+    "havde stegt",
+    "steg",
+    "uv"
+   ]
+  },
+  {
+   "en": "to rise, climb",
+   "da": "stige",
+   "level": 2,
+   "f": [
+    "stiger",
+    "steg",
+    "er steget",
+    "var steget",
+    "stig",
+    "uv"
+   ]
+  },
+  {
+   "en": "to stick, prick",
+   "da": "stikke",
+   "level": 2,
+   "f": [
+    "stikker",
+    "stak",
+    "har stukket",
+    "havde stukket",
+    "stik",
+    "uv"
+   ]
+  },
+  {
+   "en": "to run away, flee",
+   "da": "stikke af",
+   "level": 3,
+   "f": [
+    "stikker af",
+    "stak af",
+    "er stukket af",
+    "var stukket af",
+    "stik af",
+    "uv"
+   ]
+  },
+  {
+   "en": "to place, put; ask (a question)",
+   "da": "stille",
+   "level": 3,
+   "f": [
+    "stiller",
+    "stillede",
+    "har stillet",
+    "havde stillet",
+    "stil",
+    "b1"
+   ]
+  },
+  {
+   "en": "to steal",
+   "da": "stjæle",
+   "level": 2,
+   "f": [
+    "stjæler",
+    "stjal",
+    "har stjålet",
+    "havde stjålet",
+    "stjæl",
+    "uv"
+   ]
+  },
+  {
+   "en": "to trust, rely on",
+   "da": "stole på",
+   "level": 2,
+   "f": [
+    "stoler på",
+    "stolede på",
+    "har stolet på",
+    "havde stolet på",
+    "stol på",
+    "b1"
+   ]
+  },
+  {
+   "en": "to stop",
+   "da": "stoppe",
+   "level": 1,
+   "f": [
+    "stopper",
+    "stoppede",
+    "har/er stoppet",
+    "havde/var stoppet",
+    "stop",
+    "b1"
+   ]
+  },
+  {
+   "en": "to punish",
+   "da": "straffe",
+   "level": 4,
+   "f": [
+    "straffer",
+    "straffede",
+    "har straffet",
+    "havde straffet",
+    "straf",
+    "b1"
+   ]
+  },
+  {
+   "en": "to tighten",
+   "da": "stramme",
+   "level": 5,
+   "f": [
+    "strammer",
+    "strammede",
+    "har strammet",
+    "havde strammet",
+    "stram",
+    "b1"
+   ]
+  },
+  {
+   "en": "to stretch",
+   "da": "strække",
+   "level": 5,
+   "f": [
+    "strækker",
+    "strakte",
+    "har strakt",
+    "havde strakt",
+    "stræk",
+    "uv"
+   ]
+  },
+  {
+   "en": "to study",
+   "da": "studere",
+   "level": 2,
+   "f": [
+    "studerer",
+    "studerede",
+    "har studeret",
+    "havde studeret",
+    "studer",
+    "b1"
+   ]
+  },
+  {
+   "en": "to steer, control",
+   "da": "styre",
+   "level": 4,
+   "f": [
+    "styrer",
+    "styrede",
+    "har styret",
+    "havde styret",
+    "styr",
+    "b1"
+   ]
+  },
+  {
+   "en": "to strengthen",
+   "da": "styrke",
+   "level": 5,
+   "f": [
+    "styrker",
+    "styrkede",
+    "har styrket",
+    "havde styrket",
+    "styrk",
+    "b1"
+   ]
+  },
+  {
+   "en": "to bump, offend",
+   "da": "støde",
+   "level": 5,
+   "f": [
+    "støder",
+    "stødte",
+    "har stødt",
+    "havde stødt",
+    "stød",
+    "b2"
+   ]
+  },
+  {
+   "en": "to come across",
+   "da": "støde på",
+   "level": 4,
+   "f": [
+    "støder på",
+    "stødte på",
+    "er stødt på",
+    "var stødt på",
+    "stød på",
+    "b2"
+   ]
+  },
+  {
+   "en": "to support",
+   "da": "støtte",
+   "level": 4,
+   "f": [
+    "støtter",
+    "støttede",
+    "har støttet",
+    "havde støttet",
+    "støt",
+    "b1"
+   ]
+  },
+  {
+   "en": "to stand",
+   "da": "stå",
+   "level": 1,
+   "f": [
+    "står",
+    "stod",
+    "har stået",
+    "havde stået",
+    "stå",
+    "uv"
+   ]
+  },
+  {
+   "en": "to get up, stand up",
+   "da": "stå op",
+   "level": 1,
+   "f": [
+    "står op",
+    "stod op",
+    "er stået op",
+    "var stået op",
+    "stå op",
+    "uv"
+   ]
+  },
+  {
+   "en": "to answer",
+   "da": "svare",
+   "level": 1,
+   "f": [
+    "svarer",
+    "svarede",
+    "har svaret",
+    "havde svaret",
+    "svar",
+    "b1"
+   ]
+  },
+  {
+   "en": "to fail, let down",
+   "da": "svigte",
+   "level": 5,
+   "f": [
+    "svigter",
+    "svigtede",
+    "har svigtet",
+    "havde svigtet",
+    "svigt",
+    "b1"
+   ]
+  },
+  {
+   "en": "to swing",
+   "da": "svinge",
+   "level": 2,
+   "f": [
+    "svinger",
+    "svingede",
+    "har svinget",
+    "havde svinget",
+    "sving",
+    "b1"
+   ]
+  },
+  {
+   "en": "to sew",
+   "da": "sy",
+   "level": 2,
+   "f": [
+    "syr",
+    "syede",
+    "har syet",
+    "havde syet",
+    "sy",
+    "b1"
+   ]
+  },
+  {
+   "en": "to think, seem",
+   "da": "synes",
+   "level": 1,
+   "f": [
+    "synes",
+    "syntes",
+    "har syntes",
+    "havde syntes",
+    "synes",
+    "uv"
+   ]
+  },
+  {
+   "en": "to sing",
+   "da": "synge",
+   "level": 2,
+   "f": [
+    "synger",
+    "sang",
+    "har sunget",
+    "havde sunget",
+    "syng",
+    "uv"
+   ]
+  },
+  {
+   "en": "to sink; swallow",
+   "da": "synke",
+   "level": 5,
+   "f": [
+    "synker",
+    "sank",
+    "er sunket",
+    "var sunket",
+    "synk",
+    "uv"
+   ]
+  },
+  {
+   "en": "to sell",
+   "da": "sælge",
+   "level": 1,
+   "f": [
+    "sælger",
+    "solgte",
+    "har solgt",
+    "havde solgt",
+    "sælg",
+    "uv"
+   ]
+  },
+  {
+   "en": "to lower",
+   "da": "sænke",
+   "level": 5,
+   "f": [
+    "sænker",
+    "sænkede",
+    "har sænket",
+    "havde sænket",
+    "sænk",
+    "b1"
+   ]
+  },
+  {
+   "en": "to put, place",
+   "da": "sætte",
+   "level": 1,
+   "f": [
+    "sætter",
+    "satte",
+    "har sat",
+    "havde sat",
+    "sæt",
+    "uv"
+   ]
+  },
+  {
+   "en": "to search, apply",
+   "da": "søge",
+   "level": 3,
+   "f": [
+    "søger",
+    "søgte",
+    "har søgt",
+    "havde søgt",
+    "søg",
+    "b2"
+   ]
+  },
+  {
+   "en": "to make sure, take care of",
+   "da": "sørge for",
+   "level": 3,
+   "f": [
+    "sørger for",
+    "sørgede for",
+    "har sørget for",
+    "havde sørget for",
+    "sørg for",
+    "b1"
+   ]
+  },
+  {
+   "en": "to lose; drop",
+   "da": "tabe",
+   "level": 2,
+   "f": [
+    "taber",
+    "tabte",
+    "har tabt",
+    "havde tabt",
+    "tab",
+    "b2"
+   ]
+  },
+  {
+   "en": "to take",
+   "da": "tage",
+   "level": 1,
+   "f": [
+    "tager",
+    "tog",
+    "har taget",
+    "havde taget",
+    "tag",
+    "uv"
+   ]
+  },
+  {
+   "en": "to go home",
+   "da": "tage hjem",
+   "level": 1,
+   "f": [
+    "tager hjem",
+    "tog hjem",
+    "er taget hjem",
+    "var taget hjem",
+    "tag hjem",
+    "uv"
+   ]
+  },
+  {
+   "en": "to thank",
+   "da": "takke",
+   "level": 2,
+   "f": [
+    "takker",
+    "takkede",
+    "har takket",
+    "havde takket",
+    "tak",
+    "b1"
+   ]
+  },
+  {
+   "en": "to speak, talk",
+   "da": "tale",
+   "level": 1,
+   "f": [
+    "taler",
+    "talte",
+    "har talt",
+    "havde talt",
+    "tal",
+    "b2"
+   ]
+  },
+  {
+   "en": "to draw",
+   "da": "tegne",
+   "level": 2,
+   "f": [
+    "tegner",
+    "tegnede",
+    "har tegnet",
+    "havde tegnet",
+    "tegn",
+    "b1"
+   ]
+  },
+  {
+   "en": "to spend (time)",
+   "da": "tilbringe",
+   "level": 3,
+   "f": [
+    "tilbringer",
+    "tilbragte",
+    "har tilbragt",
+    "havde tilbragt",
+    "tilbring",
+    "uv"
+   ]
+  },
+  {
+   "en": "to offer",
+   "da": "tilbyde",
+   "level": 3,
+   "f": [
+    "tilbyder",
+    "tilbød",
+    "har tilbudt",
+    "havde tilbudt",
+    "tilbyd",
+    "uv"
+   ]
+  },
+  {
+   "en": "to add",
+   "da": "tilføje",
+   "level": 3,
+   "f": [
+    "tilføjer",
+    "tilføjede",
+    "har tilføjet",
+    "havde tilføjet",
+    "tilføj",
+    "b1"
+   ]
+  },
+  {
+   "en": "to belong to",
+   "da": "tilhøre",
+   "level": 3,
+   "f": [
+    "tilhører",
+    "tilhørte",
+    "har tilhørt",
+    "havde tilhørt",
+    "",
+    "b2"
+   ]
+  },
+  {
+   "en": "to allow, permit",
+   "da": "tillade",
+   "level": 3,
+   "f": [
+    "tillader",
+    "tillod",
+    "har tilladt",
+    "havde tilladt",
+    "tillad",
+    "uv"
+   ]
+  },
+  {
+   "en": "to earn; serve",
+   "da": "tjene",
+   "level": 3,
+   "f": [
+    "tjener",
+    "tjente",
+    "har tjent",
+    "havde tjent",
+    "tjen",
+    "b2"
+   ]
+  },
+  {
+   "en": "to believe",
+   "da": "tro",
+   "level": 1,
+   "f": [
+    "tror",
+    "troede",
+    "har troet",
+    "havde troet",
+    "tro",
+    "b1"
+   ]
+  },
+  {
+   "en": "to threaten",
+   "da": "true",
+   "level": 4,
+   "f": [
+    "truer",
+    "truede",
+    "har truet",
+    "havde truet",
+    "tru",
+    "b1"
+   ]
+  },
+  {
+   "en": "to press, print",
+   "da": "trykke",
+   "level": 2,
+   "f": [
+    "trykker",
+    "trykkede",
+    "har trykket",
+    "havde trykket",
+    "tryk",
+    "b1"
+   ]
+  },
+  {
+   "en": "to step",
+   "da": "træde",
+   "level": 5,
+   "f": [
+    "træder",
+    "trådte",
+    "har trådt",
+    "havde trådt",
+    "træd",
+    "uv"
+   ]
+  },
+  {
+   "en": "to meet; make (a decision)",
+   "da": "træffe",
+   "level": 5,
+   "f": [
+    "træffer",
+    "traf",
+    "har truffet",
+    "havde truffet",
+    "træf",
+    "uv"
+   ]
+  },
+  {
+   "en": "to pull",
+   "da": "trække",
+   "level": 2,
+   "f": [
+    "trækker",
+    "trak",
+    "har trukket",
+    "havde trukket",
+    "træk",
+    "uv"
+   ]
+  },
+  {
+   "en": "to be in need of; push through",
+   "da": "trænge",
+   "level": 5,
+   "f": [
+    "trænger",
+    "trængte",
+    "har trængt",
+    "havde trængt",
+    "træng",
+    "b2"
+   ]
+  },
+  {
+   "en": "to penetrate, break in",
+   "da": "trænge ind",
+   "level": 5,
+   "f": [
+    "trænger ind",
+    "trængte ind",
+    "er trængt ind",
+    "var trængt ind",
+    "træng ind",
+    "b2"
+   ]
+  },
+  {
+   "en": "to dare",
+   "da": "turde",
+   "level": 4,
+   "f": [
+    "tør",
+    "turde",
+    "har turdet",
+    "havde turdet",
+    "",
+    "uv"
+   ]
+  },
+  {
+   "en": "to force",
+   "da": "tvinge",
+   "level": 3,
+   "f": [
+    "tvinger",
+    "tvang",
+    "har tvunget",
+    "havde tvunget",
+    "tving",
+    "uv"
+   ]
+  },
+  {
+   "en": "to indicate, suggest",
+   "da": "tyde",
+   "level": 5,
+   "f": [
+    "tyder",
+    "tydede",
+    "har tydet",
+    "havde tydet",
+    "tyd",
+    "b1"
+   ]
+  },
+  {
+   "en": "to count",
+   "da": "tælle",
+   "level": 2,
+   "f": [
+    "tæller",
+    "talte",
+    "har talt",
+    "havde talt",
+    "tæl",
+    "uv"
+   ]
+  },
+  {
+   "en": "to turn on, light",
+   "da": "tænde",
+   "level": 2,
+   "f": [
+    "tænder",
+    "tændte",
+    "har tændt",
+    "havde tændt",
+    "tænd",
+    "b2"
+   ]
+  },
+  {
+   "en": "to think",
+   "da": "tænke",
+   "level": 1,
+   "f": [
+    "tænker",
+    "tænkte",
+    "har tænkt",
+    "havde tænkt",
+    "tænk",
+    "b2"
+   ]
+  },
+  {
+   "en": "to empty",
+   "da": "tømme",
+   "level": 2,
+   "f": [
+    "tømmer",
+    "tømte",
+    "har tømt",
+    "havde tømt",
+    "tøm",
+    "b2"
+   ]
+  },
+  {
+   "en": "to dry",
+   "da": "tørre",
+   "level": 2,
+   "f": [
+    "tørrer",
+    "tørrede",
+    "har tørret",
+    "havde tørret",
+    "tør",
+    "b1"
+   ]
+  },
+  {
+   "en": "to tolerate, stand",
+   "da": "tåle",
+   "level": 5,
+   "f": [
+    "tåler",
+    "tålte",
+    "har tålt",
+    "havde tålt",
+    "tål",
+    "b2"
+   ]
+  },
+  {
+   "en": "to draw up, prepare",
+   "da": "udarbejde",
+   "level": 5,
+   "f": [
+    "udarbejder",
+    "udarbejdede",
+    "har udarbejdet",
+    "havde udarbejdet",
+    "udarbejd",
+    "b1"
+   ]
+  },
+  {
+   "en": "to spread, disseminate",
+   "da": "udbrede",
+   "level": 5,
+   "f": [
+    "udbreder",
+    "udbredte",
+    "har udbredt",
+    "havde udbredt",
+    "udbred",
+    "b2"
+   ]
+  },
+  {
+   "en": "to educate, train",
+   "da": "uddanne",
+   "level": 5,
+   "f": [
+    "uddanner",
+    "uddannede",
+    "har uddannet",
+    "havde uddannet",
+    "uddan",
+    "b1"
+   ]
+  },
+  {
+   "en": "to exclude, rule out",
+   "da": "udelukke",
+   "level": 5,
+   "f": [
+    "udelukker",
+    "udelukkede",
+    "har udelukket",
+    "havde udelukket",
+    "udeluk",
+    "b1"
+   ]
+  },
+  {
+   "en": "to carry out, perform",
+   "da": "udføre",
+   "level": 4,
+   "f": [
+    "udfører",
+    "udførte",
+    "har udført",
+    "havde udført",
+    "udfør",
+    "uv"
+   ]
+  },
+  {
+   "en": "to publish",
+   "da": "udgive",
+   "level": 5,
+   "f": [
+    "udgiver",
+    "udgav",
+    "har udgivet",
+    "havde udgivet",
+    "udgiv",
+    "uv"
+   ]
+  },
+  {
+   "en": "to constitute",
+   "da": "udgøre",
+   "level": 5,
+   "f": [
+    "udgør",
+    "udgjorde",
+    "har udgjort",
+    "havde udgjort",
+    "udgør",
+    "uv"
+   ]
+  },
+  {
+   "en": "to be published (of a book)",
+   "da": "udkomme",
+   "level": 5,
+   "f": [
+    "udkommer",
+    "udkom",
+    "er udkommet",
+    "var udkommet",
+    "",
+    "uv"
+   ]
+  },
+  {
+   "en": "to hand over",
+   "da": "udlevere",
+   "level": 5,
+   "f": [
+    "udleverer",
+    "udleverede",
+    "har udleveret",
+    "havde udleveret",
+    "udlever",
+    "b1"
+   ]
+  },
+  {
+   "en": "to trigger, release",
+   "da": "udløse",
+   "level": 5,
+   "f": [
+    "udløser",
+    "udløste",
+    "har udløst",
+    "havde udløst",
+    "udløs",
+    "b2"
+   ]
+  },
+  {
+   "en": "to exploit, make use of",
+   "da": "udnytte",
+   "level": 5,
+   "f": [
+    "udnytter",
+    "udnyttede",
+    "har udnyttet",
+    "havde udnyttet",
+    "udnyt",
+    "b1"
+   ]
+  },
+  {
+   "en": "to equip",
+   "da": "udstyre",
+   "level": 5,
+   "f": [
+    "udstyrer",
+    "udstyrede",
+    "har udstyret",
+    "havde udstyret",
+    "udstyr",
+    "b1"
+   ]
+  },
+  {
+   "en": "to postpone; expose",
+   "da": "udsætte",
+   "level": 5,
+   "f": [
+    "udsætter",
+    "udsatte",
+    "har udsat",
+    "havde udsat",
+    "udsæt",
+    "uv"
+   ]
+  },
+  {
+   "en": "to pronounce, state",
+   "da": "udtale",
+   "level": 5,
+   "f": [
+    "udtaler",
+    "udtalte",
+    "har udtalt",
+    "havde udtalt",
+    "udtal",
+    "b2"
+   ]
+  },
+  {
+   "en": "to express",
+   "da": "udtrykke",
+   "level": 4,
+   "f": [
+    "udtrykker",
+    "udtrykte",
+    "har udtrykt",
+    "havde udtrykt",
+    "udtryk",
+    "b2"
+   ]
+  },
+  {
+   "en": "to expand",
+   "da": "udvide",
+   "level": 4,
+   "f": [
+    "udvider",
+    "udvidede",
+    "har udvidet",
+    "havde udvidet",
+    "udvid",
+    "b1"
+   ]
+  },
+  {
+   "en": "to develop",
+   "da": "udvikle",
+   "level": 3,
+   "f": [
+    "udvikler",
+    "udviklede",
+    "har udviklet",
+    "havde udviklet",
+    "udvikl",
+    "b1"
+   ]
+  },
+  {
+   "en": "to entertain",
+   "da": "underholde",
+   "level": 4,
+   "f": [
+    "underholder",
+    "underholdt",
+    "har underholdt",
+    "havde underholdt",
+    "underhold",
+    "uv"
+   ]
+  },
+  {
+   "en": "to underline, emphasize",
+   "da": "understrege",
+   "level": 4,
+   "f": [
+    "understreger",
+    "understregede",
+    "har understreget",
+    "havde understreget",
+    "understreg",
+    "b1"
+   ]
+  },
+  {
+   "en": "to investigate, examine",
+   "da": "undersøge",
+   "level": 3,
+   "f": [
+    "undersøger",
+    "undersøgte",
+    "har undersøgt",
+    "havde undersøgt",
+    "undersøg",
+    "b2"
+   ]
+  },
+  {
+   "en": "to avoid",
+   "da": "undgå",
+   "level": 3,
+   "f": [
+    "undgår",
+    "undgik",
+    "har undgået",
+    "havde undgået",
+    "undgå",
+    "b2"
+   ]
+  },
+  {
+   "en": "to wonder, be surprised",
+   "da": "undre sig",
+   "level": 3,
+   "f": [
+    "undrer sig",
+    "undrede sig",
+    "har undret sig",
+    "havde undret sig",
+    "undr dig",
+    "b1"
+   ]
+  },
+  {
+   "en": "to vaccinate",
+   "da": "vaccinere",
+   "level": 4,
+   "f": [
+    "vaccinerer",
+    "vaccinerede",
+    "har vaccineret",
+    "havde vaccineret",
+    "vacciner",
+    "b1"
+   ]
+  },
+  {
+   "en": "to last",
+   "da": "vare",
+   "level": 3,
+   "f": [
+    "varer",
+    "varede",
+    "har varet",
+    "havde varet",
+    "var",
+    "b1"
+   ]
+  },
+  {
+   "en": "to vary",
+   "da": "variere",
+   "level": 4,
+   "f": [
+    "varierer",
+    "varierede",
+    "har varieret",
+    "havde varieret",
+    "varier",
+    "b1"
+   ]
+  },
+  {
+   "en": "to wash",
+   "da": "vaske",
+   "level": 1,
+   "f": [
+    "vasker",
+    "vaskede",
+    "har vasket",
+    "havde vasket",
+    "vask",
+    "b1"
+   ]
+  },
+  {
+   "en": "to adopt, pass (a law)",
+   "da": "vedtage",
+   "level": 5,
+   "f": [
+    "vedtager",
+    "vedtog",
+    "har vedtaget",
+    "havde vedtaget",
+    "vedtag",
+    "uv"
+   ]
+  },
+  {
+   "en": "to weigh",
+   "da": "veje",
+   "level": 2,
+   "f": [
+    "vejer",
+    "vejede",
+    "har vejet",
+    "havde vejet",
+    "vej",
+    "b1"
+   ]
+  },
+  {
+   "en": "to turn",
+   "da": "vende",
+   "level": 2,
+   "f": [
+    "vender",
+    "vendte",
+    "har vendt",
+    "havde vendt",
+    "vend",
+    "b2"
+   ]
+  },
+  {
+   "en": "to wait",
+   "da": "vente",
+   "level": 1,
+   "f": [
+    "venter",
+    "ventede",
+    "har ventet",
+    "havde ventet",
+    "vent",
+    "b1"
+   ]
+  },
+  {
+   "en": "to know (a fact)",
+   "da": "vide",
+   "level": 1,
+   "f": [
+    "ved",
+    "vidste",
+    "har vidst",
+    "havde vidst",
+    "vid",
+    "uv"
+   ]
+  },
+  {
+   "en": "to want to, will",
+   "da": "ville",
+   "level": 1,
+   "f": [
+    "vil",
+    "ville",
+    "har villet",
+    "havde villet",
+    "vil",
+    "uv"
+   ]
+  },
+  {
+   "en": "to win",
+   "da": "vinde",
+   "level": 2,
+   "f": [
+    "vinder",
+    "vandt",
+    "har vundet",
+    "havde vundet",
+    "vind",
+    "uv"
+   ]
+  },
+  {
+   "en": "to seem; work, function",
+   "da": "virke",
+   "level": 3,
+   "f": [
+    "virker",
+    "virkede",
+    "har virket",
+    "havde virket",
+    "virk",
+    "b1"
+   ]
+  },
+  {
+   "en": "to show",
+   "da": "vise",
+   "level": 1,
+   "f": [
+    "viser",
+    "viste",
+    "har vist",
+    "havde vist",
+    "vis",
+    "b2"
+   ]
+  },
+  {
+   "en": "to grow",
+   "da": "vokse",
+   "level": 3,
+   "f": [
+    "vokser",
+    "voksede",
+    "er vokset",
+    "var vokset",
+    "voks",
+    "b1"
+   ]
+  },
+  {
+   "en": "to assess, evaluate",
+   "da": "vurdere",
+   "level": 4,
+   "f": [
+    "vurderer",
+    "vurderede",
+    "har vurderet",
+    "havde vurderet",
+    "vurder",
+    "b1"
+   ]
+  },
+  {
+   "en": "to wake (someone); evoke",
+   "da": "vække",
+   "level": 3,
+   "f": [
+    "vækker",
+    "vækkede",
+    "har vækket",
+    "havde vækket",
+    "væk",
+    "b1"
+   ]
+  },
+  {
+   "en": "to choose",
+   "da": "vælge",
+   "level": 1,
+   "f": [
+    "vælger",
+    "valgte",
+    "har valgt",
+    "havde valgt",
+    "vælg",
+    "uv"
+   ]
+  },
+  {
+   "en": "to fall over, overturn",
+   "da": "vælte",
+   "level": 3,
+   "f": [
+    "vælter",
+    "væltede",
+    "har væltet",
+    "havde væltet",
+    "vælt",
+    "b1"
+   ]
+  },
+  {
+   "en": "to be",
+   "da": "være",
+   "level": 1,
+   "f": [
+    "er",
+    "var",
+    "har været",
+    "havde været",
+    "vær",
+    "uv"
+   ]
+  },
+  {
+   "en": "to wake up",
+   "da": "vågne",
+   "level": 1,
+   "f": [
+    "vågner",
+    "vågnede",
+    "er vågnet",
+    "var vågnet",
+    "vågn",
+    "b1"
+   ]
+  },
+  {
+   "en": "to provide, yield",
+   "da": "yde",
+   "level": 5,
+   "f": [
+    "yder",
+    "ydede",
+    "har ydet",
+    "havde ydet",
+    "yd",
+    "b1"
+   ]
+  },
+  {
+   "en": "to change",
+   "da": "ændre",
+   "level": 2,
+   "f": [
+    "ændrer",
+    "ændrede",
+    "har ændret",
+    "havde ændret",
+    "ændr",
+    "b1"
+   ]
+  },
+  {
+   "en": "to destroy, ruin",
+   "da": "ødelægge",
+   "level": 3,
+   "f": [
+    "ødelægger",
+    "ødelagde",
+    "har ødelagt",
+    "havde ødelagt",
+    "ødelæg",
+    "uv"
+   ]
+  },
+  {
+   "en": "to increase",
+   "da": "øge",
+   "level": 3,
+   "f": [
+    "øger",
+    "øgede",
+    "har øget",
+    "havde øget",
+    "øg",
+    "b1"
+   ]
+  },
+  {
+   "en": "to wish",
+   "da": "ønske",
+   "level": 1,
+   "f": [
+    "ønsker",
+    "ønskede",
+    "har ønsket",
+    "havde ønsket",
+    "ønsk",
+    "b1"
+   ]
+  },
+  {
+   "en": "to open",
+   "da": "åbne",
+   "level": 1,
+   "f": [
+    "åbner",
+    "åbnede",
+    "har åbnet",
+    "havde åbnet",
+    "åbn",
+    "b1"
+   ]
+  }
+ ],
+ "adjs": [
+  {
+   "en": "absolute",
+   "da": "absolut",
+   "level": 4,
+   "f": [
+    "absolut",
+    "absolut",
+    "absolutte",
+    "m. absolut",
+    "m. absolut"
+   ]
+  },
+  {
+   "en": "considerable, several",
+   "da": "adskillig",
+   "level": 4,
+   "f": [
+    "adskillig",
+    "adskilligt",
+    "adskillige",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "decisive, crucial",
+   "da": "afgørende",
+   "level": 4,
+   "f": [
+    "afgørende",
+    "afgørende",
+    "afgørende",
+    "m. afgørende",
+    "m. afgørende"
+   ]
+  },
+  {
+   "en": "dependent",
+   "da": "afhængig",
+   "level": 3,
+   "f": [
+    "afhængig",
+    "afhængigt",
+    "afhængige",
+    "m. afhængig",
+    "m. afhængig"
+   ]
+  },
+  {
+   "en": "active",
+   "da": "aktiv",
+   "level": 2,
+   "f": [
+    "aktiv",
+    "aktivt",
+    "aktive",
+    "m. aktiv",
+    "m. aktiv"
+   ]
+  },
+  {
+   "en": "all",
+   "da": "al",
+   "level": 1,
+   "f": [
+    "al",
+    "alt",
+    "alle",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "current, topical",
+   "da": "aktuel",
+   "level": 4,
+   "f": [
+    "aktuel",
+    "aktuelt",
+    "aktuelle",
+    "m. aktuel",
+    "m. aktuel"
+   ]
+  },
+  {
+   "en": "ordinary, common",
+   "da": "almindelig",
+   "level": 2,
+   "f": [
+    "almindelig",
+    "almindeligt",
+    "almindelige",
+    "m. eller almindeligere",
+    "m. eller almindeligste"
+   ]
+  },
+  {
+   "en": "serious",
+   "da": "alvorlig",
+   "level": 2,
+   "f": [
+    "alvorlig",
+    "alvorligt",
+    "alvorlige",
+    "m. eller alvorligere",
+    "m. eller alvorligste"
+   ]
+  },
+  {
+   "en": "American",
+   "da": "amerikansk",
+   "level": 2,
+   "f": [
+    "amerikansk",
+    "amerikansk",
+    "amerikanske",
+    "m. amerikansk",
+    "m. amerikansk"
+   ]
+  },
+  {
+   "en": "different",
+   "da": "anderledes",
+   "level": 1,
+   "f": [
+    "anderledes",
+    "anderledes",
+    "anderledes",
+    "m. anderledes",
+    "m. anderledes"
+   ]
+  },
+  {
+   "en": "afraid, scared",
+   "da": "bange",
+   "level": 1,
+   "f": [
+    "bange",
+    "bange",
+    "bange",
+    "m. bange",
+    "m. bange"
+   ]
+  },
+  {
+   "en": "known, acquainted",
+   "da": "bekendt",
+   "level": 4,
+   "f": [
+    "bekendt",
+    "bekendt",
+    "bekendte",
+    "m. bekendt",
+    "m. bekendt"
+   ]
+  },
+  {
+   "en": "famous",
+   "da": "berømt",
+   "level": 2,
+   "f": [
+    "berømt",
+    "berømt",
+    "berømte",
+    "m. berømt",
+    "m. berømt"
+   ]
+  },
+  {
+   "en": "certain, definite",
+   "da": "bestemt",
+   "level": 3,
+   "f": [
+    "bestemt",
+    "bestemt",
+    "bestemte",
+    "m. bestemt",
+    "bestemtest"
+   ]
+  },
+  {
+   "en": "considerable, significant",
+   "da": "betydelig",
+   "level": 4,
+   "f": [
+    "betydelig",
+    "betydeligt",
+    "betydelige",
+    "betydeligere eller m.",
+    "betydeligst eller m."
+   ]
+  },
+  {
+   "en": "conscious, aware",
+   "da": "bevidst",
+   "level": 3,
+   "f": [
+    "bevidst",
+    "bevidst",
+    "bevidste",
+    "m. bevidst",
+    "m. bevidst"
+   ]
+  },
+  {
+   "en": "cheap",
+   "da": "billig",
+   "level": 1,
+   "f": [
+    "billig",
+    "billigt",
+    "billige",
+    "billigere",
+    "billigst"
+   ]
+  },
+  {
+   "en": "soft",
+   "da": "blød",
+   "level": 1,
+   "f": [
+    "blød",
+    "blødt",
+    "bløde",
+    "blødere",
+    "blødest"
+   ]
+  },
+  {
+   "en": "blue",
+   "da": "blå",
+   "level": 1,
+   "f": [
+    "blå",
+    "blåt",
+    "blå",
+    "m. blå",
+    "m. blå"
+   ]
+  },
+  {
+   "en": "bourgeois, civil",
+   "da": "borgerlig",
+   "level": 4,
+   "f": [
+    "borgerlig",
+    "borgerligt",
+    "borgerlige",
+    "m. borgerlig",
+    "m. borgerlig"
+   ]
+  },
+  {
+   "en": "wide, broad",
+   "da": "bred",
+   "level": 2,
+   "f": [
+    "bred",
+    "bredt",
+    "brede",
+    "bredere",
+    "bredest"
+   ]
+  },
+  {
+   "en": "brown",
+   "da": "brun",
+   "level": 1,
+   "f": [
+    "brun",
+    "brunt",
+    "brune",
+    "m. brun",
+    "m. brun"
+   ]
+  },
+  {
+   "en": "British",
+   "da": "britisk",
+   "level": 2,
+   "f": [
+    "britisk",
+    "britisk",
+    "britiske",
+    "m. britisk",
+    "m. britisk"
+   ]
+  },
+  {
+   "en": "central",
+   "da": "central",
+   "level": 3,
+   "f": [
+    "central",
+    "centralt",
+    "centrale",
+    "m. central",
+    "m. central"
+   ]
+  },
+  {
+   "en": "daily",
+   "da": "daglig",
+   "level": 2,
+   "f": [
+    "daglig",
+    "dagligt",
+    "daglige",
+    "m. daglig",
+    "m. daglig"
+   ]
+  },
+  {
+   "en": "Danish",
+   "da": "dansk",
+   "level": 1,
+   "f": [
+    "dansk",
+    "dansk",
+    "danske",
+    "m. dansk",
+    "m. dansk"
+   ]
+  },
+  {
+   "en": "lovely, nice",
+   "da": "dejlig",
+   "level": 1,
+   "f": [
+    "dejlig",
+    "dejligt",
+    "dejlige",
+    "dejligere eller m.",
+    "dejligste eller m."
+   ]
+  },
+  {
+   "en": "democratic",
+   "da": "demokratisk",
+   "level": 4,
+   "f": [
+    "demokratisk",
+    "demokratisk",
+    "demokratiske",
+    "m. demokratisk",
+    "m. demokratisk"
+   ]
+  },
+  {
+   "en": "direct",
+   "da": "direkte",
+   "level": 2,
+   "f": [
+    "direkte",
+    "direkte",
+    "direkte",
+    "m. direkte",
+    "m. direkte"
+   ]
+  },
+  {
+   "en": "double",
+   "da": "dobbelt",
+   "level": 2,
+   "f": [
+    "dobbelt",
+    "dobbelt",
+    "dobbelte",
+    "m. dobbelt",
+    "-"
+   ]
+  },
+  {
+   "en": "deep",
+   "da": "dyb",
+   "level": 2,
+   "f": [
+    "dyb",
+    "dybt",
+    "dybe",
+    "dybere",
+    "dybest"
+   ]
+  },
+  {
+   "en": "skilled, capable",
+   "da": "dygtig",
+   "level": 2,
+   "f": [
+    "dygtig",
+    "dygtigt",
+    "dygtige",
+    "dygtigere",
+    "dygtigst"
+   ]
+  },
+  {
+   "en": "expensive",
+   "da": "dyr",
+   "level": 1,
+   "f": [
+    "dyr",
+    "dyrt",
+    "dyre",
+    "dyrere",
+    "dyrest"
+   ]
+  },
+  {
+   "en": "dead",
+   "da": "død",
+   "level": 1,
+   "f": [
+    "død",
+    "dødt",
+    "døde",
+    "m. død",
+    "m. død"
+   ]
+  },
+  {
+   "en": "bad",
+   "da": "dårlig",
+   "level": 1,
+   "f": [
+    "dårlig",
+    "dårligt",
+    "dårlige",
+    "dårligere/værre/ringere",
+    "dårligst/værst/ringest"
+   ]
+  },
+  {
+   "en": "effective",
+   "da": "effektiv",
+   "level": 3,
+   "f": [
+    "effektiv",
+    "effektivt",
+    "effektive",
+    "m. effektiv",
+    "m. effektiv"
+   ]
+  },
+  {
+   "en": "own",
+   "da": "egen",
+   "level": 1,
+   "f": [
+    "egen",
+    "eget",
+    "egne",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "actual, real",
+   "da": "egentlig",
+   "level": 3,
+   "f": [
+    "egentlig",
+    "egentligt",
+    "egentlige",
+    "egentligere",
+    "egentligste"
+   ]
+  },
+  {
+   "en": "extra",
+   "da": "ekstra",
+   "level": 2,
+   "f": [
+    "ekstra",
+    "ekstra",
+    "ekstra",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "final",
+   "da": "endelig",
+   "level": 3,
+   "f": [
+    "endelig",
+    "endeligt",
+    "endelige",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "only, sole",
+   "da": "ene",
+   "level": 3,
+   "f": [
+    "ene",
+    "ene",
+    "-",
+    "-",
+    ""
+   ]
+  },
+  {
+   "en": "only, sole",
+   "da": "eneste",
+   "level": 3,
+   "f": [
+    "eneste",
+    "eneste",
+    "eneste",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "English",
+   "da": "engelsk",
+   "level": 1,
+   "f": [
+    "engelsk",
+    "engelsk",
+    "engelske",
+    "m. engelsk",
+    "m. engelsk"
+   ]
+  },
+  {
+   "en": "in agreement",
+   "da": "enig",
+   "level": 3,
+   "f": [
+    "enig",
+    "enigt",
+    "enige",
+    "m. enig",
+    "m. enig"
+   ]
+  },
+  {
+   "en": "simple",
+   "da": "enkel",
+   "level": 2,
+   "f": [
+    "enkel",
+    "enkelt",
+    "enkle",
+    "enklere",
+    "enklest"
+   ]
+  },
+  {
+   "en": "individual, single",
+   "da": "enkelt",
+   "level": 3,
+   "f": [
+    "enkelt",
+    "enkelt",
+    "enkelte",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "enormous",
+   "da": "enorm",
+   "level": 2,
+   "f": [
+    "enorm",
+    "enormt",
+    "enorme",
+    "m. enorm",
+    "m. enorm"
+   ]
+  },
+  {
+   "en": "European",
+   "da": "europæisk",
+   "level": 2,
+   "f": [
+    "europæisk",
+    "europæisk",
+    "europæiske",
+    "m. europæisk",
+    "m. europæisk"
+   ]
+  },
+  {
+   "en": "possible, potential",
+   "da": "eventuel",
+   "level": 3,
+   "f": [
+    "eventuel",
+    "eventuelt",
+    "eventuelle",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "eternal",
+   "da": "evig",
+   "level": 3,
+   "f": [
+    "evig",
+    "evigt",
+    "evige",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "fantastic",
+   "da": "fantastisk",
+   "level": 2,
+   "f": [
+    "fantastisk",
+    "fantastisk",
+    "fantastiske",
+    "m. fantastisk",
+    "m. fantastisk"
+   ]
+  },
+  {
+   "en": "dangerous",
+   "da": "farlig",
+   "level": 2,
+   "f": [
+    "farlig",
+    "farligt",
+    "farlige",
+    "farligere",
+    "farligste"
+   ]
+  },
+  {
+   "en": "firm, fixed",
+   "da": "fast",
+   "level": 3,
+   "f": [
+    "fast",
+    "fast",
+    "faste",
+    "fastere",
+    "fastest"
+   ]
+  },
+  {
+   "en": "poor",
+   "da": "fattig",
+   "level": 2,
+   "f": [
+    "fattig",
+    "fattigt",
+    "fattige",
+    "fattigere",
+    "fattigst"
+   ]
+  },
+  {
+   "en": "fine, nice",
+   "da": "fin",
+   "level": 1,
+   "f": [
+    "fin",
+    "fint",
+    "fine",
+    "finere",
+    "finest"
+   ]
+  },
+  {
+   "en": "great, good-looking",
+   "da": "flot",
+   "level": 1,
+   "f": [
+    "flot",
+    "flot",
+    "flotte",
+    "flottere",
+    "flottest"
+   ]
+  },
+  {
+   "en": "preliminary, provisional",
+   "da": "foreløbig",
+   "level": 4,
+   "f": [
+    "foreløbig",
+    "foreløbigt",
+    "foreløbige",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "wrong",
+   "da": "forkert",
+   "level": 1,
+   "f": [
+    "forkert",
+    "forkert",
+    "forkerte",
+    "m. forkert",
+    "m. forkert"
+   ]
+  },
+  {
+   "en": "sensible, reasonable",
+   "da": "fornuftig",
+   "level": 3,
+   "f": [
+    "fornuftig",
+    "fornuftigt",
+    "fornuftige",
+    "fornuftigere",
+    "fornuftigst"
+   ]
+  },
+  {
+   "en": "careful, cautious",
+   "da": "forsigtig",
+   "level": 2,
+   "f": [
+    "forsigtig",
+    "forsigtigt",
+    "forsigtige",
+    "forsigtigere",
+    "forsigtigst"
+   ]
+  },
+  {
+   "en": "different, various",
+   "da": "forskellig",
+   "level": 1,
+   "f": [
+    "forskellig",
+    "forskelligt",
+    "forskellige",
+    "m. forskellig",
+    "m. forskellig"
+   ]
+  },
+  {
+   "en": "French",
+   "da": "fransk",
+   "level": 2,
+   "f": [
+    "fransk",
+    "fransk",
+    "franske",
+    "m. fransk",
+    "m. fransk"
+   ]
+  },
+  {
+   "en": "foreign, strange",
+   "da": "fremmed",
+   "level": 2,
+   "f": [
+    "fremmed",
+    "fremmed",
+    "fremmede",
+    "m. fremmed",
+    "m. fremmed"
+   ]
+  },
+  {
+   "en": "free",
+   "da": "fri",
+   "level": 1,
+   "f": [
+    "fri",
+    "frit",
+    "frie",
+    "friere",
+    "friest"
+   ]
+  },
+  {
+   "en": "fresh",
+   "da": "frisk",
+   "level": 2,
+   "f": [
+    "frisk",
+    "frisk",
+    "friske",
+    "friskere",
+    "friskest"
+   ]
+  },
+  {
+   "en": "voluntary",
+   "da": "frivillig",
+   "level": 3,
+   "f": [
+    "frivillig",
+    "frivilligt",
+    "frivillige",
+    "m. frivillig",
+    "m. frivillig"
+   ]
+  },
+  {
+   "en": "full; drunk",
+   "da": "fuld",
+   "level": 1,
+   "f": [
+    "fuld",
+    "fuldt",
+    "fulde",
+    "m. fuld",
+    "m. fuld"
+   ]
+  },
+  {
+   "en": "complete, total",
+   "da": "fuldstændig",
+   "level": 3,
+   "f": [
+    "fuldstændig",
+    "fuldstændigt",
+    "fuldstændige",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "physical",
+   "da": "fysisk",
+   "level": 3,
+   "f": [
+    "fysisk",
+    "fysisk",
+    "fysiske",
+    "m. fysisk",
+    "m. fysisk"
+   ]
+  },
+  {
+   "en": "common, shared",
+   "da": "fælles",
+   "level": 3,
+   "f": [
+    "fælles",
+    "fælles",
+    "fælles",
+    "m. fælles",
+    "m. fælles"
+   ]
+  },
+  {
+   "en": "finished, done",
+   "da": "færdig",
+   "level": 1,
+   "f": [
+    "færdig",
+    "færdigt",
+    "færdige",
+    "m. færdig",
+    "m. færdig"
+   ]
+  },
+  {
+   "en": "first",
+   "da": "første",
+   "level": 1,
+   "f": [
+    "første",
+    "første",
+    "første",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "few",
+   "da": "få",
+   "level": 1,
+   "f": [
+    "-",
+    "-",
+    "få",
+    "færre",
+    "færrest"
+   ]
+  },
+  {
+   "en": "angry, mad; wrong",
+   "da": "gal",
+   "level": 3,
+   "f": [
+    "gal",
+    "galt",
+    "gale",
+    "m. gal",
+    "m. gal"
+   ]
+  },
+  {
+   "en": "old",
+   "da": "gammel",
+   "level": 1,
+   "f": [
+    "gammel",
+    "gammelt",
+    "gamle",
+    "ældre",
+    "ældst"
+   ]
+  },
+  {
+   "en": "general",
+   "da": "generel",
+   "level": 3,
+   "f": [
+    "generel",
+    "generelt",
+    "generelle",
+    "m. generel",
+    "m. generel"
+   ]
+  },
+  {
+   "en": "married",
+   "da": "gift",
+   "level": 1,
+   "f": [
+    "gift",
+    "gift",
+    "gifte",
+    "m. gift",
+    "m. gift"
+   ]
+  },
+  {
+   "en": "happy, glad",
+   "da": "glad",
+   "level": 1,
+   "f": [
+    "glad",
+    "glad",
+    "glade",
+    "gladere",
+    "gladest"
+   ]
+  },
+  {
+   "en": "good",
+   "da": "god",
+   "level": 1,
+   "f": [
+    "god",
+    "godt",
+    "gode",
+    "bedre",
+    "bedst"
+   ]
+  },
+  {
+   "en": "free (of charge)",
+   "da": "gratis",
+   "level": 1,
+   "f": [
+    "gratis",
+    "gratis",
+    "gratis",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "coarse, rude",
+   "da": "grov",
+   "level": 3,
+   "f": [
+    "grov",
+    "groft",
+    "grove",
+    "grovere",
+    "grovest"
+   ]
+  },
+  {
+   "en": "thorough",
+   "da": "grundig",
+   "level": 3,
+   "f": [
+    "grundig",
+    "grundigt",
+    "grundige",
+    "grundigere",
+    "grundigst"
+   ]
+  },
+  {
+   "en": "green",
+   "da": "grøn",
+   "level": 1,
+   "f": [
+    "grøn",
+    "grønt",
+    "grønne",
+    "grønnere eller m.",
+    "grønnest eller m."
+   ]
+  },
+  {
+   "en": "yellow",
+   "da": "gul",
+   "level": 1,
+   "f": [
+    "gul",
+    "gult",
+    "gule",
+    "m. gul",
+    "m. gul"
+   ]
+  },
+  {
+   "en": "half",
+   "da": "halv",
+   "level": 1,
+   "f": [
+    "halv",
+    "halvt",
+    "halve",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "whole, entire",
+   "da": "hel",
+   "level": 1,
+   "f": [
+    "hel",
+    "helt",
+    "hele",
+    "m. hel",
+    "m. hel"
+   ]
+  },
+  {
+   "en": "holy",
+   "da": "hellig",
+   "level": 3,
+   "f": [
+    "hellig",
+    "helligt",
+    "hellige",
+    "helligere",
+    "helligst"
+   ]
+  },
+  {
+   "en": "historical",
+   "da": "historisk",
+   "level": 3,
+   "f": [
+    "historisk",
+    "historisk",
+    "historiske",
+    "m. historisk",
+    "m. historisk"
+   ]
+  },
+  {
+   "en": "fast, quick",
+   "da": "hurtig",
+   "level": 1,
+   "f": [
+    "hurtig",
+    "hurtigt",
+    "hurtige",
+    "hurtigere",
+    "hurtigst"
+   ]
+  },
+  {
+   "en": "white",
+   "da": "hvid",
+   "level": 1,
+   "f": [
+    "hvid",
+    "hvidt",
+    "hvide",
+    "m. hvid",
+    "m. hvid"
+   ]
+  },
+  {
+   "en": "tall, high",
+   "da": "høj",
+   "level": 1,
+   "f": [
+    "høj",
+    "højt",
+    "høje",
+    "højere",
+    "højest"
+   ]
+  },
+  {
+   "en": "hard",
+   "da": "hård",
+   "level": 1,
+   "f": [
+    "hård",
+    "hårdt",
+    "hårde",
+    "hårdere eller m.",
+    "hårdest eller m."
+   ]
+  },
+  {
+   "en": "interesting",
+   "da": "interessant",
+   "level": 1,
+   "f": [
+    "interessant",
+    "interessant",
+    "interessante",
+    "m. interessant",
+    "m. interessant"
+   ]
+  },
+  {
+   "en": "international",
+   "da": "international",
+   "level": 3,
+   "f": [
+    "international",
+    "internationalt",
+    "internationale",
+    "m. international",
+    "m. international"
+   ]
+  },
+  {
+   "en": "Italian",
+   "da": "italiensk",
+   "level": 2,
+   "f": [
+    "italiensk",
+    "italiensk",
+    "italienske",
+    "m. italiensk",
+    "m. italiensk"
+   ]
+  },
+  {
+   "en": "Japanese",
+   "da": "japansk",
+   "level": 2,
+   "f": [
+    "japansk",
+    "japansk",
+    "japanske",
+    "m. japansk",
+    "m. japansk"
+   ]
+  },
+  {
+   "en": "known, famous",
+   "da": "kendt",
+   "level": 2,
+   "f": [
+    "kendt",
+    "kendt",
+    "kendte",
+    "m. kendt",
+    "kendtest eller m."
+   ]
+  },
+  {
+   "en": "clear; ready",
+   "da": "klar",
+   "level": 1,
+   "f": [
+    "klar",
+    "klart",
+    "klare",
+    "klarere eller m.",
+    "klareste eller m."
+   ]
+  },
+  {
+   "en": "classic",
+   "da": "klassisk",
+   "level": 3,
+   "f": [
+    "klassisk",
+    "klassisk",
+    "klassiske",
+    "m. klassisk",
+    "m. klassisk"
+   ]
+  },
+  {
+   "en": "clever, wise",
+   "da": "klog",
+   "level": 2,
+   "f": [
+    "klog",
+    "klogt",
+    "kloge",
+    "klogere",
+    "klogest"
+   ]
+  },
+  {
+   "en": "cold",
+   "da": "kold",
+   "level": 1,
+   "f": [
+    "kold",
+    "koldt",
+    "kolde",
+    "koldere",
+    "koldest"
+   ]
+  },
+  {
+   "en": "municipal",
+   "da": "kommunal",
+   "level": 4,
+   "f": [
+    "kommunal",
+    "kommunalt",
+    "kommunale",
+    "m. kommunal",
+    "m. kommunal"
+   ]
+  },
+  {
+   "en": "royal",
+   "da": "kongelig",
+   "level": 4,
+   "f": [
+    "kongelig",
+    "kongeligt",
+    "kongelige",
+    "m. kongelig",
+    "m. kongelig"
+   ]
+  },
+  {
+   "en": "concrete",
+   "da": "konkret",
+   "level": 3,
+   "f": [
+    "konkret",
+    "konkret",
+    "konkrete",
+    "m. konkret",
+    "m. konkret"
+   ]
+  },
+  {
+   "en": "conservative",
+   "da": "konservativ",
+   "level": 4,
+   "f": [
+    "konservativ",
+    "konservativt",
+    "konservative",
+    "m. konservativ",
+    "m. konservativ"
+   ]
+  },
+  {
+   "en": "short",
+   "da": "kort",
+   "level": 1,
+   "f": [
+    "kort",
+    "kort",
+    "korte",
+    "kortere",
+    "kortest"
+   ]
+  },
+  {
+   "en": "strong, powerful",
+   "da": "kraftig",
+   "level": 3,
+   "f": [
+    "kraftig",
+    "kraftigt",
+    "kraftige",
+    "kraftigere",
+    "kraftigst"
+   ]
+  },
+  {
+   "en": "cultural",
+   "da": "kulturel",
+   "level": 3,
+   "f": [
+    "kulturel",
+    "kulturelt",
+    "kulturelle",
+    "m. kulturel",
+    "m. kulturel"
+   ]
+  },
+  {
+   "en": "female",
+   "da": "kvindelig",
+   "level": 3,
+   "f": [
+    "kvindelig",
+    "kvindeligt",
+    "kvindelige",
+    "m. kvindelig",
+    "m. kvindelig"
+   ]
+  },
+  {
+   "en": "long",
+   "da": "lang",
+   "level": 1,
+   "f": [
+    "lang",
+    "langt",
+    "lange",
+    "længere",
+    "længst"
+   ]
+  },
+  {
+   "en": "slow",
+   "da": "langsom",
+   "level": 1,
+   "f": [
+    "langsom",
+    "langsomt",
+    "langsomme",
+    "langsommere",
+    "langsomst"
+   ]
+  },
+  {
+   "en": "low",
+   "da": "lav",
+   "level": 1,
+   "f": [
+    "lav",
+    "lavt",
+    "lave",
+    "lavere",
+    "lavest"
+   ]
+  },
+  {
+   "en": "easy; light",
+   "da": "let",
+   "level": 1,
+   "f": [
+    "let",
+    "let",
+    "lette",
+    "lettere",
+    "lettest"
+   ]
+  },
+  {
+   "en": "alive, living",
+   "da": "levende",
+   "level": 2,
+   "f": [
+    "levende",
+    "levende",
+    "levende",
+    "m. levende",
+    "m. levende"
+   ]
+  },
+  {
+   "en": "purple",
+   "da": "lilla",
+   "level": 2,
+   "f": [
+    "lilla",
+    "lilla",
+    "lilla",
+    "m. lilla",
+    "m. lilla"
+   ]
+  },
+  {
+   "en": "small, little",
+   "da": "lille",
+   "level": 1,
+   "f": [
+    "lille",
+    "lille",
+    "små",
+    "mindre",
+    "mindst"
+   ]
+  },
+  {
+   "en": "local",
+   "da": "lokal",
+   "level": 3,
+   "f": [
+    "lokal",
+    "lokalt",
+    "lokale",
+    "m. lokal",
+    "m. lokal"
+   ]
+  },
+  {
+   "en": "happy",
+   "da": "lykkelig",
+   "level": 1,
+   "f": [
+    "lykkelig",
+    "lykkeligt",
+    "lykkelige",
+    "lykkeligere eller m.",
+    "lykkeligst eller m."
+   ]
+  },
+  {
+   "en": "loose",
+   "da": "løs",
+   "level": 3,
+   "f": [
+    "løs",
+    "løst",
+    "løse",
+    "løsere",
+    "løsest"
+   ]
+  },
+  {
+   "en": "many",
+   "da": "mange",
+   "level": 1,
+   "f": [
+    "-",
+    "-",
+    "mange",
+    "flere",
+    "flest"
+   ]
+  },
+  {
+   "en": "human",
+   "da": "menneskelig",
+   "level": 3,
+   "f": [
+    "menneskelig",
+    "menneskeligt",
+    "menneskelige",
+    "m. menneskelig",
+    "m. menneskelig"
+   ]
+  },
+  {
+   "en": "military",
+   "da": "militær",
+   "level": 4,
+   "f": [
+    "militær",
+    "militært",
+    "militære",
+    "m. militær",
+    "m. militær"
+   ]
+  },
+  {
+   "en": "modern",
+   "da": "moderne",
+   "level": 2,
+   "f": [
+    "moderne",
+    "moderne",
+    "moderne",
+    "m. moderne",
+    "m. moderne"
+   ]
+  },
+  {
+   "en": "opposite",
+   "da": "modsat",
+   "level": 3,
+   "f": [
+    "modsat",
+    "modsat",
+    "modsatte",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "possible",
+   "da": "mulig",
+   "level": 1,
+   "f": [
+    "mulig",
+    "muligt",
+    "mulige",
+    "m. mulig",
+    "m. mulig"
+   ]
+  },
+  {
+   "en": "strange, odd",
+   "da": "mærkelig",
+   "level": 2,
+   "f": [
+    "mærkelig",
+    "mærkeligt",
+    "mærkelige",
+    "mærkeligere eller m.",
+    "mærkeligste eller m."
+   ]
+  },
+  {
+   "en": "dark",
+   "da": "mørk",
+   "level": 1,
+   "f": [
+    "mørk",
+    "mørkt",
+    "mørke",
+    "mørkere",
+    "mørkest"
+   ]
+  },
+  {
+   "en": "national",
+   "da": "national",
+   "level": 3,
+   "f": [
+    "national",
+    "nationalt",
+    "nationale",
+    "m. national",
+    "m. national"
+   ]
+  },
+  {
+   "en": "natural",
+   "da": "naturlig",
+   "level": 2,
+   "f": [
+    "naturlig",
+    "naturligt",
+    "naturlige",
+    "naturligere eller m.",
+    "naturligst eller m."
+   ]
+  },
+  {
+   "en": "easy",
+   "da": "nem",
+   "level": 1,
+   "f": [
+    "nem",
+    "nemt",
+    "nemme",
+    "nemmere",
+    "nemmest"
+   ]
+  },
+  {
+   "en": "Nordic",
+   "da": "nordisk",
+   "level": 2,
+   "f": [
+    "nordisk",
+    "nordisk",
+    "nordiske",
+    "m. nordisk",
+    "m. nordisk"
+   ]
+  },
+  {
+   "en": "normal",
+   "da": "normal",
+   "level": 2,
+   "f": [
+    "normal",
+    "normalt",
+    "normale",
+    "m. normal",
+    "m. normal"
+   ]
+  },
+  {
+   "en": "Norwegian",
+   "da": "norsk",
+   "level": 2,
+   "f": [
+    "norsk",
+    "norsk",
+    "norske",
+    "m. norsk",
+    "m. norsk"
+   ]
+  },
+  {
+   "en": "current, present",
+   "da": "nuværende",
+   "level": 3,
+   "f": [
+    "nuværende",
+    "nuværende",
+    "nuværende",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "new",
+   "da": "ny",
+   "level": 1,
+   "f": [
+    "ny",
+    "nyt",
+    "nye",
+    "nyere",
+    "nyest"
+   ]
+  },
+  {
+   "en": "recent",
+   "da": "nylig",
+   "level": 3,
+   "f": [
+    "nylig",
+    "nyligt",
+    "nylige",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "close, near",
+   "da": "nær",
+   "level": 1,
+   "f": [
+    "nær",
+    "nært",
+    "nære",
+    "nærmere",
+    "nærmest"
+   ]
+  },
+  {
+   "en": "next",
+   "da": "næste",
+   "level": 1,
+   "f": [
+    "næste",
+    "næste",
+    "næste",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "necessary",
+   "da": "nødvendig",
+   "level": 1,
+   "f": [
+    "nødvendig",
+    "nødvendigt",
+    "nødvendige",
+    "m. nødvendig",
+    "m. eller nødvendigst"
+   ]
+  },
+  {
+   "en": "public",
+   "da": "offentlig",
+   "level": 3,
+   "f": [
+    "offentlig",
+    "offentligt",
+    "offentlige",
+    "m. offentlig",
+    "m. offentlig"
+   ]
+  },
+  {
+   "en": "official",
+   "da": "officiel",
+   "level": 3,
+   "f": [
+    "officiel",
+    "officielt",
+    "officielle",
+    "m. officiel",
+    "m. officiel"
+   ]
+  },
+  {
+   "en": "extensive, comprehensive",
+   "da": "omfattende",
+   "level": 4,
+   "f": [
+    "omfattende",
+    "omfattende",
+    "omfattende",
+    "m. omfattende",
+    "m. omfattende"
+   ]
+  },
+  {
+   "en": "evil, wicked",
+   "da": "ond",
+   "level": 3,
+   "f": [
+    "ond",
+    "ondt",
+    "onde",
+    "m. ond",
+    "m. eller ondest"
+   ]
+  },
+  {
+   "en": "attentive",
+   "da": "opmærksom",
+   "level": 3,
+   "f": [
+    "opmærksom",
+    "opmærksomt",
+    "opmærksomme",
+    "m. opmærksom",
+    "m. opmærksom"
+   ]
+  },
+  {
+   "en": "original",
+   "da": "oprindelig",
+   "level": 3,
+   "f": [
+    "oprindelig",
+    "oprindeligt",
+    "oprindelige",
+    "m. oprindelig",
+    "m. oprindelig"
+   ]
+  },
+  {
+   "en": "orange",
+   "da": "orange",
+   "level": 2,
+   "f": [
+    "orange",
+    "orange",
+    "orange",
+    "m. orange",
+    "m. orange"
+   ]
+  },
+  {
+   "en": "proper, decent",
+   "da": "ordentlig",
+   "level": 2,
+   "f": [
+    "ordentlig",
+    "ordentligt",
+    "ordentlige",
+    "m. ordentlig",
+    "m. ordentlig"
+   ]
+  },
+  {
+   "en": "ready",
+   "da": "parat",
+   "level": 1,
+   "f": [
+    "parat",
+    "parat",
+    "parate",
+    "m. parat",
+    "m. parat"
+   ]
+  },
+  {
+   "en": "personal",
+   "da": "personlig",
+   "level": 2,
+   "f": [
+    "personlig",
+    "personligt",
+    "personlige",
+    "m. personlig",
+    "m. personlig"
+   ]
+  },
+  {
+   "en": "pink",
+   "da": "pink",
+   "level": 2,
+   "f": [
+    "pink",
+    "pink",
+    "pink",
+    "m. pink",
+    "m. pink"
+   ]
+  },
+  {
+   "en": "political",
+   "da": "politisk",
+   "level": 3,
+   "f": [
+    "politisk",
+    "politisk",
+    "politiske",
+    "m. politisk",
+    "m. politisk"
+   ]
+  },
+  {
+   "en": "popular",
+   "da": "populær",
+   "level": 2,
+   "f": [
+    "populær",
+    "populært",
+    "populære",
+    "m. populær",
+    "m. populær"
+   ]
+  },
+  {
+   "en": "positive",
+   "da": "positiv",
+   "level": 2,
+   "f": [
+    "positiv",
+    "positivt",
+    "positive",
+    "m. positiv",
+    "m. positiv"
+   ]
+  },
+  {
+   "en": "practical",
+   "da": "praktisk",
+   "level": 2,
+   "f": [
+    "praktisk",
+    "praktisk",
+    "praktiske",
+    "m. praktisk",
+    "m. praktisk"
+   ]
+  },
+  {
+   "en": "private",
+   "da": "privat",
+   "level": 2,
+   "f": [
+    "privat",
+    "privat",
+    "private",
+    "m. privat",
+    "m. privat"
+   ]
+  },
+  {
+   "en": "professional",
+   "da": "professionel",
+   "level": 3,
+   "f": [
+    "professionel",
+    "professionelt",
+    "professionelle",
+    "m. professionel",
+    "m. professionel"
+   ]
+  },
+  {
+   "en": "psychological, mental",
+   "da": "psykisk",
+   "level": 3,
+   "f": [
+    "psykisk",
+    "psykisk",
+    "psykiske",
+    "m. psykisk",
+    "m. psykisk"
+   ]
+  },
+  {
+   "en": "nice, pretty; polite",
+   "da": "pæn",
+   "level": 1,
+   "f": [
+    "pæn",
+    "pænt",
+    "pæne",
+    "pænere",
+    "pænest"
+   ]
+  },
+  {
+   "en": "the (person/matter) in question",
+   "da": "pågældende",
+   "level": 4,
+   "f": [
+    "pågældende",
+    "pågældende",
+    "pågældende",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "radical",
+   "da": "radikal",
+   "level": 4,
+   "f": [
+    "radikal",
+    "radikalt",
+    "radikale",
+    "m. radikal",
+    "m. radikal"
+   ]
+  },
+  {
+   "en": "nice, kind",
+   "da": "rar",
+   "level": 1,
+   "f": [
+    "rar",
+    "rart",
+    "rare",
+    "m. eller rarere",
+    "m. eller rarest"
+   ]
+  },
+  {
+   "en": "real, genuine",
+   "da": "reel",
+   "level": 4,
+   "f": [
+    "reel",
+    "reelt",
+    "reelle",
+    "m. reel",
+    "m. reel"
+   ]
+  },
+  {
+   "en": "clean, pure",
+   "da": "ren",
+   "level": 1,
+   "f": [
+    "ren",
+    "rent",
+    "rene",
+    "renere",
+    "renest"
+   ]
+  },
+  {
+   "en": "rich",
+   "da": "rig",
+   "level": 2,
+   "f": [
+    "rig",
+    "rigt",
+    "rige",
+    "rigere",
+    "rigest"
+   ]
+  },
+  {
+   "en": "right, correct",
+   "da": "rigtig",
+   "level": 1,
+   "f": [
+    "rigtig",
+    "rigtigt",
+    "rigtige",
+    "rigtigere",
+    "rigtigst"
+   ]
+  },
+  {
+   "en": "reasonable",
+   "da": "rimelig",
+   "level": 3,
+   "f": [
+    "rimelig",
+    "rimeligt",
+    "rimelige",
+    "rimeligere eller m.",
+    "rimeligst eller m."
+   ]
+  },
+  {
+   "en": "calm, quiet",
+   "da": "rolig",
+   "level": 1,
+   "f": [
+    "rolig",
+    "roligt",
+    "rolige",
+    "roligere",
+    "roligst"
+   ]
+  },
+  {
+   "en": "Russian",
+   "da": "russisk",
+   "level": 2,
+   "f": [
+    "russisk",
+    "russisk",
+    "russiske",
+    "m. russisk",
+    "m. russisk"
+   ]
+  },
+  {
+   "en": "red",
+   "da": "rød",
+   "level": 1,
+   "f": [
+    "rød",
+    "rødt",
+    "røde",
+    "m. rød eller rødere",
+    "m. rød eller rødest"
+   ]
+  },
+  {
+   "en": "same",
+   "da": "samme",
+   "level": 1,
+   "f": [
+    "samme",
+    "samme",
+    "samme",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "all (of them)",
+   "da": "samtlige",
+   "level": 4,
+   "f": [
+    "-",
+    "-",
+    "samtlige",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "true",
+   "da": "sand",
+   "level": 2,
+   "f": [
+    "sand",
+    "sandt",
+    "sande",
+    "sandere eller m.",
+    "sandest eller m."
+   ]
+  },
+  {
+   "en": "sexual",
+   "da": "seksuel",
+   "level": 3,
+   "f": [
+    "seksuel",
+    "seksuelt",
+    "seksuelle",
+    "m. seksuel",
+    "m. seksuel"
+   ]
+  },
+  {
+   "en": "itself, the very",
+   "da": "selve",
+   "level": 4,
+   "f": [
+    "selve",
+    "selve",
+    "selve",
+    "-",
+    "selveste (best)"
+   ]
+  },
+  {
+   "en": "independent",
+   "da": "selvstændig",
+   "level": 3,
+   "f": [
+    "selvstændig",
+    "selvstændigt",
+    "selvstændige",
+    "m. eller selvstændigere",
+    "m. eller selvstændigst"
+   ]
+  },
+  {
+   "en": "late",
+   "da": "sen",
+   "level": 1,
+   "f": [
+    "sen",
+    "sent",
+    "sene",
+    "senere",
+    "senest"
+   ]
+  },
+  {
+   "en": "last",
+   "da": "sidst",
+   "level": 1,
+   "f": [
+    "-",
+    "-",
+    "-",
+    "-",
+    "sidst"
+   ]
+  },
+  {
+   "en": "certain, safe",
+   "da": "sikker",
+   "level": 1,
+   "f": [
+    "sikker",
+    "sikkert",
+    "sikre",
+    "sikrere eller m.",
+    "sikrest eller m."
+   ]
+  },
+  {
+   "en": "simple",
+   "da": "simpel",
+   "level": 2,
+   "f": [
+    "simpel",
+    "simpelt",
+    "simple",
+    "simplere eller m.",
+    "simplest eller m."
+   ]
+  },
+  {
+   "en": "fun, funny",
+   "da": "sjov",
+   "level": 1,
+   "f": [
+    "sjov",
+    "sjovt",
+    "sjove",
+    "sjovere",
+    "sjovest"
+   ]
+  },
+  {
+   "en": "rare",
+   "da": "sjælden",
+   "level": 2,
+   "f": [
+    "sjælden",
+    "sjældent",
+    "sjældne",
+    "sjældnere",
+    "sjældnest"
+   ]
+  },
+  {
+   "en": "sharp",
+   "da": "skarp",
+   "level": 2,
+   "f": [
+    "skarp",
+    "skarpt",
+    "skarpe",
+    "skarpere",
+    "skarpest"
+   ]
+  },
+  {
+   "en": "bad, naughty",
+   "da": "slem",
+   "level": 3,
+   "f": [
+    "slem",
+    "slemt",
+    "slemme",
+    "værre",
+    "værst"
+   ]
+  },
+  {
+   "en": "beautiful",
+   "da": "smuk",
+   "level": 1,
+   "f": [
+    "smuk",
+    "smukt",
+    "smukke",
+    "smukkere",
+    "smukkest"
+   ]
+  },
+  {
+   "en": "social",
+   "da": "social",
+   "level": 3,
+   "f": [
+    "social",
+    "socialt",
+    "sociale",
+    "m. social",
+    "m. social"
+   ]
+  },
+  {
+   "en": "black",
+   "da": "sort",
+   "level": 1,
+   "f": [
+    "sort",
+    "sort",
+    "sorte",
+    "m. sort",
+    "m. sort"
+   ]
+  },
+  {
+   "en": "special",
+   "da": "speciel",
+   "level": 2,
+   "f": [
+    "speciel",
+    "specielt",
+    "specielle",
+    "m. speciel",
+    "m. speciel"
+   ]
+  },
+  {
+   "en": "exciting",
+   "da": "spændende",
+   "level": 1,
+   "f": [
+    "spændende",
+    "spændende",
+    "spændende",
+    "m. spændende",
+    "m. spændende"
+   ]
+  },
+  {
+   "en": "big, large",
+   "da": "stor",
+   "level": 1,
+   "f": [
+    "stor",
+    "stort",
+    "store",
+    "større",
+    "størst"
+   ]
+  },
+  {
+   "en": "strong",
+   "da": "stærk",
+   "level": 1,
+   "f": [
+    "stærk",
+    "stærkt",
+    "stærke",
+    "stærkere",
+    "stærkest"
+   ]
+  },
+  {
+   "en": "healthy",
+   "da": "sund",
+   "level": 1,
+   "f": [
+    "sund",
+    "sundt",
+    "sunde",
+    "sundere",
+    "sundest"
+   ]
+  },
+  {
+   "en": "weak",
+   "da": "svag",
+   "level": 1,
+   "f": [
+    "svag",
+    "svagt",
+    "svage",
+    "svagere",
+    "svagest"
+   ]
+  },
+  {
+   "en": "Swedish",
+   "da": "svensk",
+   "level": 2,
+   "f": [
+    "svensk",
+    "svensk",
+    "svenske",
+    "m. svensk",
+    "m. svensk"
+   ]
+  },
+  {
+   "en": "difficult",
+   "da": "svær",
+   "level": 1,
+   "f": [
+    "svær",
+    "svært",
+    "svære",
+    "sværere",
+    "sværest"
+   ]
+  },
+  {
+   "en": "sick, ill",
+   "da": "syg",
+   "level": 1,
+   "f": [
+    "syg",
+    "sygt",
+    "syge",
+    "m. syg",
+    "m. eller sygest"
+   ]
+  },
+  {
+   "en": "special, particular",
+   "da": "særlig",
+   "level": 3,
+   "f": [
+    "særlig",
+    "særligt",
+    "særlige",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "sweet",
+   "da": "sød",
+   "level": 1,
+   "f": [
+    "sød",
+    "sødt",
+    "søde",
+    "sødere",
+    "sødest"
+   ]
+  },
+  {
+   "en": "such, like that",
+   "da": "sådan",
+   "level": 1,
+   "f": [
+    "sådan",
+    "sådant",
+    "sådanne",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "so-called",
+   "da": "såkaldt",
+   "level": 4,
+   "f": [
+    "såkaldt",
+    "såkaldt",
+    "såkaldte",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "technical",
+   "da": "teknisk",
+   "level": 3,
+   "f": [
+    "teknisk",
+    "teknisk",
+    "tekniske",
+    "m. teknisk",
+    "m. teknisk"
+   ]
+  },
+  {
+   "en": "early",
+   "da": "tidlig",
+   "level": 1,
+   "f": [
+    "tidlig",
+    "tidligt",
+    "tidlige",
+    "tidligere",
+    "tidligst"
+   ]
+  },
+  {
+   "en": "satisfied, content",
+   "da": "tilfreds",
+   "level": 2,
+   "f": [
+    "tilfreds",
+    "tilfreds",
+    "tilfredse",
+    "m. tilfreds",
+    "m. tilfreds"
+   ]
+  },
+  {
+   "en": "sufficient",
+   "da": "tilstrækkelig",
+   "level": 3,
+   "f": [
+    "tilstrækkelig",
+    "tilstrækkeligt",
+    "tilstrækkelige",
+    "m. tilstrækkelig",
+    "m. tilstrækkelig"
+   ]
+  },
+  {
+   "en": "corresponding, similar",
+   "da": "tilsvarende",
+   "level": 4,
+   "f": [
+    "tilsvarende",
+    "tilsvarende",
+    "tilsvarende",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "apparent, seeming",
+   "da": "tilsyneladende",
+   "level": 4,
+   "f": [
+    "tilsyneladende",
+    "tilsyneladende",
+    "tilsyneladende",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "empty",
+   "da": "tom",
+   "level": 1,
+   "f": [
+    "tom",
+    "tomt",
+    "tomme",
+    "m. tom",
+    "m. tom"
+   ]
+  },
+  {
+   "en": "total",
+   "da": "total",
+   "level": 3,
+   "f": [
+    "total",
+    "totalt",
+    "totale",
+    "m. total",
+    "m. total"
+   ]
+  },
+  {
+   "en": "traditional",
+   "da": "traditionel",
+   "level": 3,
+   "f": [
+    "traditionel",
+    "traditionelt",
+    "traditionelle",
+    "m. traditionel",
+    "m. traditionel"
+   ]
+  },
+  {
+   "en": "busy",
+   "da": "travl",
+   "level": 1,
+   "f": [
+    "travl",
+    "travlt",
+    "travle",
+    "travlere eller m.",
+    "travlest eller m."
+   ]
+  },
+  {
+   "en": "tired",
+   "da": "træt",
+   "level": 1,
+   "f": [
+    "træt",
+    "træt",
+    "trætte",
+    "m. træt",
+    "m. træt"
+   ]
+  },
+  {
+   "en": "heavy",
+   "da": "tung",
+   "level": 1,
+   "f": [
+    "tung",
+    "tungt",
+    "tunge",
+    "tungere",
+    "tungest"
+   ]
+  },
+  {
+   "en": "clear, distinct",
+   "da": "tydelig",
+   "level": 3,
+   "f": [
+    "tydelig",
+    "tydeligt",
+    "tydelige",
+    "tydeligere",
+    "tydeligst"
+   ]
+  },
+  {
+   "en": "thick, fat",
+   "da": "tyk",
+   "level": 1,
+   "f": [
+    "tyk",
+    "tykt",
+    "tykke",
+    "tykkere",
+    "tykkest"
+   ]
+  },
+  {
+   "en": "thin",
+   "da": "tynd",
+   "level": 1,
+   "f": [
+    "tynd",
+    "tyndt",
+    "tynde",
+    "tyndere",
+    "tyndest"
+   ]
+  },
+  {
+   "en": "typical",
+   "da": "typisk",
+   "level": 3,
+   "f": [
+    "typisk",
+    "typisk",
+    "typiske",
+    "m. typisk",
+    "m. typisk"
+   ]
+  },
+  {
+   "en": "German",
+   "da": "tysk",
+   "level": 2,
+   "f": [
+    "tysk",
+    "tysk",
+    "tyske",
+    "m. tysk",
+    "m. tysk"
+   ]
+  },
+  {
+   "en": "close, tight; dense",
+   "da": "tæt",
+   "level": 2,
+   "f": [
+    "tæt",
+    "tæt",
+    "tætte",
+    "tættere",
+    "tættest"
+   ]
+  },
+  {
+   "en": "dry",
+   "da": "tør",
+   "level": 1,
+   "f": [
+    "tør",
+    "tørt",
+    "tørre",
+    "tørrere eller m.",
+    "tørrest eller m."
+   ]
+  },
+  {
+   "en": "foreign",
+   "da": "udenlandsk",
+   "level": 3,
+   "f": [
+    "udenlandsk",
+    "udenlandsk",
+    "udenlandske",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "excellent, fine",
+   "da": "udmærket",
+   "level": 3,
+   "f": [
+    "udmærket",
+    "udmærket",
+    "udmærkede",
+    "m. udmærket",
+    "m. udmærket"
+   ]
+  },
+  {
+   "en": "unknown",
+   "da": "ukendt",
+   "level": 2,
+   "f": [
+    "ukendt",
+    "ukendt",
+    "ukendte",
+    "m. ukendt",
+    "m. ukendt"
+   ]
+  },
+  {
+   "en": "immediate",
+   "da": "umiddelbar",
+   "level": 4,
+   "f": [
+    "umiddelbar",
+    "umiddelbart",
+    "umiddelbare",
+    "m. umiddelbar",
+    "m. umiddelbar"
+   ]
+  },
+  {
+   "en": "impossible",
+   "da": "umulig",
+   "level": 1,
+   "f": [
+    "umulig",
+    "umuligt",
+    "umulige",
+    "m. umulig",
+    "m. umulig"
+   ]
+  },
+  {
+   "en": "young",
+   "da": "ung",
+   "level": 1,
+   "f": [
+    "ung",
+    "ungt",
+    "unge",
+    "yngre",
+    "yngst"
+   ]
+  },
+  {
+   "en": "unusual",
+   "da": "usædvanlig",
+   "level": 3,
+   "f": [
+    "usædvanlig",
+    "usædvanligt",
+    "usædvanlige",
+    "m. usædvanlig",
+    "m. usædvanlig"
+   ]
+  },
+  {
+   "en": "incredible",
+   "da": "utrolig",
+   "level": 2,
+   "f": [
+    "utrolig",
+    "utroligt",
+    "utrolige",
+    "m. utrolig",
+    "m. utrolig"
+   ]
+  },
+  {
+   "en": "difficult",
+   "da": "vanskelig",
+   "level": 3,
+   "f": [
+    "vanskelig",
+    "vanskeligt",
+    "vanskelige",
+    "vanskeligere",
+    "vanskeligst"
+   ]
+  },
+  {
+   "en": "warm",
+   "da": "varm",
+   "level": 1,
+   "f": [
+    "varm",
+    "varmt",
+    "varme",
+    "varmere",
+    "varmest"
+   ]
+  },
+  {
+   "en": "welcome",
+   "da": "velkommen",
+   "level": 1,
+   "f": [
+    "velkommen",
+    "velkomment",
+    "velkomne",
+    "m. velkommen",
+    "m. velkommen"
+   ]
+  },
+  {
+   "en": "friendly, kind",
+   "da": "venlig",
+   "level": 1,
+   "f": [
+    "venlig",
+    "venligt",
+    "venlige",
+    "venligere",
+    "venligst"
+   ]
+  },
+  {
+   "en": "western",
+   "da": "vestlig",
+   "level": 4,
+   "f": [
+    "vestlig",
+    "vestligt",
+    "vestlige",
+    "vestligere eller m.",
+    "vestligst eller m."
+   ]
+  },
+  {
+   "en": "important",
+   "da": "vigtig",
+   "level": 1,
+   "f": [
+    "vigtig",
+    "vigtigt",
+    "vigtige",
+    "vigtigere eller m.",
+    "vigtigste eller m."
+   ]
+  },
+  {
+   "en": "wild",
+   "da": "vild",
+   "level": 2,
+   "f": [
+    "vild",
+    "vildt",
+    "vilde",
+    "vildere eller m.",
+    "vildeste eller m."
+   ]
+  },
+  {
+   "en": "violet, purple",
+   "da": "violet",
+   "level": 2,
+   "f": [
+    "violet",
+    "violet",
+    "violette",
+    "m. violet",
+    "m. violet"
+   ]
+  },
+  {
+   "en": "real",
+   "da": "virkelig",
+   "level": 2,
+   "f": [
+    "virkelig",
+    "virkeligt",
+    "virkelige",
+    "m. virkelig",
+    "m. virkelig"
+   ]
+  },
+  {
+   "en": "wise; certain",
+   "da": "vis",
+   "level": 4,
+   "f": [
+    "vis",
+    "vist",
+    "vise",
+    "visere",
+    "visest"
+   ]
+  },
+  {
+   "en": "adult, grown-up",
+   "da": "voksen",
+   "level": 2,
+   "f": [
+    "voksen",
+    "voksent",
+    "voksne",
+    "m. voksen",
+    "m. voksen"
+   ]
+  },
+  {
+   "en": "violent, intense",
+   "da": "voldsom",
+   "level": 3,
+   "f": [
+    "voldsom",
+    "voldsomt",
+    "voldsomme",
+    "voldsommere eller m.",
+    "voldsomst eller m."
+   ]
+  },
+  {
+   "en": "angry",
+   "da": "vred",
+   "level": 1,
+   "f": [
+    "vred",
+    "vredt",
+    "vrede",
+    "vredere eller m.",
+    "vredest eller m."
+   ]
+  },
+  {
+   "en": "worth",
+   "da": "værd",
+   "level": 3,
+   "f": [
+    "værd",
+    "værd",
+    "værd",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "essential, significant",
+   "da": "væsentlig",
+   "level": 4,
+   "f": [
+    "væsentlig",
+    "væsentligt",
+    "væsentlige",
+    "væsentligere eller m.",
+    "væsentligst eller m."
+   ]
+  },
+  {
+   "en": "further, extra",
+   "da": "yderlig",
+   "level": 4,
+   "f": [
+    "yderlig",
+    "yderligt",
+    "yderlige",
+    "yderligere",
+    "yderligst"
+   ]
+  },
+  {
+   "en": "genuine, real",
+   "da": "ægte",
+   "level": 2,
+   "f": [
+    "ægte",
+    "ægte",
+    "ægte",
+    "m. eller ægtere",
+    "m. eller ægtest"
+   ]
+  },
+  {
+   "en": "economic, economical",
+   "da": "økonomisk",
+   "level": 3,
+   "f": [
+    "økonomisk",
+    "økonomisk",
+    "økonomiske",
+    "m. økonomisk",
+    "m. økonomisk"
+   ]
+  },
+  {
+   "en": "top, topmost",
+   "da": "øverst",
+   "level": 4,
+   "f": [
+    "-",
+    "-",
+    "-",
+    "-",
+    "øverst"
+   ]
+  },
+  {
+   "en": "remaining, other",
+   "da": "øvrig",
+   "level": 4,
+   "f": [
+    "øvrig",
+    "øvrigt",
+    "øvrige",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "open",
+   "da": "åben",
+   "level": 1,
+   "f": [
+    "åben",
+    "åbent",
+    "åbne",
+    "m. åben",
+    "m. åben"
+   ]
+  },
+  {
+   "en": "obvious",
+   "da": "åbenbar",
+   "level": 4,
+   "f": [
+    "åbenbar",
+    "åbenbart",
+    "åbenbare",
+    "-",
+    "-"
+   ]
+  },
+  {
+   "en": "annual, yearly",
+   "da": "årlig",
+   "level": 3,
+   "f": [
+    "årlig",
+    "årligt",
+    "årlige",
+    "-",
+    "-"
+   ]
+  }
+ ]
+}
