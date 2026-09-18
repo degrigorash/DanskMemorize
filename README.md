@@ -1,6 +1,6 @@
 # DanskMemorize
 
-A small offline‑capable trainer for the 500 most common Danish verbs and 250 most common adjectives.
+A small offline‑capable trainer for the 500 most common Danish verbs, 250 most common adjectives, and the Danish question words (hv‑ord).
 
 **Live:** https://degrigorash.github.io/DanskMemorize/
 
@@ -9,7 +9,7 @@ A small offline‑capable trainer for the 500 most common Danish verbs and 250 m
 - Two directions: Danish → English and English → Danish
 - Two answer styles: typing (synonyms and small typos accepted) or 4‑option multiple choice
 - Words split into groups by everyday usefulness, from essentials to formal/advanced vocabulary; pick any combination
-- Full forms shown after each answer (verb tenses and conjugation class, adjective n/t/e forms, comparative and superlative)
+- Full forms shown after each answer (verb tenses and conjugation class, adjective n/t/e forms, comparative and superlative; for question words a usage note and a bilingual example sentence)
 - Per‑word statistics (right/wrong per direction, "learned" after 3 correct in a row), with a smart mix that favours new and shaky words
 - Progress is stored in the browser (localStorage); export/import as JSON for backup
 

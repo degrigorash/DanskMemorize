@@ -9697,5 +9697,537 @@
     "-"
    ]
   }
+ ],
+ "hv": [
+  {
+   "en": "who",
+   "da": "hvem",
+   "level": 1,
+   "f": [
+    "asks about a person (subject or object)",
+    [
+     {
+      "ex": [
+       [
+        "Hvem er du?",
+        "Who are you?"
+       ],
+       [
+        "Hvem ringede?",
+        "Who called?"
+       ],
+       [
+        "Hvem taler du med?",
+        "Who are you talking to?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "what",
+   "da": "hvad",
+   "level": 1,
+   "f": [
+    "asks about a thing or action",
+    [
+     {
+      "ex": [
+       [
+        "Hvad er det?",
+        "What is that?"
+       ],
+       [
+        "Hvad hedder du?",
+        "What is your name?"
+       ],
+       [
+        "Hvad laver du?",
+        "What are you doing?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "where",
+   "da": "hvor",
+   "level": 1,
+   "f": [
+    "two senses: 'where' about a place, and 'how' before an adjective/adverb",
+    [
+     {
+      "s": "where (place)",
+      "ex": [
+       [
+        "Hvor bor du?",
+        "Where do you live?"
+       ],
+       [
+        "Hvor er toilettet?",
+        "Where is the toilet?"
+       ]
+      ]
+     },
+     {
+      "s": "how (before an adjective/adverb)",
+      "ex": [
+       [
+        "Hvor gammel er du?",
+        "How old are you?"
+       ],
+       [
+        "Hvor tit træner du?",
+        "How often do you exercise?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "when",
+   "da": "hvornår",
+   "level": 1,
+   "f": [
+    "asks about a point in time",
+    [
+     {
+      "ex": [
+       [
+        "Hvornår kommer du?",
+        "When are you coming?"
+       ],
+       [
+        "Hvornår begynder filmen?",
+        "When does the film start?"
+       ],
+       [
+        "Hvornår har du fødselsdag?",
+        "When is your birthday?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "why",
+   "da": "hvorfor",
+   "level": 1,
+   "f": [
+    "asks about a reason",
+    [
+     {
+      "ex": [
+       [
+        "Hvorfor græder du?",
+        "Why are you crying?"
+       ],
+       [
+        "Hvorfor lærer du dansk?",
+        "Why are you learning Danish?"
+       ],
+       [
+        "Hvorfor er du sen?",
+        "Why are you late?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "how",
+   "da": "hvordan",
+   "level": 1,
+   "f": [
+    "asks about manner or way",
+    [
+     {
+      "ex": [
+       [
+        "Hvordan har du det?",
+        "How are you?"
+       ],
+       [
+        "Hvordan kommer jeg til stationen?",
+        "How do I get to the station?"
+       ],
+       [
+        "Hvordan siger man det på dansk?",
+        "How do you say that in Danish?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "which, what one (en-word)",
+   "da": "hvilken",
+   "level": 2,
+   "f": [
+    "common-gender (en-word): hvilken bog?",
+    [
+     {
+      "ex": [
+       [
+        "Hvilken farve kan du bedst lide?",
+        "Which colour do you like best?"
+       ],
+       [
+        "Hvilken bus skal jeg tage?",
+        "Which bus should I take?"
+       ],
+       [
+        "I hvilken by bor du?",
+        "In which city do you live?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "which, what one (et-word)",
+   "da": "hvilket",
+   "level": 2,
+   "f": [
+    "neuter (et-word): hvilket hus?",
+    [
+     {
+      "ex": [
+       [
+        "Hvilket hus er dit?",
+        "Which house is yours?"
+       ],
+       [
+        "Hvilket land kommer du fra?",
+        "Which country are you from?"
+       ],
+       [
+        "Hvilket tog kører først?",
+        "Which train leaves first?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "which, what ones (plural)",
+   "da": "hvilke",
+   "level": 2,
+   "f": [
+    "plural: hvilke bøger?",
+    [
+     {
+      "ex": [
+       [
+        "Hvilke lande har du besøgt?",
+        "Which countries have you visited?"
+       ],
+       [
+        "Hvilke dage passer dig?",
+        "Which days suit you?"
+       ],
+       [
+        "Hvilke sprog taler du?",
+        "Which languages do you speak?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "how many",
+   "da": "hvor mange",
+   "level": 2,
+   "f": [
+    "hvor + mange, for countable things",
+    [
+     {
+      "ex": [
+       [
+        "Hvor mange søskende har du?",
+        "How many siblings do you have?"
+       ],
+       [
+        "Hvor mange gæster kommer?",
+        "How many guests are coming?"
+       ],
+       [
+        "Hvor mange gange har du været der?",
+        "How many times have you been there?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "how much",
+   "da": "hvor meget",
+   "level": 2,
+   "f": [
+    "hvor + meget, for uncountable amounts",
+    [
+     {
+      "ex": [
+       [
+        "Hvor meget koster det?",
+        "How much does it cost?"
+       ],
+       [
+        "Hvor meget vejer du?",
+        "How much do you weigh?"
+       ],
+       [
+        "Hvor meget tid har vi?",
+        "How much time do we have?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "how old",
+   "da": "hvor gammel",
+   "level": 2,
+   "f": [
+    "hvor + adjective = 'how ...?'",
+    [
+     {
+      "ex": [
+       [
+        "Hvor gammel er du?",
+        "How old are you?"
+       ],
+       [
+        "Hvor gammel er huset?",
+        "How old is the house?"
+       ],
+       [
+        "Hvor gamle er dine børn?",
+        "How old are your children?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "how long (time)",
+   "da": "hvor længe",
+   "level": 2,
+   "f": [
+    "about duration of time",
+    [
+     {
+      "ex": [
+       [
+        "Hvor længe har du boet her?",
+        "How long have you lived here?"
+       ],
+       [
+        "Hvor længe varer mødet?",
+        "How long does the meeting last?"
+       ],
+       [
+        "Hvor længe skal du blive?",
+        "How long are you staying?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "how far",
+   "da": "hvor langt",
+   "level": 2,
+   "f": [
+    "about distance",
+    [
+     {
+      "ex": [
+       [
+        "Hvor langt er der til stationen?",
+        "How far is it to the station?"
+       ],
+       [
+        "Hvor langt kan du løbe?",
+        "How far can you run?"
+       ],
+       [
+        "Hvor langt væk bor du?",
+        "How far away do you live?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "whose",
+   "da": "hvis",
+   "level": 3,
+   "f": [
+    "asks about possession (careful: 'hvis' also means 'if')",
+    [
+     {
+      "ex": [
+       [
+        "Hvis bil er det?",
+        "Whose car is that?"
+       ],
+       [
+        "Hvis tur er det?",
+        "Whose turn is it?"
+       ],
+       [
+        "Hvis taske ligger her?",
+        "Whose bag is lying here?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "where from",
+   "da": "hvorfra",
+   "level": 3,
+   "f": [
+    "origin; often split: hvor ... fra",
+    [
+     {
+      "ex": [
+       [
+        "Hvor kommer du fra?",
+        "Where do you come from?"
+       ],
+       [
+        "Hvor ringer du fra?",
+        "Where are you calling from?"
+       ],
+       [
+        "Hvorfra ved du det?",
+        "How do you know that? (lit. from where)"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "where to",
+   "da": "hvorhen",
+   "level": 3,
+   "f": [
+    "destination; often split: hvor ... hen",
+    [
+     {
+      "ex": [
+       [
+        "Hvor skal du hen?",
+        "Where are you going?"
+       ],
+       [
+        "Hvor rejser I hen i sommer?",
+        "Where are you travelling this summer?"
+       ],
+       [
+        "Hvorhen fører denne vej?",
+        "Where does this road lead?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "with what",
+   "da": "hvormed",
+   "level": 3,
+   "f": [
+    "formal; usually split: hvad ... med",
+    [
+     {
+      "ex": [
+       [
+        "Hvad skriver du med?",
+        "What are you writing with?"
+       ],
+       [
+        "Hvad betaler du med?",
+        "What are you paying with?"
+       ],
+       [
+        "Hvormed kan jeg hjælpe?",
+        "How may I help? (lit. with what)"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "about what",
+   "da": "hvorom",
+   "level": 3,
+   "f": [
+    "formal; usually split: hvad ... om",
+    [
+     {
+      "ex": [
+       [
+        "Hvad handler filmen om?",
+        "What is the film about?"
+       ],
+       [
+        "Hvad taler I om?",
+        "What are you talking about?"
+       ],
+       [
+        "Hvad drømte du om?",
+        "What did you dream about?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "how come, why",
+   "da": "hvorfor dog",
+   "level": 3,
+   "f": [
+    "emphatic 'why on earth'",
+    [
+     {
+      "ex": [
+       [
+        "Hvorfor dog det?",
+        "Why on earth?"
+       ],
+       [
+        "Hvorfor dog ikke?",
+        "Why on earth not?"
+       ],
+       [
+        "Hvorfor dog vente?",
+        "Why on earth wait?"
+       ]
+      ]
+     }
+    ]
+   ]
+  }
  ]
 }
