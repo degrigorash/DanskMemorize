@@ -1,6 +1,6 @@
 # DanskMemorize
 
-A small offline‑capable trainer for the 500 most common Danish verbs, 250 most common adjectives, the Danish question words (hv‑ord), and Danish numbers (cardinals 0–100+, ordinals).
+A small offline‑capable trainer for the 500 most common Danish verbs, 250 most common adjectives, the Danish question words (hv‑ord), Danish numbers (cardinals 0–100+, ordinals), and everyday basics (days, months, seasons & times of day, colors).
 
 ## Features
 

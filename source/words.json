@@ -11302,5 +11302,989 @@
     []
    ]
   }
+ ],
+ "vocab": [
+  {
+   "en": "Monday",
+   "da": "mandag",
+   "level": 1,
+   "f": [
+    "lowercase; no article. på mandag = this coming Monday; om mandagen = on Mondays (habitually); i mandags = last Monday",
+    [
+     {
+      "ex": [
+       [
+        "Vi ses på mandag.",
+        "See you on Monday."
+       ],
+       [
+        "Jeg træner om mandagen.",
+        "I work out on Mondays."
+       ],
+       [
+        "Jeg så hende i mandags.",
+        "I saw her last Monday."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "Tuesday",
+   "da": "tirsdag",
+   "level": 1,
+   "f": [
+    "lowercase; no article. på tirsdag = this coming Tuesday; om tirsdagen = on Tuesdays (habitually); i tirsdags = last Tuesday",
+    [
+     {
+      "ex": [
+       [
+        "Vi ses på tirsdag.",
+        "See you on Tuesday."
+       ],
+       [
+        "Jeg træner om tirsdagen.",
+        "I work out on Tuesdays."
+       ],
+       [
+        "Jeg så hende i tirsdags.",
+        "I saw her last Tuesday."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "Wednesday",
+   "da": "onsdag",
+   "level": 1,
+   "f": [
+    "lowercase; no article. på onsdag = this coming Wednesday; om onsdagen = on Wednesdays (habitually); i onsdags = last Wednesday",
+    [
+     {
+      "ex": [
+       [
+        "Vi ses på onsdag.",
+        "See you on Wednesday."
+       ],
+       [
+        "Jeg træner om onsdagen.",
+        "I work out on Wednesdays."
+       ],
+       [
+        "Jeg så hende i onsdags.",
+        "I saw her last Wednesday."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "Thursday",
+   "da": "torsdag",
+   "level": 1,
+   "f": [
+    "lowercase; no article. på torsdag = this coming Thursday; om torsdagen = on Thursdays (habitually); i torsdags = last Thursday",
+    [
+     {
+      "ex": [
+       [
+        "Vi ses på torsdag.",
+        "See you on Thursday."
+       ],
+       [
+        "Jeg træner om torsdagen.",
+        "I work out on Thursdays."
+       ],
+       [
+        "Jeg så hende i torsdags.",
+        "I saw her last Thursday."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "Friday",
+   "da": "fredag",
+   "level": 1,
+   "f": [
+    "lowercase; no article. på fredag = this coming Friday; om fredagen = on Fridays (habitually); i fredags = last Friday",
+    [
+     {
+      "ex": [
+       [
+        "Vi ses på fredag.",
+        "See you on Friday."
+       ],
+       [
+        "Jeg træner om fredagen.",
+        "I work out on Fridays."
+       ],
+       [
+        "Jeg så hende i fredags.",
+        "I saw her last Friday."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "Saturday",
+   "da": "lørdag",
+   "level": 1,
+   "f": [
+    "lowercase; no article. på lørdag = this coming Saturday; om lørdagen = on Saturdays (habitually); i lørdags = last Saturday",
+    [
+     {
+      "ex": [
+       [
+        "Vi ses på lørdag.",
+        "See you on Saturday."
+       ],
+       [
+        "Jeg træner om lørdagen.",
+        "I work out on Saturdays."
+       ],
+       [
+        "Jeg så hende i lørdags.",
+        "I saw her last Saturday."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "Sunday",
+   "da": "søndag",
+   "level": 1,
+   "f": [
+    "lowercase; no article. på søndag = this coming Sunday; om søndagen = on Sundays (habitually); i søndags = last Sunday",
+    [
+     {
+      "ex": [
+       [
+        "Vi ses på søndag.",
+        "See you on Sunday."
+       ],
+       [
+        "Jeg træner om søndagen.",
+        "I work out on Sundays."
+       ],
+       [
+        "Jeg så hende i søndags.",
+        "I saw her last Sunday."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "January",
+   "da": "januar",
+   "level": 2,
+   "f": [
+    "lowercase; no article. i januar = in January; den 1. januar = the 1st of January",
+    [
+     {
+      "ex": [
+       [
+        "Jeg har fødselsdag i januar.",
+        "My birthday is in January."
+       ],
+       [
+        "Det sker den 3. januar.",
+        "It happens on the 3rd of January."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "February",
+   "da": "februar",
+   "level": 2,
+   "f": [
+    "lowercase; no article. i februar = in February; den 1. februar = the 1st of February",
+    [
+     {
+      "ex": [
+       [
+        "Jeg har fødselsdag i februar.",
+        "My birthday is in February."
+       ],
+       [
+        "Det sker den 3. februar.",
+        "It happens on the 3rd of February."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "March",
+   "da": "marts",
+   "level": 2,
+   "f": [
+    "lowercase; no article. i marts = in March; den 1. marts = the 1st of March",
+    [
+     {
+      "ex": [
+       [
+        "Jeg har fødselsdag i marts.",
+        "My birthday is in March."
+       ],
+       [
+        "Det sker den 3. marts.",
+        "It happens on the 3rd of March."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "April",
+   "da": "april",
+   "level": 2,
+   "f": [
+    "lowercase; no article. i april = in April; den 1. april = the 1st of April",
+    [
+     {
+      "ex": [
+       [
+        "Jeg har fødselsdag i april.",
+        "My birthday is in April."
+       ],
+       [
+        "Det sker den 3. april.",
+        "It happens on the 3rd of April."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "May",
+   "da": "maj",
+   "level": 2,
+   "f": [
+    "lowercase; no article. i maj = in May; den 1. maj = the 1st of May",
+    [
+     {
+      "ex": [
+       [
+        "Jeg har fødselsdag i maj.",
+        "My birthday is in May."
+       ],
+       [
+        "Det sker den 3. maj.",
+        "It happens on the 3rd of May."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "June",
+   "da": "juni",
+   "level": 2,
+   "f": [
+    "lowercase; no article. i juni = in June; den 1. juni = the 1st of June",
+    [
+     {
+      "ex": [
+       [
+        "Jeg har fødselsdag i juni.",
+        "My birthday is in June."
+       ],
+       [
+        "Det sker den 3. juni.",
+        "It happens on the 3rd of June."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "July",
+   "da": "juli",
+   "level": 2,
+   "f": [
+    "lowercase; no article. i juli = in July; den 1. juli = the 1st of July",
+    [
+     {
+      "ex": [
+       [
+        "Jeg har fødselsdag i juli.",
+        "My birthday is in July."
+       ],
+       [
+        "Det sker den 3. juli.",
+        "It happens on the 3rd of July."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "August",
+   "da": "august",
+   "level": 2,
+   "f": [
+    "lowercase; no article. i august = in August; den 1. august = the 1st of August",
+    [
+     {
+      "ex": [
+       [
+        "Jeg har fødselsdag i august.",
+        "My birthday is in August."
+       ],
+       [
+        "Det sker den 3. august.",
+        "It happens on the 3rd of August."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "September",
+   "da": "september",
+   "level": 2,
+   "f": [
+    "lowercase; no article. i september = in September; den 1. september = the 1st of September",
+    [
+     {
+      "ex": [
+       [
+        "Jeg har fødselsdag i september.",
+        "My birthday is in September."
+       ],
+       [
+        "Det sker den 3. september.",
+        "It happens on the 3rd of September."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "October",
+   "da": "oktober",
+   "level": 2,
+   "f": [
+    "lowercase; no article. i oktober = in October; den 1. oktober = the 1st of October",
+    [
+     {
+      "ex": [
+       [
+        "Jeg har fødselsdag i oktober.",
+        "My birthday is in October."
+       ],
+       [
+        "Det sker den 3. oktober.",
+        "It happens on the 3rd of October."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "November",
+   "da": "november",
+   "level": 2,
+   "f": [
+    "lowercase; no article. i november = in November; den 1. november = the 1st of November",
+    [
+     {
+      "ex": [
+       [
+        "Jeg har fødselsdag i november.",
+        "My birthday is in November."
+       ],
+       [
+        "Det sker den 3. november.",
+        "It happens on the 3rd of November."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "December",
+   "da": "december",
+   "level": 2,
+   "f": [
+    "lowercase; no article. i december = in December; den 1. december = the 1st of December",
+    [
+     {
+      "ex": [
+       [
+        "Jeg har fødselsdag i december.",
+        "My birthday is in December."
+       ],
+       [
+        "Det sker den 3. december.",
+        "It happens on the 3rd of December."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "spring",
+   "da": "forår",
+   "level": 3,
+   "f": [
+    "lowercase; no article. habitual: om foråret = in the spring / at spring",
+    [
+     {
+      "ex": [
+       [
+        "Jeg planter blomster om foråret.",
+        "I plant flowers in spring."
+       ],
+       [
+        "Foråret kommer sent i år.",
+        "Spring is coming late this year."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "summer",
+   "da": "sommer",
+   "level": 3,
+   "f": [
+    "lowercase; no article. habitual: om sommeren = in the summer / at summer",
+    [
+     {
+      "ex": [
+       [
+        "Vi rejser om sommeren.",
+        "We travel in summer."
+       ],
+       [
+        "Det er en varm sommer.",
+        "It is a warm summer."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "autumn / fall",
+   "da": "efterår",
+   "level": 3,
+   "f": [
+    "lowercase; no article. habitual: om efteråret = in the autumn / fall / at autumn / fall",
+    [
+     {
+      "ex": [
+       [
+        "Bladene falder om efteråret.",
+        "The leaves fall in autumn."
+       ],
+       [
+        "Jeg elsker efteråret.",
+        "I love autumn."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "winter",
+   "da": "vinter",
+   "level": 3,
+   "f": [
+    "lowercase; no article. habitual: om vinteren = in the winter / at winter",
+    [
+     {
+      "ex": [
+       [
+        "Det sner om vinteren.",
+        "It snows in winter."
+       ],
+       [
+        "Vinteren er lang og mørk.",
+        "The winter is long and dark."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "morning",
+   "da": "morgen",
+   "level": 3,
+   "f": [
+    "lowercase; no article. habitual: om morgenen = in the morning / at morning",
+    [
+     {
+      "ex": [
+       [
+        "Jeg drikker kaffe om morgenen.",
+        "I drink coffee in the morning."
+       ],
+       [
+        "God morgen!",
+        "Good morning!"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "forenoon / late morning",
+   "da": "formiddag",
+   "level": 3,
+   "f": [
+    "lowercase; no article. habitual: om formiddagen = in the forenoon / late morning / at forenoon / late morning",
+    [
+     {
+      "ex": [
+       [
+        "Vi mødes om formiddagen.",
+        "We meet in the late morning."
+       ],
+       [
+        "Mødet er i formiddag.",
+        "The meeting is this morning."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "afternoon",
+   "da": "eftermiddag",
+   "level": 3,
+   "f": [
+    "lowercase; no article. habitual: om eftermiddagen = in the afternoon / at afternoon",
+    [
+     {
+      "ex": [
+       [
+        "Hun sover om eftermiddagen.",
+        "She sleeps in the afternoon."
+       ],
+       [
+        "Vi ses i eftermiddag.",
+        "See you this afternoon."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "evening",
+   "da": "aften",
+   "level": 3,
+   "f": [
+    "lowercase; no article. habitual: om aftenen = in the evening / at evening",
+    [
+     {
+      "ex": [
+       [
+        "Vi spiser om aftenen.",
+        "We eat in the evening."
+       ],
+       [
+        "God aften!",
+        "Good evening!"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "night",
+   "da": "nat",
+   "level": 3,
+   "f": [
+    "lowercase; no article. habitual: om natten = in the night / at night",
+    [
+     {
+      "ex": [
+       [
+        "Byen er stille om natten.",
+        "The city is quiet at night."
+       ],
+       [
+        "Jeg arbejdede hele natten.",
+        "I worked all night."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "red",
+   "da": "rød",
+   "level": 4,
+   "f": [
+    "adjective: rød (en-word) · rødt (et-word) · røde (plural/definite)",
+    [
+     {
+      "ex": [
+       [
+        "en rød bil",
+        "a red car"
+       ],
+       [
+        "et rødt hus",
+        "a red house"
+       ],
+       [
+        "de røde sko",
+        "the red shoes"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "blue",
+   "da": "blå",
+   "level": 4,
+   "f": [
+    "adjective: blå (en-word) · blåt (et-word) · blå (plural/definite)",
+    [
+     {
+      "ex": [
+       [
+        "en blå bil",
+        "a blue car"
+       ],
+       [
+        "et blåt hus",
+        "a blue house"
+       ],
+       [
+        "de blå sko",
+        "the blue shoes"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "green",
+   "da": "grøn",
+   "level": 4,
+   "f": [
+    "adjective: grøn (en-word) · grønt (et-word) · grønne (plural/definite)",
+    [
+     {
+      "ex": [
+       [
+        "en grøn bil",
+        "a green car"
+       ],
+       [
+        "et grønt hus",
+        "a green house"
+       ],
+       [
+        "de grønne sko",
+        "the green shoes"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "yellow",
+   "da": "gul",
+   "level": 4,
+   "f": [
+    "adjective: gul (en-word) · gult (et-word) · gule (plural/definite)",
+    [
+     {
+      "ex": [
+       [
+        "en gul bil",
+        "a yellow car"
+       ],
+       [
+        "et gult hus",
+        "a yellow house"
+       ],
+       [
+        "de gule sko",
+        "the yellow shoes"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "black",
+   "da": "sort",
+   "level": 4,
+   "f": [
+    "adjective: sort (en-word) · sort (et-word) · sorte (plural/definite)",
+    [
+     {
+      "ex": [
+       [
+        "en sort bil",
+        "a black car"
+       ],
+       [
+        "et sort hus",
+        "a black house"
+       ],
+       [
+        "de sorte sko",
+        "the black shoes"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "white",
+   "da": "hvid",
+   "level": 4,
+   "f": [
+    "adjective: hvid (en-word) · hvidt (et-word) · hvide (plural/definite)",
+    [
+     {
+      "ex": [
+       [
+        "en hvid bil",
+        "a white car"
+       ],
+       [
+        "et hvidt hus",
+        "a white house"
+       ],
+       [
+        "de hvide sko",
+        "the white shoes"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "grey",
+   "da": "grå",
+   "level": 4,
+   "f": [
+    "adjective: grå (en-word) · gråt (et-word) · grå (plural/definite)",
+    [
+     {
+      "ex": [
+       [
+        "en grå bil",
+        "a grey car"
+       ],
+       [
+        "et gråt hus",
+        "a grey house"
+       ],
+       [
+        "de grå sko",
+        "the grey shoes"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "brown",
+   "da": "brun",
+   "level": 4,
+   "f": [
+    "adjective: brun (en-word) · brunt (et-word) · brune (plural/definite)",
+    [
+     {
+      "ex": [
+       [
+        "en brun bil",
+        "a brown car"
+       ],
+       [
+        "et brunt hus",
+        "a brown house"
+       ],
+       [
+        "de brune sko",
+        "the brown shoes"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "orange",
+   "da": "orange",
+   "level": 4,
+   "f": [
+    "adjective: orange (en-word) · orange (et-word) · orange (plural/definite)",
+    [
+     {
+      "ex": [
+       [
+        "en orange bil",
+        "a orange car"
+       ],
+       [
+        "et orange hus",
+        "a orange house"
+       ],
+       [
+        "de orange sko",
+        "the orange shoes"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "pink",
+   "da": "lyserød",
+   "level": 4,
+   "f": [
+    "adjective: lyserød (en-word) · lyserødt (et-word) · lyserøde (plural/definite)",
+    [
+     {
+      "ex": [
+       [
+        "en lyserød bil",
+        "a pink car"
+       ],
+       [
+        "et lyserødt hus",
+        "a pink house"
+       ],
+       [
+        "de lyserøde sko",
+        "the pink shoes"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "purple",
+   "da": "lilla",
+   "level": 4,
+   "f": [
+    "adjective: lilla (en-word) · lilla (et-word) · lilla (plural/definite)",
+    [
+     {
+      "ex": [
+       [
+        "en lilla bil",
+        "a purple car"
+       ],
+       [
+        "et lilla hus",
+        "a purple house"
+       ],
+       [
+        "de lilla sko",
+        "the purple shoes"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "light",
+   "da": "lys",
+   "level": 4,
+   "f": [
+    "adjective: lys (en-word) · lyst (et-word) · lyse (plural/definite)",
+    [
+     {
+      "ex": [
+       [
+        "en lys bil",
+        "a light car"
+       ],
+       [
+        "et lyst hus",
+        "a light house"
+       ],
+       [
+        "de lyse sko",
+        "the light shoes"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "dark",
+   "da": "mørk",
+   "level": 4,
+   "f": [
+    "adjective: mørk (en-word) · mørkt (et-word) · mørke (plural/definite)",
+    [
+     {
+      "ex": [
+       [
+        "en mørk bil",
+        "a dark car"
+       ],
+       [
+        "et mørkt hus",
+        "a dark house"
+       ],
+       [
+        "de mørke sko",
+        "the dark shoes"
+       ]
+      ]
+     }
+    ]
+   ]
+  }
  ]
 }

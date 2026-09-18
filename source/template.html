@@ -257,7 +257,12 @@ const TRACKS = {
     1:['0–20','nul to tyve – each has its own name'],
     2:['Tens 30–100','the base-20 oddities: halvtreds (50), tres (60), halvfjerds (70)…'],
     3:['Compound 21–99','ones before tens: enogtyve = one-and-twenty'],
-    4:['Big & ordinals','hundrede, tusind, million and ordinals (første, anden, tredje…)']}}
+    4:['Big & ordinals','hundrede, tusind, million and ordinals (første, anden, tredje…)']}},
+  vocab: {name:'Basics', groups:{
+    1:['Days','mandag…søndag – closed set; på mandag / om mandagen / i mandags'],
+    2:['Months','januar…december – i januar, dates (den 1. maj)'],
+    3:['Seasons & times of day','forår, sommer… / morgen, aften… – om sommeren, om morgenen'],
+    4:['Colors','rød, blå, grøn… – adjectives that inflect (rød/rødt/røde)']}}
 };
 const KEY = 'dansk-trainer-v1';
 const $ = id => document.getElementById(id);
@@ -273,7 +278,7 @@ function savePrefs(){ try{ localStorage.setItem(KEY+'-prefs', JSON.stringify(pre
 
 const WORDS = [];
 for (const t of Object.keys(TRACKS)) for (const w of DATA[t]) WORDS.push({track:t, da:w.da, en:w.en, level:w.level, f:w.f, id:t+'|'+w.da});
-$('totalCount').textContent = `${DATA.verbs.length} verbs · ${DATA.adjs.length} adjectives · ${DATA.hv.length} question words · ${DATA.nums.length} numbers`;
+$('totalCount').textContent = `${DATA.verbs.length} verbs · ${DATA.adjs.length} adjectives · ${DATA.hv.length} question words · ${DATA.nums.length} numbers · ${DATA.vocab.length} basics`;
 
 function st(w, dir){ return (stats[w.id] && stats[w.id][dir]) || {r:0,w:0,s:0}; }
 function status(w, dir){ const s = st(w,dir); if (s.r+s.w===0) return 'new'; return s.s>=3 ? 'learned' : 'learning'; }
@@ -421,7 +426,7 @@ function formsHtml(w){
     const note = f[0] ? `<div class="hvnote">${esc(f[0])}</div>` : '';
     return `<div class="hvforms">${pair}${note}</div>`;
   }
-  if (w.track==='hv'){
+  if (w.track==='hv' || w.track==='vocab'){
     const note = f[0] ? `<div class="hvnote">${esc(f[0])}</div>` : '';
     const groups = (f[1] || []).map(g => {
       const label = g.s ? `<div class="hvsense">${esc(g.s)}</div>` : '';
