@@ -5106,7 +5106,7 @@
     "har smidt",
     "havde smidt",
     "smid",
-    "b2"
+    "uv"
    ]
   },
   {
@@ -7198,7 +7198,7 @@
     "ene",
     "-",
     "-",
-    ""
+    "-"
    ]
   },
   {
@@ -12167,11 +12167,11 @@
       "ex": [
        [
         "en orange bil",
-        "a orange car"
+        "an orange car"
        ],
        [
         "et orange hus",
-        "a orange house"
+        "an orange house"
        ],
        [
         "de orange sko",
