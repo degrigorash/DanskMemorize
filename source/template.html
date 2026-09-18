@@ -87,6 +87,10 @@ select{background:var(--card);border:1px solid var(--line);border-radius:8px;pad
 .hvex+.hvex{margin-top:6px}
 .hvex .da{font-weight:600;color:var(--ink)}
 .hvex .en{color:var(--muted);font-size:13px}
+.numpair{display:flex;align-items:baseline;gap:10px;margin-bottom:8px}
+.numpair .digit{font-size:24px;font-weight:700;color:var(--ink)}
+.numpair .eq{color:var(--muted)}
+.numpair .word{font-size:22px;font-weight:600;color:var(--accent)}
 .actions{display:flex;justify-content:space-between;align-items:center;margin-top:16px;gap:8px}
 .kbd{font-size:12px;color:var(--muted)}
 .kbd kbd{border:1px solid var(--line);border-radius:4px;padding:0 5px;font-family:inherit}
@@ -248,7 +252,12 @@ const TRACKS = {
   hv: {name:'Question words', groups:{
     1:['The six basics','hvem, hvad, hvor, hvornår, hvorfor, hvordan'],
     2:['hvilken & hvor + …','which-forms (hvilken/hvilket/hvilke) and hvor mange / hvor gammel …'],
-    3:['Trickier & compound','hvis (whose), hvorfra / hvorhen and other compound forms']}}
+    3:['Trickier & compound','hvis (whose), hvorfra / hvorhen and other compound forms']}},
+  nums: {name:'Numbers', groups:{
+    1:['0–20','nul to tyve – each has its own name'],
+    2:['Tens 30–100','the base-20 oddities: halvtreds (50), tres (60), halvfjerds (70)…'],
+    3:['Compound 21–99','ones before tens: enogtyve = one-and-twenty'],
+    4:['Big & ordinals','hundrede, tusind, million and ordinals (første, anden, tredje…)']}}
 };
 const KEY = 'dansk-trainer-v1';
 const $ = id => document.getElementById(id);
@@ -264,7 +273,7 @@ function savePrefs(){ try{ localStorage.setItem(KEY+'-prefs', JSON.stringify(pre
 
 const WORDS = [];
 for (const t of Object.keys(TRACKS)) for (const w of DATA[t]) WORDS.push({track:t, da:w.da, en:w.en, level:w.level, f:w.f, id:t+'|'+w.da});
-$('totalCount').textContent = `${DATA.verbs.length} verbs · ${DATA.adjs.length} adjectives · ${DATA.hv.length} question words`;
+$('totalCount').textContent = `${DATA.verbs.length} verbs · ${DATA.adjs.length} adjectives · ${DATA.hv.length} question words · ${DATA.nums.length} numbers`;
 
 function st(w, dir){ return (stats[w.id] && stats[w.id][dir]) || {r:0,w:0,s:0}; }
 function status(w, dir){ const s = st(w,dir); if (s.r+s.w===0) return 'new'; return s.s>=3 ? 'learned' : 'learning'; }
@@ -407,6 +416,11 @@ function shuffle(a){ for (let i=a.length-1;i>0;i--){ const j=Math.floor(Math.ran
 
 function formsHtml(w){
   const f = w.f || []; const cell = v => esc(v && v!=='-' ? v : '–');
+  if (w.track==='nums'){
+    const pair = `<div class="numpair"><span class="digit">${esc(w.en)}</span><span class="eq">=</span><span class="word">${esc(w.da)}</span></div>`;
+    const note = f[0] ? `<div class="hvnote">${esc(f[0])}</div>` : '';
+    return `<div class="hvforms">${pair}${note}</div>`;
+  }
   if (w.track==='hv'){
     const note = f[0] ? `<div class="hvnote">${esc(f[0])}</div>` : '';
     const groups = (f[1] || []).map(g => {
