@@ -30,8 +30,8 @@ header h1 span{color:var(--muted);font-weight:400;font-size:14px;margin-left:8px
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:14px}
 h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 10px;font-weight:600}
 .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.seg{display:inline-flex;border:1px solid var(--line);border-radius:9px;overflow:hidden}
-.seg button{border:0;background:transparent;padding:7px 14px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:9px;max-width:100%;overflow-x:auto}
+.seg button{border:0;background:transparent;padding:7px 14px;flex:0 0 auto}
 .seg button+button{border-left:1px solid var(--line)}
 .seg button.on{background:var(--soft);color:var(--accent);font-weight:600}
 .groups{display:grid;grid-template-columns:1fr;gap:6px;margin-top:6px}
