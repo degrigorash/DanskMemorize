@@ -65,7 +65,8 @@ select{background:var(--card);border:1px solid var(--line);border-radius:8px;pad
 .prompt .word{font-size:40px;font-weight:700;letter-spacing:.2px;word-break:break-word}
 .prompt .hint{color:var(--muted);font-size:14px;margin-top:6px}
 .answer{display:flex;gap:8px}
-.answer input{flex:1;padding:12px 14px;border:2px solid var(--line);border-radius:10px;background:var(--bg);outline:none;font-size:18px}
+.answer input{flex:1;min-width:0;padding:12px 14px;border:2px solid var(--line);border-radius:10px;background:var(--bg);outline:none;font-size:18px}
+.answer button{flex:0 0 auto}
 .answer input:focus{border-color:var(--accent)}
 .answer input.ok{border-color:var(--ok)} .answer input.bad{border-color:var(--bad)}
 .choices{display:grid;grid-template-columns:1fr 1fr;gap:10px}
