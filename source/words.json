@@ -10009,7 +10009,7 @@
         "How old are you?"
        ],
        [
-        "Hvor gammel er huset?",
+        "Hvor gammelt er huset?",
         "How old is the house?"
        ],
        [
@@ -10153,10 +10153,10 @@
   },
   {
    "en": "with what",
-   "da": "hvormed",
+   "da": "hvad ... med",
    "level": 3,
    "f": [
-    "formal; usually split: hvad ... med",
+    "the preposition goes to the end of the question; the single word 'hvormed' is formal/literary",
     [
      {
       "ex": [
@@ -10169,8 +10169,8 @@
         "What are you paying with?"
        ],
        [
-        "Hvormed kan jeg hjælpe?",
-        "How may I help? (lit. with what)"
+        "Hvad kan jeg hjælpe med?",
+        "What can I help you with?"
        ]
       ]
      }
@@ -10179,10 +10179,10 @@
   },
   {
    "en": "about what",
-   "da": "hvorom",
+   "da": "hvad ... om",
    "level": 3,
    "f": [
-    "formal; usually split: hvad ... om",
+    "the preposition goes to the end of the question; the single word 'hvorom' is archaic, only in 'hvorom alting er' (be that as it may)",
     [
      {
       "ex": [

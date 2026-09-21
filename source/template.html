@@ -391,6 +391,7 @@ function enAlts(en){
 function daAlts(da){
   const base = clean(da); const alts = new Set([base]);
   if (base.endsWith(' sig')) alts.add(base.slice(0,-4));
+  if (base.includes(' ... ')) alts.add(base.replace(/ \.\.\. /g,' '));
   return [...alts];
 }
 function lev(a,b){ if(Math.abs(a.length-b.length)>1) return 9; const m=a.length,n=b.length; let prev=[...Array(n+1).keys()];
