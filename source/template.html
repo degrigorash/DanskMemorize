@@ -65,6 +65,14 @@ select{background:var(--card);border:1px solid var(--line);border-radius:8px;pad
 .prompt{text-align:center;padding:10px 0 22px}
 .prompt .word{font-size:40px;font-weight:700;letter-spacing:.2px;word-break:break-word}
 .prompt .hint{color:var(--muted);font-size:14px;margin-top:6px}
+.prompt .word{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap}
+.say{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;padding:0;border:1px solid var(--line);border-radius:50%;background:var(--card);color:var(--accent);vertical-align:middle;flex:0 0 auto}
+.say:hover{background:var(--soft)} .say:active{transform:scale(.92)}
+.say svg{width:18px;height:18px}
+.prompt .say{width:44px;height:44px} .prompt .say svg{width:22px;height:22px}
+.full .say,.hvex .say{width:28px;height:28px;margin-left:6px} .full .say svg,.hvex .say svg{width:15px;height:15px}
+.hvex .da{display:flex;align-items:center}
+body.nosay .say{display:none}
 .answer{display:flex;gap:8px}
 .answer input{flex:1;min-width:0;padding:12px 14px;border:2px solid var(--line);border-radius:10px;background:var(--bg);outline:none;font-size:18px}
 .answer button{flex:0 0 auto}
@@ -184,7 +192,7 @@ th.on{color:var(--accent)}
   <div class="card">
     <div class="top"><span id="counter"></span><span id="score"></span></div>
     <div class="prog"><i id="progBar" style="width:0"></i></div>
-    <div class="prompt"><div class="word" id="promptWord"></div><div class="hint" id="promptHint"></div></div>
+    <div class="prompt"><div class="word"><span id="promptWord"></span><button class="say" id="promptSay" type="button" aria-label="Listen" title="Listen" hidden></button></div><div class="hint" id="promptHint"></div></div>
     <div id="typeArea" class="answer"><input id="answerInput" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type the translation…"><button class="primary" id="checkBtn">Check</button></div>
     <div id="mcArea" class="choices" hidden></div>
     <div id="feedback" class="feedback"></div>
@@ -279,6 +287,24 @@ const TRACKS = {
 const KEY = 'dansk-trainer-v1';
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+
+// text-to-speech for Danish (Web Speech API; uses the device's Danish voice if installed)
+const SAY_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>';
+const canSay = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
+if (!canSay) document.body.classList.add('nosay');
+let daVoice = null;
+function pickVoice(){ const vs = speechSynthesis.getVoices(); daVoice = vs.find(v => /^da([-_]|$)/i.test(v.lang)) || null; }
+if (canSay){ pickVoice(); speechSynthesis.onvoiceschanged = pickVoice; }
+function speak(text){
+  if (!canSay || !text) return;
+  if (speechSynthesis.speaking || speechSynthesis.pending) speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text); u.lang = 'da-DK'; if (daVoice) u.voice = daVoice; u.rate = 0.9;
+  speechSynthesis.speak(u);
+}
+const sayBtn = text => `<button class="say" type="button" data-say="${esc(text)}" aria-label="Listen" title="Listen">${SAY_ICON}</button>`;
+document.addEventListener('click', e => { const b = e.target.closest('button.say[data-say]'); if (b) { e.preventDefault(); speak(b.dataset.say); } });
+$('promptSay').innerHTML = SAY_ICON;
+$('promptSay').onclick = () => { if (S) speak(S.queue[S.i].da); };
 
 /* ---------- state ---------- */
 let stats = load();
@@ -412,6 +438,7 @@ function nextCard(){
   $('score').textContent = `✓ ${S.right}   ✗ ${S.wrong}`;
   $('progBar').style.width = (100*S.i/S.queue.length)+'%';
   $('promptWord').textContent = prompt(w, S.dir);
+  $('promptSay').hidden = S.dir!=='da';
   $('promptHint').textContent = `${TRACKS[w.track].name.toLowerCase().replace(/s$/,'')} · group ${w.level}` + (S.dir==='en' && w.track==='verbs' ? ' · answer with the infinitive' : '');
   $('feedback').className='feedback'; $('feedback').innerHTML=''; $('nextBtn').hidden=true;
   if (S.mode==='type'){
@@ -444,7 +471,7 @@ function formsHtml(w){
     const groups = (f[1] || []).map(g => {
       const label = g.s ? `<div class="hvsense">${esc(g.s)}</div>` : '';
       const rows = (g.ex || []).map(([da, en]) =>
-        `<div class="hvex"><span class="da">${esc(da)}</span><span class="en">${esc(en)}</span></div>`).join('');
+        `<div class="hvex"><span class="da">${esc(da)}${sayBtn(da)}</span><span class="en">${esc(en)}</span></div>`).join('');
       return `<div class="hvgroup">${label}${rows}</div>`;
     }).join('');
     return `<div class="hvforms">${note}${groups}</div>`;
@@ -464,7 +491,7 @@ function resolve(ok, typo){
     if (!S.requeued[w.id]) { S.requeued[w.id]=1; const pos = Math.min(S.queue.length, S.i+3+Math.floor(Math.random()*3)); S.queue.splice(pos,0,w); } }
   const fb = $('feedback'); fb.className = 'feedback show ' + (ok?'ok':'bad');
   fb.innerHTML = (ok ? (typo ? 'Correct (small typo)' : 'Correct') : 'Not quite') +
-    `<div class="full"><b>${esc(w.da)}</b> — ${esc(w.en)}</div>` + formsHtml(w);
+    `<div class="full"><b>${esc(w.da)}</b> — ${esc(w.en)}${sayBtn(w.da)}</div>` + formsHtml(w);
   $('score').textContent = `✓ ${S.right}   ✗ ${S.wrong}`;
   $('nextBtn').hidden=false; document.activeElement && document.activeElement.blur && document.activeElement.blur();
 }
