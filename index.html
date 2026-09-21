@@ -445,7 +445,7 @@ function nextCard(){
   $('feedback').className='feedback'; $('feedback').innerHTML=''; $('nextBtn').hidden=true;
   if (S.mode==='type'){
     $('typeArea').hidden=false; $('mcArea').hidden=true;
-    const inp=$('answerInput'); inp.value=''; inp.className=''; inp.disabled=false; $('checkBtn').hidden=false; inp.focus();
+    const inp=$('answerInput'); inp.value=''; inp.className=''; inp.disabled=false; inp.lang = S.dir==='en' ? 'da' : 'en'; $('checkBtn').hidden=false; inp.focus();
     $('kbdHint').innerHTML = '<kbd>Enter</kbd> check / next';
   } else {
     $('typeArea').hidden=true; $('mcArea').hidden=false;
