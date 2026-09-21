@@ -94,6 +94,11 @@ select{background:var(--card);border:1px solid var(--line);border-radius:8px;pad
 .actions{display:flex;justify-content:space-between;align-items:center;margin-top:16px;gap:8px}
 .kbd{font-size:12px;color:var(--muted)}
 .kbd kbd{border:1px solid var(--line);border-radius:4px;padding:0 5px;font-family:inherit}
+@media (max-width:520px){
+  #practice .card{padding-bottom:74px}
+  .actions{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);padding:10px 16px;margin:0;z-index:10}
+  .actions .kbd{display:none}
+}
 
 /* summary */
 .big{font-size:44px;font-weight:700;text-align:center;margin:6px 0}
@@ -130,13 +135,9 @@ th.on{color:var(--accent)}
 
 <!-- SETUP -->
 <section id="setup">
-  <div class="card">
-    <h2>What to learn</h2>
-    <div class="row">
-      <div class="seg" id="trackSeg"></div>
-    </div>
-    <div class="groups" id="groupList"></div>
-    <div class="legend"><span><i style="background:var(--learned)"></i>learned (3+ correct in a row)</span><span><i style="background:var(--learning)"></i>learning</span><span><i style="background:var(--line)"></i>not seen yet</span></div>
+  <div class="row" style="justify-content:space-between">
+    <button class="primary" id="startBtn">Start</button>
+    <span class="small" id="poolInfo"></span>
   </div>
   <div class="card">
     <h2>How</h2>
@@ -161,9 +162,13 @@ th.on{color:var(--accent)}
         </select></label>
     </div>
   </div>
-  <div class="row" style="justify-content:space-between">
-    <button class="primary" id="startBtn">Start</button>
-    <span class="small" id="poolInfo"></span>
+  <div class="card">
+    <h2>What to learn</h2>
+    <div class="row">
+      <div class="seg" id="trackSeg"></div>
+    </div>
+    <div class="groups" id="groupList"></div>
+    <div class="legend"><span><i style="background:var(--learned)"></i>learned (3+ correct in a row)</span><span><i style="background:var(--learning)"></i>learning</span><span><i style="background:var(--line)"></i>not seen yet</span></div>
   </div>
 </section>
 
