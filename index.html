@@ -396,7 +396,8 @@ function startSession(words){
 $('startBtn').onclick = () => startSession(sample(pool(), prefs.count));
 
 function show(id){ ['setup','practice','summary','stats'].forEach(s => $(s).hidden = s!==id);
-  $('tabPractice').classList.toggle('on', id!=='stats'); $('tabStats').classList.toggle('on', id==='stats'); }
+  $('tabPractice').classList.toggle('on', id!=='stats'); $('tabStats').classList.toggle('on', id==='stats');
+  $('totalCount').hidden = id!=='setup'; }
 $('tabPractice').onclick = () => { if (S) show('practice'); else { renderSetup(); show('setup'); } };
 $('tabStats').onclick = () => { renderStats(); show('stats'); };
 
