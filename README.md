@@ -7,6 +7,7 @@ A small offline‑capable trainer for the 500 most common Danish verbs, 250 most
 - Two directions: Danish → English and English → Danish
 - Two answer styles: typing (synonyms and small typos accepted) or 4‑option multiple choice
 - Words split into groups by everyday usefulness, from essentials to formal/advanced vocabulary; pick any combination
+- "Show words" on any group opens a preview of its full word list with translations, learned status and listen buttons
 - Full forms shown after each answer (verb tenses and conjugation class, adjective n/t/e forms, comparative and superlative; for question words a usage note and bilingual example sentences; for numbers the digit ↔ Danish word and a base‑20 breakdown)
 - Per‑word statistics (right/wrong per direction, "learned" after 3 correct in a row), with a smart mix that favours new and shaky words
 - Listen buttons: hear the Danish prompt, the answer, every verb and adjective form, number word and example sentence read aloud (uses the device's own text‑to‑speech; on Android install a Danish voice under Settings → Text‑to‑speech if none is present)
