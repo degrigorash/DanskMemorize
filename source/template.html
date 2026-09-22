@@ -354,7 +354,7 @@ function loadPrefs(){ try{ return JSON.parse(localStorage.getItem(KEY+'-prefs'))
 function savePrefs(){ try{ localStorage.setItem(KEY+'-prefs', JSON.stringify(prefs)); }catch(e){} }
 
 const WORDS = [];
-for (const t of Object.keys(TRACKS)) for (const w of DATA[t]) WORDS.push({track:t, da:w.da, en:w.en, level:w.level, f:w.f, id:t+'|'+w.da});
+for (const t of Object.keys(TRACKS)) for (const w of DATA[t]) WORDS.push({track:t, da:w.da, en:w.en, level:w.level, f:w.f, ex:w.ex, id:t+'|'+w.da});
 $('totalCount').textContent = `${DATA.verbs.length} verbs · ${DATA.adjs.length} adjectives · ${DATA.hv.length} question words · ${DATA.nums.length} numbers · ${DATA.vocab.length} basics`;
 
 function st(w, dir){ return (stats[w.id] && stats[w.id][dir]) || {r:0,w:0,s:0}; }
@@ -517,6 +517,8 @@ function nextCard(){
 }
 function shuffle(a){ for (let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
 
+const exHtml = ex => ex && ex.length ? `<div class="hvgroup">${ex.map(([da, en]) =>
+  `<div class="hvex"><span class="da">${esc(da)}${sayBtn(da)}</span><span class="en">${esc(en)}</span></div>`).join('')}</div>` : '';
 const mm = (v, word) => v && v.startsWith('m. ') ? word + ' ' + v.slice(3) : v;
 function formsHtml(w){
   const f = w.f || []; const has = v => v && v!=='-'; const cell = (v, spoken) => has(v) ? esc(v) + sayBtn(spoken || v) : '–';
@@ -538,7 +540,7 @@ function formsHtml(w){
   if (w.track==='verbs'){
     const cls = {b1:'group 1 (‑ede / ‑et)', b2:'group 2 (‑te / ‑t)', uv:'irregular'}[f[5]] || f[5];
     return `<div class="forms"><span>infinitive</span><span>${cell(w.da)}</span><span>present</span><span>${cell(f[0])}</span><span>past</span><span>${cell(f[1])}</span>
-      <span>perfect</span><span>${cell(f[2])}</span><span>past perf.</span><span>${cell(f[3])}</span><span>imperative</span><span>${cell(f[4])}</span><span class="cls">conjugation: ${esc(cls)}</span></div>`;
+      <span>perfect</span><span>${cell(f[2])}</span><span>past perf.</span><span>${cell(f[3])}</span><span>imperative</span><span>${cell(f[4])}</span><span class="cls">conjugation: ${esc(cls)}</span></div>` + exHtml(w.ex);
   }
   return `<div class="forms"><span>n‑form</span><span>${cell(f[0])}</span><span>t‑form</span><span>${cell(f[1])}</span><span>e‑form</span><span>${cell(f[2])}</span>
     <span>comparative</span><span>${cell(f[3], mm(f[3],'mere'))}</span><span>superlative</span><span>${cell(f[4], mm(f[4],'mest'))}</span></div>`;
