@@ -10,7 +10,7 @@ def entry(track, w):
     if ex: e['ex'] = ex
     return e
 
-data = {k: [entry(k, w) for w in words[k]] for k in ('verbs', 'adjs', 'hv', 'nums', 'vocab')}
+data = {k: [entry(k, w) for w in words[k]] for k in ('verbs', 'adjs', 'hv', 'nums', 'vocab', 'pron')}
 html = (here / 'template.html').read_text(encoding='utf-8').replace('__DATA__', json.dumps(data, ensure_ascii=False))
 (here.parent / 'index.html').write_text(html, encoding='utf-8')
 missing = [w['da'] for k, ex in examples.items() for w in words[k] if w['da'] not in ex]

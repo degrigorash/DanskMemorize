@@ -12286,5 +12286,1580 @@
     ]
    ]
   }
+ ],
+ "pron": [
+  {
+   "en": "I",
+   "da": "jeg",
+   "level": 1,
+   "f": [
+    "subject form only – as object it becomes mig. The g is silent: sounds like ‘yai’.",
+    [
+     {
+      "ex": [
+       [
+        "Jeg bor i København.",
+        "I live in Copenhagen."
+       ],
+       [
+        "Jeg er træt i dag.",
+        "I am tired today."
+       ],
+       [
+        "Kan jeg hjælpe dig?",
+        "Can I help you?"
+       ]
+      ]
+     }
+    ],
+    [
+     "1s"
+    ]
+   ]
+  },
+  {
+   "en": "you (one person)",
+   "da": "du",
+   "level": 1,
+   "f": [
+    "one person, informal – the normal way to address anyone today, strangers and bosses included (≈ Russian ты). Object form: dig, possessive: din/dit/dine.",
+    [
+     {
+      "ex": [
+       [
+        "Hvor bor du?",
+        "Where do you live?"
+       ],
+       [
+        "Du er min bedste ven.",
+        "You are my best friend."
+       ],
+       [
+        "Kommer du i morgen?",
+        "Are you coming tomorrow?"
+       ]
+      ]
+     }
+    ],
+    [
+     "2s"
+    ]
+   ]
+  },
+  {
+   "en": "he",
+   "da": "han",
+   "level": 1,
+   "f": [
+    "he – for a male person. Object: ham, possessive: hans (or sin/sit/sine when it is his own).",
+    [
+     {
+      "ex": [
+       [
+        "Han hedder Peter.",
+        "His name is Peter."
+       ],
+       [
+        "Han arbejder i en bank.",
+        "He works in a bank."
+       ],
+       [
+        "Hvor kommer han fra?",
+        "Where is he from?"
+       ]
+      ]
+     }
+    ],
+    [
+     "3m"
+    ]
+   ]
+  },
+  {
+   "en": "she",
+   "da": "hun",
+   "level": 1,
+   "f": [
+    "she – object: hende, possessive: hendes. Don't mix up with hund (dog)!",
+    [
+     {
+      "ex": [
+       [
+        "Hun er læge.",
+        "She is a doctor."
+       ],
+       [
+        "Hun taler tre sprog.",
+        "She speaks three languages."
+       ],
+       [
+        "Kender du hende? – Ja, hun er min nabo.",
+        "Do you know her? – Yes, she is my neighbour."
+       ]
+      ]
+     }
+    ],
+    [
+     "3f"
+    ]
+   ]
+  },
+  {
+   "en": "it (en-word)",
+   "da": "den",
+   "level": 1,
+   "f": [
+    "it, standing for an en-word (common gender): bilen → den. Same form as subject and object. Also ‘that one’ and ‘the’ before adjectives: den røde bil.",
+    [
+     {
+      "ex": [
+       [
+        "Hvor er bilen? – Den står udenfor.",
+        "Where is the car? – It is outside."
+       ],
+       [
+        "Jeg kan ikke finde nøglen. Har du set den?",
+        "I can't find the key. Have you seen it?"
+       ],
+       [
+        "Kagen? Den var lækker.",
+        "The cake? It was delicious."
+       ]
+      ]
+     }
+    ],
+    [
+     "3c"
+    ]
+   ]
+  },
+  {
+   "en": "it (et-word)",
+   "da": "det",
+   "level": 1,
+   "f": [
+    "it, standing for an et-word (neuter): huset → det. Also the general ‘it / that’ with no specific noun: Det regner. Det er godt. Det ved jeg ikke.",
+    [
+     {
+      "ex": [
+       [
+        "Hvor er huset? – Det ligger ved havnen.",
+        "Where is the house? – It is by the harbour."
+       ],
+       [
+        "Det regner.",
+        "It is raining."
+       ],
+       [
+        "Det ved jeg ikke.",
+        "I don't know (that)."
+       ]
+      ]
+     }
+    ],
+    [
+     "3n"
+    ]
+   ]
+  },
+  {
+   "en": "we",
+   "da": "vi",
+   "level": 1,
+   "f": [
+    "we – object: os, possessive: vores.",
+    [
+     {
+      "ex": [
+       [
+        "Vi bor i Aarhus.",
+        "We live in Aarhus."
+       ],
+       [
+        "Skal vi gå?",
+        "Shall we go?"
+       ],
+       [
+        "Vi ses i morgen!",
+        "See you tomorrow! (lit. we see each other)"
+       ]
+      ]
+     }
+    ],
+    [
+     "1p"
+    ]
+   ]
+  },
+  {
+   "en": "you (several people)",
+   "da": "I",
+   "level": 1,
+   "f": [
+    "you, plural – always written with a capital I, to tell it apart from i (‘in’) (≈ Russian вы to a group). Object: jer, possessive: jeres.",
+    [
+     {
+      "ex": [
+       [
+        "Hvor skal I hen?",
+        "Where are you (all) going?"
+       ],
+       [
+        "Kommer I til festen?",
+        "Are you (all) coming to the party?"
+       ],
+       [
+        "I er altid velkomne.",
+        "You are always welcome."
+       ]
+      ]
+     }
+    ],
+    [
+     "2p"
+    ]
+   ]
+  },
+  {
+   "en": "they",
+   "da": "de",
+   "level": 1,
+   "f": [
+    "they – object: dem, possessive: deres. Also ‘the / those’ before plural adjectives: de røde biler. With a capital, De = polite ‘you’.",
+    [
+     {
+      "ex": [
+       [
+        "De bor i Odense.",
+        "They live in Odense."
+       ],
+       [
+        "Hvad laver de?",
+        "What are they doing?"
+       ],
+       [
+        "De kommer klokken syv.",
+        "They are coming at seven."
+       ]
+      ]
+     }
+    ],
+    [
+     "3p"
+    ]
+   ]
+  },
+  {
+   "en": "me",
+   "da": "mig",
+   "level": 2,
+   "f": [
+    "object form of jeg – after verbs and prepositions: ser mig, til mig, med mig. Also the reflexive: jeg vasker mig.",
+    [
+     {
+      "ex": [
+       [
+        "Kan du hjælpe mig?",
+        "Can you help me?"
+       ],
+       [
+        "Giv den til mig.",
+        "Give it to me."
+       ],
+       [
+        "Jeg skynder mig.",
+        "I hurry (up)."
+       ]
+      ]
+     }
+    ],
+    [
+     "1s"
+    ]
+   ]
+  },
+  {
+   "en": "you (object, one person)",
+   "da": "dig",
+   "level": 2,
+   "f": [
+    "object form of du: ser dig, til dig. Also the reflexive: du vasker dig. Sounds like ‘dai’.",
+    [
+     {
+      "ex": [
+       [
+        "Jeg elsker dig.",
+        "I love you."
+       ],
+       [
+        "Det er til dig.",
+        "This is for you."
+       ],
+       [
+        "Skynd dig!",
+        "Hurry up!"
+       ]
+      ]
+     }
+    ],
+    [
+     "2s"
+    ]
+   ]
+  },
+  {
+   "en": "him",
+   "da": "ham",
+   "level": 2,
+   "f": [
+    "object form of han: ser ham, med ham. Not used reflexively – ‘he washes himself’ is han vasker sig.",
+    [
+     {
+      "ex": [
+       [
+        "Jeg kender ham godt.",
+        "I know him well."
+       ],
+       [
+        "Har du talt med ham?",
+        "Have you talked to him?"
+       ],
+       [
+        "Giv bogen til ham.",
+        "Give the book to him."
+       ]
+      ]
+     }
+    ],
+    [
+     "3m"
+    ]
+   ]
+  },
+  {
+   "en": "her (object)",
+   "da": "hende",
+   "level": 2,
+   "f": [
+    "object form of hun: ser hende, med hende. The possessive adds -s: hendes.",
+    [
+     {
+      "ex": [
+       [
+        "Jeg så hende i går.",
+        "I saw her yesterday."
+       ],
+       [
+        "Ring til hende!",
+        "Call her!"
+       ],
+       [
+        "Vi venter på hende.",
+        "We are waiting for her."
+       ]
+      ]
+     }
+    ],
+    [
+     "3f"
+    ]
+   ]
+  },
+  {
+   "en": "us",
+   "da": "os",
+   "level": 2,
+   "f": [
+    "object form of vi: ser os, hos os. Also the reflexive: vi glæder os (we look forward).",
+    [
+     {
+      "ex": [
+       [
+        "Kom og besøg os!",
+        "Come and visit us!"
+       ],
+       [
+        "Han hjalp os med flytningen.",
+        "He helped us with the move."
+       ],
+       [
+        "Vi glæder os til ferien.",
+        "We are looking forward to the holiday."
+       ]
+      ]
+     }
+    ],
+    [
+     "1p"
+    ]
+   ]
+  },
+  {
+   "en": "you (object, several people)",
+   "da": "jer",
+   "level": 2,
+   "f": [
+    "object form of I: ser jer, til jer. Also the reflexive: sæt jer (sit down).",
+    [
+     {
+      "ex": [
+       [
+        "Jeg savner jer.",
+        "I miss you (all)."
+       ],
+       [
+        "Det er til jer.",
+        "This is for you (all)."
+       ],
+       [
+        "Sæt jer ned!",
+        "Sit down (you all)!"
+       ]
+      ]
+     }
+    ],
+    [
+     "2p"
+    ]
+   ]
+  },
+  {
+   "en": "them",
+   "da": "dem",
+   "level": 2,
+   "f": [
+    "object form of de: ser dem, med dem. Also ‘those’: dem der (those who). With a capital, Dem = polite ‘you’ as object.",
+    [
+     {
+      "ex": [
+       [
+        "Jeg kender dem ikke.",
+        "I don't know them."
+       ],
+       [
+        "Har du set dem?",
+        "Have you seen them?"
+       ],
+       [
+        "Vi bor hos dem i weekenden.",
+        "We are staying with them at the weekend."
+       ]
+      ]
+     }
+    ],
+    [
+     "3p"
+    ]
+   ]
+  },
+  {
+   "en": "my, mine (en-word)",
+   "da": "min",
+   "level": 3,
+   "f": [
+    "my, before an en-word: min bil, min mor. Possessives agree with the thing owned, not the owner: mit hus (et-word), mine børn (plural).",
+    [
+     {
+      "ex": [
+       [
+        "Det er min bil.",
+        "That is my car."
+       ],
+       [
+        "Min mor bor i Jylland.",
+        "My mother lives in Jutland."
+       ],
+       [
+        "Bilen er min.",
+        "The car is mine."
+       ]
+      ]
+     }
+    ],
+    [
+     "1s"
+    ]
+   ]
+  },
+  {
+   "en": "my, mine (et-word)",
+   "da": "mit",
+   "level": 3,
+   "f": [
+    "my, before an et-word: mit hus, mit navn.",
+    [
+     {
+      "ex": [
+       [
+        "Mit navn er Anna.",
+        "My name is Anna."
+       ],
+       [
+        "Det er mit hus.",
+        "That is my house."
+       ],
+       [
+        "Æblet er mit.",
+        "The apple is mine."
+       ]
+      ]
+     }
+    ],
+    [
+     "1s"
+    ]
+   ]
+  },
+  {
+   "en": "my, mine (plural)",
+   "da": "mine",
+   "level": 3,
+   "f": [
+    "my, before a plural noun: mine børn, mine venner.",
+    [
+     {
+      "ex": [
+       [
+        "Mine børn går i skole.",
+        "My children go to school."
+       ],
+       [
+        "Har du set mine nøgler?",
+        "Have you seen my keys?"
+       ],
+       [
+        "Bøgerne er mine.",
+        "The books are mine."
+       ]
+      ]
+     }
+    ],
+    [
+     "1s"
+    ]
+   ]
+  },
+  {
+   "en": "your, yours (one person, en-word)",
+   "da": "din",
+   "level": 3,
+   "f": [
+    "your (one owner, informal), before an en-word: din bil, din far. Sounds like ‘deen’.",
+    [
+     {
+      "ex": [
+       [
+        "Er det din bil?",
+        "Is that your car?"
+       ],
+       [
+        "Hvad hedder din far?",
+        "What is your father's name?"
+       ],
+       [
+        "Tasken er din.",
+        "The bag is yours."
+       ]
+      ]
+     }
+    ],
+    [
+     "2s"
+    ]
+   ]
+  },
+  {
+   "en": "your, yours (one person, et-word)",
+   "da": "dit",
+   "level": 3,
+   "f": [
+    "your (one owner), before an et-word: dit hus, dit navn.",
+    [
+     {
+      "ex": [
+       [
+        "Hvad er dit navn?",
+        "What is your name?"
+       ],
+       [
+        "Dit hus er stort.",
+        "Your house is big."
+       ],
+       [
+        "Det er dit problem.",
+        "That's your problem."
+       ]
+      ]
+     }
+    ],
+    [
+     "2s"
+    ]
+   ]
+  },
+  {
+   "en": "your, yours (one person, plural)",
+   "da": "dine",
+   "level": 3,
+   "f": [
+    "your (one owner), before a plural noun: dine børn, dine sko.",
+    [
+     {
+      "ex": [
+       [
+        "Hvor er dine sko?",
+        "Where are your shoes?"
+       ],
+       [
+        "Dine børn er søde.",
+        "Your children are sweet."
+       ],
+       [
+        "Bøgerne er dine.",
+        "The books are yours."
+       ]
+      ]
+     }
+    ],
+    [
+     "2s"
+    ]
+   ]
+  },
+  {
+   "en": "his",
+   "da": "hans",
+   "level": 3,
+   "f": [
+    "his – one form for all nouns: hans bil, hans hus, hans børn. Only about someone other than the subject: Han tager hans bil = he takes another man's car (his own would be sin bil).",
+    [
+     {
+      "ex": [
+       [
+        "Hans bil er ny.",
+        "His car is new."
+       ],
+       [
+        "Jeg kender hans søster.",
+        "I know his sister."
+       ],
+       [
+        "Peter er syg, så jeg låner hans cykel.",
+        "Peter is ill, so I'm borrowing his bike."
+       ]
+      ]
+     }
+    ],
+    [
+     "3m"
+    ]
+   ]
+  },
+  {
+   "en": "her, hers (possessive)",
+   "da": "hendes",
+   "level": 3,
+   "f": [
+    "her(s) – one form for all nouns: hendes bil, hendes hus, hendes børn. Same rule as hans: her own (when she is the subject) is sin/sit/sine.",
+    [
+     {
+      "ex": [
+       [
+        "Hendes navn er Sofie.",
+        "Her name is Sofie."
+       ],
+       [
+        "Er det hendes hus?",
+        "Is that her house?"
+       ],
+       [
+        "Nøglerne er hendes.",
+        "The keys are hers."
+       ]
+      ]
+     }
+    ],
+    [
+     "3f"
+    ]
+   ]
+  },
+  {
+   "en": "its (owner is an en-word)",
+   "da": "dens",
+   "level": 3,
+   "f": [
+    "its, when the owner is an en-word and not the subject: bilen og dens ejer. If the owner is the subject, use sin/sit/sine.",
+    [
+     {
+      "ex": [
+       [
+        "Byen og dens indbyggere.",
+        "The town and its inhabitants."
+       ],
+       [
+        "Bilen og dens ejer.",
+        "The car and its owner."
+       ],
+       [
+        "Jeg kan lide bogen, men dens slutning er trist.",
+        "I like the book, but its ending is sad."
+       ]
+      ]
+     }
+    ],
+    [
+     "3c"
+    ]
+   ]
+  },
+  {
+   "en": "its (owner is an et-word)",
+   "da": "dets",
+   "level": 3,
+   "f": [
+    "its, when the owner is an et-word and not the subject: huset og dets have.",
+    [
+     {
+      "ex": [
+       [
+        "Landet og dets historie.",
+        "The country and its history."
+       ],
+       [
+        "Huset og dets have.",
+        "The house and its garden."
+       ],
+       [
+        "Jeg elsker Danmark og dets natur.",
+        "I love Denmark and its nature."
+       ]
+      ]
+     }
+    ],
+    [
+     "3n"
+    ]
+   ]
+  },
+  {
+   "en": "our, ours",
+   "da": "vores",
+   "level": 3,
+   "f": [
+    "our(s) – one form for all nouns: vores bil, vores hus, vores børn. (The old written forms vor / vort / vore are rare today.)",
+    [
+     {
+      "ex": [
+       [
+        "Vores hus er gult.",
+        "Our house is yellow."
+       ],
+       [
+        "Vores børn går i skole.",
+        "Our children go to school."
+       ],
+       [
+        "Hunden er vores.",
+        "The dog is ours."
+       ]
+      ]
+     }
+    ],
+    [
+     "1p"
+    ]
+   ]
+  },
+  {
+   "en": "your, yours (several people)",
+   "da": "jeres",
+   "level": 3,
+   "f": [
+    "your(s) when talking to several people – one form for all nouns: jeres bil, jeres hus, jeres børn.",
+    [
+     {
+      "ex": [
+       [
+        "Er det jeres hus?",
+        "Is that your (pl.) house?"
+       ],
+       [
+        "Jeres børn er søde.",
+        "Your (pl.) children are sweet."
+       ],
+       [
+        "Hvor er jeres bil?",
+        "Where is your (pl.) car?"
+       ]
+      ]
+     }
+    ],
+    [
+     "2p"
+    ]
+   ]
+  },
+  {
+   "en": "their, theirs",
+   "da": "deres",
+   "level": 3,
+   "f": [
+    "their(s) – one form for all nouns. Also the reflexive possessive in the plural: de tager deres bil (their own car). With a capital, Deres = polite ‘your’.",
+    [
+     {
+      "ex": [
+       [
+        "Deres hus er stort.",
+        "Their house is big."
+       ],
+       [
+        "De elsker deres børn.",
+        "They love their children."
+       ],
+       [
+        "Bilen er deres.",
+        "The car is theirs."
+       ]
+      ]
+     }
+    ],
+    [
+     "3p"
+    ]
+   ]
+  },
+  {
+   "en": "himself, herself, itself, themselves (reflexive)",
+   "da": "sig",
+   "level": 4,
+   "f": [
+    "3rd-person reflexive, singular and plural: points back to the subject – han vasker sig, de morer sig. Never a subject. Compare han vasker ham = he washes another man.",
+    [
+     {
+      "ex": [
+       [
+        "Han vasker sig.",
+        "He washes himself."
+       ],
+       [
+        "Hun skynder sig.",
+        "She hurries (herself)."
+       ],
+       [
+        "De morer sig.",
+        "They are enjoying themselves."
+       ],
+       [
+        "Børnene glæder sig til jul.",
+        "The children are looking forward to Christmas."
+       ]
+      ]
+     }
+    ],
+    [
+     "3m",
+     "3f",
+     "3p"
+    ]
+   ]
+  },
+  {
+   "en": "his own, her own, its own (en-word)",
+   "da": "sin",
+   "level": 4,
+   "f": [
+    "reflexive possessive, en-word owned: the owner is the subject of the sentence. Han tager sin bil = his own car; han tager hans bil = someone else's. Singular owners only – plural uses deres.",
+    [
+     {
+      "ex": [
+       [
+        "Han elsker sin kone.",
+        "He loves his (own) wife."
+       ],
+       [
+        "Hun tog sin taske og gik.",
+        "She took her bag and left."
+       ],
+       [
+        "Katten slikker sin pote.",
+        "The cat licks its paw."
+       ]
+      ]
+     }
+    ],
+    [
+     "3m",
+     "3f"
+    ]
+   ]
+  },
+  {
+   "en": "his own, her own, its own (et-word)",
+   "da": "sit",
+   "level": 4,
+   "f": [
+    "reflexive possessive, et-word owned: han solgte sit hus (his own house).",
+    [
+     {
+      "ex": [
+       [
+        "Han solgte sit hus.",
+        "He sold his (own) house."
+       ],
+       [
+        "Hun glemte sit pas.",
+        "She forgot her passport."
+       ],
+       [
+        "Barnet elsker sit værelse.",
+        "The child loves its room."
+       ]
+      ]
+     }
+    ],
+    [
+     "3m",
+     "3f"
+    ]
+   ]
+  },
+  {
+   "en": "his own, her own, its own (plural)",
+   "da": "sine",
+   "level": 4,
+   "f": [
+    "reflexive possessive, plural owned: hun besøger sine forældre (her own parents).",
+    [
+     {
+      "ex": [
+       [
+        "Hun besøger sine forældre.",
+        "She visits her parents."
+       ],
+       [
+        "Han vasker sine hænder.",
+        "He washes his hands."
+       ],
+       [
+        "Hunden leger med sine hvalpe.",
+        "The dog plays with its puppies."
+       ]
+      ]
+     }
+    ],
+    [
+     "3m",
+     "3f"
+    ]
+   ]
+  },
+  {
+   "en": "you (polite)",
+   "da": "De",
+   "level": 4,
+   "f": [
+    "polite ‘you’, always capitalised (≈ Russian Вы). Rare today – to the elderly, royalty, in formal letters and some customer service. Object: Dem, possessive: Deres. Verb forms are the same as with du.",
+    [
+     {
+      "ex": [
+       [
+        "Hvad ønsker De?",
+        "What would you like? (polite)"
+       ],
+       [
+        "Kan De hjælpe mig?",
+        "Can you help me? (polite)"
+       ],
+       [
+        "De er velkommen.",
+        "You are welcome. (polite)"
+       ]
+      ]
+     }
+    ],
+    [
+     "pol"
+    ]
+   ]
+  },
+  {
+   "en": "you (polite, object)",
+   "da": "Dem",
+   "level": 4,
+   "f": [
+    "object form of polite De – capitalised to distinguish it from dem (them).",
+    [
+     {
+      "ex": [
+       [
+        "Kan jeg hjælpe Dem?",
+        "Can I help you? (polite)"
+       ],
+       [
+        "Det er til Dem.",
+        "This is for you. (polite)"
+       ],
+       [
+        "Vi ringer til Dem i morgen.",
+        "We will call you tomorrow. (polite)"
+       ]
+      ]
+     }
+    ],
+    [
+     "pol"
+    ]
+   ]
+  },
+  {
+   "en": "your, yours (polite)",
+   "da": "Deres",
+   "level": 4,
+   "f": [
+    "possessive of polite De – capitalised to distinguish it from deres (their). One form for all nouns.",
+    [
+     {
+      "ex": [
+       [
+        "Må jeg se Deres pas?",
+        "May I see your passport? (polite)"
+       ],
+       [
+        "Deres bord er klart.",
+        "Your table is ready. (polite)"
+       ],
+       [
+        "Er det Deres taske?",
+        "Is this your bag? (polite)"
+       ]
+      ]
+     }
+    ],
+    [
+     "pol"
+    ]
+   ]
+  },
+  {
+   "en": "one, you (people in general)",
+   "da": "man",
+   "level": 5,
+   "f": [
+    "generic ‘one / you / people’: man siger, at … Extremely common in spoken Danish. Object form: en, possessive: ens.",
+    [
+     {
+      "ex": [
+       [
+        "Man må ikke ryge her.",
+        "You (one) may not smoke here."
+       ],
+       [
+        "Hvad gør man, når man er syg?",
+        "What do you do when you are ill?"
+       ],
+       [
+        "Man siger, at han er rig.",
+        "People say he is rich."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "each other, one another",
+   "da": "hinanden",
+   "level": 5,
+   "f": [
+    "reciprocal – vi elsker hinanden. One form; no gender or number changes.",
+    [
+     {
+      "ex": [
+       [
+        "Vi elsker hinanden.",
+        "We love each other."
+       ],
+       [
+        "De hjælper hinanden.",
+        "They help each other."
+       ],
+       [
+        "Kender I hinanden?",
+        "Do you know each other?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "myself, yourself, himself, herself (emphatic), even",
+   "da": "selv",
+   "level": 5,
+   "f": [
+    "emphasises the person: jeg gør det selv (I'll do it myself). Not the grammatical reflexive – that is mig/dig/sig. Also ‘even’: selv børn kan forstå det.",
+    [
+     {
+      "ex": [
+       [
+        "Jeg kan gøre det selv.",
+        "I can do it myself."
+       ],
+       [
+        "Hun bagte kagen selv.",
+        "She baked the cake herself."
+       ],
+       [
+        "Selv børnene forstod det.",
+        "Even the children understood it."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "this (en-word)",
+   "da": "denne",
+   "level": 5,
+   "f": [
+    "this, before an en-word: denne bog. Spoken Danish prefers den her bog. Et-word: dette, plural: disse.",
+    [
+     {
+      "ex": [
+       [
+        "Denne bog er god.",
+        "This book is good."
+       ],
+       [
+        "Jeg tager denne.",
+        "I'll take this one."
+       ],
+       [
+        "Denne gang går det bedre.",
+        "This time it goes better."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "this (et-word)",
+   "da": "dette",
+   "level": 5,
+   "f": [
+    "this, before an et-word: dette hus. Spoken: det her hus. Also ‘this’ standing alone: dette er min bror.",
+    [
+     {
+      "ex": [
+       [
+        "Dette hus er til salg.",
+        "This house is for sale."
+       ],
+       [
+        "Hvad betyder dette ord?",
+        "What does this word mean?"
+       ],
+       [
+        "Dette er min bror.",
+        "This is my brother."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "these",
+   "da": "disse",
+   "level": 5,
+   "f": [
+    "these, before a plural noun: disse sko. Spoken: de her sko.",
+    [
+     {
+      "ex": [
+       [
+        "Disse sko er for små.",
+        "These shoes are too small."
+       ],
+       [
+        "Disse æbler er søde.",
+        "These apples are sweet."
+       ],
+       [
+        "Hvem ejer disse bøger?",
+        "Who owns these books?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "someone, anyone, some (en-word)",
+   "da": "nogen",
+   "level": 5,
+   "f": [
+    "before an en-word, or alone about people: er der nogen hjemme? In questions and negatives = ‘any(one)’. Et-word: noget, plural: nogle.",
+    [
+     {
+      "ex": [
+       [
+        "Er der nogen hjemme?",
+        "Is anyone home?"
+       ],
+       [
+        "Jeg kender ikke nogen her.",
+        "I don't know anyone here."
+       ],
+       [
+        "Har du nogen anelse?",
+        "Do you have any idea?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "something, anything, some (et-word)",
+   "da": "noget",
+   "level": 5,
+   "f": [
+    "before an et-word or a mass noun, or alone: noget brød, noget at drikke. In questions and negatives = ‘any(thing)’.",
+    [
+     {
+      "ex": [
+       [
+        "Vil du have noget at drikke?",
+        "Do you want something to drink?"
+       ],
+       [
+        "Jeg har ikke set noget.",
+        "I haven't seen anything."
+       ],
+       [
+        "Har du noget brød?",
+        "Do you have any bread?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "some, a few (plural)",
+   "da": "nogle",
+   "level": 5,
+   "f": [
+    "some, before a plural noun: nogle venner. Pronounced exactly like nogen; in speech many Danes don't distinguish them.",
+    [
+     {
+      "ex": [
+       [
+        "Jeg har nogle spørgsmål.",
+        "I have some questions."
+       ],
+       [
+        "Nogle mennesker kan lide vinter.",
+        "Some people like winter."
+       ],
+       [
+        "Vil du have nogle æbler?",
+        "Do you want some apples?"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "nobody, no one, none (en-word / plural)",
+   "da": "ingen",
+   "level": 5,
+   "f": [
+    "nobody, or ‘no’ before an en-word or plural: ingen kom, ingen penge. Et-word: intet (formal) / ingenting.",
+    [
+     {
+      "ex": [
+       [
+        "Ingen ved det.",
+        "Nobody knows."
+       ],
+       [
+        "Jeg har ingen penge.",
+        "I have no money."
+       ],
+       [
+        "Der var ingen hjemme.",
+        "There was nobody home."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "nothing",
+   "da": "ingenting",
+   "level": 5,
+   "f": [
+    "nothing – the everyday form; intet is the formal / written equivalent (intet problem).",
+    [
+     {
+      "ex": [
+       [
+        "Jeg så ingenting.",
+        "I saw nothing."
+       ],
+       [
+        "Det koster ingenting.",
+        "It costs nothing."
+       ],
+       [
+        "Ingenting er umuligt.",
+        "Nothing is impossible."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "everyone, everybody, all (plural)",
+   "da": "alle",
+   "level": 5,
+   "f": [
+    "everyone, or ‘all’ before a plural: alle børn. Et-word / ‘everything’: alt.",
+    [
+     {
+      "ex": [
+       [
+        "Alle er velkomne.",
+        "Everyone is welcome."
+       ],
+       [
+        "Alle børnene sov.",
+        "All the children slept."
+       ],
+       [
+        "Tak til alle!",
+        "Thanks to everyone!"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "everything, all (et-word)",
+   "da": "alt",
+   "level": 5,
+   "f": [
+    "everything, or ‘all’ before an et-word or mass noun: alt arbejde. Plural: alle.",
+    [
+     {
+      "ex": [
+       [
+        "Alt er klart.",
+        "Everything is ready."
+       ],
+       [
+        "Har du alt med?",
+        "Do you have everything with you?"
+       ],
+       [
+        "Alt i alt gik det godt.",
+        "All in all it went well."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "each, every (en-word)",
+   "da": "hver",
+   "level": 5,
+   "f": [
+    "each / every before an en-word: hver dag. Et-word: hvert år. Also hver anden dag = every other day.",
+    [
+     {
+      "ex": [
+       [
+        "Jeg træner hver dag.",
+        "I work out every day."
+       ],
+       [
+        "Hver gang jeg ser ham …",
+        "Every time I see him …"
+       ],
+       [
+        "De fik en gave hver.",
+        "They got a present each."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "each, every (et-word)",
+   "da": "hvert",
+   "level": 5,
+   "f": [
+    "each / every before an et-word: hvert år, hvert barn.",
+    [
+     {
+      "ex": [
+       [
+        "Vi rejser hvert år.",
+        "We travel every year."
+       ],
+       [
+        "Hvert barn fik en bog.",
+        "Each child got a book."
+       ],
+       [
+        "Hvert femte minut.",
+        "Every five minutes."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "both",
+   "da": "begge",
+   "level": 5,
+   "f": [
+    "both – begge børn, dem begge. ‘Both things’: begge dele.",
+    [
+     {
+      "ex": [
+       [
+        "Begge børn er syge.",
+        "Both children are ill."
+       ],
+       [
+        "Jeg kan lide dem begge.",
+        "I like them both."
+       ],
+       [
+        "Begge dele, tak.",
+        "Both, please."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "another, other (en-word)",
+   "da": "anden",
+   "level": 5,
+   "f": [
+    "another / the other, before an en-word: en anden bil, den anden bil. Et-word: andet, plural: andre. Also the ordinal ‘second’.",
+    [
+     {
+      "ex": [
+       [
+        "Har du en anden idé?",
+        "Do you have another idea?"
+       ],
+       [
+        "Den anden bil er billigere.",
+        "The other car is cheaper."
+       ],
+       [
+        "Hver anden uge.",
+        "Every other week."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "other, something else (et-word)",
+   "da": "andet",
+   "level": 5,
+   "f": [
+    "other / else, before an et-word or alone: et andet hus, noget andet. Blandt andet = among other things.",
+    [
+     {
+      "ex": [
+       [
+        "Vil du have noget andet?",
+        "Do you want something else?"
+       ],
+       [
+        "Det er et andet problem.",
+        "That's another problem."
+       ],
+       [
+        "Blandt andet.",
+        "Among other things."
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "others, other (plural)",
+   "da": "andre",
+   "level": 5,
+   "f": [
+    "other(s), plural: andre mennesker, de andre.",
+    [
+     {
+      "ex": [
+       [
+        "De andre kommer senere.",
+        "The others are coming later."
+       ],
+       [
+        "Andre mennesker tænker anderledes.",
+        "Other people think differently."
+       ],
+       [
+        "Hjælp andre!",
+        "Help others!"
+       ]
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "en": "same",
+   "da": "samme",
+   "level": 5,
+   "f": [
+    "same – always with den/det/de or directly before the noun: den samme bil, samme tid.",
+    [
+     {
+      "ex": [
+       [
+        "Vi bor på samme vej.",
+        "We live on the same street."
+       ],
+       [
+        "Det er det samme for mig.",
+        "It's all the same to me."
+       ],
+       [
+        "Samme tid i morgen?",
+        "Same time tomorrow?"
+       ]
+      ]
+     }
+    ]
+   ]
+  }
  ]
 }

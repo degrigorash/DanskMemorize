@@ -129,6 +129,18 @@ body.nosay .say{display:none}
 .hvex+.hvex{margin-top:6px}
 .hvex .da{font-weight:600;color:var(--ink)}
 .hvex .en{color:var(--muted);font-size:13px}
+.prontable{overflow-x:auto;margin-bottom:10px;-webkit-overflow-scrolling:touch}
+.prontable table{border-collapse:collapse;font-size:13px;color:var(--muted);white-space:nowrap}
+.prontable th,.prontable td{padding:3px 8px;text-align:left;vertical-align:top;font-weight:400}
+.prontable thead th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;padding-bottom:5px}
+.prontable tbody th{font-size:12px;padding-left:0}
+.prontable tr.on{background:var(--soft);color:var(--ink)}
+.prontable tr.on th{color:var(--muted)}
+.prontable td span{display:flex;align-items:center}
+.prontable tr.on td span{min-height:22px}
+.prontable .hit{color:var(--accent);font-weight:700}
+.prontable .say{width:22px;height:22px;margin-left:4px} .prontable .say svg{width:12px;height:12px}
+@media (max-width:520px){ .prontable table{font-size:12px;white-space:normal;width:100%} .prontable th,.prontable td{padding:2px 5px} .prontable tbody th,.prontable thead th:first-child,.prontable .say{display:none} .prontable td:first-of-type{padding-left:0} .prontable tr.on td span{min-height:0} .prontable thead th{font-size:9px;letter-spacing:0} }
 .numpair{display:flex;align-items:baseline;gap:10px;margin-bottom:8px}
 .numpair .digit{font-size:24px;font-weight:700;color:var(--ink)}
 .numpair .eq{color:var(--muted)}
@@ -320,7 +332,26 @@ const TRACKS = {
     1:['Days','mandag…søndag – closed set; på mandag / om mandagen / i mandags'],
     2:['Months','januar…december – i januar, dates (den 1. maj)'],
     3:['Seasons & times of day','forår, sommer… / morgen, aften… – om sommeren, om morgenen'],
-    4:['Colors','rød, blå, grøn… – adjectives that inflect (rød/rødt/røde)']}}
+    4:['Colors','rød, blå, grøn… – adjectives that inflect (rød/rødt/røde)']}},
+  pron: {name:'Pronouns', groups:{
+    1:['Subject','jeg, du, han, hun, den, det, vi, I, de – who does it'],
+    2:['Object','mig, dig, ham, hende, os, jer, dem – after verbs and prepositions (den/det stay the same)'],
+    3:['Possessive','min/mit/mine, din/dit/dine, hans, hendes, vores, jeres, deres – agree with the thing owned'],
+    4:['Reflexive & polite','sig and sin/sit/sine (his own – not hans!), plus the formal De/Dem/Deres'],
+    5:['Other pronouns','man, hinanden, selv, denne/dette/disse, nogen/noget/nogle, ingen, alle, hver, begge, anden…']}}
+};
+// personal-pronoun paradigm shown after every pronoun answer: [label, subject, object, possessive, reflexive]
+const PRON_ROWS = {
+  '1s': ['I', ['jeg'], ['mig'], ['min/mit/mine'], ['mig']],
+  '2s': ['you (one)', ['du'], ['dig'], ['din/dit/dine'], ['dig']],
+  '3m': ['he', ['han'], ['ham'], ['hans'], ['sig', 'sin/sit/sine']],
+  '3f': ['she', ['hun'], ['hende'], ['hendes'], ['sig', 'sin/sit/sine']],
+  '3c': ['it (en)', ['den'], ['den'], ['dens'], ['sig', 'sin/sit/sine']],
+  '3n': ['it (et)', ['det'], ['det'], ['dets'], ['sig', 'sin/sit/sine']],
+  '1p': ['we', ['vi'], ['os'], ['vores'], ['os']],
+  '2p': ['you (several)', ['I'], ['jer'], ['jeres'], ['jer']],
+  '3p': ['they', ['de'], ['dem'], ['deres'], ['sig', 'deres']],
+  'pol': ['you (polite)', ['De'], ['Dem'], ['Deres'], ['sig']]
 };
 const KEY = 'dansk-trainer-v1';
 const $ = id => document.getElementById(id);
@@ -355,7 +386,7 @@ function savePrefs(){ try{ localStorage.setItem(KEY+'-prefs', JSON.stringify(pre
 
 const WORDS = [];
 for (const t of Object.keys(TRACKS)) for (const w of DATA[t]) WORDS.push({track:t, da:w.da, en:w.en, level:w.level, f:w.f, ex:w.ex, id:t+'|'+w.da});
-$('totalCount').textContent = `${DATA.verbs.length} verbs · ${DATA.adjs.length} adjectives · ${DATA.hv.length} question words · ${DATA.nums.length} numbers · ${DATA.vocab.length} basics`;
+$('totalCount').textContent = `${DATA.verbs.length} verbs · ${DATA.adjs.length} adjectives · ${DATA.hv.length} question words · ${DATA.nums.length} numbers · ${DATA.vocab.length} basics · ${DATA.pron.length} pronouns`;
 
 function st(w, dir){ return (stats[w.id] && stats[w.id][dir]) || {r:0,w:0,s:0}; }
 function status(w, dir){ const s = st(w,dir); if (s.r+s.w===0) return 'new'; return s.s>=3 ? 'learned' : 'learning'; }
@@ -382,7 +413,7 @@ function expand(s){
 }
 function enAlts(en){
   const alts = new Set();
-  for (const variant of expand(en)) for (let part of variant.split(/[,;]/)){
+  for (const variant of expand(en)) for (let part of variant.split(/[,;]|\s\/\s/)){
     part = part.trim().replace(/^to /,''); if (!part) continue;
     alts.add(part); if (part.startsWith('the ')) alts.add(part.slice(4));
   }
@@ -505,10 +536,11 @@ function nextCard(){
     $('kbdHint').innerHTML = '<kbd>Enter</kbd> check / next';
   } else {
     $('typeArea').hidden=true; $('mcArea').hidden=false;
-    const others = WORDS.filter(x => x.track===w.track && x.id!==w.id && answerText(x,S.dir)!==answerText(w,S.dir));
+    const at = x => answerText(x,S.dir).toLowerCase();
+    const others = WORDS.filter(x => x.track===w.track && x.id!==w.id && at(x)!==at(w));
     const same = others.filter(x => x.level===w.level), rest = others.filter(x => x.level!==w.level);
-    const pick=[]; const used=new Set([answerText(w,S.dir)]);
-    for (const src of [same, rest]) { shuffle(src); for (const x of src){ if (pick.length>=3) break; const t=answerText(x,S.dir); if (!used.has(t)){ used.add(t); pick.push(x);} } }
+    const pick=[]; const used=new Set([at(w)]);
+    for (const src of [same, rest]) { shuffle(src); for (const x of src){ if (pick.length>=3) break; const t=at(x); if (!used.has(t)){ used.add(t); pick.push(x);} } }
     const opts = shuffle([w, ...pick]);
     $('mcArea').innerHTML = opts.map((x,i) => `<button data-id="${x.id}"><b>${i+1}</b>${answerText(x,S.dir)}</button>`).join('');
     $('mcArea').querySelectorAll('button').forEach(b => b.onclick = () => answerMC(b));
@@ -526,6 +558,18 @@ function formsHtml(w){
     const pair = `<div class="numpair"><span class="digit">${esc(w.en)}</span><span class="eq">=</span><span class="word">${esc(w.da)}</span>${sayBtn(w.da)}</div>`;
     const note = f[0] ? `<div class="hvnote">${esc(f[0])}</div>` : '';
     return `<div class="hvforms">${pair}${note}</div>`;
+  }
+  if (w.track==='pron'){
+    const note = f[0] ? `<div class="hvnote">${esc(f[0])}</div>` : '';
+    const rows = (f[1] || []).map(g => `<div class="hvgroup">${(g.ex || []).map(([da, en]) =>
+      `<div class="hvex"><span class="da">${esc(da)}${sayBtn(da)}</span><span class="en">${esc(en)}</span></div>`).join('')}</div>`).join('');
+    const keys = f[2] || [];
+    const table = keys.length ? `<div class="prontable"><table><thead><tr><th></th><th>subject</th><th>object</th><th>possessive</th><th>reflexive</th></tr></thead><tbody>` +
+      Object.entries(PRON_ROWS).map(([k, [label, ...cols]]) => { const on = keys.includes(k);
+        return `<tr class="${on?'on':''}"><th>${esc(label)}</th>` + cols.map(items => `<td>${items.map(v => { const hit = on && v.split('/').includes(w.da);
+          return `<span class="${hit?'hit':''}">${esc(v)}${on ? sayBtn(v) : ''}</span>`; }).join('')}</td>`).join('') + '</tr>'; }).join('') +
+      `</tbody></table></div>` : '';
+    return `<div class="hvforms">${table}${note}${rows}</div>`;
   }
   if (w.track==='hv' || w.track==='vocab'){
     const note = f[0] ? `<div class="hvnote">${esc(f[0])}</div>` : '';
