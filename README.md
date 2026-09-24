@@ -17,6 +17,8 @@ A small offline‑capable trainer for the 500 most common Danish verbs, 250 most
 
 `index.html` is generated. To change words, translations or groups, edit `source/words.json`. Example sentences live separately in `source/examples/<track>.json` (currently `verbs.json`), keyed by the word as written in `words.json`, each value a list of `[danish, english]` pairs. Then run
 
+When one English word translates to several Danish words (to play → lege/spille, to live → bo/leve), give each entry a short context hint in parentheses, e.g. `to play (as children do, with toys)` vs `to play (a game, sport, an instrument, a role)`. The hint is shown in the prompt and in the word lists but is ignored when grading a typed answer, so `play` is still accepted for both. Avoid `/` inside the parentheses: it is treated as alternatives. Then run
+
     python3 source/build.py
 
 then commit both files. `source/template.html` holds the app itself (including the personal‑pronoun paradigm table `PRON_ROWS`, which pronoun entries reference by row key in `f[2]`).

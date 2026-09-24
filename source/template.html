@@ -412,11 +412,17 @@ function expand(s){
   return out.map(x => x.toLowerCase().replace(/\s+/g,' ').trim());
 }
 function enAlts(en){
+  // variants[0] is the gloss with every parenthesis removed; a part from an expanded variant only counts
+  // if it still contains a base part in order ("free of charge" for "free (of charge)"), so the context
+  // hint in "to play (a game, sport)" does not make "sport" an accepted answer
+  const variants = expand(en), parts = v => v.split(/[,;]|\s\/\s/).map(p => p.trim().replace(/^to /,'')).filter(Boolean);
+  const base = parts(variants[0]);
+  const fits = p => base.some(b => { const bw = b.split(' '), pw = p.split(' '); let i = 0; for (const x of pw) if (x===bw[i]) i++; return i===bw.length; });
   const alts = new Set();
-  for (const variant of expand(en)) for (let part of variant.split(/[,;]|\s\/\s/)){
-    part = part.trim().replace(/^to /,''); if (!part) continue;
+  variants.forEach((variant, k) => { for (const part of parts(variant)){
+    if (k && !fits(part)) continue;
     alts.add(part); if (part.startsWith('the ')) alts.add(part.slice(4));
-  }
+  } });
   return [...alts];
 }
 function daAlts(da){
