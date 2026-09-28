@@ -77,6 +77,7 @@ dialog.modal::backdrop{background:rgba(0,0,0,.45)}
 .modal .foot{padding:10px 18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:8px}
 .modal .list .pill{justify-self:end}
 .modal .foot button{white-space:nowrap}
+.modal .body{overflow-y:auto;padding:14px 18px 16px;font-size:14px;-webkit-overflow-scrolling:touch}
 @media (max-width:520px){
   .modal .list li{grid-template-columns:1fr auto}
   .modal .list .da{grid-column:1;grid-row:1}
@@ -140,7 +141,9 @@ body.nosay .say{display:none}
 .prontable tr.on td span{min-height:22px}
 .prontable .hit{color:var(--accent);font-weight:700}
 .prontable .say{width:22px;height:22px;margin-left:4px} .prontable .say svg{width:12px;height:12px}
-@media (max-width:520px){ .prontable table{font-size:12px;white-space:normal;width:100%} .prontable th,.prontable td{padding:2px 5px} .prontable tbody th,.prontable thead th:first-child,.prontable .say{display:none} .prontable td:first-of-type{padding-left:0} .prontable tr.on td span{min-height:0} .prontable thead th{font-size:9px;letter-spacing:0} }
+.prontable.ref table{color:var(--ink);font-size:14px}
+.prontable.ref td span{min-height:24px} .prontable.ref tbody th{padding-top:6px}
+@media (max-width:520px){ .prontable table,.prontable.ref table{font-size:12px;white-space:normal;width:100%} .prontable th,.prontable td{padding:2px 5px} .prontable tbody th,.prontable thead th:first-child,.prontable .say{display:none} .prontable td:first-of-type{padding-left:0} .prontable tr.on td span,.prontable.ref td span{min-height:0} .prontable thead th{font-size:9px;letter-spacing:0} }
 .numpair{display:flex;align-items:baseline;gap:10px;margin-bottom:8px}
 .numpair .digit{font-size:24px;font-weight:700;color:var(--ink)}
 .numpair .eq{color:var(--muted)}
@@ -222,6 +225,7 @@ th.on{color:var(--accent)}
       <div class="seg" id="trackSeg"></div>
     </div>
     <div class="groups" id="groupList"></div>
+    <div class="row" id="pronRef" style="margin-top:10px" hidden><button class="ghost" id="pronTableBtn" type="button">Pronoun table</button><span class="small">every personal pronoun form in one table</span></div>
     <div class="legend"><span><i style="background:var(--learned)"></i>learned (3+ correct in a row)</span><span><i style="background:var(--learning)"></i>learning</span><span><i style="background:var(--line)"></i>not seen yet</span></div>
   </div>
 </section>
@@ -302,6 +306,16 @@ th.on{color:var(--accent)}
     </div>
     <ul class="list" id="previewList"></ul>
     <div class="foot"><span class="small" id="previewInfo"></span><button class="ghost" id="previewSelect" type="button">Practice this group</button></div>
+  </div>
+</dialog>
+
+<dialog id="pronDlg" class="modal" aria-labelledby="pronDlgTitle">
+  <div class="box">
+    <div class="head">
+      <div><h3 id="pronDlgTitle">Personal pronouns</h3><div class="small">subject · object · possessive · reflexive</div></div>
+      <button class="ghost close" id="pronDlgClose" type="button" aria-label="Close">✕</button>
+    </div>
+    <div class="body" id="pronDlgBody"></div>
   </div>
 </dialog>
 
@@ -462,6 +476,7 @@ function renderSetup(){
   $('groupList').querySelectorAll('input').forEach(cb => cb.onchange = () => {
     prefs.groups[t] = [...$('groupList').querySelectorAll('input:checked')].map(c => +c.dataset.lvl); savePrefs(); updatePool(); });
   $('groupList').querySelectorAll('.peek').forEach(b => b.onclick = e => { e.preventDefault(); e.stopPropagation(); openPreview(t, +b.dataset.lvl); });
+  $('pronRef').hidden = t!=='pron';
   updatePool();
 }
 
@@ -481,6 +496,22 @@ function closePreview(){ const d = $('preview'); if (canSay) speechSynthesis.can
 $('previewClose').onclick = closePreview;
 $('preview').addEventListener('click', e => { if (e.target === $('preview')) closePreview(); });
 $('preview').addEventListener('close', () => { if (canSay) speechSynthesis.cancel(); });
+
+/* ---------- pronoun table (setup screen, Pronouns track) ---------- */
+const PRON_NOTES = [
+  ['Possessives agree with the thing owned', 'min bil (en-word) · mit hus (et-word) · mine børn (plural) – the same for din/dit/dine and sin/sit/sine. hans, hendes, dens, dets, vores, jeres, deres never change.'],
+  ['sig and sin/sit/sine point back to the subject', 'Only for he, she, it, they (and man). With they the possessive stays deres.',
+    [['Han tager sin bil.', 'He takes his (own) car.'], ['Han tager hans bil.', "He takes his (someone else's) car."]]],
+  ['den or det', 'den stands for an en-word (bilen → den), det for an et-word (huset → det) – the same form as subject and object.'],
+  ['Capital letters', 'I (you, several) is always capitalised. De / Dem / Deres with a capital are the polite ‘you’; lower-case de / dem / deres mean they / them / their.']
+];
+$('pronDlgBody').innerHTML = pronTable() + PRON_NOTES.map(([title, text, ex]) => `<div class="hvgroup"><div class="hvsense">${esc(title)}</div><div>${esc(text)}</div>` +
+  (ex || []).map(([da, en]) => `<div class="hvex" style="margin-top:6px"><span class="da">${esc(da)}${sayBtn(da)}</span><span class="en">${esc(en)}</span></div>`).join('') + '</div>').join('');
+function closePron(){ const d = $('pronDlg'); if (canSay) speechSynthesis.cancel(); if (d.close) d.close(); else d.removeAttribute('open'); }
+$('pronTableBtn').onclick = () => { const d = $('pronDlg'); if (d.showModal) d.showModal(); else d.setAttribute('open',''); $('pronDlgBody').scrollTop = 0; };
+$('pronDlgClose').onclick = closePron;
+$('pronDlg').addEventListener('click', e => { if (e.target === $('pronDlg')) closePron(); });
+$('pronDlg').addEventListener('close', () => { if (canSay) speechSynthesis.cancel(); });
 function pool(){ const sel = prefs.groups[prefs.track]||[]; return WORDS.filter(w => w.track===prefs.track && sel.includes(w.level)); }
 function updatePool(){
   const p = pool(); $('startBtn').disabled = p.length===0;
@@ -557,6 +588,15 @@ function shuffle(a){ for (let i=a.length-1;i>0;i--){ const j=Math.floor(Math.ran
 
 const exHtml = ex => ex && ex.length ? `<div class="hvgroup">${ex.map(([da, en]) =>
   `<div class="hvex"><span class="da">${esc(da)}${sayBtn(da)}</span><span class="en">${esc(en)}</span></div>`).join('')}</div>` : '';
+// PRON_ROWS as a table; with keys, those rows are highlighted (word da in bold) and only they get listen buttons,
+// without keys it is the plain reference table with listen buttons everywhere
+function pronTable(keys, da){
+  return `<div class="prontable${keys ? '' : ' ref'}"><table><thead><tr><th></th><th>subject</th><th>object</th><th>possessive</th><th>reflexive</th></tr></thead><tbody>` +
+    Object.entries(PRON_ROWS).map(([k, [label, ...cols]]) => { const on = !!keys && keys.includes(k);
+      return `<tr class="${on?'on':''}"><th>${esc(label)}</th>` + cols.map(items => `<td>${items.map(v => { const hit = on && v.split('/').includes(da);
+        return `<span class="${hit?'hit':''}">${esc(v)}${on || !keys ? sayBtn(v) : ''}</span>`; }).join('')}</td>`).join('') + '</tr>'; }).join('') +
+    `</tbody></table></div>`;
+}
 const mm = (v, word) => v && v.startsWith('m. ') ? word + ' ' + v.slice(3) : v;
 function formsHtml(w){
   const f = w.f || []; const has = v => v && v!=='-'; const cell = (v, spoken) => has(v) ? esc(v) + sayBtn(spoken || v) : '–';
@@ -570,12 +610,7 @@ function formsHtml(w){
     const rows = (f[1] || []).map(g => `<div class="hvgroup">${(g.ex || []).map(([da, en]) =>
       `<div class="hvex"><span class="da">${esc(da)}${sayBtn(da)}</span><span class="en">${esc(en)}</span></div>`).join('')}</div>`).join('');
     const keys = f[2] || [];
-    const table = keys.length ? `<div class="prontable"><table><thead><tr><th></th><th>subject</th><th>object</th><th>possessive</th><th>reflexive</th></tr></thead><tbody>` +
-      Object.entries(PRON_ROWS).map(([k, [label, ...cols]]) => { const on = keys.includes(k);
-        return `<tr class="${on?'on':''}"><th>${esc(label)}</th>` + cols.map(items => `<td>${items.map(v => { const hit = on && v.split('/').includes(w.da);
-          return `<span class="${hit?'hit':''}">${esc(v)}${on ? sayBtn(v) : ''}</span>`; }).join('')}</td>`).join('') + '</tr>'; }).join('') +
-      `</tbody></table></div>` : '';
-    return `<div class="hvforms">${table}${note}${rows}</div>`;
+    return `<div class="hvforms">${keys.length ? pronTable(keys, w.da) : ''}${note}${rows}</div>`;
   }
   if (w.track==='hv' || w.track==='vocab'){
     const note = f[0] ? `<div class="hvnote">${esc(f[0])}</div>` : '';
