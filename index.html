@@ -9,11 +9,13 @@
   --bg:#f6f4ef; --card:#ffffff; --ink:#1f2a2e; --muted:#6b7680; --line:#e3ded4;
   --accent:#0f7c6c; --accent-ink:#ffffff; --soft:#e6f2ef; --ok:#1f8a4c; --ok-bg:#e4f5ea;
   --bad:#c2402d; --bad-bg:#fbe7e3; --warn:#b9770e; --new:#c9c3b6; --learning:#e0b64a; --learned:#2e9e63;
+  --hard:#b5541c; --hard-bg:#fbeee2;
 }
 @media (prefers-color-scheme: dark){
   :root{ --bg:#15191c; --card:#1e2428; --ink:#e8e6e1; --muted:#98a2ab; --line:#2f373d;
     --accent:#3fb59f; --accent-ink:#0f1a18; --soft:#213531; --ok:#5fcf8a; --ok-bg:#1d3427;
-    --bad:#ef7f6d; --bad-bg:#3d2320; --warn:#e0a93e; --new:#3a4248; --learning:#c9a23f; --learned:#3fa76b; }
+    --bad:#ef7f6d; --bad-bg:#3d2320; --warn:#e0a93e; --new:#3a4248; --learning:#c9a23f; --learned:#3fa76b;
+    --hard:#f0955a; --hard-bg:#3b2a1e; }
 }
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -148,6 +150,11 @@ body.nosay .say{display:none}
 .numpair .digit{font-size:24px;font-weight:700;color:var(--ink)}
 .numpair .eq{color:var(--muted)}
 .numpair .word{font-size:22px;font-weight:600;color:var(--accent)}
+.marks{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.marks button{padding:7px 14px;font-size:14px}
+.marks button.on{background:var(--soft);border-color:var(--accent);color:var(--accent);font-weight:600}
+.marks #markHard.on{background:var(--hard-bg);border-color:var(--hard);color:var(--hard)}
+.star{color:var(--hard);font-size:13px;margin-left:4px}
 .actions{display:flex;justify-content:space-between;align-items:center;margin-top:16px;gap:8px}
 .kbd{font-size:12px;color:var(--muted)}
 .kbd kbd{border:1px solid var(--line);border-radius:4px;padding:0 5px;font-family:inherit}
@@ -214,6 +221,7 @@ th.on{color:var(--accent)}
       <label class="inline"><span class="small">Pick words</span>
         <select id="focus">
           <option value="smart">smart mix – prefer new & shaky words</option>
+          <option value="hard">only shaky and hard words</option>
           <option value="weak">only words I got wrong or haven't seen</option>
           <option value="even">everything equally</option>
         </select></label>
@@ -226,7 +234,7 @@ th.on{color:var(--accent)}
     </div>
     <div class="groups" id="groupList"></div>
     <div class="row" id="pronRef" style="margin-top:10px" hidden><button class="ghost" id="pronTableBtn" type="button">Pronoun table</button><span class="small">every personal pronoun form in one table</span></div>
-    <div class="legend"><span><i style="background:var(--learned)"></i>learned (3+ correct in a row)</span><span><i style="background:var(--learning)"></i>learning</span><span><i style="background:var(--line)"></i>not seen yet</span></div>
+    <div class="legend"><span><i style="background:var(--learned)"></i>learned (3+ correct in a row)</span><span><i style="background:var(--learning)"></i>learning</span><span><i style="background:var(--line)"></i>not seen yet</span><span><span class="star" style="margin:0 4px 0 0">★</span>hard word</span></div>
   </div>
 </section>
 
@@ -239,6 +247,10 @@ th.on{color:var(--accent)}
     <div id="typeArea" class="answer"><input id="answerInput" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type the translation…"><button class="primary" id="checkBtn">Check</button></div>
     <div id="mcArea" class="choices" hidden></div>
     <div id="feedback" class="feedback"></div>
+    <div class="marks" id="marks" hidden>
+      <button class="ghost" id="markLearned" type="button" aria-pressed="false"></button>
+      <button class="ghost" id="markHard" type="button" aria-pressed="false"></button>
+    </div>
     <div class="actions">
       <button class="primary" id="nextBtn" hidden>Next</button>
       <span class="kbd" id="kbdHint"></span>
@@ -276,7 +288,7 @@ th.on{color:var(--accent)}
     <div class="filters">
       <input id="search" placeholder="search…">
       <select id="fTrack"><option value="">all tracks</option></select>
-      <select id="fStatus"><option value="">any status</option><option value="new">new</option><option value="learning">learning</option><option value="learned">learned</option></select>
+      <select id="fStatus"><option value="">any status</option><option value="new">new</option><option value="learning">learning</option><option value="learned">learned</option><option value="hard">★ hard</option></select>
     </div>
     <div class="tblwrap"><table id="wordTable"><thead><tr>
       <th data-k="da">Danish</th><th data-k="en">English</th><th data-k="level">Grp</th>
@@ -397,6 +409,12 @@ function load(){ try{ return JSON.parse(localStorage.getItem(KEY)) || {}; }catch
 function save(){ try{ localStorage.setItem(KEY, JSON.stringify(stats)); }catch(e){} }
 function loadPrefs(){ try{ return JSON.parse(localStorage.getItem(KEY+'-prefs')) || {}; }catch(e){ return {}; } }
 function savePrefs(){ try{ localStorage.setItem(KEY+'-prefs', JSON.stringify(prefs)); }catch(e){} }
+// words the user flagged as hard, {id: timestamp}; independent of direction
+let hard = loadHard();
+function loadHard(){ try{ return JSON.parse(localStorage.getItem(KEY+'-hard')) || {}; }catch(e){ return {}; } }
+function saveHard(){ try{ localStorage.setItem(KEY+'-hard', JSON.stringify(hard)); }catch(e){} }
+const isHard = w => !!hard[w.id];
+const starHtml = w => isHard(w) ? '<span class="star" title="hard word">★</span>' : '';
 
 const WORDS = [];
 for (const t of Object.keys(TRACKS)) for (const w of DATA[t]) WORDS.push({track:t, da:w.da, en:w.en, level:w.level, f:w.f, ex:w.ex, id:t+'|'+w.da});
@@ -487,7 +505,7 @@ function openPreview(t, lvl){
   $('previewTitle').textContent = `${TRACKS[t].name} · ${lvl}. ${name}`;
   $('previewDesc').textContent = desc;
   $('previewList').innerHTML = ws.map(w => { const s = status(w,prefs.dir);
-    return `<li><span class="da">${esc(w.da)}${sayBtn(w.da)}</span><span class="en">${esc(w.en)}</span><span class="pill ${s}">${s}</span></li>`; }).join('');
+    return `<li><span class="da">${esc(w.da)}${starHtml(w)}${sayBtn(w.da)}</span><span class="en">${esc(w.en)}</span><span class="pill ${s}">${s}</span></li>`; }).join('');
   $('previewInfo').textContent = `${ws.length} words · ${l} learned · ${m} learning · ${ws.length-l-m} new (${prefs.dir==='da'?'da→en':'en→da'})`;
   $('previewSelect').onclick = () => { prefs.groups[t] = [lvl]; savePrefs(); closePreview(); renderSetup(); };
   const d = $('preview'); if (d.showModal) d.showModal(); else d.setAttribute('open',''); $('previewList').scrollTop = 0;
@@ -515,11 +533,11 @@ $('pronDlg').addEventListener('close', () => { if (canSay) speechSynthesis.cance
 function pool(){ const sel = prefs.groups[prefs.track]||[]; return WORDS.filter(w => w.track===prefs.track && sel.includes(w.level)); }
 function updatePool(){
   const p = pool(); $('startBtn').disabled = p.length===0;
-  const weak = p.filter(w => status(w,prefs.dir)!=='learned').length;
-  $('poolInfo').textContent = p.length ? `${p.length} words selected · ${weak} not yet learned` : 'select at least one group';
+  const weak = prefs.focus==='hard' ? p.filter(w => weight(w)>0).length : p.filter(w => status(w,prefs.dir)!=='learned').length;
+  $('poolInfo').textContent = p.length ? `${p.length} words selected · ${weak} ${prefs.focus==='hard' ? 'shaky or hard' : 'not yet learned'}` : 'select at least one group';
 }
 $('count').onchange = e => { prefs.count=+e.target.value; savePrefs(); };
-$('focus').onchange = e => { prefs.focus=e.target.value; savePrefs(); };
+$('focus').onchange = e => { prefs.focus=e.target.value; savePrefs(); updatePool(); };
 
 
 /* ---------- session ---------- */
@@ -530,6 +548,8 @@ function weight(w){
   const seen = s.r+s.w;
   let base = seen===0 ? 3 : s.s===0 ? 4 : s.s===1 ? 2.5 : s.s===2 ? 1.5 : 0.4;
   if (prefs.focus==='weak') return (seen===0 || s.s<3) ? base : 0;
+  // shaky = seen but not learned yet; hard words come in whatever their status
+  if (prefs.focus==='hard') return isHard(w) ? Math.max(base, 3) : (seen && s.s<3) ? base : 0;
   return base;
 }
 function sample(cands, n){
@@ -542,7 +562,9 @@ function sample(cands, n){
   return out;
 }
 function startSession(words){
-  if (!words.length){ alert('Nothing to practice here – every selected word is already learned in this direction. Try another group or "everything equally".'); return; }
+  if (!words.length){ alert(prefs.focus==='hard'
+    ? 'Nothing to practice here – no shaky or hard words in the selected groups yet. Mark words as hard after answering, or try another group.'
+    : 'Nothing to practice here – every selected word is already learned in this direction. Try another group or "everything equally".'); return; }
   S = {queue: words, i:0, right:0, wrong:0, missed:[], dir:prefs.dir, mode:prefs.mode, track:prefs.track, answered:false, requeued:{}};
   show('practice'); nextCard();
 }
@@ -559,13 +581,13 @@ function answerText(w, dir){ return dir==='da' ? w.en : w.da; }
 
 function nextCard(){
   if (S.i >= S.queue.length) return finish();
-  const w = S.queue[S.i]; S.answered=false;
+  const w = S.queue[S.i]; S.answered=false; S.undo=null; $('marks').hidden=true;
   $('counter').textContent = `${S.i+1} / ${S.queue.length}`;
   $('score').textContent = `✓ ${S.right}   ✗ ${S.wrong}`;
   $('progBar').style.width = (100*S.i/S.queue.length)+'%';
   $('promptWord').textContent = prompt(w, S.dir);
   $('promptSay').hidden = S.dir!=='da';
-  $('promptHint').textContent = `${TRACKS[w.track].name.toLowerCase().replace(/s$/,'')} · group ${w.level}` + (S.dir==='en' && w.track==='verbs' ? ' · answer with the infinitive' : '');
+  $('promptHint').textContent = `${TRACKS[w.track].name.toLowerCase().replace(/s$/,'')} · group ${w.level}` + (S.dir==='en' && w.track==='verbs' ? ' · answer with the infinitive' : '') + (isHard(w) ? ' · ★ hard word' : '');
   $('feedback').className='feedback'; $('feedback').innerHTML=''; $('nextBtn').hidden=true;
   if (S.mode==='type'){
     $('typeArea').hidden=false; $('mcArea').hidden=true;
@@ -639,6 +661,8 @@ function resolve(ok, typo){
   fb.innerHTML = (ok ? (typo ? 'Correct (small typo)' : 'Correct') : 'Not quite') +
     `<div class="full"><b>${esc(w.da)}</b> — ${esc(w.en)}${sayBtn(w.da)}</div>` + formsHtml(w);
   $('score').textContent = `✓ ${S.right}   ✗ ${S.wrong}`;
+  $('marks').hidden=false; renderMarks();
+  $('kbdHint').innerHTML = '<kbd>Enter</kbd> next · <kbd>L</kbd> learned · <kbd>H</kbd> hard';
   $('nextBtn').hidden=false; document.activeElement && document.activeElement.blur && document.activeElement.blur();
 }
 function answerType(){
@@ -652,12 +676,45 @@ function answerMC(btn){
   $('mcArea').querySelectorAll('button').forEach(b => { b.disabled=true; if (b.dataset.id===w.id) b.classList.add('ok'); else if (b===btn) b.classList.add('bad'); });
   resolve(ok);
 }
+/* ---------- mark the answered word as learned / hard ---------- */
+function renderMarks(){
+  const w = S.queue[S.i], l = status(w,S.dir)==='learned', h = isHard(w);
+  const ml = $('markLearned'), mh = $('markHard');
+  ml.textContent = l ? '✓ Learned' : 'Mark as learned'; ml.classList.toggle('on', l); ml.setAttribute('aria-pressed', l);
+  mh.textContent = h ? '★ Hard word' : '☆ Mark as hard'; mh.classList.toggle('on', h); mh.setAttribute('aria-pressed', h);
+  ml.title = `${S.dir==='da'?'da→en':'en→da'}: counts as learned (3 correct in a row) and is not repeated this session`;
+  mh.title = 'hard words always come up in "only shaky and hard words"';
+}
+function toggleLearned(){
+  const w = S.queue[S.i]; stats[w.id] = stats[w.id] || {};
+  const s = stats[w.id][S.dir] = stats[w.id][S.dir] || {r:0,w:0,s:0};
+  if (status(w,S.dir)!=='learned'){
+    // remember what marking changed so a second click on this card restores it
+    S.undo = {s:s.s, hard:hard[w.id]}; s.s = 3; delete hard[w.id];
+    S.queue = S.queue.filter((x,i) => i<=S.i || x!==w);
+    $('counter').textContent = `${S.i+1} / ${S.queue.length}`;
+  } else {
+    s.s = S.undo ? S.undo.s : 0;
+    if (S.undo && S.undo.hard) hard[w.id] = S.undo.hard;
+    S.undo = null;
+  }
+  save(); saveHard(); renderMarks();
+}
+function toggleHard(){
+  const w = S.queue[S.i];
+  if (isHard(w)) delete hard[w.id]; else hard[w.id] = Date.now();
+  saveHard(); renderMarks();
+}
+$('markLearned').onclick = toggleLearned;
+$('markHard').onclick = toggleHard;
 $('checkBtn').onclick = answerType;
 $('nextBtn').onclick = () => { S.i++; nextCard(); };
 $('quitBtn').onclick = () => finish();
 document.addEventListener('keydown', e => {
   if ($('practice').hidden || !S) return;
   if (e.key==='Enter'){ e.preventDefault(); if (S.answered) { S.i++; nextCard(); } else if (S.mode==='type') answerType(); return; }
+  if (S.answered && !e.metaKey && !e.ctrlKey && !e.altKey){ const k = e.key.toLowerCase();
+    if (k==='l'){ toggleLearned(); return; } if (k==='h'){ toggleHard(); return; } }
   if (S.mode==='mc' && !S.answered && /^[1-4]$/.test(e.key)){ const b=$('mcArea').querySelectorAll('button')[+e.key-1]; if (b) answerMC(b); }
 });
 
@@ -679,7 +736,7 @@ function renderStats(){
   const dir = prefs.statsDir;
   let R=0,W=0,learned=0,seen=0;
   for (const w of WORDS){ const s=st(w,dir); R+=s.r; W+=s.w; if (s.r+s.w) seen++; if (status(w,dir)==='learned') learned++; }
-  $('tiles').innerHTML = [[WORDS.length,'words total'],[seen,'seen ('+(dir==='da'?'da→en':'en→da')+')'],[learned,'learned'],[R,'correct answers'],[W,'wrong answers'],[R+W?Math.round(100*R/(R+W))+'%':'–','accuracy']]
+  $('tiles').innerHTML = [[WORDS.length,'words total'],[seen,'seen ('+(dir==='da'?'da→en':'en→da')+')'],[learned,'learned'],[R,'correct answers'],[W,'wrong answers'],[R+W?Math.round(100*R/(R+W))+'%':'–','accuracy'],[WORDS.filter(isHard).length,'★ hard words']]
     .map(([v,k]) => `<div class="tile"><div class="v">${v}</div><div class="k">${k}</div></div>`).join('');
   $('groupStats').innerHTML = Object.entries(TRACKS).map(([t,tr]) => `<h2 style="margin-top:10px">${tr.name}</h2>` + Object.entries(tr.groups).map(([lvl,[name]]) => {
     const ws = WORDS.filter(w => w.track===t && w.level==lvl);
@@ -693,12 +750,12 @@ function renderTable(){
   const q = $('search').value.toLowerCase(), ft=$('fTrack').value, fs=$('fStatus').value, dir=prefs.statsDir;
   let rows = WORDS.filter(w => (!ft || w.track===ft) && (!q || w.da.toLowerCase().includes(q) || w.en.toLowerCase().includes(q)))
     .map(w => { const a=st(w,'da'), b=st(w,'en'); return {w, da:w.da, en:w.en, level:w.level, r_da:a.r, w_da:a.w, r_en:b.r, w_en:b.w, status:status(w,dir), track:w.track}; })
-    .filter(r => !fs || r.status===fs);
+    .filter(r => !fs || (fs==='hard' ? isHard(r.w) : r.status===fs));
   const ord = {new:0,learning:1,learned:2};
   rows.sort((x,y) => { let a=x[sort.k], b=y[sort.k]; if (sort.k==='status'){a=ord[a];b=ord[b];} if (sort.k==='level'){ if (x.track!==y.track) return x.track<y.track?-1:1; }
     if (a<b) return sort.asc?-1:1; if (a>b) return sort.asc?1:-1; return x.da<y.da?-1:1; });
   $('wordTable').querySelectorAll('th').forEach(th => { th.classList.toggle('on', th.dataset.k===sort.k); th.onclick = () => { if (sort.k===th.dataset.k) sort.asc=!sort.asc; else sort={k:th.dataset.k, asc:true}; renderTable(); }; });
-  $('wordTable').querySelector('tbody').innerHTML = rows.slice(0,400).map(r => `<tr><td><b>${esc(r.da)}</b></td><td>${r.en}</td><td>${TRACKS[r.track].name[0]}${r.level}</td>
+  $('wordTable').querySelector('tbody').innerHTML = rows.slice(0,400).map(r => `<tr><td><b>${esc(r.da)}</b>${starHtml(r.w)}</td><td>${r.en}</td><td>${TRACKS[r.track].name[0]}${r.level}</td>
     <td>${r.r_da||''}</td><td>${r.w_da||''}</td><td>${r.r_en||''}</td><td>${r.w_en||''}</td><td><span class="pill ${r.status}">${r.status}</span></td></tr>`).join('');
   $('tableInfo').textContent = rows.length>400 ? `showing 400 of ${rows.length} – narrow the search to see more` : `${rows.length} words · status column follows the direction chosen above`;
 }
@@ -706,7 +763,7 @@ function renderTable(){
 
 /* ---------- backup ---------- */
 $('exportBtn').onclick = () => {
-  const blob = new Blob([JSON.stringify({exported:new Date().toISOString(), stats}, null, 1)], {type:'application/json'});
+  const blob = new Blob([JSON.stringify({exported:new Date().toISOString(), stats, hard}, null, 1)], {type:'application/json'});
   const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `dansk-progress-${new Date().toISOString().slice(0,10)}.json`; a.click();
 };
 $('importBtn').onclick = () => $('importFile').click();
@@ -714,9 +771,10 @@ $('importFile').onchange = e => { const f=e.target.files[0]; if(!f) return; cons
   rd.onload = () => { try { const j=JSON.parse(rd.result); const inc=j.stats||j; if (typeof inc!=='object') throw 0;
       if (confirm('Merge imported progress into the current one? (Counts are added together.)')) {
         for (const [id,dirs] of Object.entries(inc)) { stats[id]=stats[id]||{}; for (const [d,s] of Object.entries(dirs)) { const c=stats[id][d]||{r:0,w:0,s:0}; stats[id][d]={r:c.r+(s.r||0), w:c.w+(s.w||0), s:Math.max(c.s,s.s||0), last:Math.max(c.last||0,s.last||0)}; } }
-        save(); renderStats(); } } catch(err){ alert('That file does not look like an exported progress file.'); } e.target.value=''; };
+        if (j.stats && j.hard && typeof j.hard==='object') for (const [id,t] of Object.entries(j.hard)) hard[id] = Math.max(hard[id]||0, +t||1);
+        save(); saveHard(); renderStats(); } } catch(err){ alert('That file does not look like an exported progress file.'); } e.target.value=''; };
   rd.readAsText(f); };
-$('resetBtn').onclick = () => { if (confirm('Delete ALL progress? This cannot be undone (export first if unsure).')) { stats={}; save(); renderStats(); } };
+$('resetBtn').onclick = () => { if (confirm('Delete ALL progress? This cannot be undone (export first if unsure).')) { stats={}; hard={}; save(); saveHard(); renderStats(); } };
 
 renderSetup(); show('setup');
 </script>

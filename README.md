@@ -11,6 +11,7 @@ A small offline‑capable trainer for the 500 most common Danish verbs, 250 most
 - On the Pronouns track, "Pronoun table" opens the full personal‑pronoun table (subject, object, possessive, reflexive) with short usage notes, available any time
 - Full forms shown after each answer (verb tenses and conjugation class plus 2–3 bilingual example sentences per verb, adjective n/t/e forms, comparative and superlative; for question words a usage note and bilingual example sentences; for numbers the digit ↔ Danish word and a base‑20 breakdown; for pronouns the whole personal‑pronoun table with the word's row highlighted, a usage note and example sentences)
 - Per‑word statistics (right/wrong per direction, "learned" after 3 correct in a row), with a smart mix that favours new and shaky words
+- After each answer, mark the word as learned (counts as 3 correct in a row, not repeated this session) or as a hard word (★, key <kbd>L</kbd> / <kbd>H</kbd>); the "only shaky and hard words" mode practises just the words you have seen but not learned yet plus every word marked hard
 - Listen buttons: hear the Danish prompt, the answer, every verb and adjective form, number word and example sentence read aloud (uses the device's own text‑to‑speech; on Android install a Danish voice under Settings → Text‑to‑speech if none is present)
 - Progress is stored in the browser (localStorage); export/import as JSON for backup
 
