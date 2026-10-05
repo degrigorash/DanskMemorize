@@ -280,7 +280,7 @@ th.on{color:var(--accent)}
   </div>
   <div class="card">
     <h2>Quiz with an AI agent</h2>
-    <p class="small" style="margin-top:0">Downloads a text file with a ready-made tutor prompt and your progress (learned, shaky and ★ hard words). Attach it to a new chat with Claude, ChatGPT or any other AI assistant and write “start”. It will test you with sentences, gap-fills, reading texts and role-play built from the words you know.</p>
+    <p class="small" style="margin-top:0">Downloads a text file with a ready-made tutor prompt and your progress (learned, shaky and ★ hard words). Attach it to a new chat with Claude, ChatGPT or any other AI assistant and write “start”. It keeps testing you, mostly on your learned words to check they have stuck, with sentences, gap-fills, reading texts and role-play until you write “stop”.</p>
     <div class="row"><button class="primary" id="aiFileBtn" type="button">Download for AI agent</button><span class="small" id="aiFileInfo" aria-live="polite"></span></div>
   </div>
   <div class="card">
@@ -781,10 +781,12 @@ How to quiz me:
   6. A short reading text (4–6 sentences) followed by 2–3 questions about it.
   7. A role-play (café, shop, doctor, small talk) where you play the other person.
   8. Free writing: give me a topic, I write 3–5 sentences, you correct them.
-- About half of the questions should use my ★ hard and shaky words. Also spot-check learned words, especially those near the top of each learned list (practised longest ago).
+- The main goal is to check that my learned words have really stuck. About 80% of the questions should test learned words: work through each learned list from the top (practised longest ago) and test the words in sentences, not only their translation. Use my ★ hard and shaky words for the rest.
+- If I get a learned word wrong, bring it back a few questions later.
 - Build sentences mostly from words I know. If you need a word I haven't learned, give its meaning in brackets.
 - Only use exercise types that fit the tracks I've practised (for example, no number exercises if Numbers isn't listed below).
-- Keep score. When I write "stop", give me my score and a short list of words and grammar points to review.
+- Keep asking new questions for as long as I keep answering. Don't stop after a set number, don't ask whether I want to continue, and don't wrap up on your own. When you have been through all my learned words, start again from the top with different exercise types.
+- Keep score. Only when I write "stop", give me my score, the learned words I got wrong ("not really learned yet") and a short list of grammar points to review.
 
 Start with a numbered menu of these exercise types and suggest one based on my progress. If I answer "mix", rotate through them.`;
 const AI_DIRS = {da:'da→en', en:'en→da'};
