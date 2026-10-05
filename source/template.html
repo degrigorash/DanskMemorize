@@ -767,9 +767,11 @@ function renderTable(){
 ['search','fTrack','fStatus'].forEach(id => $(id).oninput = renderTable);
 
 /* ---------- copy for AI agent ---------- */
-const AI_PROMPT = `I'm learning Danish with a flashcard app. It only checks single words, so please be my Danish tutor and test whether I can actually use them. My progress from the app is further down in this file.
+const AI_PROMPT = `I'm learning Danish with a flashcard app. It only checks single words, so please be my Danish tutor and test whether I can actually use them. The goal is to check that the words I've marked as learned have really stuck. My progress from the app is further down in this file.
 
 How to quiz me:
+- About 80% of the questions should test my learned words. Work through each learned list from the top (practised longest ago) and test the words in sentences, not only their translation. Use my ★ hard and shaky words only for the other 20%. Don't make them the focus, even if there are many of them.
+- If I get a learned word wrong, bring it back a few questions later.
 - Ask one question at a time and wait for my answer. Don't give the answer away in the question.
 - After each answer, tell me whether it's right, show the correct Danish, and explain any mistake in a sentence or two in English. Point out spelling slips (æ, ø and å matter), but don't count them as wrong.
 - Vary the exercises:
@@ -781,14 +783,12 @@ How to quiz me:
   6. A short reading text (4–6 sentences) followed by 2–3 questions about it.
   7. A role-play (café, shop, doctor, small talk) where you play the other person.
   8. Free writing: give me a topic, I write 3–5 sentences, you correct them.
-- The main goal is to check that my learned words have really stuck. About 80% of the questions should test learned words: work through each learned list from the top (practised longest ago) and test the words in sentences, not only their translation. Use my ★ hard and shaky words for the rest.
-- If I get a learned word wrong, bring it back a few questions later.
 - Build sentences mostly from words I know. If you need a word I haven't learned, give its meaning in brackets.
 - Only use exercise types that fit the tracks I've practised (for example, no number exercises if Numbers isn't listed below).
 - Keep asking new questions for as long as I keep answering. Don't stop after a set number, don't ask whether I want to continue, and don't wrap up on your own. When you have been through all my learned words, start again from the top with different exercise types.
 - Keep score. Only when I write "stop", give me my score, the learned words I got wrong ("not really learned yet") and a short list of grammar points to review.
 
-Start with a numbered menu of these exercise types and suggest one based on my progress. If I answer "mix", rotate through them.`;
+Start with a numbered menu of these exercise types and suggest one that suits checking my learned words. If I answer "mix", rotate through them, still mostly on learned words.`;
 const AI_DIRS = {da:'da→en', en:'en→da'};
 function aiLine(w, withRecord){
   const f = w.f || [], has = v => v && v!=='-';
@@ -821,13 +821,13 @@ function aiText(){
     learned.sort((a,b) => lastSeen(a)-lastSeen(b));
     const untouched = ws.length - hardW.length - shaky.length - learned.length;
     let s = `## ${tr.name} — ${learned.length} learned · ${shaky.length} shaky · ${hardW.length} ★ hard · ${untouched} not practised yet`;
+    if (learned.length) s += `\nLearned:\n` + learned.map(w => { const sd = seenDirs(w); return aiLine(w, false) + (sd.length===1 ? ` [${AI_DIRS[sd[0]]} only]` : ''); }).join('\n');
     if (hardW.length) s += `\n★ Hard:\n` + hardW.map(w => aiLine(w, true)).join('\n');
     if (shaky.length) s += `\nShaky:\n` + shaky.map(w => aiLine(w, true)).join('\n');
-    if (learned.length) s += `\nLearned:\n` + learned.map(w => { const sd = seenDirs(w); return aiLine(w, false) + (sd.length===1 ? ` [${AI_DIRS[sd[0]]} only]` : ''); }).join('\n');
     parts.push(s);
   }
   if (!parts.length) return null;
-  const legend = `Learned = answered right 3 times in a row. Shaky = practised but not learned yet. ★ Hard = words I marked as hard myself. da→en means I'm shown the Danish word and answer in English, en→da the other way round; counts are right ✓ and wrong ✗ answers. Verbs show present, past and perfect; adjectives show t-form, e-form, comparative and superlative. Shaky words are listed worst first, learned words from longest ago practised to most recent. "[da→en only]" means I've only practised that direction.`;
+  const legend = `Learned = answered right 3 times in a row. Shaky = practised but not learned yet. ★ Hard = words I marked as hard myself. da→en means I'm shown the Danish word and answer in English, en→da the other way round; counts are right ✓ and wrong ✗ answers. Verbs show present, past and perfect; adjectives show t-form, e-form, comparative and superlative. Learned words are listed from longest ago practised to most recent, shaky words worst first. "[da→en only]" means I've only practised that direction.`;
   const text = `${AI_PROMPT}\n\n--- My progress (${new Date().toISOString().slice(0,10)}) ---\n${legend}\n\n${parts.join('\n\n')}` +
     (notStarted.length ? `\n\nNot started yet: ${notStarted.join(', ')}.` : '');
   return {text, tot};
