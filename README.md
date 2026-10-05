@@ -13,6 +13,7 @@ A small offline‑capable trainer for the 500 most common Danish verbs, 250 most
 - Per‑word statistics (right/wrong per direction, "learned" after 3 correct in a row), with a smart mix that favours new and shaky words
 - After each answer, mark the word as learned (counts as 3 correct in a row, not repeated this session) or as a hard word (★, key <kbd>L</kbd> / <kbd>H</kbd>); the "only shaky and hard words" mode practises just the words you have seen but not learned yet plus every word marked hard
 - Listen buttons: hear the Danish prompt, the answer, every verb and adjective form, number word and example sentence read aloud (uses the device's own text‑to‑speech; on Android install a Danish voice under Settings → Text‑to‑speech if none is present)
+- "Copy for AI agent" on the Stats screen copies a ready‑made tutor prompt plus your progress (★ hard and shaky words with right/wrong counts, learned words oldest first, verb and adjective forms). Paste it into a new chat with any AI assistant to be quizzed with sentence translation, gap‑fills, similar‑word choices, numbers and dates, reading texts, role‑play and free writing
 - Progress is stored in the browser (localStorage); export/import as JSON for backup
 
 ## Editing the word list

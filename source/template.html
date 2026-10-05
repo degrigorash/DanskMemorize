@@ -80,6 +80,7 @@ dialog.modal::backdrop{background:rgba(0,0,0,.45)}
 .modal .list .pill{justify-self:end}
 .modal .foot button{white-space:nowrap}
 .modal .body{overflow-y:auto;padding:14px 18px 16px;font-size:14px;-webkit-overflow-scrolling:touch}
+#aiDlgText{display:block;width:100%;height:60vh;resize:vertical;font:13px/1.4 ui-monospace,Menlo,Consolas,monospace;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px}
 @media (max-width:520px){
   .modal .list li{grid-template-columns:1fr auto}
   .modal .list .da{grid-column:1;grid-row:1}
@@ -279,6 +280,11 @@ th.on{color:var(--accent)}
     <div class="tiles" id="tiles"></div>
   </div>
   <div class="card">
+    <h2>Quiz with an AI agent</h2>
+    <p class="small" style="margin-top:0">Copies a ready-made tutor prompt together with your progress (learned, shaky and ★ hard words). Paste it into a new chat with Claude, ChatGPT or any other AI assistant, and it will test you with sentences, gap-fills, reading texts and role-play built from the words you know.</p>
+    <div class="row"><button class="primary" id="aiCopyBtn" type="button">Copy for AI agent</button><span class="small" id="aiCopyInfo" aria-live="polite"></span></div>
+  </div>
+  <div class="card">
     <h2>Progress by group</h2>
     <div class="row" style="margin-bottom:8px"><div class="seg" id="statsDirSeg"><button data-v="da">Danish → English</button><button data-v="en">English → Danish</button></div></div>
     <div id="groupStats"></div>
@@ -328,6 +334,16 @@ th.on{color:var(--accent)}
       <button class="ghost close" id="pronDlgClose" type="button" aria-label="Close">✕</button>
     </div>
     <div class="body" id="pronDlgBody"></div>
+  </div>
+</dialog>
+
+<dialog id="aiDlg" class="modal" aria-labelledby="aiDlgTitle">
+  <div class="box">
+    <div class="head">
+      <div><h3 id="aiDlgTitle">Copy for AI agent</h3><div class="small">This browser blocked automatic copying. Select all the text below, copy it and paste it into a new chat.</div></div>
+      <button class="ghost close" id="aiDlgClose" type="button" aria-label="Close">✕</button>
+    </div>
+    <div class="body"><textarea id="aiDlgText" readonly></textarea></div>
   </div>
 </dialog>
 
@@ -760,6 +776,90 @@ function renderTable(){
   $('tableInfo').textContent = rows.length>400 ? `showing 400 of ${rows.length} – narrow the search to see more` : `${rows.length} words · status column follows the direction chosen above`;
 }
 ['search','fTrack','fStatus'].forEach(id => $(id).oninput = renderTable);
+
+/* ---------- copy for AI agent ---------- */
+const AI_PROMPT = `I'm learning Danish with a flashcard app. It only checks single words, so please be my Danish tutor and test whether I can actually use them. My progress from the app is at the end of this message.
+
+How to quiz me:
+- Ask one question at a time and wait for my answer. Don't give the answer away in the question.
+- After each answer, tell me whether it's right, show the correct Danish, and explain any mistake in a sentence or two in English. Point out spelling slips (æ, ø and å matter), but don't count them as wrong.
+- Vary the exercises:
+  1. Translate a short English sentence into Danish (check my word order: verb in second place, inversion after "i dag" and similar, where "ikke" goes).
+  2. Translate a Danish sentence into English.
+  3. Fill the gap with the right form: verb tense, adjective ending (en/et word, plural, definite), pronoun (han/ham, sin/hans).
+  4. Pick between two similar words and say why (e.g. lege/spille, kende/vide).
+  5. Write out numbers, prices, years and dates in Danish.
+  6. A short reading text (4–6 sentences) followed by 2–3 questions about it.
+  7. A role-play (café, shop, doctor, small talk) where you play the other person.
+  8. Free writing: give me a topic, I write 3–5 sentences, you correct them.
+- About half of the questions should use my ★ hard and shaky words. Also spot-check learned words, especially those near the top of each learned list (practised longest ago).
+- Build sentences mostly from words I know. If you need a word I haven't learned, give its meaning in brackets.
+- Only use exercise types that fit the tracks I've practised (for example, no number exercises if Numbers isn't listed below).
+- Keep score. When I write "stop", give me my score and a short list of words and grammar points to review.
+
+Start with a numbered menu of these exercise types and suggest one based on my progress. If I answer "mix", rotate through them.`;
+const AI_DIRS = {da:'da→en', en:'en→da'};
+function aiLine(w, withRecord){
+  const f = w.f || [], has = v => v && v!=='-';
+  const forms = w.track==='verbs' ? [f[0], f[1], f[2]] : w.track==='adjs' ? [f[1], f[2], mm(f[3],'mere'), mm(f[4],'mest')] : [];
+  const fs = forms.filter(has).join(', ');
+  let line = `- ${w.da}${fs ? ` (${fs})` : ''} — ${w.en}`;
+  if (withRecord){
+    const rec = Object.keys(AI_DIRS).map(d => { const s = st(w,d); return s.r+s.w ? `${AI_DIRS[d]} ${s.r}✓ ${s.w}✗` : ''; }).filter(Boolean).join('; ');
+    line += ` [${rec || 'not practised yet'}]`;
+  }
+  return line;
+}
+function aiText(){
+  const seenDirs = w => Object.keys(AI_DIRS).filter(d => { const s = st(w,d); return s.r+s.w>0; });
+  const lastSeen = w => Math.max(0, ...Object.keys(AI_DIRS).map(d => st(w,d).last || 0));
+  const wrongs = w => st(w,'da').w + st(w,'en').w;
+  const parts = [], notStarted = [], tot = {learned:0, shaky:0, hard:0};
+  for (const [t, tr] of Object.entries(TRACKS)){
+    const ws = WORDS.filter(w => w.track===t), hardW = [], shaky = [], learned = [];
+    for (const w of ws){
+      const sd = seenDirs(w);
+      if (isHard(w)) hardW.push(w);
+      else if (!sd.length) continue;
+      else if (sd.every(d => st(w,d).s>=3)) learned.push(w);
+      else shaky.push(w);
+    }
+    if (!hardW.length && !shaky.length && !learned.length){ notStarted.push(tr.name); continue; }
+    tot.learned += learned.length; tot.shaky += shaky.length; tot.hard += hardW.length;
+    shaky.sort((a,b) => wrongs(b)-wrongs(a));
+    learned.sort((a,b) => lastSeen(a)-lastSeen(b));
+    const untouched = ws.length - hardW.length - shaky.length - learned.length;
+    let s = `## ${tr.name} — ${learned.length} learned · ${shaky.length} shaky · ${hardW.length} ★ hard · ${untouched} not practised yet`;
+    if (hardW.length) s += `\n★ Hard:\n` + hardW.map(w => aiLine(w, true)).join('\n');
+    if (shaky.length) s += `\nShaky:\n` + shaky.map(w => aiLine(w, true)).join('\n');
+    if (learned.length) s += `\nLearned:\n` + learned.map(w => { const sd = seenDirs(w); return aiLine(w, false) + (sd.length===1 ? ` [${AI_DIRS[sd[0]]} only]` : ''); }).join('\n');
+    parts.push(s);
+  }
+  if (!parts.length) return null;
+  const legend = `Learned = answered right 3 times in a row. Shaky = practised but not learned yet. ★ Hard = words I marked as hard myself. da→en means I'm shown the Danish word and answer in English, en→da the other way round; counts are right ✓ and wrong ✗ answers. Verbs show present, past and perfect; adjectives show t-form, e-form, comparative and superlative. Shaky words are listed worst first, learned words from longest ago practised to most recent. "[da→en only]" means I've only practised that direction.`;
+  const text = `${AI_PROMPT}\n\n--- My progress (${new Date().toISOString().slice(0,10)}) ---\n${legend}\n\n${parts.join('\n\n')}` +
+    (notStarted.length ? `\n\nNot started yet: ${notStarted.join(', ')}.` : '');
+  return {text, tot};
+}
+async function copyText(t){
+  try { await navigator.clipboard.writeText(t); return true; } catch(e){}
+  const ta = document.createElement('textarea'); ta.value = t; ta.setAttribute('readonly','');
+  ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0'; document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, t.length);
+  let ok = false; try { ok = document.execCommand('copy'); } catch(e){}
+  ta.remove(); return ok;
+}
+$('aiCopyBtn').onclick = async () => {
+  const info = $('aiCopyInfo'), r = aiText();
+  if (!r){ info.textContent = 'Practise some words first – there is nothing to share yet.'; return; }
+  const summary = `${r.tot.learned} learned · ${r.tot.shaky} shaky · ${r.tot.hard} ★ hard`;
+  if (await copyText(r.text)){ info.textContent = `Copied (${summary}). Paste it into a new chat with your AI assistant.`; return; }
+  info.textContent = '';
+  const d = $('aiDlg'), ta = $('aiDlgText'); ta.value = r.text;
+  if (d.showModal) d.showModal(); else d.setAttribute('open','');
+  ta.focus(); ta.select(); ta.scrollTop = 0;
+};
+$('aiDlgClose').onclick = () => { const d = $('aiDlg'); if (d.close) d.close(); else d.removeAttribute('open'); };
+$('aiDlg').addEventListener('click', e => { if (e.target === $('aiDlg')) $('aiDlgClose').onclick(); });
 
 /* ---------- backup ---------- */
 $('exportBtn').onclick = () => {
