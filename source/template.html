@@ -80,7 +80,6 @@ dialog.modal::backdrop{background:rgba(0,0,0,.45)}
 .modal .list .pill{justify-self:end}
 .modal .foot button{white-space:nowrap}
 .modal .body{overflow-y:auto;padding:14px 18px 16px;font-size:14px;-webkit-overflow-scrolling:touch}
-#aiDlgText{display:block;width:100%;height:60vh;resize:vertical;font:13px/1.4 ui-monospace,Menlo,Consolas,monospace;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px}
 @media (max-width:520px){
   .modal .list li{grid-template-columns:1fr auto}
   .modal .list .da{grid-column:1;grid-row:1}
@@ -281,8 +280,8 @@ th.on{color:var(--accent)}
   </div>
   <div class="card">
     <h2>Quiz with an AI agent</h2>
-    <p class="small" style="margin-top:0">Copies a ready-made tutor prompt together with your progress (learned, shaky and ★ hard words). Paste it into a new chat with Claude, ChatGPT or any other AI assistant, and it will test you with sentences, gap-fills, reading texts and role-play built from the words you know.</p>
-    <div class="row"><button class="primary" id="aiCopyBtn" type="button">Copy for AI agent</button><span class="small" id="aiCopyInfo" aria-live="polite"></span></div>
+    <p class="small" style="margin-top:0">Downloads a text file with a ready-made tutor prompt and your progress (learned, shaky and ★ hard words). Attach it to a new chat with Claude, ChatGPT or any other AI assistant and write “start”. It will test you with sentences, gap-fills, reading texts and role-play built from the words you know.</p>
+    <div class="row"><button class="primary" id="aiFileBtn" type="button">Download for AI agent</button><span class="small" id="aiFileInfo" aria-live="polite"></span></div>
   </div>
   <div class="card">
     <h2>Progress by group</h2>
@@ -334,16 +333,6 @@ th.on{color:var(--accent)}
       <button class="ghost close" id="pronDlgClose" type="button" aria-label="Close">✕</button>
     </div>
     <div class="body" id="pronDlgBody"></div>
-  </div>
-</dialog>
-
-<dialog id="aiDlg" class="modal" aria-labelledby="aiDlgTitle">
-  <div class="box">
-    <div class="head">
-      <div><h3 id="aiDlgTitle">Copy for AI agent</h3><div class="small">This browser blocked automatic copying. Select all the text below, copy it and paste it into a new chat.</div></div>
-      <button class="ghost close" id="aiDlgClose" type="button" aria-label="Close">✕</button>
-    </div>
-    <div class="body"><textarea id="aiDlgText" readonly></textarea></div>
   </div>
 </dialog>
 
@@ -778,7 +767,7 @@ function renderTable(){
 ['search','fTrack','fStatus'].forEach(id => $(id).oninput = renderTable);
 
 /* ---------- copy for AI agent ---------- */
-const AI_PROMPT = `I'm learning Danish with a flashcard app. It only checks single words, so please be my Danish tutor and test whether I can actually use them. My progress from the app is at the end of this message.
+const AI_PROMPT = `I'm learning Danish with a flashcard app. It only checks single words, so please be my Danish tutor and test whether I can actually use them. My progress from the app is further down in this file.
 
 How to quiz me:
 - Ask one question at a time and wait for my answer. Don't give the answer away in the question.
@@ -841,31 +830,20 @@ function aiText(){
     (notStarted.length ? `\n\nNot started yet: ${notStarted.join(', ')}.` : '');
   return {text, tot};
 }
-async function copyText(t){
-  try { await navigator.clipboard.writeText(t); return true; } catch(e){}
-  const ta = document.createElement('textarea'); ta.value = t; ta.setAttribute('readonly','');
-  ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0'; document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, t.length);
-  let ok = false; try { ok = document.execCommand('copy'); } catch(e){}
-  ta.remove(); return ok;
+function download(name, text, type){
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], {type})); a.download = name; a.click();
 }
-$('aiCopyBtn').onclick = async () => {
-  const info = $('aiCopyInfo'), r = aiText();
+$('aiFileBtn').onclick = () => {
+  const info = $('aiFileInfo'), r = aiText();
   if (!r){ info.textContent = 'Practise some words first – there is nothing to share yet.'; return; }
-  const summary = `${r.tot.learned} learned · ${r.tot.shaky} shaky · ${r.tot.hard} ★ hard`;
-  if (await copyText(r.text)){ info.textContent = `Copied (${summary}). Paste it into a new chat with your AI assistant.`; return; }
-  info.textContent = '';
-  const d = $('aiDlg'), ta = $('aiDlgText'); ta.value = r.text;
-  if (d.showModal) d.showModal(); else d.setAttribute('open','');
-  ta.focus(); ta.select(); ta.scrollTop = 0;
+  const name = `dansk-ai-quiz-${new Date().toISOString().slice(0,10)}.txt`;
+  download(name, r.text, 'text/plain;charset=utf-8');
+  info.textContent = `Downloaded ${name} (${r.tot.learned} learned · ${r.tot.shaky} shaky · ${r.tot.hard} ★ hard). Attach it to a new chat and write “start”.`;
 };
-$('aiDlgClose').onclick = () => { const d = $('aiDlg'); if (d.close) d.close(); else d.removeAttribute('open'); };
-$('aiDlg').addEventListener('click', e => { if (e.target === $('aiDlg')) $('aiDlgClose').onclick(); });
 
 /* ---------- backup ---------- */
-$('exportBtn').onclick = () => {
-  const blob = new Blob([JSON.stringify({exported:new Date().toISOString(), stats, hard}, null, 1)], {type:'application/json'});
-  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `dansk-progress-${new Date().toISOString().slice(0,10)}.json`; a.click();
-};
+$('exportBtn').onclick = () => download(`dansk-progress-${new Date().toISOString().slice(0,10)}.json`,
+  JSON.stringify({exported:new Date().toISOString(), stats, hard}, null, 1), 'application/json');
 $('importBtn').onclick = () => $('importFile').click();
 $('importFile').onchange = e => { const f=e.target.files[0]; if(!f) return; const rd=new FileReader();
   rd.onload = () => { try { const j=JSON.parse(rd.result); const inc=j.stats||j; if (typeof inc!=='object') throw 0;
