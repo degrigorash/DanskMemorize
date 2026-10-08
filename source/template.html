@@ -75,6 +75,7 @@ dialog.modal::backdrop{background:rgba(0,0,0,.45)}
 .modal .list li:last-child{border-bottom:0}
 .modal .list .da{font-weight:600;display:flex;align-items:center;gap:4px}
 .modal .list .en{color:var(--muted);font-size:14px}
+.modal .list .ex{display:block;color:var(--ink);margin-top:2px}
 .modal .say{width:28px;height:28px} .modal .say svg{width:15px;height:15px}
 .modal .foot{padding:10px 18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:8px}
 .modal .list .pill{justify-self:end}
@@ -99,6 +100,12 @@ dialog.modal::backdrop{background:rgba(0,0,0,.45)}
 .say:hover{background:var(--soft)} .say:active{transform:scale(.92)}
 .say svg{width:18px;height:18px}
 .prompt .say{width:44px;height:44px} .prompt .say svg{width:22px;height:22px}
+/* modal track: the prompt is a whole sentence (en→da adds the Danish sentence with a gap) */
+.prompt .word.sent{font-size:26px;font-weight:600;line-height:1.3}
+.prompt .word.sent #promptWord{display:flex;flex-direction:column;gap:10px;min-width:0}
+.prompt .gapline{font-size:19px;font-weight:500;color:var(--muted)}
+.gap{display:inline-block;min-width:3.2em;border-bottom:2px solid currentColor}
+b.mod{color:var(--accent);font-weight:700}
 .full .say,.hvex .say,.forms .say,.numpair .say{width:28px;height:28px;margin-left:6px} .full .say svg,.hvex .say svg,.forms .say svg,.numpair .say svg{width:15px;height:15px}
 .forms span:nth-child(even){display:flex;align-items:center;flex-wrap:wrap}
 .hvex .da{display:flex;align-items:center}
@@ -109,7 +116,7 @@ body.nosay .say{display:none}
 .answer input:focus{border-color:var(--accent)}
 .answer input.ok{border-color:var(--ok)} .answer input.bad{border-color:var(--bad)}
 .choices{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-@media (max-width:520px){.choices{grid-template-columns:1fr}.prompt .word{font-size:32px}}
+@media (max-width:520px){.choices{grid-template-columns:1fr}.prompt .word{font-size:32px}.prompt .word.sent{font-size:22px}}
 .choices button{text-align:left;padding:14px 14px 14px 40px;border:2px solid var(--line);border-radius:10px;background:var(--bg);position:relative;font-size:17px}
 .choices button:hover:not(:disabled){border-color:var(--accent)}
 .choices button b{position:absolute;left:12px;top:13px;font-size:13px;color:var(--muted);font-weight:600;border:1px solid var(--line);border-radius:5px;width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center}
@@ -232,8 +239,9 @@ th.on{color:var(--accent)}
     <div class="row">
       <div class="seg" id="trackSeg"></div>
     </div>
+    <div class="small" id="trackNote" style="margin-top:8px" hidden></div>
     <div class="groups" id="groupList"></div>
-    <div class="row" id="pronRef" style="margin-top:10px" hidden><button class="ghost" id="pronTableBtn" type="button">Pronoun table</button><span class="small">every personal pronoun form in one table</span></div>
+    <div class="row" id="refRow" style="margin-top:10px" hidden><button class="ghost" id="refBtn" type="button"></button><span class="small" id="refDesc"></span></div>
     <div class="legend"><span><i style="background:var(--learned)"></i>learned (3+ correct in a row)</span><span><i style="background:var(--learning)"></i>learning</span><span><i style="background:var(--line)"></i>not seen yet</span><span><span class="star" style="margin:0 4px 0 0">★</span>hard word</span></div>
   </div>
 </section>
@@ -326,13 +334,13 @@ th.on{color:var(--accent)}
   </div>
 </dialog>
 
-<dialog id="pronDlg" class="modal" aria-labelledby="pronDlgTitle">
+<dialog id="refDlg" class="modal" aria-labelledby="refDlgTitle">
   <div class="box">
     <div class="head">
-      <div><h3 id="pronDlgTitle">Personal pronouns</h3><div class="small">subject · object · possessive · reflexive</div></div>
-      <button class="ghost close" id="pronDlgClose" type="button" aria-label="Close">✕</button>
+      <div><h3 id="refDlgTitle"></h3><div class="small" id="refDlgSub"></div></div>
+      <button class="ghost close" id="refDlgClose" type="button" aria-label="Close">✕</button>
     </div>
-    <div class="body" id="pronDlgBody"></div>
+    <div class="body" id="refDlgBody"></div>
   </div>
 </dialog>
 
@@ -345,6 +353,11 @@ const TRACKS = {
     3:['Common','slightly more abstract everyday verbs: decide, expect, recommend, disappear'],
     4:['Formal & news','what you meet in newspapers and at work: negotiate, demand, improve, evaluate'],
     5:['Advanced','official and bureaucratic Danish: adopt (a law), presuppose, constitute']}},
+  modal: {name:'Modal verbs', note:'Each card is one meaning of a modal verb, shown in a sentence. Danish → English: pick what the modal means there (always multiple choice). English → Danish: fill in the missing modal.', groups:{
+    1:['kan / kunne','can, know, like, may, could – ability, possibility, requests'],
+    2:['skal / skulle','plans, going somewhere, rules, Shall we…?, hearsay, should'],
+    3:['vil / ville','want, would like, Will you…?, will, would'],
+    4:['må / måtte','may, must not, have to, must be']}},
   adjs: {name:'Adjectives', groups:{
     1:['Essentials','good, big, new, cold, tired, red – the core describing words'],
     2:['Everyday','common descriptions and nationalities: dangerous, modern, normal, French'],
@@ -405,7 +418,7 @@ function speak(text){
 const sayBtn = text => `<button class="say" type="button" data-say="${esc(text)}" aria-label="Listen" title="Listen">${SAY_ICON}</button>`;
 document.addEventListener('click', e => { const b = e.target.closest('button.say[data-say]'); if (b) { e.preventDefault(); speak(b.dataset.say); } });
 $('promptSay').innerHTML = SAY_ICON;
-$('promptSay').onclick = () => { if (S) speak(S.queue[S.i].da); };
+$('promptSay').onclick = () => { if (S) speak(S.sent ? S.sent.plain : S.queue[S.i].da); };
 
 /* ---------- state ---------- */
 let stats = load();
@@ -422,8 +435,9 @@ const isHard = w => !!hard[w.id];
 const starHtml = w => isHard(w) ? '<span class="star" title="hard word">★</span>' : '';
 
 const WORDS = [];
-for (const t of Object.keys(TRACKS)) for (const w of DATA[t]) WORDS.push({track:t, da:w.da, en:w.en, level:w.level, f:w.f, ex:w.ex, id:t+'|'+w.da});
-$('totalCount').textContent = `${DATA.verbs.length} verbs · ${DATA.adjs.length} adjectives · ${DATA.hv.length} question words · ${DATA.nums.length} numbers · ${DATA.vocab.length} basics · ${DATA.pron.length} pronouns`;
+// modal cards share their da (several meanings of skal), so they carry their own key
+for (const t of Object.keys(TRACKS)) for (const w of DATA[t]) WORDS.push({track:t, da:w.da, en:w.en, level:w.level, f:w.f, ex:w.ex, id:t+'|'+(w.key || w.da)});
+$('totalCount').textContent = `${DATA.verbs.length} verbs · ${DATA.modal.length} modal verb meanings · ${DATA.adjs.length} adjectives · ${DATA.hv.length} question words · ${DATA.nums.length} numbers · ${DATA.vocab.length} basics · ${DATA.pron.length} pronouns`;
 
 function st(w, dir){ return (stats[w.id] && stats[w.id][dir]) || {r:0,w:0,s:0}; }
 function status(w, dir){ const s = st(w,dir); if (s.r+s.w===0) return 'new'; return s.s>=3 ? 'learned' : 'learning'; }
@@ -470,9 +484,8 @@ function daAlts(da){
 }
 function lev(a,b){ if(Math.abs(a.length-b.length)>1) return 9; const m=a.length,n=b.length; let prev=[...Array(n+1).keys()];
   for(let i=1;i<=m;i++){ const cur=[i]; for(let j=1;j<=n;j++) cur[j]=Math.min(prev[j]+1,cur[j-1]+1,prev[j-1]+(a[i-1]===b[j-1]?0:1)); prev=cur;} return prev[n]; }
-function check(input, w, dir){
+function check(input, alts){
   const ans = clean(input).replace(/^to /,''); if (!ans) return {ok:false};
-  const alts = dir==='da' ? enAlts(w.en) : daAlts(w.da);
   if (alts.includes(ans)) return {ok:true};
   if (ans.length>=5 && alts.some(a => a.length>=5 && lev(a,ans)===1)) return {ok:true, typo:true};
   return {ok:false};
@@ -499,7 +512,9 @@ function renderSetup(){
   $('groupList').querySelectorAll('input').forEach(cb => cb.onchange = () => {
     prefs.groups[t] = [...$('groupList').querySelectorAll('input:checked')].map(c => +c.dataset.lvl); savePrefs(); updatePool(); });
   $('groupList').querySelectorAll('.peek').forEach(b => b.onclick = e => { e.preventDefault(); e.stopPropagation(); openPreview(t, +b.dataset.lvl); });
-  $('pronRef').hidden = t!=='pron';
+  $('trackNote').hidden = !TRACKS[t].note; $('trackNote').textContent = TRACKS[t].note || '';
+  const ref = REFS[t]; $('refRow').hidden = !ref;
+  if (ref){ $('refBtn').textContent = ref.btn; $('refDesc').textContent = ref.desc; }
   updatePool();
 }
 
@@ -510,6 +525,8 @@ function openPreview(t, lvl){
   $('previewTitle').textContent = `${TRACKS[t].name} · ${lvl}. ${name}`;
   $('previewDesc').textContent = desc;
   $('previewList').innerHTML = ws.map(w => { const s = status(w,prefs.dir);
+    if (w.track==='modal'){ const x = parseSent(w.f[1][0]);
+      return `<li><span class="da">${esc(w.da)}${starHtml(w)}${sayBtn(x.plain)}</span><span class="en">${esc(w.en)}<span class="ex">${x.bold}</span></span><span class="pill ${s}">${s}</span></li>`; }
     return `<li><span class="da">${esc(w.da)}${starHtml(w)}${sayBtn(w.da)}</span><span class="en">${esc(w.en)}</span><span class="pill ${s}">${s}</span></li>`; }).join('');
   $('previewInfo').textContent = `${ws.length} words · ${l} learned · ${m} learning · ${ws.length-l-m} new (${prefs.dir==='da'?'da→en':'en→da'})`;
   $('previewSelect').onclick = () => { prefs.groups[t] = [lvl]; savePrefs(); closePreview(); renderSetup(); };
@@ -520,7 +537,7 @@ $('previewClose').onclick = closePreview;
 $('preview').addEventListener('click', e => { if (e.target === $('preview')) closePreview(); });
 $('preview').addEventListener('close', () => { if (canSay) speechSynthesis.cancel(); });
 
-/* ---------- pronoun table (setup screen, Pronouns track) ---------- */
+/* ---------- reference dialog (setup screen): pronoun table, modal table ---------- */
 const PRON_NOTES = [
   ['Possessives agree with the thing owned', 'min bil (en-word) · mit hus (et-word) · mine børn (plural) – the same for din/dit/dine and sin/sit/sine. hans, hendes, dens, dets, vores, jeres, deres never change.'],
   ['sig and sin/sit/sine point back to the subject', 'Only for he, she, it, they (and man). With they the possessive stays deres.',
@@ -528,13 +545,45 @@ const PRON_NOTES = [
   ['den or det', 'den stands for an en-word (bilen → den), det for an et-word (huset → det) – the same form as subject and object.'],
   ['Capital letters', 'I (you, several) is always capitalised. De / Dem / Deres with a capital are the polite ‘you’; lower-case de / dem / deres mean they / them / their.']
 ];
-$('pronDlgBody').innerHTML = pronTable() + PRON_NOTES.map(([title, text, ex]) => `<div class="hvgroup"><div class="hvsense">${esc(title)}</div><div>${esc(text)}</div>` +
+const MODAL_NOTES = [
+  ['No ‘at’ after a modal', 'The next verb follows straight away: Jeg kan svømme – not ‘kan at svømme’. Only longer expressions take at: er nødt til at, har lyst til at.',
+    [['Jeg vil lære dansk.', 'I want to learn Danish.'], ['Jeg er nødt til at gå.', 'I have to go.']]],
+  ['må ikke = must not', 'må ikke forbids something. It never means ‘don’t have to’ – that is behøver ikke.',
+    [['Du må ikke komme.', "You mustn't come."], ['Du behøver ikke komme.', "You don't have to come."]]],
+  ['Going somewhere: no verb needed', 'With a place or direction the verb of motion is left out, and kan needs no verb with a language.',
+    [['Jeg skal hjem.', "I'm going home."], ['Vil du med?', 'Do you want to come along?'], ['Jeg må af sted.', 'I have to be off.'], ['Hun kan dansk.', 'She speaks Danish.']]],
+  ['The past form is more polite', 'kunne, ville and skulle soften a request or a wish.',
+    [['Kan du hjælpe mig?', 'Can you help me?'], ['Kunne du hjælpe mig?', 'Could you help me?']]],
+  ['Talking about the future', 'skal for plans and arrangements, vil for predictions (mostly in writing and the news). In everyday speech the present tense often does the job.',
+    [['Jeg skal til Paris i morgen.', "I'm going to Paris tomorrow."], ['Det vil tage tid.', 'It will take time.'], ['Jeg ringer i morgen.', "I'll call tomorrow."]]],
+  ['must: må or skal', 'må – you see it as necessary yourself; skal – a rule, or someone else decides. må være is your own conclusion, skal være is what people say.',
+    [['Jeg må gå nu.', 'I have to go now.'], ['Du skal betale ved indgangen.', 'You have to pay at the entrance.'], ['Det må være dejligt.', 'It must be lovely.'], ['Det skal være dejligt.', "It's supposed to be lovely."]]],
+  ['should have, could have, would have', 'past form of the modal + have + past participle.',
+    [['Du skulle have ringet.', 'You should have called.'], ['Det kunne have været værre.', 'It could have been worse.'], ['Det ville have været sjovt.', 'It would have been fun.']]]
+];
+const notesHtml = notes => notes.map(([title, text, ex]) => `<div class="hvgroup"><div class="hvsense">${esc(title)}</div><div>${esc(text)}</div>` +
   (ex || []).map(([da, en]) => `<div class="hvex" style="margin-top:6px"><span class="da">${esc(da)}${sayBtn(da)}</span><span class="en">${esc(en)}</span></div>`).join('') + '</div>').join('');
-function closePron(){ const d = $('pronDlg'); if (canSay) speechSynthesis.cancel(); if (d.close) d.close(); else d.removeAttribute('open'); }
-$('pronTableBtn').onclick = () => { const d = $('pronDlg'); if (d.showModal) d.showModal(); else d.setAttribute('open',''); $('pronDlgBody').scrollTop = 0; };
-$('pronDlgClose').onclick = closePron;
-$('pronDlg').addEventListener('click', e => { if (e.target === $('pronDlg')) closePron(); });
-$('pronDlg').addEventListener('close', () => { if (canSay) speechSynthesis.cancel(); });
+// forms come from the verb entries; every meaning is listed with its first sentence
+function modalTable(){
+  const rows = [['can', 'kunne'], ['shall, have to', 'skulle'], ['want, will', 'ville'], ['may, must', 'måtte']].map(([label, inf]) => {
+    const f = (DATA.verbs.find(v => v.da===inf) || {f:[]}).f;
+    return `<tr><th>${esc(label)}</th>${[inf, f[0], f[1], f[2]].map(v => `<td><span>${esc(v)}${sayBtn(v)}</span></td>`).join('')}</tr>`; }).join('');
+  const meanings = Object.entries(TRACKS.modal.groups).map(([lvl, [name]]) => `<div class="hvgroup"><div class="hvsense">${esc(name)}</div>` +
+    WORDS.filter(w => w.track==='modal' && w.level==lvl).map(w => sentRow(parseSent(w.f[1][0]), w.en)).join('') + '</div>').join('');
+  return `<div class="prontable ref"><table><thead><tr><th></th><th>infinitive</th><th>present</th><th>past</th><th>perfect</th></tr></thead><tbody>${rows}</tbody></table></div>` +
+    `<h2 style="margin:14px 0 0">Watch out</h2>${notesHtml(MODAL_NOTES)}<h2 style="margin:16px 0 0">Every meaning</h2>${meanings}`;
+}
+const REFS = {
+  pron: {btn:'Pronoun table', desc:'every personal pronoun form in one table', title:'Personal pronouns', sub:'subject · object · possessive · reflexive', body: () => pronTable() + notesHtml(PRON_NOTES)},
+  modal: {btn:'Modal table', desc:'forms, common traps and every meaning on one page', title:'Modal verbs', sub:'kan · skal · vil · må', body: modalTable}
+};
+function closeRef(){ const d = $('refDlg'); if (canSay) speechSynthesis.cancel(); if (d.close) d.close(); else d.removeAttribute('open'); }
+$('refBtn').onclick = () => { const r = REFS[prefs.track], d = $('refDlg'); if (!r) return;
+  $('refDlgTitle').textContent = r.title; $('refDlgSub').textContent = r.sub; $('refDlgBody').innerHTML = r.body();
+  if (d.showModal) d.showModal(); else d.setAttribute('open',''); $('refDlgBody').scrollTop = 0; };
+$('refDlgClose').onclick = closeRef;
+$('refDlg').addEventListener('click', e => { if (e.target === $('refDlg')) closeRef(); });
+$('refDlg').addEventListener('close', () => { if (canSay) speechSynthesis.cancel(); });
 function pool(){ const sel = prefs.groups[prefs.track]||[]; return WORDS.filter(w => w.track===prefs.track && sel.includes(w.level)); }
 function updatePool(){
   const p = pool(); $('startBtn').disabled = p.length===0;
@@ -570,7 +619,7 @@ function startSession(words){
   if (!words.length){ alert(prefs.focus==='hard'
     ? 'Nothing to practice here – no shaky or hard words in the selected groups yet. Mark words as hard after answering, or try another group.'
     : 'Nothing to practice here – every selected word is already learned in this direction. Try another group or "everything equally".'); return; }
-  S = {queue: words, i:0, right:0, wrong:0, missed:[], dir:prefs.dir, mode:prefs.mode, track:prefs.track, answered:false, requeued:{}};
+  S = {queue: words, i:0, right:0, wrong:0, missed:[], dir:prefs.dir, mode:prefs.mode, track:prefs.track, answered:false, requeued:{}, lastSent:{}};
   show('practice'); nextCard();
 }
 $('startBtn').onclick = () => startSession(sample(pool(), prefs.count));
@@ -587,31 +636,78 @@ function answerText(w, dir){ return dir==='da' ? w.en : w.da; }
 function nextCard(){
   if (S.i >= S.queue.length) return finish();
   const w = S.queue[S.i]; S.answered=false; S.undo=null; $('marks').hidden=true;
+  // modal cards are practised in a sentence; da→en asks for the meaning, which is always multiple choice
+  S.sent = w.track==='modal' ? pickSent(w) : null;
+  S.mc = S.mode==='mc' || (!!S.sent && S.dir==='da');
   $('counter').textContent = `${S.i+1} / ${S.queue.length}`;
   $('score').textContent = `✓ ${S.right}   ✗ ${S.wrong}`;
   $('progBar').style.width = (100*S.i/S.queue.length)+'%';
-  $('promptWord').textContent = prompt(w, S.dir);
+  const pw = $('promptWord'); pw.parentNode.classList.toggle('sent', !!S.sent);
+  if (!S.sent) pw.textContent = prompt(w, S.dir);
+  else pw.innerHTML = S.dir==='da' ? `<span>${S.sent.bold}</span>` : `<span>${esc(S.sent.en)}</span><span class="gapline">${S.sent.gap}</span>`;
   $('promptSay').hidden = S.dir!=='da';
-  $('promptHint').textContent = `${TRACKS[w.track].name.toLowerCase().replace(/s$/,'')} · group ${w.level}` + (S.dir==='en' && w.track==='verbs' ? ' · answer with the infinitive' : '') + (isHard(w) ? ' · ★ hard word' : '');
+  // no group number for modal en→da: the group would give the modal away
+  $('promptHint').textContent = (S.sent ? `modal verb · ${S.dir==='da' ? `what does ${S.sent.word} mean here?` : 'fill in the missing modal'}`
+    : `${TRACKS[w.track].name.toLowerCase().replace(/s$/,'')} · group ${w.level}` + (S.dir==='en' && w.track==='verbs' ? ' · answer with the infinitive' : '')) + (isHard(w) ? ' · ★ hard word' : '');
   $('feedback').className='feedback'; $('feedback').innerHTML=''; $('nextBtn').hidden=true;
-  if (S.mode==='type'){
+  if (!S.mc){
     $('typeArea').hidden=false; $('mcArea').hidden=true;
-    const inp=$('answerInput'); inp.value=''; inp.className=''; inp.disabled=false; inp.lang = S.dir==='en' ? 'da' : 'en'; $('checkBtn').hidden=false; inp.focus();
+    const inp=$('answerInput'); inp.value=''; inp.className=''; inp.disabled=false; inp.lang = S.dir==='en' ? 'da' : 'en'; $('checkBtn').hidden=false;
+    inp.placeholder = S.sent ? 'Type the missing word…' : 'Type the translation…'; inp.focus();
     $('kbdHint').innerHTML = '<kbd>Enter</kbd> check / next';
   } else {
     $('typeArea').hidden=true; $('mcArea').hidden=false;
-    const at = x => answerText(x,S.dir).toLowerCase();
-    const others = WORDS.filter(x => x.track===w.track && x.id!==w.id && at(x)!==at(w));
-    const same = others.filter(x => x.level===w.level), rest = others.filter(x => x.level!==w.level);
-    const pick=[]; const used=new Set([at(w)]);
-    for (const src of [same, rest]) { shuffle(src); for (const x of src){ if (pick.length>=3) break; const t=at(x); if (!used.has(t)){ used.add(t); pick.push(x);} } }
-    const opts = shuffle([w, ...pick]);
-    $('mcArea').innerHTML = opts.map((x,i) => `<button data-id="${x.id}"><b>${i+1}</b>${answerText(x,S.dir)}</button>`).join('');
+    const opts = S.sent ? modalChoices(w, S.sent) : wordChoices(w);
+    $('mcArea').innerHTML = opts.map((o,i) => `<button data-ok="${o.ok?1:''}"><b>${i+1}</b>${esc(o.text)}</button>`).join('');
     $('mcArea').querySelectorAll('button').forEach(b => b.onclick = () => answerMC(b));
     $('kbdHint').innerHTML = '<kbd>1</kbd>–<kbd>4</kbd> choose · <kbd>Enter</kbd> next';
   }
 }
+// four options as [{text, ok}]: the answer plus three words of the same track, from the same group first
+function wordChoices(w){
+  const at = x => answerText(x,S.dir).toLowerCase();
+  const others = WORDS.filter(x => x.track===w.track && x.id!==w.id && at(x)!==at(w));
+  const same = others.filter(x => x.level===w.level), rest = others.filter(x => x.level!==w.level);
+  const pick=[]; const used=new Set([at(w)]);
+  for (const src of [same, rest]) { shuffle(src); for (const x of src){ if (pick.length>=3) break; const t=at(x); if (!used.has(t)){ used.add(t); pick.push(x);} } }
+  return shuffle([w, ...pick]).map(x => ({text: answerText(x,S.dir), ok: x===w}));
+}
 function shuffle(a){ for (let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+
+/* ---------- modal track: sentences with the modal in brackets, "Jeg [må|skal] gå nu." ---------- */
+const MODAL_FORMS = ['kan','kunne','skal','skulle','vil','ville','må','måtte'];   // present/past pairs
+function parseSent([da, en]){
+  const m = da.match(/\[([^\]]+)\]/), opts = m[1].split('|'), pre = da.slice(0, m.index), post = da.slice(m.index + m[0].length);
+  return {en, alts: opts.map(o => o.toLowerCase()), word: opts[0].toLowerCase(), plain: pre + opts[0] + post,
+    bold: `${esc(pre)}<b class="mod">${esc(opts[0])}</b>${esc(post)}`, gap: `${esc(pre)}<span class="gap"></span>${esc(post)}`};
+}
+const sentRow = (s, label) => `<div class="hvex"><span class="da"><span>${s.bold}</span>${sayBtn(s.plain)}</span><span class="en">${esc(label || s.en)}</span></div>`;
+function pickSent(w){
+  const n = w.f[1].length, prev = S.lastSent[w.id];
+  let i = Math.floor(Math.random()*n);
+  if (n>1 && i===prev) i = (i + 1 + Math.floor(Math.random()*(n-1))) % n;
+  S.lastSent[w.id] = i;
+  return Object.assign(parseSent(w.f[1][i]), {i});
+}
+function modalChoices(w, s){
+  if (S.dir==='en'){
+    // en→da: the other tense of the same modal, then other modals in the same tense; never another accepted answer
+    const right = s.word, k = MODAL_FORMS.indexOf(right), free = x => !s.alts.includes(x), pick = [];
+    const add = x => { if (pick.length<3 && free(x) && !pick.includes(x)) pick.push(x); };
+    add(MODAL_FORMS[k ^ 1]);
+    shuffle(MODAL_FORMS.filter((x, i) => i%2===k%2)).forEach(add);
+    shuffle(MODAL_FORMS.slice()).forEach(add);
+    return shuffle([{text:right, ok:true}, ...pick.map(text => ({text}))]);
+  }
+  // da→en: card's own extra distractors (f[3], a card key or plain text), then other meanings of the same modal,
+  // skipping the card's family (f[2]) – meanings close enough that they would also fit the sentence
+  const fam = w.f[2], used = new Set([w.en]), pick = [];
+  const add = t => { if (pick.length<3 && !used.has(t)){ used.add(t); pick.push(t); } };
+  (w.f[3] || []).forEach(k => { const x = WORDS.find(y => y.id==='modal|'+k); add(x ? x.en : k); });
+  const others = WORDS.filter(x => x.track==='modal' && x!==w && !(fam && x.f[2]===fam));
+  for (const src of [others.filter(x => x.level===w.level), others.filter(x => x.level!==w.level)]) shuffle(src).forEach(x => add(x.en));
+  return shuffle([{text:w.en, ok:true}, ...pick.map(text => ({text}))]);
+}
 
 const exHtml = ex => ex && ex.length ? `<div class="hvgroup">${ex.map(([da, en]) =>
   `<div class="hvex"><span class="da">${esc(da)}${sayBtn(da)}</span><span class="en">${esc(en)}</span></div>`).join('')}</div>` : '';
@@ -625,8 +721,16 @@ function pronTable(keys, da){
     `</tbody></table></div>`;
 }
 const mm = (v, word) => v && v.startsWith('m. ') ? word + ' ' + v.slice(3) : v;
-function formsHtml(w){
+function formsHtml(w, cur){
   const f = w.f || []; const has = v => v && v!=='-'; const cell = (v, spoken) => has(v) ? esc(v) + sayBtn(spoken || v) : '–';
+  if (w.track==='modal'){
+    // cur = index of the sentence just practised (shown above); the other meanings of the same modal follow for contrast
+    const more = f[1].filter((_, i) => i!==cur).map(parseSent);
+    const others = WORDS.filter(x => x.track==='modal' && x.level===w.level && x!==w);
+    return `<div class="hvforms"><div class="hvnote">${esc(f[0])}</div>` +
+      (more.length ? `<div class="hvgroup"><div class="hvsense">more examples</div>${more.map(s => sentRow(s)).join('')}</div>` : '') +
+      `<div class="hvgroup"><div class="hvsense">other meanings of ${esc(TRACKS.modal.groups[w.level][0])}</div>${others.map(x => sentRow(parseSent(x.f[1][0]), x.en)).join('')}</div></div>`;
+  }
   if (w.track==='nums'){
     const pair = `<div class="numpair"><span class="digit">${esc(w.en)}</span><span class="eq">=</span><span class="word">${esc(w.da)}</span>${sayBtn(w.da)}</div>`;
     const note = f[0] ? `<div class="hvnote">${esc(f[0])}</div>` : '';
@@ -663,8 +767,11 @@ function resolve(ok, typo){
     // re-queue once, a few cards later
     if (!S.requeued[w.id]) { S.requeued[w.id]=1; const pos = Math.min(S.queue.length, S.i+3+Math.floor(Math.random()*3)); S.queue.splice(pos,0,w); } }
   const fb = $('feedback'); fb.className = 'feedback show ' + (ok?'ok':'bad');
+  const s = S.sent;
+  if (s && S.dir==='en') $('promptWord').querySelector('.gapline').innerHTML = s.bold;
   fb.innerHTML = (ok ? (typo ? 'Correct (small typo)' : 'Correct') : 'Not quite') +
-    `<div class="full"><b>${esc(w.da)}</b> — ${esc(w.en)}${sayBtn(w.da)}</div>` + formsHtml(w);
+    (s ? `<div class="full"><b>${esc(s.word)}</b> — ${esc(w.en)}</div><div class="hvgroup">${sentRow(s)}</div>`
+       : `<div class="full"><b>${esc(w.da)}</b> — ${esc(w.en)}${sayBtn(w.da)}</div>`) + formsHtml(w, s && s.i);
   $('score').textContent = `✓ ${S.right}   ✗ ${S.wrong}`;
   $('marks').hidden=false; renderMarks();
   $('kbdHint').innerHTML = '<kbd>Enter</kbd> next · <kbd>L</kbd> learned · <kbd>H</kbd> hard';
@@ -672,13 +779,14 @@ function resolve(ok, typo){
 }
 function answerType(){
   if (S.answered) return;
-  const inp=$('answerInput'); const res = check(inp.value, S.queue[S.i], S.dir);
+  const w = S.queue[S.i], inp = $('answerInput');
+  const res = check(inp.value, S.sent ? S.sent.alts : S.dir==='da' ? enAlts(w.en) : daAlts(w.da));
   inp.disabled=true; inp.className = res.ok?'ok':'bad'; $('checkBtn').hidden=true; resolve(res.ok, res.typo);
 }
 function answerMC(btn){
   if (S.answered) return;
-  const w=S.queue[S.i]; const ok = btn.dataset.id===w.id;
-  $('mcArea').querySelectorAll('button').forEach(b => { b.disabled=true; if (b.dataset.id===w.id) b.classList.add('ok'); else if (b===btn) b.classList.add('bad'); });
+  const ok = btn.dataset.ok==='1';
+  $('mcArea').querySelectorAll('button').forEach(b => { b.disabled=true; if (b.dataset.ok==='1') b.classList.add('ok'); else if (b===btn) b.classList.add('bad'); });
   resolve(ok);
 }
 /* ---------- mark the answered word as learned / hard ---------- */
@@ -717,10 +825,10 @@ $('nextBtn').onclick = () => { S.i++; nextCard(); };
 $('quitBtn').onclick = () => finish();
 document.addEventListener('keydown', e => {
   if ($('practice').hidden || !S) return;
-  if (e.key==='Enter'){ e.preventDefault(); if (S.answered) { S.i++; nextCard(); } else if (S.mode==='type') answerType(); return; }
+  if (e.key==='Enter'){ e.preventDefault(); if (S.answered) { S.i++; nextCard(); } else if (!S.mc) answerType(); return; }
   if (S.answered && !e.metaKey && !e.ctrlKey && !e.altKey){ const k = e.key.toLowerCase();
     if (k==='l'){ toggleLearned(); return; } if (k==='h'){ toggleHard(); return; } }
-  if (S.mode==='mc' && !S.answered && /^[1-4]$/.test(e.key)){ const b=$('mcArea').querySelectorAll('button')[+e.key-1]; if (b) answerMC(b); }
+  if (S.mc && !S.answered && /^[1-4]$/.test(e.key)){ const b=$('mcArea').querySelectorAll('button')[+e.key-1]; if (b) answerMC(b); }
 });
 
 function finish(){
@@ -767,7 +875,7 @@ function renderTable(){
 ['search','fTrack','fStatus'].forEach(id => $(id).oninput = renderTable);
 
 /* ---------- copy for AI agent ---------- */
-const AI_PROMPT = `I'm learning Danish with a flashcard app. It only checks single words, so please be my Danish tutor and test whether I can actually use them. The goal is to check that the words I've marked as learned have really stuck. My progress from the app is further down in this file.
+const AI_PROMPT = `I'm learning Danish with a flashcard app. It mostly checks single words, so please be my Danish tutor and test whether I can actually use them. The goal is to check that the words I've marked as learned have really stuck. My progress from the app is further down in this file.
 
 How to quiz me:
 - About 80% of the questions should test my learned words. Work through each learned list from the top (practised longest ago) and test the words in sentences, not only their translation. Use my ★ hard and shaky words only for the other 20%. Don't make them the focus, even if there are many of them.
@@ -784,6 +892,7 @@ How to quiz me:
   6. A short reading text (4–6 sentences) followed by 2–3 questions about it.
   7. A role-play (café, shop, doctor, small talk) where you play the other person.
   8. Free writing: give me a topic, I write 3–5 sentences, you correct them.
+- Modal verbs (kan/kunne, skal/skulle, vil/ville, må/måtte) are listed one meaning per line, because the same modal means different things in different sentences. Test each meaning in a new sentence, never the bare word: ask what the modal means in a Danish sentence, or give me an English sentence that needs it. Also mix in the classic traps: må ikke (mustn't) vs behøver ikke (don't have to), skal for plans vs vil, no "at" after a modal, and kunne/ville to sound more polite.
 - Build sentences mostly from words I know. If you need a word I haven't learned, give its meaning in brackets.
 - Only use exercise types that fit the tracks I've practised (for example, no number exercises if Numbers isn't listed below).
 - Never stop on your own: no fixed number of questions, no "want to continue?" or "shall we do another?", no wrapping up. When you have been through all my learned words, start again from the top with different exercise types.
@@ -795,7 +904,7 @@ function aiLine(w, withRecord){
   const f = w.f || [], has = v => v && v!=='-';
   const forms = w.track==='verbs' ? [f[0], f[1], f[2]] : w.track==='adjs' ? [f[1], f[2], mm(f[3],'mere'), mm(f[4],'mest')] : [];
   const fs = forms.filter(has).join(', ');
-  let line = `- ${w.da}${fs ? ` (${fs})` : ''} — ${w.en}`;
+  let line = w.track==='modal' ? `- ${w.da} — ${w.en}; e.g. "${parseSent(w.f[1][0]).plain}"` : `- ${w.da}${fs ? ` (${fs})` : ''} — ${w.en}`;
   if (withRecord){
     const rec = Object.keys(AI_DIRS).map(d => { const s = st(w,d); return s.r+s.w ? `${AI_DIRS[d]} ${s.r}✓ ${s.w}✗` : ''; }).filter(Boolean).join('; ');
     line += ` [${rec || 'not practised yet'}]`;
@@ -828,7 +937,7 @@ function aiText(){
     parts.push(s);
   }
   if (!parts.length) return null;
-  const legend = `Learned = answered right 3 times in a row. Shaky = practised but not learned yet. ★ Hard = words I marked as hard myself. da→en means I'm shown the Danish word and answer in English, en→da the other way round; counts are right ✓ and wrong ✗ answers. Verbs show present, past and perfect; adjectives show t-form, e-form, comparative and superlative. Learned words are listed from longest ago practised to most recent, shaky words worst first. "[da→en only]" means I've only practised that direction.`;
+  const legend = `Learned = answered right 3 times in a row. Shaky = practised but not learned yet. ★ Hard = words I marked as hard myself. da→en means I'm shown the Danish word and answer in English, en→da the other way round; counts are right ✓ and wrong ✗ answers. Verbs show present, past and perfect; adjectives show t-form, e-form, comparative and superlative; modal verbs show one meaning with an example sentence. Learned words are listed from longest ago practised to most recent, shaky words worst first. "[da→en only]" means I've only practised that direction.`;
   const text = `${AI_PROMPT}\n\n--- My progress (${new Date().toISOString().slice(0,10)}) ---\n${legend}\n\n${parts.join('\n\n')}` +
     (notStarted.length ? `\n\nNot started yet: ${notStarted.join(', ')}.` : '');
   return {text, tot};

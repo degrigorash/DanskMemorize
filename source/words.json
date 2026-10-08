@@ -13861,5 +13861,762 @@
     ]
    ]
   }
+ ],
+ "modal": [
+  {
+   "key": "kan-ability",
+   "en": "can, be able to (ability)",
+   "da": "kan",
+   "level": 1,
+   "f": [
+    "ability you have now. The next verb follows without ‘at’: Jeg kan svømme – not ‘kan at svømme’. Past: kunne.",
+    [
+     [
+      "Jeg [kan] svømme, men ikke særlig hurtigt.",
+      "I can swim, but not very fast."
+     ],
+     [
+      "[Kan] du se skiltet derovre?",
+      "Can you see the sign over there?"
+     ],
+     [
+      "Min datter [kan] allerede læse.",
+      "My daughter can already read."
+     ],
+     [
+      "Vi [kan] desværre ikke komme på lørdag.",
+      "Unfortunately we can't come on Saturday."
+     ]
+    ],
+    "ability"
+   ]
+  },
+  {
+   "key": "kan-know",
+   "en": "know, speak (a language, a skill)",
+   "da": "kan",
+   "level": 1,
+   "f": [
+    "with a language or something learnt by heart kan stands on its own, no verb after it: Hun kan tysk = she speaks German, Kan du dansk? = do you speak Danish?",
+    [
+     [
+      "Hun [kan|taler] både tysk og fransk.",
+      "She speaks both German and French."
+     ],
+     [
+      "[Kan|Taler] du dansk?",
+      "Do you speak Danish?"
+     ],
+     [
+      "Han [kan] hele digtet udenad.",
+      "He knows the whole poem by heart."
+     ]
+    ],
+    "ability"
+   ]
+  },
+  {
+   "key": "kan-like",
+   "en": "like (something, doing something)",
+   "da": "kan",
+   "level": 1,
+   "f": [
+    "kan lide = like – the everyday way to say it. godt is usually added in positive sentences: Jeg kan godt lide… Past: kunne lide (liked).",
+    [
+     [
+      "Jeg [kan] godt lide kaffe.",
+      "I like coffee."
+     ],
+     [
+      "[Kan] du lide sushi?",
+      "Do you like sushi?"
+     ],
+     [
+      "Hun [kan] ikke lide at flyve.",
+      "She doesn't like flying."
+     ],
+     [
+      "Jeg [kunne] godt lide filmen.",
+      "I liked the film."
+     ]
+    ],
+    ""
+   ]
+  },
+  {
+   "key": "kan-possible",
+   "en": "may, might (it's possible)",
+   "da": "kan",
+   "level": 1,
+   "f": [
+    "something that is possible, often with godt or sagtens: Det kan godt være = that may well be. kunne works too and sounds a little more tentative.",
+    [
+     [
+      "Det [kan|kunne] godt være, at du har ret.",
+      "You may well be right."
+     ],
+     [
+      "Toget [kan|kunne] være forsinket i dag.",
+      "The train may be late today."
+     ],
+     [
+      "Det [kan|kunne] sagtens ske igen.",
+      "That could easily happen again."
+     ],
+     [
+      "Pas på, gulvet [kan|kunne] være glat.",
+      "Careful, the floor may be slippery."
+     ]
+    ],
+    "possible"
+   ]
+  },
+  {
+   "key": "kan-permission",
+   "en": "can, may (permission, an offer)",
+   "da": "kan",
+   "level": 1,
+   "f": [
+    "everyday permission and offers. When asking, Kan jeg…? and Må jeg…? are both fine – må is a little more polite. A ban is usually må ikke (Du må ikke ryge her).",
+    [
+     [
+      "Du [kan|må] godt gå nu, hvis du vil.",
+      "You can go now if you like."
+     ],
+     [
+      "Du [kan|må] bare tage en kage.",
+      "You can just take a cake."
+     ],
+     [
+      "[Kan|Må] jeg låne din cykel i morgen?",
+      "Can I borrow your bike tomorrow?"
+     ],
+     [
+      "I [kan|må] stille cyklerne i gården.",
+      "You can put the bikes in the courtyard."
+     ]
+    ],
+    "permission"
+   ]
+  },
+  {
+   "key": "kan-request",
+   "en": "Can you…? (asking someone to do something)",
+   "da": "kan",
+   "level": 1,
+   "f": [
+    "a request. Kan du ikke lige…? is a very common soft way to ask. The past form makes it more polite: Kunne du…?",
+    [
+     [
+      "[Kan] du hjælpe mig med kasserne?",
+      "Can you help me with the boxes?"
+     ],
+     [
+      "[Kan] du række mig saltet?",
+      "Can you pass me the salt?"
+     ],
+     [
+      "[Kan|Kunne] du ikke lige lukke døren?",
+      "Could you just close the door?"
+     ]
+    ],
+    "request"
+   ]
+  },
+  {
+   "key": "kunne-past",
+   "en": "could, was able to (past)",
+   "da": "kunne",
+   "level": 1,
+   "f": [
+    "the past of kan. Perfect: har kunnet (Jeg har ikke kunnet sove = I haven’t been able to sleep).",
+    [
+     [
+      "Hun [kunne] ikke finde sine nøgler i morges.",
+      "She couldn't find her keys this morning."
+     ],
+     [
+      "Da jeg var barn, [kunne] jeg stå på hænder.",
+      "When I was a child, I could do handstands."
+     ],
+     [
+      "Vi [kunne] ikke sove i nat på grund af larmen.",
+      "We couldn't sleep last night because of the noise."
+     ]
+    ],
+    "ability"
+   ]
+  },
+  {
+   "key": "kunne-polite",
+   "en": "Could you…? / Could I…? (polite request)",
+   "da": "kunne",
+   "level": 1,
+   "f": [
+    "the past form makes a request softer and more polite than kan. Kunne jeg få…? is a polite way to order in a café or shop.",
+    [
+     [
+      "[Kunne] du hjælpe mig et øjeblik?",
+      "Could you help me for a moment?"
+     ],
+     [
+      "[Kunne] De sige mig, hvor stationen ligger?",
+      "Could you tell me where the station is?"
+     ],
+     [
+      "[Kunne] jeg få en kop kaffe?",
+      "Could I have a cup of coffee?"
+     ]
+    ],
+    "request"
+   ]
+  },
+  {
+   "key": "kunne-wouldlike",
+   "en": "would like (a polite wish)",
+   "da": "kunne",
+   "level": 1,
+   "f": [
+    "fixed phrase: kunne godt tænke sig (noget / at gøre noget) = would like. The reflexive follows the person: mig, dig, sig, os, jer.",
+    [
+     [
+      "Jeg [kunne] godt tænke mig en is.",
+      "I'd like an ice cream."
+     ],
+     [
+      "[Kunne] du tænke dig at komme med?",
+      "Would you like to come along?"
+     ],
+     [
+      "Vi [kunne] godt tænke os at bo på landet.",
+      "We'd like to live in the countryside."
+     ]
+    ],
+    "want"
+   ]
+  },
+  {
+   "key": "kunne-could",
+   "en": "could (an idea, a possibility)",
+   "da": "kunne",
+   "level": 1,
+   "f": [
+    "a possibility or a suggestion. With have + past participle: could have (Det kunne have været værre = it could have been worse).",
+    [
+     [
+      "Det [kunne] være sjovt at prøve.",
+      "It could be fun to try."
+     ],
+     [
+      "Vi [kunne] tage til stranden i morgen.",
+      "We could go to the beach tomorrow."
+     ],
+     [
+      "Det [kunne] have været meget værre.",
+      "It could have been much worse."
+     ]
+    ],
+    "possible"
+   ]
+  },
+  {
+   "key": "skal-plan",
+   "en": "be going to (a plan, an arrangement)",
+   "da": "skal",
+   "level": 2,
+   "f": [
+    "something planned or agreed – the usual way to talk about your own future. Hvad skal du i weekenden? = what are you doing at the weekend?",
+    [
+     [
+      "Vi [skal] holde ferie i Spanien i år.",
+      "We're spending our holiday in Spain this year."
+     ],
+     [
+      "Hvad [skal] du lave i weekenden?",
+      "What are you doing at the weekend?"
+     ],
+     [
+      "Jeg [skal] mødes med Anna klokken tre.",
+      "I'm meeting Anna at three."
+     ],
+     [
+      "De [skal] giftes til sommer.",
+      "They're getting married in the summer."
+     ]
+    ],
+    "future"
+   ]
+  },
+  {
+   "key": "skal-go",
+   "en": "be going (somewhere)",
+   "da": "skal",
+   "level": 2,
+   "f": [
+    "with a place or direction the verb of motion is left out: Jeg skal hjem = I’m going home, Hvor skal du hen? = where are you going?",
+    [
+     [
+      "Jeg [skal] hjem nu.",
+      "I'm going home now."
+     ],
+     [
+      "Hvor [skal] du hen?",
+      "Where are you going?"
+     ],
+     [
+      "Vi [skal] i biografen i aften.",
+      "We're going to the cinema tonight."
+     ],
+     [
+      "Jeg [skal] til tandlægen i morgen.",
+      "I'm going to the dentist tomorrow."
+     ]
+    ],
+    "future"
+   ]
+  },
+  {
+   "key": "skal-must",
+   "en": "have to (a rule, someone else decides)",
+   "da": "skal",
+   "level": 2,
+   "f": [
+    "an obligation from outside – a rule, an order, an agreement. Du skal ikke…! is a firm ‘don’t…!’ (Du skal ikke være bange = don’t be afraid).",
+    [
+     [
+      "Du [skal] betale, før du går ind.",
+      "You have to pay before you go in."
+     ],
+     [
+      "Børnene [skal] være i seng klokken otte.",
+      "The children have to be in bed by eight."
+     ],
+     [
+      "Man [skal] have pas med på turen.",
+      "You need to bring a passport on the trip."
+     ],
+     [
+      "Du [skal] spise op, før du får dessert.",
+      "You have to finish your food before you get dessert."
+     ]
+    ],
+    "must"
+   ]
+  },
+  {
+   "key": "skal-offer",
+   "en": "Shall I…? / Shall we…? (offer, suggestion)",
+   "da": "skal",
+   "level": 2,
+   "f": [
+    "Skal jeg…? offers to do something, Skal vi…? suggests doing something together. Skal vi ikke…? = why don’t we…?",
+    [
+     [
+      "[Skal] jeg hjælpe dig med tasken?",
+      "Shall I help you with the bag?"
+     ],
+     [
+      "[Skal] vi spise ude i aften?",
+      "Shall we eat out tonight?"
+     ],
+     [
+      "[Skal] vi ikke tage en kop kaffe?",
+      "Why don't we have a cup of coffee?"
+     ],
+     [
+      "[Skal] jeg åbne vinduet?",
+      "Shall I open the window?"
+     ]
+    ],
+    ""
+   ]
+  },
+  {
+   "key": "skal-hearsay",
+   "en": "is said to, is supposed to (people say so)",
+   "da": "skal",
+   "level": 2,
+   "f": [
+    "hearsay – something you have heard but not checked yourself; skulle works the same way. Compare må: Han må være rig = he must be rich (my own conclusion).",
+    [
+     [
+      "Han [skal|skulle] være meget rig.",
+      "He is said to be very rich."
+     ],
+     [
+      "Restauranten [skal|skulle] være rigtig god.",
+      "The restaurant is supposed to be really good."
+     ],
+     [
+      "Det [skal|skulle] blive koldt i weekenden.",
+      "It's supposed to get cold at the weekend."
+     ]
+    ],
+    "",
+    [
+     "må-assume"
+    ]
+   ]
+  },
+  {
+   "key": "skulle-supposed",
+   "en": "was supposed to, was going to (a past plan)",
+   "da": "skulle",
+   "level": 2,
+   "f": [
+    "a plan or arrangement seen from the past – often one that did not happen. skulle lige til at = was just about to.",
+    [
+     [
+      "Vi [skulle] mødes klokken tre, men hun kom ikke.",
+      "We were supposed to meet at three, but she didn't come."
+     ],
+     [
+      "Jeg [skulle] lige til at ringe til dig.",
+      "I was just about to call you."
+     ],
+     [
+      "Hvor [skulle] du hen, da jeg mødte dig?",
+      "Where were you going when I met you?"
+     ]
+    ],
+    "future"
+   ]
+  },
+  {
+   "key": "skulle-should",
+   "en": "should (advice), should have",
+   "da": "skulle",
+   "level": 2,
+   "f": [
+    "advice, or – with have + past participle – something that ought to have happened: Du skulle have ringet = you should have called. bør / burde mean the same.",
+    [
+     [
+      "Du [skulle|bør|burde] prøve den nye bager.",
+      "You should try the new bakery."
+     ],
+     [
+      "Du [skulle|burde] have ringet til mig.",
+      "You should have called me."
+     ],
+     [
+      "Vi [skulle|burde] have taget bussen.",
+      "We should have taken the bus."
+     ]
+    ],
+    "must"
+   ]
+  },
+  {
+   "key": "vil-want",
+   "en": "want (to)",
+   "da": "vil",
+   "level": 3,
+   "f": [
+    "a direct want – Jeg vil… can sound demanding, vil gerne is the polite version. With a direction the verb is left out: Vil du med? = do you want to come along?",
+    [
+     [
+      "Jeg [vil] ikke i seng endnu!",
+      "I don't want to go to bed yet!"
+     ],
+     [
+      "Hvad [vil] du have til jul?",
+      "What do you want for Christmas?"
+     ],
+     [
+      "Han [vil] være læge, når han bliver stor.",
+      "He wants to be a doctor when he grows up."
+     ],
+     [
+      "[Vil] du med i biografen i aften?",
+      "Do you want to come to the cinema tonight?"
+     ]
+    ],
+    "want"
+   ]
+  },
+  {
+   "key": "vil-gerne",
+   "en": "would like (polite)",
+   "da": "vil",
+   "level": 3,
+   "f": [
+    "vil gerne = would like – the polite way to ask for something or say what you want. ville gerne is even softer.",
+    [
+     [
+      "Jeg [vil|ville] gerne have en kop kaffe.",
+      "I'd like a cup of coffee."
+     ],
+     [
+      "Vi [vil|ville] gerne betale.",
+      "We'd like to pay, please."
+     ],
+     [
+      "Jeg [vil|ville] gerne høre mere om det.",
+      "I'd like to hear more about it."
+     ]
+    ],
+    "want"
+   ]
+  },
+  {
+   "key": "vil-request",
+   "en": "Will you…? (asking someone to do something)",
+   "da": "vil",
+   "level": 3,
+   "f": [
+    "a request: Vil du…? = will you…? Vil du ikke nok…? adds ‘please’. Kan du…? and Kunne du…? are the other common ways to ask.",
+    [
+     [
+      "[Vil] du række mig saltet?",
+      "Will you pass me the salt?"
+     ],
+     [
+      "[Vil] du ikke nok hjælpe mig?",
+      "Won't you please help me?"
+     ],
+     [
+      "[Vil] du lukke døren efter dig?",
+      "Will you close the door behind you?"
+     ]
+    ],
+    "request"
+   ]
+  },
+  {
+   "key": "vil-future",
+   "en": "will (a prediction)",
+   "da": "vil",
+   "level": 3,
+   "f": [
+    "the future as a prediction, typical of the news and formal Danish. In everyday speech Danes more often use the present tense (Jeg ringer i morgen = I’ll call tomorrow), kommer til at, or skal for plans.",
+    [
+     [
+      "Det [vil] tage lang tid.",
+      "It will take a long time."
+     ],
+     [
+      "Mange [vil] sikkert være uenige.",
+      "Many will probably disagree."
+     ],
+     [
+      "Priserne [vil] stige næste år.",
+      "Prices will rise next year."
+     ]
+    ],
+    "future"
+   ]
+  },
+  {
+   "key": "ville-past",
+   "en": "wanted (to)",
+   "da": "ville",
+   "level": 3,
+   "f": [
+    "the past of vil. Perfect: har villet.",
+    [
+     [
+      "Anna [ville] ikke spise sin mad i går.",
+      "Anna didn't want to eat her food yesterday."
+     ],
+     [
+      "Jeg [ville] bare sige tak.",
+      "I just wanted to say thank you."
+     ],
+     [
+      "Han [ville] gerne med, men han var syg.",
+      "He wanted to come along, but he was ill."
+     ]
+    ],
+    "want"
+   ]
+  },
+  {
+   "key": "ville-would",
+   "en": "would (imagined, if…)",
+   "da": "ville",
+   "level": 3,
+   "f": [
+    "something imagined or depending on a condition: Hvis jeg var rig, ville jeg… With have: would have (Det ville have været sjovt). Fixed phrase: Jeg ville ønske… = I wish…",
+    [
+     [
+      "Hvis jeg var rig, [ville] jeg rejse jorden rundt.",
+      "If I were rich, I would travel around the world."
+     ],
+     [
+      "Det [ville] være dejligt.",
+      "That would be lovely."
+     ],
+     [
+      "Jeg [ville] ikke gøre det, hvis jeg var dig.",
+      "I wouldn't do that if I were you."
+     ],
+     [
+      "Jeg [ville] ønske, du var her.",
+      "I wish you were here."
+     ]
+    ],
+    ""
+   ]
+  },
+  {
+   "key": "må-may",
+   "en": "may, be allowed to",
+   "da": "må",
+   "level": 4,
+   "f": [
+    "permission. må gerne = may, are welcome to. When asking, Må jeg…? is a little more polite than Kan jeg…?",
+    [
+     [
+      "[Må] jeg låne din telefon et øjeblik?",
+      "May I borrow your phone for a moment?"
+     ],
+     [
+      "Du [må] gerne tage en kage mere.",
+      "You're welcome to take another cake."
+     ],
+     [
+      "Børnene [må] se tv efter aftensmaden.",
+      "The children are allowed to watch TV after dinner."
+     ]
+    ],
+    "permission"
+   ]
+  },
+  {
+   "key": "må-not",
+   "en": "must not, not allowed to",
+   "da": "må",
+   "level": 4,
+   "f": [
+    "må ikke is a ban – it never means ‘don’t have to’. ‘You don’t have to’ is Du behøver ikke (at)…: Du behøver ikke komme = you don’t have to come.",
+    [
+     [
+      "Du [må] ikke ryge her.",
+      "You mustn't smoke here."
+     ],
+     [
+      "Man [må] ikke parkere foran porten.",
+      "You're not allowed to park in front of the gate."
+     ],
+     [
+      "Du [må|skal] ikke sige det til nogen!",
+      "You mustn't tell anyone!"
+     ]
+    ],
+    "permission",
+    [
+     "don't have to, don't need to",
+     "can't, aren't able to",
+     "don't want to"
+    ]
+   ]
+  },
+  {
+   "key": "må-must",
+   "en": "must, have to (I see it as necessary)",
+   "da": "må",
+   "level": 4,
+   "f": [
+    "a necessity you feel or conclude yourself. må hellere = had better. For rules and orders Danes usually say skal; for a strong need also er nødt til at.",
+    [
+     [
+      "Jeg [må|skal] gå nu, ellers kommer jeg for sent.",
+      "I have to go now, otherwise I'll be late."
+     ],
+     [
+      "Vi [må|skal] finde en løsning.",
+      "We must find a solution."
+     ],
+     [
+      "Jeg [må] hellere ringe til min mor.",
+      "I'd better call my mother."
+     ],
+     [
+      "Du [må|skal] prøve den kage!",
+      "You must try that cake!"
+     ]
+    ],
+    "must"
+   ]
+  },
+  {
+   "key": "må-assume",
+   "en": "must be, must have (a conclusion)",
+   "da": "må",
+   "level": 4,
+   "f": [
+    "a conclusion: you don’t know for sure, but it must be so. Compare skal: Han skal være rig = he is said to be rich (people say so).",
+    [
+     [
+      "Det [må] være dejligt at bo ved havet.",
+      "It must be lovely to live by the sea."
+     ],
+     [
+      "Du [må] være Annas bror.",
+      "You must be Anna's brother."
+     ],
+     [
+      "Han [må] have glemt det.",
+      "He must have forgotten."
+     ],
+     [
+      "Der [må] være sket noget.",
+      "Something must have happened."
+     ]
+    ],
+    "",
+    [
+     "skal-hearsay"
+    ]
+   ]
+  },
+  {
+   "key": "måtte-had",
+   "en": "had to",
+   "da": "måtte",
+   "level": 4,
+   "f": [
+    "the past of må in the sense of necessity. Perfect: har måttet (Vi har måttet aflyse = we have had to cancel).",
+    [
+     [
+      "Vi [måtte] vente en time på bussen.",
+      "We had to wait an hour for the bus."
+     ],
+     [
+      "Jeg [måtte] gå tidligt fra festen.",
+      "I had to leave the party early."
+     ],
+     [
+      "De [måtte] aflyse koncerten på grund af regnen.",
+      "They had to cancel the concert because of the rain."
+     ]
+    ],
+    "must"
+   ]
+  },
+  {
+   "key": "måtte-allowed",
+   "en": "was allowed to",
+   "da": "måtte",
+   "level": 4,
+   "f": [
+    "the past of må in the sense of permission; måtte ikke = wasn’t allowed to. Only the context tells it apart from ‘had to’.",
+    [
+     [
+      "Da jeg var barn, [måtte] jeg ikke spise slik på hverdage.",
+      "When I was a child, I wasn't allowed to eat sweets on weekdays."
+     ],
+     [
+      "Vi [måtte] gerne blive oppe til midnat.",
+      "We were allowed to stay up till midnight."
+     ],
+     [
+      "Man [måtte] ikke tage billeder på museet.",
+      "You weren't allowed to take photos in the museum."
+     ]
+    ],
+    "permission"
+   ]
+  }
  ]
 }
