@@ -14618,5 +14618,1183 @@
     "permission"
    ]
   }
+ ],
+ "move": [
+  {
+   "en": "in, into (going in)",
+   "da": "ind",
+   "level": 1,
+   "f": [
+    "going in from outside. Use it with movement verbs: gå, komme, køre, løbe, flytte. Followed by i + the place: ind i huset. Being inside is inde.",
+    [
+     [
+      "Kom bare [ind]!",
+      "Come on in!"
+     ],
+     [
+      "Tenzin åbner døren og går [ind].",
+      "Tenzin opens the door and goes in."
+     ],
+     [
+      "Må jeg komme [ind]?",
+      "May I come in?"
+     ],
+     [
+      "Vi flytter [ind] i den nye lejlighed i maj.",
+      "We're moving into the new flat in May."
+     ]
+    ],
+    "",
+    [
+     "inde"
+    ]
+   ]
+  },
+  {
+   "en": "in, inside (being in)",
+   "da": "inde",
+   "level": 1,
+   "f": [
+    "being inside already. Use it with state verbs: være, sidde, stå, bo, blive. Followed by i or på: inde i klassen, inde på værelset. Going in is ind.",
+    [
+     [
+      "De andre kursister sidder [inde] i klassen.",
+      "The other students are sitting in the classroom."
+     ],
+     [
+      "Det regner, så vi bliver [inde] i dag.",
+      "It's raining, so we're staying indoors today."
+     ],
+     [
+      "Hvor er børnene? – De er [inde] på deres værelse.",
+      "Where are the children? – They're in their room."
+     ],
+     [
+      "Jeg har været [inde] hele dagen.",
+      "I've been inside all day."
+     ]
+    ],
+    "",
+    [
+     "ind"
+    ]
+   ]
+  },
+  {
+   "en": "out (going out)",
+   "da": "ud",
+   "level": 1,
+   "f": [
+    "going out. gå ud also means going out for fun: gå ud og spise = go out to eat. ud ad døren = out the door (ad, not af). Being out is ude.",
+    [
+     [
+      "Bussen standser, men Tenzin kan ikke komme [ud].",
+      "The bus stops, but Tenzin can't get out."
+     ],
+     [
+      "Skal vi gå [ud] og spise i aften?",
+      "Shall we go out to eat tonight?"
+     ],
+     [
+      "Hunden vil gerne [ud].",
+      "The dog wants to go out."
+     ],
+     [
+      "Han løber [ud] ad døren.",
+      "He runs out the door."
+     ]
+    ],
+    "",
+    [
+     "ude"
+    ]
+   ]
+  },
+  {
+   "en": "out, outside (being out)",
+   "da": "ude",
+   "level": 1,
+   "f": [
+    "being out or outside. Followed by i or på: ude i haven, ude på gaden. være ude at + verb = be out doing something: ude at handle. Going out is ud.",
+    [
+     [
+      "Børnene leger [ude] i haven.",
+      "The children are playing out in the garden."
+     ],
+     [
+      "Hun er [ude] at handle.",
+      "She's out shopping."
+     ],
+     [
+      "Det er dejligt vejr – skal vi sidde [ude]?",
+      "The weather is lovely – shall we sit outside?"
+     ],
+     [
+      "Han står [ude] på gaden og venter.",
+      "He's standing out in the street, waiting."
+     ]
+    ],
+    "",
+    [
+     "ud"
+    ]
+   ]
+  },
+  {
+   "en": "up (going up)",
+   "da": "op",
+   "level": 1,
+   "f": [
+    "going up. op ad trappen = up the stairs (ad, not af). stå op = get up (out of bed) – standing up from a chair is rejse sig. Being up is oppe.",
+    [
+     [
+      "Han går [op] ad trappen.",
+      "He goes up the stairs."
+     ],
+     [
+      "Jeg står [op] klokken syv.",
+      "I get up at seven."
+     ],
+     [
+      "Elevatoren kører [op] til femte sal.",
+      "The lift goes up to the fifth floor."
+     ],
+     [
+      "Kom [op] og se udsigten!",
+      "Come up and see the view!"
+     ]
+    ],
+    "",
+    [
+     "oppe"
+    ]
+   ]
+  },
+  {
+   "en": "up (being up)",
+   "da": "oppe",
+   "level": 1,
+   "f": [
+    "being up somewhere: oppe på fjerde sal, oppe i træet, oppe ved tavlen (up at the front). It also means awake: Er du stadig oppe? Going up is op.",
+    [
+     [
+      "Læreren står [oppe] ved tavlen.",
+      "The teacher is standing up at the board."
+     ],
+     [
+      "Er du stadig [oppe]?",
+      "Are you still up?"
+     ],
+     [
+      "Vi bor [oppe] på fjerde sal.",
+      "We live up on the fourth floor."
+     ],
+     [
+      "Katten sidder [oppe] i træet.",
+      "The cat is sitting up in the tree."
+     ]
+    ],
+    "",
+    [
+     "op"
+    ]
+   ]
+  },
+  {
+   "en": "down (going down)",
+   "da": "ned",
+   "level": 1,
+   "f": [
+    "going down. ned ad trappen = down the stairs (ad, not af). Sæt dig ned! = Sit down! Being down is nede.",
+    [
+     [
+      "Tenzin går [ned] ad trappen.",
+      "Tenzin goes down the stairs."
+     ],
+     [
+      "Sæt dig [ned]!",
+      "Sit down!"
+     ],
+     [
+      "Kom [ned] fra træet!",
+      "Come down from the tree!"
+     ],
+     [
+      "Solen går [ned] klokken otte.",
+      "The sun goes down at eight."
+     ]
+    ],
+    "",
+    [
+     "nede"
+    ]
+   ]
+  },
+  {
+   "en": "down (being down)",
+   "da": "nede",
+   "level": 1,
+   "f": [
+    "being down somewhere: nede i kælderen, nede på hjørnet, nede ved vandet. Going down is ned.",
+    [
+     [
+      "Bageren ligger [nede] på hjørnet.",
+      "The bakery is down on the corner."
+     ],
+     [
+      "Vi venter [nede] i gården.",
+      "We're waiting down in the courtyard."
+     ],
+     [
+      "Cyklerne står [nede] i kælderen.",
+      "The bikes are down in the basement."
+     ],
+     [
+      "Vi spiser frokost [nede] ved stranden.",
+      "We're having lunch down at the beach."
+     ]
+    ],
+    "",
+    [
+     "ned"
+    ]
+   ]
+  },
+  {
+   "en": "home (going home)",
+   "da": "hjem",
+   "level": 1,
+   "f": [
+    "going home – with no preposition: gå hjem, never til hjem. Jeg skal hjem = I am going home (no verb needed after skal). Being at home is hjemme.",
+    [
+     [
+      "Jeg skal [hjem] nu.",
+      "I have to go home now."
+     ],
+     [
+      "Hvornår kommer du [hjem]?",
+      "When are you coming home?"
+     ],
+     [
+      "Velkommen [hjem]!",
+      "Welcome home!"
+     ],
+     [
+      "Han cykler [hjem] fra arbejde.",
+      "He cycles home from work."
+     ]
+    ],
+    "",
+    [
+     "hjemme"
+    ]
+   ]
+  },
+  {
+   "en": "at home (being home)",
+   "da": "hjemme",
+   "level": 1,
+   "f": [
+    "being at home. hjemme hos + a person = at someone's place: hjemme hos mig. Føl dig som hjemme = make yourself at home. Going home is hjem.",
+    [
+     [
+      "Er din mor [hjemme]?",
+      "Is your mother at home?"
+     ],
+     [
+      "Jeg arbejder [hjemme] i dag.",
+      "I'm working from home today."
+     ],
+     [
+      "Vi ses [hjemme] hos mig klokken syv.",
+      "See you at my place at seven."
+     ],
+     [
+      "Føl dig som [hjemme]!",
+      "Make yourself at home!"
+     ]
+    ],
+    "",
+    [
+     "hjem"
+    ]
+   ]
+  },
+  {
+   "en": "over to (going there)",
+   "da": "hen",
+   "level": 2,
+   "f": [
+    "moving towards a place, usually with til: hen til stoppestedet. Hvor skal du hen? = Where are you going? Being there is henne.",
+    [
+     [
+      "Tenzin går [hen] til stoppestedet.",
+      "Tenzin walks over to the bus stop.",
+      [
+       "henne",
+       "ovre",
+       "om"
+      ]
+     ],
+     [
+      "Hvor skal du [hen]?",
+      "Where are you going?",
+      [
+       "henne",
+       "ovre",
+       "fremme"
+      ]
+     ],
+     [
+      "Han skynder sig [hen] til skolen.",
+      "He hurries over to the school.",
+      [
+       "henne",
+       "ovre",
+       "om"
+      ]
+     ],
+     [
+      "Kan du komme [hen] til mig et øjeblik?",
+      "Can you come over to me for a moment?",
+      [
+       "henne",
+       "ovre",
+       "omme"
+      ]
+     ]
+    ],
+    "",
+    [
+     "henne"
+    ]
+   ]
+  },
+  {
+   "en": "over at (being there)",
+   "da": "henne",
+   "level": 2,
+   "f": [
+    "being at a place, usually with ved, hos or i: henne ved vinduet, henne hos min mor. Hvor er du henne? = Where are you? Going there is hen.",
+    [
+     [
+      "Hvor er du [henne]?",
+      "Where are you?",
+      [
+       "hen",
+       "ovre",
+       "omme"
+      ]
+     ],
+     [
+      "Jeg er [henne|ovre] hos min mor.",
+      "I'm over at my mother's.",
+      [
+       "hen",
+       "over",
+       "fremme"
+      ]
+     ],
+     [
+      "Han står [henne] ved vinduet.",
+      "He's standing over by the window.",
+      [
+       "hen",
+       "over",
+       "omme"
+      ]
+     ],
+     [
+      "Hvor er mine nøgler [henne]?",
+      "Where are my keys?",
+      [
+       "hen",
+       "ovre",
+       "omme"
+      ]
+     ]
+    ],
+    "",
+    [
+     "hen"
+    ]
+   ]
+  },
+  {
+   "en": "over, across (going across)",
+   "da": "over",
+   "level": 2,
+   "f": [
+    "crossing to the other side, or over to someone: komme over = come over (visit). Being on the other side is ovre.",
+    [
+     [
+      "Han svømmer [over] til den anden side.",
+      "He swims across to the other side.",
+      [
+       "ovre",
+       "hen",
+       "frem"
+      ]
+     ],
+     [
+      "Vi sejler [over] til Sverige.",
+      "We're sailing over to Sweden.",
+      [
+       "ovre",
+       "om",
+       "frem"
+      ]
+     ],
+     [
+      "Kom [over] og få en kop kaffe!",
+      "Come over and have a cup of coffee!",
+      [
+       "ovre",
+       "om",
+       "frem"
+      ]
+     ],
+     [
+      "Skal vi gå [over|hen] til naboen?",
+      "Shall we go over to the neighbour's?",
+      [
+       "ovre",
+       "henne",
+       "frem"
+      ]
+     ]
+    ],
+    "",
+    [
+     "ovre"
+    ]
+   ]
+  },
+  {
+   "en": "over (being on the other side)",
+   "da": "ovre",
+   "level": 2,
+   "f": [
+    "being over on the other side or over at someone's: ovre på den anden side, ovre hos naboen. derovre = over there. Going across is over.",
+    [
+     [
+      "Han bor [ovre] på den anden side af gaden.",
+      "He lives over on the other side of the street.",
+      [
+       "over",
+       "henne",
+       "omme"
+      ]
+     ],
+     [
+      "Min bror bor [ovre] i Sverige.",
+      "My brother lives over in Sweden.",
+      [
+       "over",
+       "henne",
+       "fremme"
+      ]
+     ],
+     [
+      "Vi var [ovre|henne] hos naboen i går.",
+      "We were over at the neighbour's yesterday.",
+      [
+       "over",
+       "hen",
+       "omme"
+      ]
+     ]
+    ],
+    "",
+    [
+     "over"
+    ]
+   ]
+  },
+  {
+   "en": "forward, ahead (going)",
+   "da": "frem",
+   "level": 2,
+   "f": [
+    "moving forward or reaching where you are going. lige frem = straight ahead; komme frem = get there. Having arrived is fremme.",
+    [
+     [
+      "Gå lige [frem] og drej til venstre ved kirken.",
+      "Go straight ahead and turn left at the church.",
+      [
+       "fremme",
+       "over",
+       "om"
+      ]
+     ],
+     [
+      "Hvornår kommer vi [frem]?",
+      "When do we get there?",
+      [
+       "fremme",
+       "hen",
+       "over"
+      ]
+     ],
+     [
+      "Bilen kører langsomt [frem].",
+      "The car moves slowly forward.",
+      [
+       "fremme",
+       "over",
+       "om"
+      ]
+     ]
+    ],
+    "",
+    [
+     "fremme"
+    ]
+   ]
+  },
+  {
+   "en": "there, arrived (being there)",
+   "da": "fremme",
+   "level": 2,
+   "f": [
+    "having arrived: Nu er vi fremme = We're there. It also means out, on display: Maden står fremme. Moving forward is frem.",
+    [
+     [
+      "Nu er vi [fremme]!",
+      "We're there now!",
+      [
+       "frem",
+       "ovre",
+       "henne"
+      ]
+     ],
+     [
+      "Hvornår er vi [fremme]?",
+      "When will we be there?",
+      [
+       "frem",
+       "henne",
+       "omme"
+      ]
+     ],
+     [
+      "Ring, når du er [fremme].",
+      "Call when you get there.",
+      [
+       "frem",
+       "ovre",
+       "omme"
+      ]
+     ],
+     [
+      "Maden står [fremme] på bordet.",
+      "The food is out on the table.",
+      [
+       "frem",
+       "ovre",
+       "henne"
+      ]
+     ]
+    ],
+    "",
+    [
+     "frem"
+    ]
+   ]
+  },
+  {
+   "en": "round (going round)",
+   "da": "om",
+   "level": 2,
+   "f": [
+    "going round, e.g. to the back of a building: gå om bag huset. Only this direction meaning here – om also means about, if and in (om en time). Being round there is omme.",
+    [
+     [
+      "Han går [om] bag huset.",
+      "He goes round behind the house.",
+      [
+       "omme",
+       "over",
+       "frem"
+      ]
+     ],
+     [
+      "Kør [om] til bagindgangen.",
+      "Drive round to the back entrance.",
+      [
+       "omme",
+       "frem",
+       "hen"
+      ]
+     ],
+     [
+      "Vi går [om] til baghaven.",
+      "We go round to the back garden.",
+      [
+       "omme",
+       "over",
+       "frem"
+      ]
+     ]
+    ],
+    "",
+    [
+     "omme"
+    ]
+   ]
+  },
+  {
+   "en": "round (being round the back)",
+   "da": "omme",
+   "level": 2,
+   "f": [
+    "being round the back or on the other side: omme bag huset, omme i baghaven. Going round is om.",
+    [
+     [
+      "Cyklen står [omme] bag huset.",
+      "The bike is round behind the house.",
+      [
+       "om",
+       "ovre",
+       "fremme"
+      ]
+     ],
+     [
+      "Vi sidder [omme] i baghaven.",
+      "We're sitting round in the back garden.",
+      [
+       "om",
+       "henne",
+       "fremme"
+      ]
+     ],
+     [
+      "Indgangen er [omme] på den anden side.",
+      "The entrance is round on the other side.",
+      [
+       "om",
+       "fremme",
+       "over"
+      ]
+     ]
+    ],
+    "",
+    [
+     "om"
+    ]
+   ]
+  },
+  {
+   "en": "past, by",
+   "da": "forbi",
+   "level": 3,
+   "f": [
+    "passing something: gå forbi, køre forbi. komme forbi means both get past and drop by (visit). være forbi = be over: Sommeren er forbi.",
+    [
+     [
+      "Undskyld, må jeg komme [forbi]?",
+      "Excuse me, can I get past?",
+      [
+       "tilbage",
+       "væk",
+       "ind"
+      ]
+     ],
+     [
+      "Bussen kørte lige [forbi].",
+      "The bus just drove past.",
+      [
+       "væk",
+       "igennem",
+       "tilbage"
+      ]
+     ],
+     [
+      "Kom [forbi] i morgen!",
+      "Drop by tomorrow!",
+      [
+       "tilbage",
+       "væk",
+       "igennem"
+      ]
+     ],
+     [
+      "Vi går [forbi] bageren på vej hjem.",
+      "We walk past the bakery on the way home.",
+      [
+       "igennem",
+       "væk",
+       "tilbage"
+      ]
+     ]
+    ],
+    "",
+    [
+     "igennem"
+    ]
+   ]
+  },
+  {
+   "en": "through",
+   "da": "igennem",
+   "level": 3,
+   "f": [
+    "from one side to the other: gå igennem parken. gennem means the same and is more formal.",
+    [
+     [
+      "Vi går [igennem] parken.",
+      "We walk through the park.",
+      [
+       "forbi",
+       "væk",
+       "tilbage"
+      ]
+     ],
+     [
+      "Toget kører [igennem] en lang tunnel.",
+      "The train goes through a long tunnel.",
+      [
+       "forbi",
+       "væk",
+       "ad"
+      ]
+     ],
+     [
+      "Lad mig komme [igennem]!",
+      "Let me through!",
+      [
+       "tilbage",
+       "væk",
+       "ad"
+      ]
+     ]
+    ],
+    "",
+    [
+     "forbi"
+    ]
+   ]
+  },
+  {
+   "en": "away, gone",
+   "da": "væk",
+   "level": 3,
+   "f": [
+    "the same form for going and being: gå væk (go away), være væk (be gone, be away). væk fra = away from – the opposite of hen til.",
+    [
+     [
+      "Katten går [væk] fra skålen.",
+      "The cat walks away from the bowl.",
+      [
+       "hen",
+       "forbi",
+       "tilbage"
+      ]
+     ],
+     [
+      "Gå [væk]!",
+      "Go away!",
+      [
+       "tilbage",
+       "forbi",
+       "ud"
+      ]
+     ],
+     [
+      "Mine nøgler er [væk].",
+      "My keys are gone.",
+      [
+       "tilbage",
+       "forbi",
+       "henne"
+      ]
+     ],
+     [
+      "Hun er [væk] på ferie i to uger.",
+      "She's away on holiday for two weeks.",
+      [
+       "tilbage",
+       "ude",
+       "forbi"
+      ]
+     ]
+    ],
+    "",
+    [
+     "hen"
+    ]
+   ]
+  },
+  {
+   "en": "back",
+   "da": "tilbage",
+   "level": 3,
+   "f": [
+    "the same form for going and being: komme tilbage (come back), være tilbage (be back), give tilbage (give back). The opposite direction is frem.",
+    [
+     [
+      "Jeg er [tilbage] om fem minutter.",
+      "I'll be back in five minutes.",
+      [
+       "væk",
+       "forbi",
+       "hjemme"
+      ]
+     ],
+     [
+      "Hvornår kommer du [tilbage]?",
+      "When are you coming back?",
+      [
+       "forbi",
+       "væk",
+       "igennem"
+      ]
+     ],
+     [
+      "Han giver mig pengene [tilbage].",
+      "He gives me the money back.",
+      [
+       "væk",
+       "forbi",
+       "ud"
+      ]
+     ],
+     [
+      "Gå to skridt [tilbage].",
+      "Take two steps back.",
+      [
+       "frem",
+       "væk",
+       "forbi"
+      ]
+     ]
+    ],
+    "",
+    [
+     "frem"
+    ]
+   ]
+  },
+  {
+   "en": "along, by way of (the route)",
+   "da": "ad",
+   "level": 3,
+   "f": [
+    "the route you take after a direction word: ned ad trappen, ud ad vinduet, hen ad vejen. Writing af here is a very common mistake, even among Danes – af means of, off, from.",
+    [
+     [
+      "Hun løber op [ad] trappen.",
+      "She runs up the stairs.",
+      [
+       "af",
+       "i",
+       "om"
+      ]
+     ],
+     [
+      "Hun kigger ud [ad] vinduet.",
+      "She looks out of the window.",
+      [
+       "af",
+       "i",
+       "om"
+      ]
+     ],
+     [
+      "Vi cykler hen [ad] vejen.",
+      "We cycle along the road.",
+      [
+       "af",
+       "i",
+       "om"
+      ]
+     ],
+     [
+      "Katten kom ind [ad] vinduet.",
+      "The cat came in through the window.",
+      [
+       "af",
+       "i",
+       "om"
+      ]
+     ]
+    ],
+    "",
+    []
+   ]
+  },
+  {
+   "en": "sit down (getting into a seat)",
+   "da": "sætte sig",
+   "level": 4,
+   "f": [
+    "reflexive: jeg sætter mig, du sætter dig, han sætter sig, vi sætter os. Past: satte sig, har sat sig. Once seated you sidder. Sæt dig ned = Sit down.",
+    [
+     [
+      "Tenzin går ind og [sætter sig].",
+      "Tenzin goes in and sits down.",
+      [
+       "sidder",
+       "rejser sig",
+       "lægger sig"
+      ]
+     ],
+     [
+      "[Sæt dig] ned, er du sød.",
+      "Please sit down.",
+      [
+       "sid",
+       "rejs dig",
+       "læg dig"
+      ]
+     ],
+     [
+      "Hun [satte sig] ved vinduet.",
+      "She sat down by the window.",
+      [
+       "sad",
+       "rejste sig",
+       "lagde sig"
+      ]
+     ],
+     [
+      "Han kommer hjem og [sætter sig] i sofaen.",
+      "He comes home and sits down on the sofa.",
+      [
+       "sidder",
+       "rejser sig",
+       "lægger sig"
+      ]
+     ]
+    ],
+    "",
+    [
+     "sidde"
+    ]
+   ]
+  },
+  {
+   "en": "be sitting",
+   "da": "sidde",
+   "level": 4,
+   "f": [
+    "being seated. Past: sad, har siddet. sidder og + verb = is sitting and …ing: Hun sidder og læser. Sitting down is sætte sig.",
+    [
+     [
+      "Hun [sidder] og læser i sofaen.",
+      "She's sitting on the sofa reading.",
+      [
+       "sætter sig",
+       "står",
+       "ligger"
+      ]
+     ],
+     [
+      "Vi [sad] i bussen i en time.",
+      "We sat on the bus for an hour.",
+      [
+       "satte os",
+       "stod",
+       "lå"
+      ]
+     ],
+     [
+      "Er der nogen, der [sidder] her?",
+      "Is anyone sitting here?",
+      [
+       "sætter sig",
+       "står",
+       "ligger"
+      ]
+     ]
+    ],
+    "",
+    [
+     "sætte sig"
+    ]
+   ]
+  },
+  {
+   "en": "stand up (from sitting or lying)",
+   "da": "rejse sig",
+   "level": 4,
+   "f": [
+    "reflexive: jeg rejser mig, du rejser dig. Past: rejste sig. Not the same as stå op (get up out of bed) – and rejse on its own means travel. Once up you står.",
+    [
+     [
+      "Tenzin [rejser sig] og trykker stop.",
+      "Tenzin stands up and presses stop.",
+      [
+       "står",
+       "sætter sig",
+       "lægger sig"
+      ]
+     ],
+     [
+      "Alle [rejste sig], da hun kom ind.",
+      "Everyone stood up when she came in.",
+      [
+       "stod",
+       "satte sig",
+       "lagde sig"
+      ]
+     ],
+     [
+      "Du behøver ikke at [rejse dig].",
+      "You don't need to get up.",
+      [
+       "stå",
+       "sætte dig",
+       "lægge dig"
+      ]
+     ]
+    ],
+    "",
+    [
+     "stå"
+    ]
+   ]
+  },
+  {
+   "en": "be standing",
+   "da": "stå",
+   "level": 4,
+   "f": [
+    "being on your feet. Past: stod, har stået. Upright things står too: Bøgerne står på hylden. Getting up is rejse sig.",
+    [
+     [
+      "Læreren [står] oppe ved tavlen.",
+      "The teacher is standing up at the board.",
+      [
+       "rejser sig",
+       "sidder",
+       "ligger"
+      ]
+     ],
+     [
+      "Vi [stod] i kø i en halv time.",
+      "We stood in line for half an hour.",
+      [
+       "rejste os",
+       "sad",
+       "lå"
+      ]
+     ],
+     [
+      "Der er ingen ledige pladser, så jeg må [stå].",
+      "There are no free seats, so I have to stand.",
+      [
+       "rejse mig",
+       "sidde",
+       "ligge"
+      ]
+     ],
+     [
+      "Hvor længe har du [stået] her?",
+      "How long have you been standing here?",
+      [
+       "rejst dig",
+       "siddet",
+       "ligget"
+      ]
+     ]
+    ],
+    "",
+    [
+     "rejse sig"
+    ]
+   ]
+  },
+  {
+   "en": "lie down (getting into lying)",
+   "da": "lægge sig",
+   "level": 4,
+   "f": [
+    "reflexive: jeg lægger mig, du lægger dig. Past: lagde sig, har lagt sig. It also means go to bed. Once down you ligger.",
+    [
+     [
+      "Jeg er træt – jeg [lægger mig] lidt.",
+      "I'm tired – I'll lie down for a bit.",
+      [
+       "ligger",
+       "sætter mig",
+       "rejser mig"
+      ]
+     ],
+     [
+      "Hunden [lagde sig] foran døren.",
+      "The dog lay down in front of the door.",
+      [
+       "lå",
+       "satte sig",
+       "rejste sig"
+      ]
+     ],
+     [
+      "Jeg [lagde mig] tidligt i går.",
+      "I went to bed early yesterday.",
+      [
+       "lå",
+       "satte mig",
+       "rejste mig"
+      ]
+     ]
+    ],
+    "",
+    [
+     "ligge"
+    ]
+   ]
+  },
+  {
+   "en": "be lying",
+   "da": "ligge",
+   "level": 4,
+   "f": [
+    "lying down. Past: lå, har ligget. Flat things and places ligger too: Nøglerne ligger på bordet, Stationen ligger i centrum. Lying down is lægge sig.",
+    [
+     [
+      "Katten [ligger] på sofaen.",
+      "The cat is lying on the sofa.",
+      [
+       "lægger sig",
+       "sidder",
+       "står"
+      ]
+     ],
+     [
+      "Han [lå] i sengen hele dagen.",
+      "He lay in bed all day.",
+      [
+       "lagde sig",
+       "sad",
+       "stod"
+      ]
+     ],
+     [
+      "Hvor [ligger|er] stationen?",
+      "Where is the station?",
+      [
+       "lægger sig",
+       "står",
+       "sidder"
+      ]
+     ],
+     [
+      "Mine nøgler [ligger|er] på bordet.",
+      "My keys are on the table.",
+      [
+       "lægger sig",
+       "står",
+       "sidder"
+      ]
+     ]
+    ],
+    "",
+    [
+     "lægge sig"
+    ]
+   ]
+  }
  ]
 }

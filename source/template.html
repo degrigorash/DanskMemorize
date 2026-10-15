@@ -100,7 +100,7 @@ dialog.modal::backdrop{background:rgba(0,0,0,.45)}
 .say:hover{background:var(--soft)} .say:active{transform:scale(.92)}
 .say svg{width:18px;height:18px}
 .prompt .say{width:44px;height:44px} .prompt .say svg{width:22px;height:22px}
-/* modal track: the prompt is a whole sentence (en→da adds the Danish sentence with a gap) */
+/* sentence tracks (modal, movement): the prompt is a whole sentence (en→da adds the Danish sentence with a gap) */
 .prompt .word.sent{font-size:26px;font-weight:600;line-height:1.3}
 .prompt .word.sent #promptWord{display:flex;flex-direction:column;gap:10px;min-width:0}
 .prompt .gapline{font-size:19px;font-weight:500;color:var(--muted)}
@@ -153,6 +153,8 @@ body.nosay .say{display:none}
 .prontable.ref table{color:var(--ink);font-size:14px}
 .prontable.ref td span{min-height:24px} .prontable.ref tbody th{padding-top:6px}
 @media (max-width:520px){ .prontable table,.prontable.ref table{font-size:12px;white-space:normal;width:100%} .prontable th,.prontable td{padding:2px 5px} .prontable tbody th,.prontable thead th:first-child,.prontable .say{display:none} .prontable td:first-of-type{padding-left:0} .prontable tr.on td span,.prontable.ref td span{min-height:0} .prontable thead th{font-size:9px;letter-spacing:0} }
+/* movement table: the row label is the English meaning, so it stays on narrow screens */
+@media (max-width:520px){ .prontable.mv tbody th,.prontable.mv thead th:first-child{display:table-cell} .prontable.mv th{white-space:normal} .prontable.mv tbody th{padding-top:2px} }
 .numpair{display:flex;align-items:baseline;gap:10px;margin-bottom:8px}
 .numpair .digit{font-size:24px;font-weight:700;color:var(--ink)}
 .numpair .eq{color:var(--muted)}
@@ -353,7 +355,7 @@ const TRACKS = {
     3:['Common','slightly more abstract everyday verbs: decide, expect, recommend, disappear'],
     4:['Formal & news','what you meet in newspapers and at work: negotiate, demand, improve, evaluate'],
     5:['Advanced','official and bureaucratic Danish: adopt (a law), presuppose, constitute']}},
-  modal: {name:'Modal verbs', note:'Each card is one meaning of a modal verb, shown in a sentence. Danish → English: pick what the modal means there (always multiple choice). English → Danish: fill in the missing modal.', groups:{
+  modal: {name:'Modal verbs', sent:{label:'modal verb', fill:'fill in the missing modal'}, note:'Each card is one meaning of a modal verb, shown in a sentence. Danish → English: pick what the modal means there (always multiple choice). English → Danish: fill in the missing modal.', groups:{
     1:['kan / kunne','can, know, like, may, could – ability, possibility, requests'],
     2:['skal / skulle','plans, going somewhere, rules, Shall we…?, hearsay, should'],
     3:['vil / ville','want, would like, Will you…?, will, would'],
@@ -382,7 +384,12 @@ const TRACKS = {
     2:['Object','mig, dig, ham, hende, os, jer, dem – after verbs and prepositions (den/det stay the same)'],
     3:['Possessive','min/mit/mine, din/dit/dine, hans, hendes, vores, jeres, deres – agree with the thing owned'],
     4:['Reflexive & polite','sig and sin/sit/sine (his own – not hans!), plus the formal De/Dem/Deres'],
-    5:['Other pronouns','man, hinanden, selv, denne/dette/disse, nogen/noget/nogle, ingen, alle, hver, begge, anden…']}}
+    5:['Other pronouns','man, hinanden, selv, denne/dette/disse, nogen/noget/nogle, ingen, alle, hver, begge, anden…']}},
+  move: {name:'Movement & place', abbr:'Mv', sent:{label:'movement & place', fill:'fill the gap'}, note:'Is someone moving (går ind, Hvor skal du hen?) or already there (er inde, Hvor er du henne?)? Each card is one word, shown in a sentence. Danish → English: pick what the word means there (always multiple choice). English → Danish: fill the gap.', groups:{
+    1:['Core pairs','ind/inde, ud/ude, op/oppe, ned/nede, hjem/hjemme – going there vs. being there'],
+    2:['More pairs','hen/henne, over/ovre, frem/fremme, om/omme'],
+    3:['Path & away','forbi, igennem, væk, tilbage – and ad: ned ad trappen, not af'],
+    4:['Position verbs','sætte sig/sidde, rejse sig/stå, lægge sig/ligge – getting into a position vs. being in it']}}
 };
 // personal-pronoun paradigm shown after every pronoun answer: [label, subject, object, possessive, reflexive]
 const PRON_ROWS = {
@@ -437,7 +444,7 @@ const starHtml = w => isHard(w) ? '<span class="star" title="hard word">★</spa
 const WORDS = [];
 // modal cards share their da (several meanings of skal), so they carry their own key
 for (const t of Object.keys(TRACKS)) for (const w of DATA[t]) WORDS.push({track:t, da:w.da, en:w.en, level:w.level, f:w.f, ex:w.ex, id:t+'|'+(w.key || w.da)});
-$('totalCount').textContent = `${DATA.verbs.length} verbs · ${DATA.modal.length} modal verb meanings · ${DATA.adjs.length} adjectives · ${DATA.hv.length} question words · ${DATA.nums.length} numbers · ${DATA.vocab.length} basics · ${DATA.pron.length} pronouns`;
+$('totalCount').textContent = `${DATA.verbs.length} verbs · ${DATA.modal.length} modal verb meanings · ${DATA.adjs.length} adjectives · ${DATA.hv.length} question words · ${DATA.nums.length} numbers · ${DATA.vocab.length} basics · ${DATA.pron.length} pronouns · ${DATA.move.length} movement & place words`;
 
 function st(w, dir){ return (stats[w.id] && stats[w.id][dir]) || {r:0,w:0,s:0}; }
 function status(w, dir){ const s = st(w,dir); if (s.r+s.w===0) return 'new'; return s.s>=3 ? 'learned' : 'learning'; }
@@ -525,7 +532,7 @@ function openPreview(t, lvl){
   $('previewTitle').textContent = `${TRACKS[t].name} · ${lvl}. ${name}`;
   $('previewDesc').textContent = desc;
   $('previewList').innerHTML = ws.map(w => { const s = status(w,prefs.dir);
-    if (w.track==='modal'){ const x = parseSent(w.f[1][0]);
+    if (TRACKS[w.track].sent){ const x = parseSent(w.f[1][0]);
       return `<li><span class="da">${esc(w.da)}${starHtml(w)}${sayBtn(x.plain)}</span><span class="en">${esc(w.en)}<span class="ex">${x.bold}</span></span><span class="pill ${s}">${s}</span></li>`; }
     return `<li><span class="da">${esc(w.da)}${starHtml(w)}${sayBtn(w.da)}</span><span class="en">${esc(w.en)}</span><span class="pill ${s}">${s}</span></li>`; }).join('');
   $('previewInfo').textContent = `${ws.length} words · ${l} learned · ${m} learning · ${ws.length-l-m} new (${prefs.dir==='da'?'da→en':'en→da'})`;
@@ -573,9 +580,41 @@ function modalTable(){
   return `<div class="prontable ref"><table><thead><tr><th></th><th>infinitive</th><th>present</th><th>past</th><th>perfect</th></tr></thead><tbody>${rows}</tbody></table></div>` +
     `<h2 style="margin:14px 0 0">Watch out</h2>${notesHtml(MODAL_NOTES)}<h2 style="margin:16px 0 0">Every meaning</h2>${meanings}`;
 }
+const MOVE_NOTES = [
+  ['Going there or being there?', 'Ask Hvor hen? (where to?) → the short form: ind, ud, op, ned, hjem, hen. Ask Hvor? (where?) → the form with -e: inde, ude, oppe, nede, hjemme, henne. Movement verbs (gå, komme, køre, løbe, cykle, flytte) take the short form, state verbs (være, bo, sidde, stå, ligge, blive) the -e form.',
+    [['Han går ind.', 'He goes in.'], ['Han er inde.', "He's inside."], ['Hvor skal du hen?', 'Where are you going?'], ['Hvor er du henne?', 'Where are you?']]],
+  ['hen til, but henne ved / hos', 'hen is followed by til; henne by ved, hos or i.',
+    [['Han går hen til vinduet.', 'He walks over to the window.'], ['Han står henne ved vinduet.', "He's standing over by the window."]]],
+  ['Same form for both', 'væk, tilbage, forbi and igennem never change.',
+    [['Gå væk!', 'Go away!'], ['Mine nøgler er væk.', 'My keys are gone.'], ['Kom tilbage!', 'Come back!'], ['Jeg er tilbage.', "I'm back."]]],
+  ['ad, not af', 'ad = along, by way of – the route you take: stairs, a road, a door or a window. af means of, off or from. Writing af here is a very common mistake, even among Danes.',
+    [['Han går ned ad trappen.', 'He goes down the stairs.'], ['Hun kigger ud ad vinduet.', 'She looks out of the window.'], ['Han står af bussen.', 'He gets off the bus.']]],
+  ['stå op or rejse sig?', 'stå op = get up (out of bed, start the day). rejse sig = stand up (from a chair or the floor). rejse on its own means travel.',
+    [['Jeg står op klokken syv.', 'I get up at seven.'], ['Han rejser sig fra stolen.', 'He gets up from the chair.']]],
+  ['står, ligger, sidder for things', 'Danish often uses a position verb where English just says is: upright things står, flat things and places ligger.',
+    [['Bøgerne står på hylden.', 'The books are on the shelf.'], ['Nøglerne ligger på bordet.', 'The keys are on the table.'], ['Bageren ligger nede på hjørnet.', 'The bakery is down on the corner.']]],
+  ['With her and der', 'The same pairs join her (here) and der (there) into one word.',
+    [['Kom herind!', 'Come in here!'], ['Det er koldt herude.', "It's cold out here."], ['Gå derover.', 'Go over there.'], ['Bussen holder derovre.', 'The bus stops over there.'], ['Jeg bor deroppe.', 'I live up there.']]],
+  ['The direction word is stressed', 'går ˈind, står ˈop, kommer forˈbi – the stress falls on the little word. In ˈsætter sig, ˈrejser sig the verb is stressed and sig stays weak.']
+];
+// label, going there, being there – the -e form is the place form
+const MOVE_PAIRS = [['in', 'ind', 'inde'], ['out', 'ud', 'ude'], ['up', 'op', 'oppe'], ['down', 'ned', 'nede'], ['home', 'hjem', 'hjemme'],
+  ['over to / at', 'hen', 'henne'], ['across / over', 'over', 'ovre'], ['forward / there', 'frem', 'fremme'], ['round', 'om', 'omme']];
+const MOVE_POS = [['sit', ['sætter sig', 'satte sig'], ['sidder', 'sad']], ['stand', ['rejser sig', 'rejste sig'], ['står', 'stod']], ['lie', ['lægger sig', 'lagde sig'], ['ligger', 'lå']]];
+function moveTable(){
+  const table = (head, rows) => `<div class="prontable ref mv"><table><thead><tr><th></th>${head.map(h => `<th>${esc(h)}</th>`).join('')}</tr></thead><tbody>` +
+    rows.map(([label, ...cols]) => `<tr><th>${esc(label)}</th>${cols.map(c => `<td>${[].concat(c).map(v => `<span>${esc(v)}${sayBtn(v)}</span>`).join('')}</td>`).join('')}</tr>`).join('') +
+    '</tbody></table></div>';
+  const words = Object.entries(TRACKS.move.groups).map(([lvl, [name]]) => `<div class="hvgroup"><div class="hvsense">${esc(name)}</div>` +
+    WORDS.filter(w => w.track==='move' && w.level==lvl).map(w => sentRow(parseSent(w.f[1][0]), w.en)).join('') + '</div>').join('');
+  return table(['going there (hvor hen?)', 'being there (hvor?)'], MOVE_PAIRS) +
+    `<div class="hvnote" style="margin:12px 0 4px">Position verbs, present and past:</div>` + table(['getting into it', 'being in it'], MOVE_POS) +
+    `<h2 style="margin:14px 0 0">Watch out</h2>${notesHtml(MOVE_NOTES)}<h2 style="margin:16px 0 0">Every word</h2>${words}`;
+}
 const REFS = {
   pron: {btn:'Pronoun table', desc:'every personal pronoun form in one table', title:'Personal pronouns', sub:'subject · object · possessive · reflexive', body: () => pronTable() + notesHtml(PRON_NOTES)},
-  modal: {btn:'Modal table', desc:'forms, common traps and every meaning on one page', title:'Modal verbs', sub:'kan · skal · vil · må', body: modalTable}
+  modal: {btn:'Modal table', desc:'forms, common traps and every meaning on one page', title:'Modal verbs', sub:'kan · skal · vil · må', body: modalTable},
+  move: {btn:'Direction table', desc:'going there vs. being there, ad or af, her/der forms and every word on one page', title:'Movement & place', sub:'ind/inde · hen/henne · sætte sig/sidde', body: moveTable}
 };
 function closeRef(){ const d = $('refDlg'); if (canSay) speechSynthesis.cancel(); if (d.close) d.close(); else d.removeAttribute('open'); }
 $('refBtn').onclick = () => { const r = REFS[prefs.track], d = $('refDlg'); if (!r) return;
@@ -636,8 +675,8 @@ function answerText(w, dir){ return dir==='da' ? w.en : w.da; }
 function nextCard(){
   if (S.i >= S.queue.length) return finish();
   const w = S.queue[S.i]; S.answered=false; S.undo=null; $('marks').hidden=true;
-  // modal cards are practised in a sentence; da→en asks for the meaning, which is always multiple choice
-  S.sent = w.track==='modal' ? pickSent(w) : null;
+  // modal and movement cards are practised in a sentence; da→en asks for the meaning, which is always multiple choice
+  S.sent = TRACKS[w.track].sent ? pickSent(w) : null;
   S.mc = S.mode==='mc' || (!!S.sent && S.dir==='da');
   $('counter').textContent = `${S.i+1} / ${S.queue.length}`;
   $('score').textContent = `✓ ${S.right}   ✗ ${S.wrong}`;
@@ -646,8 +685,9 @@ function nextCard(){
   if (!S.sent) pw.textContent = prompt(w, S.dir);
   else pw.innerHTML = S.dir==='da' ? `<span>${S.sent.bold}</span>` : `<span>${esc(S.sent.en)}</span><span class="gapline">${S.sent.gap}</span>`;
   $('promptSay').hidden = S.dir!=='da';
-  // no group number for modal en→da: the group would give the modal away
-  $('promptHint').textContent = (S.sent ? `modal verb · ${S.dir==='da' ? `what does ${S.sent.word} mean here?` : 'fill in the missing modal'}`
+  // no group number for sentence cards: in en→da the group would give the answer away
+  const sk = TRACKS[w.track].sent;
+  $('promptHint').textContent = (S.sent ? `${sk.label} · ${S.dir==='da' ? `what does ${S.sent.word} mean here?` : sk.fill}`
     : `${TRACKS[w.track].name.toLowerCase().replace(/s$/,'')} · group ${w.level}` + (S.dir==='en' && w.track==='verbs' ? ' · answer with the infinitive' : '')) + (isHard(w) ? ' · ★ hard word' : '');
   $('feedback').className='feedback'; $('feedback').innerHTML=''; $('nextBtn').hidden=true;
   if (!S.mc){
@@ -657,7 +697,7 @@ function nextCard(){
     $('kbdHint').innerHTML = '<kbd>Enter</kbd> check / next';
   } else {
     $('typeArea').hidden=true; $('mcArea').hidden=false;
-    const opts = S.sent ? modalChoices(w, S.sent) : wordChoices(w);
+    const opts = S.sent ? sentChoices(w, S.sent) : wordChoices(w);
     $('mcArea').innerHTML = opts.map((o,i) => `<button data-ok="${o.ok?1:''}"><b>${i+1}</b>${esc(o.text)}</button>`).join('');
     $('mcArea').querySelectorAll('button').forEach(b => b.onclick = () => answerMC(b));
     $('kbdHint').innerHTML = '<kbd>1</kbd>–<kbd>4</kbd> choose · <kbd>Enter</kbd> next';
@@ -674,11 +714,12 @@ function wordChoices(w){
 }
 function shuffle(a){ for (let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
 
-/* ---------- modal track: sentences with the modal in brackets, "Jeg [må|skal] gå nu." ---------- */
+/* ---------- sentence tracks: the word in brackets, "Jeg [må|skal] gå nu."; a movement sentence may add
+   its own three wrong options: ["Han går [hen] til skolen.", "…", ["henne", "ovre", "om"]] ---------- */
 const MODAL_FORMS = ['kan','kunne','skal','skulle','vil','ville','må','måtte'];   // present/past pairs
-function parseSent([da, en]){
+function parseSent([da, en, wrong]){
   const m = da.match(/\[([^\]]+)\]/), opts = m[1].split('|'), pre = da.slice(0, m.index), post = da.slice(m.index + m[0].length);
-  return {en, alts: opts.map(o => o.toLowerCase()), word: opts[0].toLowerCase(), plain: pre + opts[0] + post,
+  return {en, wrong, alts: opts.map(o => o.toLowerCase()), word: opts[0].toLowerCase(), plain: pre + opts[0] + post,
     bold: `${esc(pre)}<b class="mod">${esc(opts[0])}</b>${esc(post)}`, gap: `${esc(pre)}<span class="gap"></span>${esc(post)}`};
 }
 const sentRow = (s, label) => `<div class="hvex"><span class="da"><span>${s.bold}</span>${sayBtn(s.plain)}</span><span class="en">${esc(label || s.en)}</span></div>`;
@@ -689,22 +730,29 @@ function pickSent(w){
   S.lastSent[w.id] = i;
   return Object.assign(parseSent(w.f[1][i]), {i});
 }
-function modalChoices(w, s){
+function sentChoices(w, s){
+  const t = w.track;
   if (S.dir==='en'){
-    // en→da: the other tense of the same modal, then other modals in the same tense; never another accepted answer
-    const right = s.word, k = MODAL_FORMS.indexOf(right), free = x => !s.alts.includes(x), pick = [];
-    const add = x => { if (pick.length<3 && free(x) && !pick.includes(x)) pick.push(x); };
-    add(MODAL_FORMS[k ^ 1]);
-    shuffle(MODAL_FORMS.filter((x, i) => i%2===k%2)).forEach(add);
-    shuffle(MODAL_FORMS.slice()).forEach(add);
+    // en→da: never another accepted answer
+    const right = s.word, pick = [];
+    const add = x => { x = x.toLowerCase(); if (pick.length<3 && !s.alts.includes(x) && !pick.includes(x)) pick.push(x); };
+    if (t==='modal'){
+      // the other tense of the same modal, then other modals in the same tense
+      const k = MODAL_FORMS.indexOf(right);
+      add(MODAL_FORMS[k ^ 1]);
+      shuffle(MODAL_FORMS.filter((x, i) => i%2===k%2)).forEach(add);
+      shuffle(MODAL_FORMS.slice()).forEach(add);
+    } else if (s.wrong) s.wrong.forEach(add);
+    // movement sentence without its own wrong options: the partner (inde for ind), then other words of the group
+    else { (w.f[3] || []).forEach(add); shuffle(WORDS.filter(x => x.track===t && x.level===w.level && x!==w)).forEach(x => add(x.da)); }
     return shuffle([{text:right, ok:true}, ...pick.map(text => ({text}))]);
   }
-  // da→en: card's own extra distractors (f[3], a card key or plain text), then other meanings of the same modal,
+  // da→en: card's own extra distractors (f[3], a card key or plain text), then other meanings in the same group,
   // skipping the card's family (f[2]) – meanings close enough that they would also fit the sentence
   const fam = w.f[2], used = new Set([w.en]), pick = [];
-  const add = t => { if (pick.length<3 && !used.has(t)){ used.add(t); pick.push(t); } };
-  (w.f[3] || []).forEach(k => { const x = WORDS.find(y => y.id==='modal|'+k); add(x ? x.en : k); });
-  const others = WORDS.filter(x => x.track==='modal' && x!==w && !(fam && x.f[2]===fam));
+  const add = txt => { if (pick.length<3 && !used.has(txt)){ used.add(txt); pick.push(txt); } };
+  (w.f[3] || []).forEach(k => { const x = WORDS.find(y => y.id===t+'|'+k); add(x ? x.en : k); });
+  const others = WORDS.filter(x => x.track===t && x!==w && !(fam && x.f[2]===fam));
   for (const src of [others.filter(x => x.level===w.level), others.filter(x => x.level!==w.level)]) shuffle(src).forEach(x => add(x.en));
   return shuffle([{text:w.en, ok:true}, ...pick.map(text => ({text}))]);
 }
@@ -723,13 +771,16 @@ function pronTable(keys, da){
 const mm = (v, word) => v && v.startsWith('m. ') ? word + ' ' + v.slice(3) : v;
 function formsHtml(w, cur){
   const f = w.f || []; const has = v => v && v!=='-'; const cell = (v, spoken) => has(v) ? esc(v) + sayBtn(spoken || v) : '–';
-  if (w.track==='modal'){
-    // cur = index of the sentence just practised (shown above); the other meanings of the same modal follow for contrast
-    const more = f[1].filter((_, i) => i!==cur).map(parseSent);
-    const others = WORDS.filter(x => x.track==='modal' && x.level===w.level && x!==w);
+  if (TRACKS[w.track].sent){
+    // cur = index of the sentence just practised (shown above); for contrast follow the other meanings of the same modal,
+    // or a movement word's partner (inde for ind) – the rest of its group when it has none
+    const more = f[1].filter((_, i) => i!==cur).map(parseSent), modal = w.track==='modal';
+    const partners = modal ? [] : (f[3] || []).map(k => WORDS.find(x => x.id==='move|'+k)).filter(Boolean);
+    const others = partners.length ? partners : WORDS.filter(x => x.track===w.track && x.level===w.level && x!==w);
+    const head = modal ? `other meanings of ${TRACKS.modal.groups[w.level][0]}` : partners.length ? 'compare' : 'other words in this group';
     return `<div class="hvforms"><div class="hvnote">${esc(f[0])}</div>` +
       (more.length ? `<div class="hvgroup"><div class="hvsense">more examples</div>${more.map(s => sentRow(s)).join('')}</div>` : '') +
-      `<div class="hvgroup"><div class="hvsense">other meanings of ${esc(TRACKS.modal.groups[w.level][0])}</div>${others.map(x => sentRow(parseSent(x.f[1][0]), x.en)).join('')}</div></div>`;
+      `<div class="hvgroup"><div class="hvsense">${esc(head)}</div>${others.map(x => sentRow(parseSent(x.f[1][0]), x.en)).join('')}</div></div>`;
   }
   if (w.track==='nums'){
     const pair = `<div class="numpair"><span class="digit">${esc(w.en)}</span><span class="eq">=</span><span class="word">${esc(w.da)}</span>${sayBtn(w.da)}</div>`;
@@ -868,7 +919,7 @@ function renderTable(){
   rows.sort((x,y) => { let a=x[sort.k], b=y[sort.k]; if (sort.k==='status'){a=ord[a];b=ord[b];} if (sort.k==='level'){ if (x.track!==y.track) return x.track<y.track?-1:1; }
     if (a<b) return sort.asc?-1:1; if (a>b) return sort.asc?1:-1; return x.da<y.da?-1:1; });
   $('wordTable').querySelectorAll('th').forEach(th => { th.classList.toggle('on', th.dataset.k===sort.k); th.onclick = () => { if (sort.k===th.dataset.k) sort.asc=!sort.asc; else sort={k:th.dataset.k, asc:true}; renderTable(); }; });
-  $('wordTable').querySelector('tbody').innerHTML = rows.slice(0,400).map(r => `<tr><td><b>${esc(r.da)}</b>${starHtml(r.w)}</td><td>${r.en}</td><td>${TRACKS[r.track].name[0]}${r.level}</td>
+  $('wordTable').querySelector('tbody').innerHTML = rows.slice(0,400).map(r => `<tr><td><b>${esc(r.da)}</b>${starHtml(r.w)}</td><td>${r.en}</td><td>${TRACKS[r.track].abbr || TRACKS[r.track].name[0]}${r.level}</td>
     <td>${r.r_da||''}</td><td>${r.w_da||''}</td><td>${r.r_en||''}</td><td>${r.w_en||''}</td><td><span class="pill ${r.status}">${r.status}</span></td></tr>`).join('');
   $('tableInfo').textContent = rows.length>400 ? `showing 400 of ${rows.length} – narrow the search to see more` : `${rows.length} words · status column follows the direction chosen above`;
 }
@@ -893,6 +944,7 @@ How to quiz me:
   7. A role-play (café, shop, doctor, small talk) where you play the other person.
   8. Free writing: give me a topic, I write 3–5 sentences, you correct them.
 - Modal verbs (kan/kunne, skal/skulle, vil/ville, må/måtte) are listed one meaning per line, because the same modal means different things in different sentences. Test each meaning in a new sentence, never the bare word: ask what the modal means in a Danish sentence, or give me an English sentence that needs it. Also mix in the classic traps: må ikke (mustn't) vs behøver ikke (don't have to), skal for plans vs vil, no "at" after a modal, and kunne/ville to sound more polite.
+- Movement & place words are listed one per line with an example sentence. Test them in sentences too, never the bare word. The key skill is choosing between going somewhere (går ind, kommer hjem, Hvor skal du hen?) and being there (er inde, er hjemme, Hvor er du henne?), and the same for sætte sig/sidde, rejse sig/stå, lægge sig/ligge. Also mix in ned ad trappen (ad, not af) and stå op (get up) vs rejse sig (stand up).
 - Build sentences mostly from words I know. If you need a word I haven't learned, give its meaning in brackets.
 - Only use exercise types that fit the tracks I've practised (for example, no number exercises if Numbers isn't listed below).
 - Never stop on your own: no fixed number of questions, no "want to continue?" or "shall we do another?", no wrapping up. When you have been through all my learned words, start again from the top with different exercise types.
@@ -904,7 +956,7 @@ function aiLine(w, withRecord){
   const f = w.f || [], has = v => v && v!=='-';
   const forms = w.track==='verbs' ? [f[0], f[1], f[2]] : w.track==='adjs' ? [f[1], f[2], mm(f[3],'mere'), mm(f[4],'mest')] : [];
   const fs = forms.filter(has).join(', ');
-  let line = w.track==='modal' ? `- ${w.da} — ${w.en}; e.g. "${parseSent(w.f[1][0]).plain}"` : `- ${w.da}${fs ? ` (${fs})` : ''} — ${w.en}`;
+  let line = TRACKS[w.track].sent ? `- ${w.da} — ${w.en}; e.g. "${parseSent(w.f[1][0]).plain}"` : `- ${w.da}${fs ? ` (${fs})` : ''} — ${w.en}`;
   if (withRecord){
     const rec = Object.keys(AI_DIRS).map(d => { const s = st(w,d); return s.r+s.w ? `${AI_DIRS[d]} ${s.r}✓ ${s.w}✗` : ''; }).filter(Boolean).join('; ');
     line += ` [${rec || 'not practised yet'}]`;
@@ -937,7 +989,7 @@ function aiText(){
     parts.push(s);
   }
   if (!parts.length) return null;
-  const legend = `Learned = answered right 3 times in a row. Shaky = practised but not learned yet. ★ Hard = words I marked as hard myself. da→en means I'm shown the Danish word and answer in English, en→da the other way round; counts are right ✓ and wrong ✗ answers. Verbs show present, past and perfect; adjectives show t-form, e-form, comparative and superlative; modal verbs show one meaning with an example sentence. Learned words are listed from longest ago practised to most recent, shaky words worst first. "[da→en only]" means I've only practised that direction.`;
+  const legend = `Learned = answered right 3 times in a row. Shaky = practised but not learned yet. ★ Hard = words I marked as hard myself. da→en means I'm shown the Danish word and answer in English, en→da the other way round; counts are right ✓ and wrong ✗ answers. Verbs show present, past and perfect; adjectives show t-form, e-form, comparative and superlative; modal verbs and movement & place words show one meaning with an example sentence. Learned words are listed from longest ago practised to most recent, shaky words worst first. "[da→en only]" means I've only practised that direction.`;
   const text = `${AI_PROMPT}\n\n--- My progress (${new Date().toISOString().slice(0,10)}) ---\n${legend}\n\n${parts.join('\n\n')}` +
     (notStarted.length ? `\n\nNot started yet: ${notStarted.join(', ')}.` : '');
   return {text, tot};
